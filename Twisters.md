@@ -1,5 +1,8 @@
 # Twisters Build - League Launch Guide
 
+**League Start Regex:** `"!(uiv)" "spear|mov|[egdl] da.* to a"`  
+**Spear Progression:** Hardwood `1` > Ironhead `5` > Hunting `10` > Winged `16` > War `21` > Forked `26` > Barbed `33` > Broad `40` > Crossblade `45` > Seaglass `51` > Sword `52` > Striking `55` > Helix `65` > Steelhead `45` > Coursing `48` > Swift `51` > Branched `54` > Jagged `59` > Massive `62` > Orichalcum `67` > Soaring `70` > Pronged `72` > Stalking `77` > Flying `78` > Grand `79` > Spiked `77` > Guardian `75` > Akoyan `78`
+
 **Legend:** `I, II, III...` = Gem cutting levels | `D` = Drop after | `S` = Swap | `[text]` = Notes  
 **Colors:** 🔴 Strength (+90) · 🟢 Dexterity (+110) · 🔵 Intelligence (+115) · 🟡 Lineage
 
