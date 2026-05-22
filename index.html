@@ -17,7 +17,6 @@
     }
 
     h1 {
-      color: #e8c97a;
       font-size: 1.8em;
       margin-bottom: 16px;
       border-bottom: 1px solid #333;
@@ -25,12 +24,13 @@
     }
 
     h2 {
-      color: #c8a84b;
       font-size: 1.2em;
       margin: 24px 0 10px;
       border-bottom: 1px solid #2a2a2a;
       padding-bottom: 4px;
     }
+
+    .page-heading { color: #6bb8c8; }
 
     p { margin: 6px 0; }
 
@@ -170,7 +170,7 @@
 </head>
 <body>
 
-<h1>Twisters Build - League Launch Guide</h1>
+<h1 class="page-heading">Twisters Build - League Launch Guide</h1>
 
 <div class="meta">
   <p><strong>League Start Regex:</strong> <code id="regex-text">"!(uiv)" "spear|mov|[egdl] da.* to a"</code><button class="copy-btn" title="Copy regex" onclick="const btn=this;navigator.clipboard.writeText(document.getElementById('regex-text').textContent).then(()=>{btn.textContent='✓';btn.classList.add('copied');setTimeout(()=>{btn.textContent='⧉';btn.classList.remove('copied')},1500)})">⧉</button></p>
@@ -178,7 +178,7 @@
   <p><strong>Sceptre:</strong> BUY THIS AT LEVEL 16. It's used for Malice and extra spirit.</p>
 </div>
 
-<h2>Campaign Zone Rewards</h2>
+<h2 class="page-heading">Campaign Zone Rewards</h2>
 <div class="rewards-grid">
 
   <div class="reward-card">
