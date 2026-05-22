@@ -10,6 +10,68 @@
 
 ---
 
+## Campaign Zone Rewards
+
+**Act 1**
+
+| Zone | Reward |
+|------|--------|
+| Cemetery of the Eternals | Regal Orb |
+| Hunting Grounds | Exalted Orb |
+| Ogham Village | Artificer's Orb |
+| Ogham Manor | Orb of Alchemy |
+
+**Act 2**
+
+| Zone | Reward |
+|------|--------|
+| Vastiri Outskirts | Exalted Orb |
+| The Halani Gates | Exalted Orb |
+| The Lost City | Orb of Alchemy |
+| Buried Shrines | Lesser Jeweller's Orb |
+| Mastodon Badlands | Regal Orb |
+| The Bone Pits | Exalted Orb |
+
+**Act 3**
+
+| Zone | Reward |
+|------|--------|
+| Jungle Ruins | Orb of Alchemy |
+| Infested Barrens | Exalted Orb |
+| Jiquani's Sanctum | Exalted Orb |
+
+**Act 4**
+
+| Zone | Reward |
+|------|--------|
+| Kedge Bay | Exalted Orb |
+| Journey's End | Orb of Alchemy |
+| Abandoned Prison | Exalted Orb |
+| Eye of Hinekora | Chaos Orb |
+| Ngakanu | Greater Jeweller's Orb |
+
+**Interlude 1**
+
+| Zone | Reward |
+|------|--------|
+| Stones of Serle | Exalted Orb |
+
+**Interlude 2**
+
+| Zone | Reward |
+|------|--------|
+| Pools of Khatal | Orb of Alchemy |
+| Qimah | Exalted Orb |
+
+**Interlude 3**
+
+| Zone | Reward |
+|------|--------|
+| Howling Caves | Chaos Orb |
+| Etched Ravine | Exalted Orb |
+
+---
+
 | Icon | Skill | Supports |
 |------|-------|----------|
 | ![](icons/Whirling_Slash_skill_icon.png) | **Whirling Slash** | 🔴Rage `I, IV, V` - 🟢Rapid Attacks `I, IV, V` - 🔴Knockback `III` - 🔵Magnified Area `I, III` - 🟢Punch Through `III` - 🟢Heightened Accuracy `III` - 🟡Rigwalds Ferocity |
