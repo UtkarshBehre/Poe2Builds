@@ -101,6 +101,23 @@
       border: 1px solid #222;
       border-radius: 4px;
       align-self: flex-start;
+      cursor: zoom-in;
+      transition: transform 0.2s;
+    }
+
+    .passive-tree.maximized {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
+      max-width: 90vw;
+      max-height: 90vh;
+      z-index: 1000;
+      cursor: zoom-out;
+      border: 2px solid #444;
+      border-radius: 6px;
+      box-shadow: 0 0 0 9999px rgba(0,0,0,0.75);
     }
 
     .skills-layout {
@@ -132,6 +149,23 @@
     }
     .copy-btn:hover { color: #e8c97a; }
     .copy-btn.copied { color: #50c050; }
+
+    .spear-grid {
+      display: flex;
+      gap: 16px;
+      margin: 4px 0 2px;
+    }
+    .spear-col {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      flex: 1;
+    }
+    .spear-col span {
+      color: #aaa;
+      font-size: 0.92em;
+    }
+    .spear-col span::before { content: '› '; color: #555; }
 
     .rewards-grid {
       display: flex;
@@ -174,7 +208,51 @@
 
 <div class="meta">
   <p><strong>League Start Regex:</strong> <code id="regex-text">"!(uiv)" "spear|mov|[egdl] da.* to a"</code><button class="copy-btn" title="Copy regex" onclick="const btn=this;navigator.clipboard.writeText(document.getElementById('regex-text').textContent).then(()=>{btn.textContent='✓';btn.classList.add('copied');setTimeout(()=>{btn.textContent='⧉';btn.classList.remove('copied')},1500)})">⧉</button></p>
-  <p><strong>Spear Progression:</strong> Hardwood <code>1</code> &gt; Ironhead <code>5</code> &gt; Hunting <code>10</code> &gt; Winged <code>16</code> &gt; War <code>21</code> &gt; Forked <code>26</code> &gt; Barbed <code>33</code> &gt; Broad <code>40</code> &gt; Crossblade <code>45</code> &gt; Seaglass <code>51</code> &gt; Sword <code>52</code> &gt; Striking <code>55</code> &gt; Helix <code>65</code> &gt; Steelhead <code>45</code> &gt; Coursing <code>48</code> &gt; Swift <code>51</code> &gt; Branched <code>54</code> &gt; Jagged <code>59</code> &gt; Massive <code>62</code> &gt; Orichalcum <code>67</code> &gt; Soaring <code>70</code> &gt; Pronged <code>72</code> &gt; Stalking <code>77</code> &gt; Flying <code>78</code> &gt; Grand <code>79</code> &gt; Spiked <code>77</code> &gt; Guardian <code>75</code> &gt; Akoyan <code>78</code></p>
+  <p><strong>Spear Progression:</strong></p>
+  <div class="spear-grid">
+    <div class="spear-col">
+      <span>Hardwood <code>1</code></span>
+      <span>Ironhead <code>5</code></span>
+      <span>Hunting <code>10</code></span>
+      <span>Winged <code>16</code></span>
+    </div>
+    <div class="spear-col">
+      <span>War <code>21</code></span>
+      <span>Forked <code>26</code></span>
+      <span>Barbed <code>33</code></span>
+      <span>Broad <code>40</code></span>
+    </div>
+    <div class="spear-col">
+      <span>Crossblade <code>45</code></span>
+      <span>Seaglass <code>51</code></span>
+      <span>Sword <code>52</code></span>
+      <span>Striking <code>55</code></span>
+    </div>
+    <div class="spear-col">
+      <span>Helix <code>65</code></span>
+      <span>Steelhead <code>45</code></span>
+      <span>Coursing <code>48</code></span>
+      <span>Swift <code>51</code></span>
+    </div>
+    <div class="spear-col">
+      <span>Branched <code>54</code></span>
+      <span>Jagged <code>59</code></span>
+      <span>Massive <code>62</code></span>
+      <span>Orichalcum <code>67</code></span>
+    </div>
+    <div class="spear-col">
+      <span>Soaring <code>70</code></span>
+      <span>Pronged <code>72</code></span>
+      <span>Stalking <code>77</code></span>
+      <span>Flying <code>78</code></span>
+    </div>
+    <div class="spear-col">
+      <span>Grand <code>79</code></span>
+      <span>Spiked <code>77</code></span>
+      <span>Guardian <code>75</code></span>
+      <span>Akoyan <code>78</code></span>
+    </div>
+  </div>
   <p><strong>Sceptre:</strong> BUY THIS AT LEVEL 16. It's used for Malice and extra spirit.</p>
 </div>
 
@@ -334,7 +412,7 @@
 </table>
 
 <div class="skills-tree">
-  <img src="icons/Tree_Screenshot.png" alt="Passive Tree" class="passive-tree">
+  <img src="icons/Tree_Screenshot.png" alt="Passive Tree" class="passive-tree" onclick="this.classList.toggle('maximized')">
 </div>
 </div>
 
