@@ -3,6 +3,8 @@
 **League Start Regex:** `"!(uiv)" "spear|mov|[egdl] da.* to a"`  
 **Spear Progression:** Hardwood `1` > Ironhead `5` > Hunting `10` > Winged `16` > War `21` > Forked `26` > Barbed `33` > Broad `40` > Crossblade `45` > Seaglass `51` > Sword `52` > Striking `55` > Helix `65` > Steelhead `45` > Coursing `48` > Swift `51` > Branched `54` > Jagged `59` > Massive `62` > Orichalcum `67` > Soaring `70` > Pronged `72` > Stalking `77` > Flying `78` > Grand `79` > Spiked `77` > Guardian `75` > Akoyan `78`
 
+**Sceptre:** BUY THIS AT LEVEL 16. It's used for Malice and extra spirit.
+
 **Legend:** `I, II, III...` = Gem cutting levels | `D` = Drop after | `S` = Swap | `[text]` = Notes  
 **Colors:** 🔴 Strength (+90) · 🟢 Dexterity (+110) · 🔵 Intelligence (+115) · 🟡 Lineage
 
@@ -22,3 +24,7 @@
 | ![](icons/Thunderous_Leap_skill_icon.png) | **Thunderous Leap `VII`** | 🟢Rapid Attacks `I, IV, V` |
 | ![](icons/Combat_Frenzy_skill_icon.png) | **Combat Frenzy `VIII`** | 🟢Charged Profusion `I` - 🔵Empowered Sparks `II, IV` - 🔴Cannibalism `III, IV` *[if spirit on item]* - 🔴Herbalism `II, IV` |
 | ![](icons/Wind_Dancer_skill_icon.png) | **Wind Dancer** | 🔵Magnified Area `I, III` - 🟢Blind `II, V` - 🔴Knockback `III` - 🟢Pin `I, II` - 🟢Heightened Accuracy `III` - 🟢Maim `II` |
+
+---
+
+![Passive Tree](icons/Tree_Screenshot.png)
