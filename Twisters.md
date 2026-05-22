@@ -26,7 +26,8 @@
 | | Buried Shrines | Lesser Jeweller's Orb |
 | | Mastodon Badlands | Regal Orb |
 | | The Bone Pits | Exalted Orb |
-| **Act 3** | Jungle Ruins | Orb of Alchemy |
+| **Act 3** | Sandswept Marsh | Lesser Jeweller's Orb |
+| | Jungle Ruins | Orb of Alchemy |
 | | Infested Barrens | Exalted Orb |
 | | Jiquani's Sanctum | Exalted Orb |
 | **Act 4** | Kedge Bay | Exalted Orb |
