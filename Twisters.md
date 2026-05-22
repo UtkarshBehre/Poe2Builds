@@ -7,7 +7,7 @@
 
 | Icon | Skill | Supports |
 |------|-------|----------|
-| ![](icons/Whirling_Slash_skill_icon.png) | **Whirling Slash** | 🔴Rage `(I, IV, V)` - 🟢Rapid Attacks `(I, IV, V)` - 🔴Knockback `(III)` - 🔵Magnified Area `(I, III)` - 🟢Punch Through `(III)` - 🟢Heightened Accuracy `(III)` - 🟡Rigwalds Ferocity |
+| ![](icons/Whirling_Slash_skill_icon.png) | **Whirling Slash** | 🔴Rage `I, IV, V` - 🟢Rapid Attacks `I, IV, V` - 🔴Knockback `III` - 🔵Magnified Area `I, III` - 🟢Punch Through `III` - 🟢Heightened Accuracy `III` - 🟡Rigwalds Ferocity |
 | ![](icons/Twister_skill_icon.png) | **Twister** | 🟢Retreat `(I, III, V)` - 🟢Projectile Acceleration `(I, IV, V)` *[if extra]* - 🔵Frost Nexus `(II, S)` - 🔴Elemental Armament `(I, II)` - 🔵Conc Area `(I)` - 🔵Ice Bite `(I, III)` - 🟢Longshot `(II, III)` - 🟢Close Combat `(III, V)` - 🔵Pinpoint Critical `(II)` - 🟡Rakiata - 🟡Garukhan's Resolve |
 | ![](icons/Frost_Bomb_skill_icon.png) | **Frost Bomb `(I)`** *[DROP after Act 1]* | 🔵Magnified Area `(I, D)` |
 | ![](icons/War_Banner_skill_icon.png) | **War Banner `(IV)`** | 🔴Prolonged Duration `(I, III)` - 🔵Magnified Area `(I, III)` - 🔴Efficiency `(I, IV)` *[optional]* - 🔴Life Tap `(II)` *[optional]* |
