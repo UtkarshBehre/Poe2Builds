@@ -126,6 +126,15 @@
       margin: 0;
       width: 100%;
     }
+
+    .r-gold   { color: #e8c060; font-weight: 600; }
+    .r-orange { color: #e07828; font-weight: 600; }
+    .r-salmon { color: #e07060; font-weight: 600; }
+
+    .str     { color: #e05050; }
+    .dex     { color: #50c050; }
+    .int     { color: #6090e8; }
+    .lineage { color: #e8c060; }
   </style>
 </head>
 <body>
@@ -137,7 +146,7 @@
   <p><strong>Spear Progression:</strong> Hardwood <code>1</code> &gt; Ironhead <code>5</code> &gt; Hunting <code>10</code> &gt; Winged <code>16</code> &gt; War <code>21</code> &gt; Forked <code>26</code> &gt; Barbed <code>33</code> &gt; Broad <code>40</code> &gt; Crossblade <code>45</code> &gt; Seaglass <code>51</code> &gt; Sword <code>52</code> &gt; Striking <code>55</code> &gt; Helix <code>65</code> &gt; Steelhead <code>45</code> &gt; Coursing <code>48</code> &gt; Swift <code>51</code> &gt; Branched <code>54</code> &gt; Jagged <code>59</code> &gt; Massive <code>62</code> &gt; Orichalcum <code>67</code> &gt; Soaring <code>70</code> &gt; Pronged <code>72</code> &gt; Stalking <code>77</code> &gt; Flying <code>78</code> &gt; Grand <code>79</code> &gt; Spiked <code>77</code> &gt; Guardian <code>75</code> &gt; Akoyan <code>78</code></p>
   <p><strong>Sceptre:</strong> BUY THIS AT LEVEL 16. It's used for Malice and extra spirit.</p>
   <p><strong>Legend:</strong> <code>I, II, III...</code> = Gem cutting levels &nbsp;|&nbsp; <code>D</code> = Drop after &nbsp;|&nbsp; <code>S</code> = Swap &nbsp;|&nbsp; <code>[text]</code> = Notes</p>
-  <p><strong>Colors:</strong> 🔴 Strength (+90) · 🟢 Dexterity (+110) · 🔵 Intelligence (+115) · 🟡 Lineage</p>
+  <p><strong>Colors:</strong> <span class="str">■ Strength (+90)</span> · <span class="dex">■ Dexterity (+110)</span> · <span class="int">■ Intelligence (+115)</span> · <span class="lineage">■ Lineage</span></p>
 </div>
 
 <h2>Campaign Zone Rewards</h2>
@@ -148,10 +157,10 @@
     <table>
       <thead><tr><th>Zone</th><th>Reward</th></tr></thead>
       <tbody>
-        <tr><td>Cemetery of the Eternals</td><td>Regal Orb</td></tr>
-        <tr><td>Hunting Grounds</td><td>Exalted Orb</td></tr>
+        <tr><td>Cemetery of the Eternals</td><td class="r-gold">Regal Orb</td></tr>
+        <tr><td>Hunting Grounds</td><td class="r-gold">Exalted Orb</td></tr>
         <tr><td>Ogham Village</td><td>Artificer's Orb</td></tr>
-        <tr><td>Ogham Manor</td><td>Orb of Alchemy</td></tr>
+        <tr><td>Ogham Manor</td><td class="r-gold">Orb of Alchemy</td></tr>
       </tbody>
     </table>
   </div>
@@ -161,12 +170,12 @@
     <table>
       <thead><tr><th>Zone</th><th>Reward</th></tr></thead>
       <tbody>
-        <tr><td>Vastiri Outskirts</td><td>Exalted Orb</td></tr>
-        <tr><td>The Halani Gates</td><td>Exalted Orb</td></tr>
-        <tr><td>The Lost City</td><td>Orb of Alchemy</td></tr>
-        <tr><td>Buried Shrines</td><td>Lesser Jeweller's Orb</td></tr>
-        <tr><td>Mastodon Badlands</td><td>Regal Orb</td></tr>
-        <tr><td>The Bone Pits</td><td>Exalted Orb</td></tr>
+        <tr><td>Vastiri Outskirts</td><td class="r-gold">Exalted Orb</td></tr>
+        <tr><td>The Halani Gates</td><td class="r-gold">Exalted Orb</td></tr>
+        <tr><td>The Lost City</td><td class="r-gold">Orb of Alchemy</td></tr>
+        <tr><td>Buried Shrines</td><td class="r-salmon">Lesser Jeweller's Orb</td></tr>
+        <tr><td>Mastodon Badlands</td><td class="r-gold">Regal Orb</td></tr>
+        <tr><td>The Bone Pits</td><td class="r-gold">Exalted Orb</td></tr>
       </tbody>
     </table>
   </div>
@@ -176,9 +185,9 @@
     <table>
       <thead><tr><th>Zone</th><th>Reward</th></tr></thead>
       <tbody>
-        <tr><td>Jungle Ruins</td><td>Orb of Alchemy</td></tr>
-        <tr><td>Infested Barrens</td><td>Exalted Orb</td></tr>
-        <tr><td>Jiquani's Sanctum</td><td>Exalted Orb</td></tr>
+        <tr><td>Jungle Ruins</td><td class="r-gold">Orb of Alchemy</td></tr>
+        <tr><td>Infested Barrens</td><td class="r-gold">Exalted Orb</td></tr>
+        <tr><td>Jiquani's Sanctum</td><td class="r-gold">Exalted Orb</td></tr>
       </tbody>
     </table>
   </div>
@@ -188,11 +197,11 @@
     <table>
       <thead><tr><th>Zone</th><th>Reward</th></tr></thead>
       <tbody>
-        <tr><td>Kedge Bay</td><td>Exalted Orb</td></tr>
-        <tr><td>Journey's End</td><td>Orb of Alchemy</td></tr>
-        <tr><td>Abandoned Prison</td><td>Exalted Orb</td></tr>
-        <tr><td>Eye of Hinekora</td><td>Chaos Orb</td></tr>
-        <tr><td>Ngakanu</td><td>Greater Jeweller's Orb</td></tr>
+        <tr><td>Kedge Bay</td><td class="r-gold">Exalted Orb</td></tr>
+        <tr><td>Journey's End</td><td class="r-gold">Orb of Alchemy</td></tr>
+        <tr><td>Abandoned Prison</td><td class="r-gold">Exalted Orb</td></tr>
+        <tr><td>Eye of Hinekora</td><td class="r-orange">Chaos Orb</td></tr>
+        <tr><td>Ngakanu</td><td class="r-salmon">Greater Jeweller's Orb</td></tr>
       </tbody>
     </table>
   </div>
@@ -202,7 +211,7 @@
     <table>
       <thead><tr><th>Zone</th><th>Reward</th></tr></thead>
       <tbody>
-        <tr><td>Stones of Serle</td><td>Exalted Orb</td></tr>
+        <tr><td>Stones of Serle</td><td class="r-gold">Exalted Orb</td></tr>
       </tbody>
     </table>
   </div>
@@ -212,8 +221,8 @@
     <table>
       <thead><tr><th>Zone</th><th>Reward</th></tr></thead>
       <tbody>
-        <tr><td>Pools of Khatal</td><td>Orb of Alchemy</td></tr>
-        <tr><td>Qimah</td><td>Exalted Orb</td></tr>
+        <tr><td>Pools of Khatal</td><td class="r-gold">Orb of Alchemy</td></tr>
+        <tr><td>Qimah</td><td class="r-gold">Exalted Orb</td></tr>
       </tbody>
     </table>
   </div>
@@ -223,8 +232,8 @@
     <table>
       <thead><tr><th>Zone</th><th>Reward</th></tr></thead>
       <tbody>
-        <tr><td>Howling Caves</td><td>Chaos Orb</td></tr>
-        <tr><td>Etched Ravine</td><td>Exalted Orb</td></tr>
+        <tr><td>Howling Caves</td><td class="r-orange">Chaos Orb</td></tr>
+        <tr><td>Etched Ravine</td><td class="r-gold">Exalted Orb</td></tr>
       </tbody>
     </table>
   </div>
@@ -239,62 +248,62 @@
     <tr>
       <td><img src="icons/Whirling_Slash_skill_icon.png" alt="Whirling Slash"></td>
       <td><strong>Whirling Slash</strong></td>
-      <td>🔴Rage <code>I, IV, V</code> - 🟢Rapid Attacks <code>I, IV, V</code> - 🔴Knockback <code>III</code> - 🔵Magnified Area <code>I, III</code> - 🟢Punch Through <code>III</code> - 🟢Heightened Accuracy <code>III</code> - 🟡Rigwalds Ferocity</td>
+      <td><span class="str">Rage</span> <code>I, IV, V</code> - <span class="dex">Rapid Attacks</span> <code>I, IV, V</code> - <span class="str">Knockback</span> <code>III</code> - <span class="int">Magnified Area</span> <code>I, III</code> - <span class="dex">Punch Through</span> <code>III</code> - <span class="dex">Heightened Accuracy</span> <code>III</code> - <span class="lineage">Rigwalds Ferocity</span></td>
     </tr>
     <tr>
       <td><img src="icons/Twister_skill_icon.png" alt="Twister"></td>
       <td><strong>Twister</strong></td>
-      <td>🟢Retreat <code>I, III, V</code> - 🟢Projectile Acceleration <code>I, IV, V</code> <em>[if extra]</em> - 🔵Frost Nexus <code>II, S</code> - 🔴Elemental Armament <code>I, II</code> - 🔵Conc Area <code>I</code> - 🔵Ice Bite <code>I, III</code> - 🟢Longshot <code>II, III</code> - 🟢Close Combat <code>III, V</code> - 🔵Pinpoint Critical <code>II</code> - 🟡Rakiata - 🟡Garukhan's Resolve</td>
+      <td><span class="dex">Retreat</span> <code>I, III, V</code> - <span class="dex">Projectile Acceleration</span> <code>I, IV, V</code> <em>[if extra]</em> - <span class="int">Frost Nexus</span> <code>II, S</code> - <span class="str">Elemental Armament</span> <code>I, II</code> - <span class="int">Conc Area</span> <code>I</code> - <span class="int">Ice Bite</span> <code>I, III</code> - <span class="dex">Longshot</span> <code>II, III</code> - <span class="dex">Close Combat</span> <code>III, V</code> - <span class="int">Pinpoint Critical</span> <code>II</code> - <span class="lineage">Rakiata</span> - <span class="lineage">Garukhan's Resolve</span></td>
     </tr>
     <tr>
       <td><img src="icons/Frost_Bomb_skill_icon.png" alt="Frost Bomb"></td>
       <td><strong>Frost Bomb <code>I</code></strong> <em>[DROP after Act 1]</em></td>
-      <td>🔵Magnified Area <code>I, D</code></td>
+      <td><span class="int">Magnified Area</span> <code>I, D</code></td>
     </tr>
     <tr>
       <td><img src="icons/War_Banner_skill_icon.png" alt="War Banner"></td>
       <td><strong>War Banner <code>IV</code></strong></td>
-      <td>🔴Prolonged Duration <code>I, III</code> - 🔵Magnified Area <code>I, III</code> - 🔴Efficiency <code>I, IV</code> <em>[optional]</em> - 🔴Life Tap <code>II</code> <em>[optional]</em></td>
+      <td><span class="str">Prolonged Duration</span> <code>I, III</code> - <span class="int">Magnified Area</span> <code>I, III</code> - <span class="str">Efficiency</span> <code>I, IV</code> <em>[optional]</em> - <span class="str">Life Tap</span> <code>II</code> <em>[optional]</em></td>
     </tr>
     <tr>
       <td><img src="icons/Barrage_skill_icon.png" alt="Barrage"></td>
       <td><strong>Barrage <code>V</code></strong></td>
-      <td>🔵Rapid Casting <code>I, IV</code> - 🟢Cooldown Recovery <code>III, IV</code> - 🔴Prolonged Duration <code>I, III, D</code> - 🔴Life Tap <code>II</code> - 🟢Second Wind <code>II, IV, V</code> - 🟢Heightened Charges <code>II</code></td>
+      <td><span class="int">Rapid Casting</span> <code>I, IV</code> - <span class="dex">Cooldown Recovery</span> <code>III, IV</code> - <span class="str">Prolonged Duration</span> <code>I, III, D</code> - <span class="str">Life Tap</span> <code>II</code> - <span class="dex">Second Wind</span> <code>II, IV, V</code> - <span class="dex">Heightened Charges</span> <code>II</code></td>
     </tr>
     <tr>
       <td><img src="icons/Ice-Tipped_Arrows_skill_icon.png" alt="Ice-Tipped Arrows"></td>
       <td><strong>Ice-Tipped Arrows <code>V</code></strong></td>
-      <td>🔴Elemental Armament <code>I, II</code> - 🔵Magnified Area <code>I, D</code> - 🟢Cooldown Recovery <code>III, IV, D</code> - 🔵Elemental Focus <code>III</code> - 🟢Second Wind <code>II, IV, V</code> - 🟢Culling Strike <code>IV, V</code> - 🔵Cold Exposure <code>IV</code></td>
+      <td><span class="str">Elemental Armament</span> <code>I, II</code> - <span class="int">Magnified Area</span> <code>I, D</code> - <span class="dex">Cooldown Recovery</span> <code>III, IV, D</code> - <span class="int">Elemental Focus</span> <code>III</code> - <span class="dex">Second Wind</span> <code>II, IV, V</code> - <span class="dex">Culling Strike</span> <code>IV, V</code> - <span class="int">Cold Exposure</span> <code>IV</code></td>
     </tr>
     <tr>
       <td><img src="icons/Freezing_Mark_skill_icon.png" alt="Freezing Mark"></td>
       <td><strong>Freezing Mark <code>VII</code></strong></td>
-      <td>🔴Prolonged Duration <code>I, III</code> - 🟢Charged Mark <code>V</code> - 🔵Mark of Siphoning <code>I, IV</code> - 🔴Mark for Death <code>II, IV</code> - 🔴Efficiency <code>I, IV</code> - 🔴Life Tap <code>II</code></td>
+      <td><span class="str">Prolonged Duration</span> <code>I, III</code> - <span class="dex">Charged Mark</span> <code>V</code> - <span class="int">Mark of Siphoning</span> <code>I, IV</code> - <span class="str">Mark for Death</span> <code>II, IV</code> - <span class="str">Efficiency</span> <code>I, IV</code> - <span class="str">Life Tap</span> <code>II</code></td>
     </tr>
     <tr>
       <td><img src="icons/Herald_of_Ice_skill_icon.png" alt="Herald of Ice"></td>
       <td><strong>Herald of Ice <code>VIII</code></strong></td>
-      <td>🔴Elemental Armament <code>I, II</code> - 🔵Cold-Attunement <code>I, D</code> - 🔵Frost Nexus <code>II</code> - 🔵Magnified Area <code>I, III, D</code> - 🔵Freeze <code>II</code> - 🔵Embitter <code>II</code> - 🔵Cold Mastery <code>V, D</code> - 🟡Diala's Desire</td>
+      <td><span class="str">Elemental Armament</span> <code>I, II</code> - <span class="int">Cold-Attunement</span> <code>I, D</code> - <span class="int">Frost Nexus</span> <code>II</code> - <span class="int">Magnified Area</span> <code>I, III, D</code> - <span class="int">Freeze</span> <code>II</code> - <span class="int">Embitter</span> <code>II</code> - <span class="int">Cold Mastery</span> <code>V, D</code> - <span class="lineage">Diala's Desire</span></td>
     </tr>
     <tr>
       <td><img src="icons/Herald_of_Thunder_skill_icon.png" alt="Herald of Thunder"></td>
       <td><strong>Herald of Thunder <code>IV</code></strong></td>
-      <td>🔴Elemental Armament <code>I, II</code> - 🔵Conc Area <code>I</code> - 🟢Long Shot - 🟢Maim <code>II</code> - 🔵Living Lightning <code>II, IV</code> - 🔵Elemental Focus <code>III</code> - 🟡Oisin's Oath</td>
+      <td><span class="str">Elemental Armament</span> <code>I, II</code> - <span class="int">Conc Area</span> <code>I</code> - <span class="dex">Long Shot</span> - <span class="dex">Maim</span> <code>II</code> - <span class="int">Living Lightning</span> <code>II, IV</code> - <span class="int">Elemental Focus</span> <code>III</code> - <span class="lineage">Oisin's Oath</span></td>
     </tr>
     <tr>
       <td><img src="icons/Thunderous_Leap_skill_icon.png" alt="Thunderous Leap"></td>
       <td><strong>Thunderous Leap <code>VII</code></strong></td>
-      <td>🟢Rapid Attacks <code>I, IV, V</code></td>
+      <td><span class="dex">Rapid Attacks</span> <code>I, IV, V</code></td>
     </tr>
     <tr>
       <td><img src="icons/Combat_Frenzy_skill_icon.png" alt="Combat Frenzy"></td>
       <td><strong>Combat Frenzy <code>VIII</code></strong></td>
-      <td>🟢Charged Profusion <code>I</code> - 🔵Empowered Sparks <code>II, IV</code> - 🔴Cannibalism <code>III, IV</code> <em>[if spirit on item]</em> - 🔴Herbalism <code>II, IV</code></td>
+      <td><span class="dex">Charged Profusion</span> <code>I</code> - <span class="int">Empowered Sparks</span> <code>II, IV</code> - <span class="str">Cannibalism</span> <code>III, IV</code> <em>[if spirit on item]</em> - <span class="str">Herbalism</span> <code>II, IV</code></td>
     </tr>
     <tr>
       <td><img src="icons/Wind_Dancer_skill_icon.png" alt="Wind Dancer"></td>
       <td><strong>Wind Dancer</strong></td>
-      <td>🔵Magnified Area <code>I, III</code> - 🟢Blind <code>II, V</code> - 🔴Knockback <code>III</code> - 🟢Pin <code>I, II</code> - 🟢Heightened Accuracy <code>III</code> - 🟢Maim <code>II</code></td>
+      <td><span class="int">Magnified Area</span> <code>I, III</code> - <span class="dex">Blind</span> <code>II, V</code> - <span class="str">Knockback</span> <code>III</code> - <span class="dex">Pin</span> <code>I, II</code> - <span class="dex">Heightened Accuracy</span> <code>III</code> - <span class="dex">Maim</span> <code>II</code></td>
     </tr>
   </tbody>
 </table>
