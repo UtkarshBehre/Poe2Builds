@@ -17,7 +17,7 @@
 | ![](icons/Frost_Bomb_skill_icon.png) | **Frost Bomb `I`** *[DROP after Act 1]* | 🔵Magnified Area `I, D` |
 | ![](icons/War_Banner_skill_icon.png) | **War Banner `IV`** | 🔴Prolonged Duration `I, III` - 🔵Magnified Area `I, III` - 🔴Efficiency `I, IV` *[optional]* - 🔴Life Tap `II` *[optional]* |
 | ![](icons/Barrage_skill_icon.png) | **Barrage `V`** | 🔵Rapid Casting `I, IV` - 🟢Cooldown Recovery `III, IV` - 🔴Prolonged Duration `I, III, D` - 🔴Life Tap `II` - 🟢Second Wind `II, IV, V` - 🟢Heightened Charges `II` |
-| ![](icons/Ice-Tipped_Arrows_skill_icon.png) | **Ice-Tipped Arrows `V`** | 🔴Elemental Armament `I, II` - 🔵Magnified Area `I, D` - 🔵Elemental Focus `III` - 🟢Cooldown Recovery `III, IV, D` - 🟢Second Wind `II, IV, V` - 🟢Culling Strike `IV, V` - 🔵Cold Exposure `IV` |
+| ![](icons/Ice-Tipped_Arrows_skill_icon.png) | **Ice-Tipped Arrows `V`** | 🔴Elemental Armament `I, II` - 🔵Magnified Area `I, D` - 🟢Cooldown Recovery `III, IV, D` - 🔵Elemental Focus `III` - 🟢Second Wind `II, IV, V` - 🟢Culling Strike `IV, V` - 🔵Cold Exposure `IV` |
 | ![](icons/Freezing_Mark_skill_icon.png) | **Freezing Mark `VII`** | 🔴Prolonged Duration `I, III` - 🟢Charged Mark `V` - 🔵Mark of Siphoning `I, IV` - 🔴Mark for Death `II, IV` - 🔴Efficiency `I, IV` - 🔴Life Tap `II` |
 | ![](icons/Herald_of_Ice_skill_icon.png) | **Herald of Ice `VIII`** | 🔴Elemental Armament `I, II` - 🔵Cold-Attunement `I, D` - 🔵Frost Nexus `II` - 🔵Magnified Area `I, III, D` - 🔵Freeze `II` - 🔵Embitter `II` - 🔵Cold Mastery `V, D` - 🟡Diala's Desire |
 | ![](icons/Herald_of_Thunder_skill_icon.png) | **Herald of Thunder `IV`** | 🔴Elemental Armament `I, II` - 🔵Conc Area `I` - 🟢Long Shot - 🟢Maim `II` - 🔵Living Lightning `II, IV` - 🔵Elemental Focus `III` - 🟡Oisin's Oath |
@@ -28,3 +28,16 @@
 ---
 
 ![Passive Tree](icons/Tree_Screenshot.png)
+
+---
+
+## Quest Choices
+
+| Quest | Choice |
+|-------|--------|
+| Valley of the Titans | +1 Charm, 30% Charge Generation (Left) |
+| Venom Crypts Vial | 25% increased Stun Threshold |
+| Abandoned Prison Chapel | 30% increased recovery from Life Flasks |
+| Halls of the Dead Totems | +5 to Strength, Dexterity, and Intelligence |
+| Qimah The Seven Pillars | 15% increased Global Defences **OR** +5% to all Elemental Resistances **OR** 12% increased Cooldown Recovery Rate |
+
