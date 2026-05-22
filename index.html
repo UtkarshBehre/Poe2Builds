@@ -120,6 +120,19 @@
       max-width: 25%;
     }
 
+    .copy-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #666;
+      font-size: 0.85em;
+      padding: 0 4px;
+      vertical-align: middle;
+      transition: color 0.15s;
+    }
+    .copy-btn:hover { color: #e8c97a; }
+    .copy-btn.copied { color: #50c050; }
+
     .rewards-grid {
       display: flex;
       flex-wrap: wrap;
@@ -160,7 +173,7 @@
 <h1>Twisters Build - League Launch Guide</h1>
 
 <div class="meta">
-  <p><strong>League Start Regex:</strong> <code>"!(uiv)" "spear|mov|[egdl] da.* to a"</code></p>
+  <p><strong>League Start Regex:</strong> <code id="regex-text">"!(uiv)" "spear|mov|[egdl] da.* to a"</code><button class="copy-btn" title="Copy regex" onclick="const btn=this;navigator.clipboard.writeText(document.getElementById('regex-text').textContent).then(()=>{btn.textContent='✓';btn.classList.add('copied');setTimeout(()=>{btn.textContent='⧉';btn.classList.remove('copied')},1500)})">⧉</button></p>
   <p><strong>Spear Progression:</strong> Hardwood <code>1</code> &gt; Ironhead <code>5</code> &gt; Hunting <code>10</code> &gt; Winged <code>16</code> &gt; War <code>21</code> &gt; Forked <code>26</code> &gt; Barbed <code>33</code> &gt; Broad <code>40</code> &gt; Crossblade <code>45</code> &gt; Seaglass <code>51</code> &gt; Sword <code>52</code> &gt; Striking <code>55</code> &gt; Helix <code>65</code> &gt; Steelhead <code>45</code> &gt; Coursing <code>48</code> &gt; Swift <code>51</code> &gt; Branched <code>54</code> &gt; Jagged <code>59</code> &gt; Massive <code>62</code> &gt; Orichalcum <code>67</code> &gt; Soaring <code>70</code> &gt; Pronged <code>72</code> &gt; Stalking <code>77</code> &gt; Flying <code>78</code> &gt; Grand <code>79</code> &gt; Spiked <code>77</code> &gt; Guardian <code>75</code> &gt; Akoyan <code>78</code></p>
   <p><strong>Sceptre:</strong> BUY THIS AT LEVEL 16. It's used for Malice and extra spirit.</p>
 </div>
