@@ -95,12 +95,36 @@
     }
 
     .passive-tree {
-      width: 100%;
-      max-width: 100%;
       display: block;
-      margin: 16px 0;
+      margin: 16px auto;
+      max-width: 50%;
       border: 1px solid #222;
       border-radius: 4px;
+    }
+
+    .rewards-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin: 10px 0 20px;
+    }
+
+    .reward-card {
+      flex: 1 1 200px;
+      min-width: 180px;
+    }
+
+    .reward-card h3 {
+      color: #c8a84b;
+      font-size: 0.95em;
+      margin-bottom: 6px;
+      padding-bottom: 3px;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    .reward-card table {
+      margin: 0;
+      width: 100%;
     }
   </style>
 </head>
@@ -117,34 +141,95 @@
 </div>
 
 <h2>Campaign Zone Rewards</h2>
-<table>
-  <thead><tr><th>Act</th><th>Zone</th><th>Reward</th></tr></thead>
-  <tbody>
-    <tr><td><strong>Act 1</strong></td><td>Cemetery of the Eternals</td><td>Regal Orb</td></tr>
-    <tr><td></td><td>Hunting Grounds</td><td>Exalted Orb</td></tr>
-    <tr><td></td><td>Ogham Village</td><td>Artificer's Orb</td></tr>
-    <tr><td></td><td>Ogham Manor</td><td>Orb of Alchemy</td></tr>
-    <tr><td><strong>Act 2</strong></td><td>Vastiri Outskirts</td><td>Exalted Orb</td></tr>
-    <tr><td></td><td>The Halani Gates</td><td>Exalted Orb</td></tr>
-    <tr><td></td><td>The Lost City</td><td>Orb of Alchemy</td></tr>
-    <tr><td></td><td>Buried Shrines</td><td>Lesser Jeweller's Orb</td></tr>
-    <tr><td></td><td>Mastodon Badlands</td><td>Regal Orb</td></tr>
-    <tr><td></td><td>The Bone Pits</td><td>Exalted Orb</td></tr>
-    <tr><td><strong>Act 3</strong></td><td>Jungle Ruins</td><td>Orb of Alchemy</td></tr>
-    <tr><td></td><td>Infested Barrens</td><td>Exalted Orb</td></tr>
-    <tr><td></td><td>Jiquani's Sanctum</td><td>Exalted Orb</td></tr>
-    <tr><td><strong>Act 4</strong></td><td>Kedge Bay</td><td>Exalted Orb</td></tr>
-    <tr><td></td><td>Journey's End</td><td>Orb of Alchemy</td></tr>
-    <tr><td></td><td>Abandoned Prison</td><td>Exalted Orb</td></tr>
-    <tr><td></td><td>Eye of Hinekora</td><td>Chaos Orb</td></tr>
-    <tr><td></td><td>Ngakanu</td><td>Greater Jeweller's Orb</td></tr>
-    <tr><td><strong>Interlude 1</strong></td><td>Stones of Serle</td><td>Exalted Orb</td></tr>
-    <tr><td><strong>Interlude 2</strong></td><td>Pools of Khatal</td><td>Orb of Alchemy</td></tr>
-    <tr><td></td><td>Qimah</td><td>Exalted Orb</td></tr>
-    <tr><td><strong>Interlude 3</strong></td><td>Howling Caves</td><td>Chaos Orb</td></tr>
-    <tr><td></td><td>Etched Ravine</td><td>Exalted Orb</td></tr>
-  </tbody>
-</table>
+<div class="rewards-grid">
+
+  <div class="reward-card">
+    <h3>Act 1</h3>
+    <table>
+      <thead><tr><th>Zone</th><th>Reward</th></tr></thead>
+      <tbody>
+        <tr><td>Cemetery of the Eternals</td><td>Regal Orb</td></tr>
+        <tr><td>Hunting Grounds</td><td>Exalted Orb</td></tr>
+        <tr><td>Ogham Village</td><td>Artificer's Orb</td></tr>
+        <tr><td>Ogham Manor</td><td>Orb of Alchemy</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="reward-card">
+    <h3>Act 2</h3>
+    <table>
+      <thead><tr><th>Zone</th><th>Reward</th></tr></thead>
+      <tbody>
+        <tr><td>Vastiri Outskirts</td><td>Exalted Orb</td></tr>
+        <tr><td>The Halani Gates</td><td>Exalted Orb</td></tr>
+        <tr><td>The Lost City</td><td>Orb of Alchemy</td></tr>
+        <tr><td>Buried Shrines</td><td>Lesser Jeweller's Orb</td></tr>
+        <tr><td>Mastodon Badlands</td><td>Regal Orb</td></tr>
+        <tr><td>The Bone Pits</td><td>Exalted Orb</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="reward-card">
+    <h3>Act 3</h3>
+    <table>
+      <thead><tr><th>Zone</th><th>Reward</th></tr></thead>
+      <tbody>
+        <tr><td>Jungle Ruins</td><td>Orb of Alchemy</td></tr>
+        <tr><td>Infested Barrens</td><td>Exalted Orb</td></tr>
+        <tr><td>Jiquani's Sanctum</td><td>Exalted Orb</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="reward-card">
+    <h3>Act 4</h3>
+    <table>
+      <thead><tr><th>Zone</th><th>Reward</th></tr></thead>
+      <tbody>
+        <tr><td>Kedge Bay</td><td>Exalted Orb</td></tr>
+        <tr><td>Journey's End</td><td>Orb of Alchemy</td></tr>
+        <tr><td>Abandoned Prison</td><td>Exalted Orb</td></tr>
+        <tr><td>Eye of Hinekora</td><td>Chaos Orb</td></tr>
+        <tr><td>Ngakanu</td><td>Greater Jeweller's Orb</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="reward-card">
+    <h3>Interlude 1</h3>
+    <table>
+      <thead><tr><th>Zone</th><th>Reward</th></tr></thead>
+      <tbody>
+        <tr><td>Stones of Serle</td><td>Exalted Orb</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="reward-card">
+    <h3>Interlude 2</h3>
+    <table>
+      <thead><tr><th>Zone</th><th>Reward</th></tr></thead>
+      <tbody>
+        <tr><td>Pools of Khatal</td><td>Orb of Alchemy</td></tr>
+        <tr><td>Qimah</td><td>Exalted Orb</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="reward-card">
+    <h3>Interlude 3</h3>
+    <table>
+      <thead><tr><th>Zone</th><th>Reward</th></tr></thead>
+      <tbody>
+        <tr><td>Howling Caves</td><td>Chaos Orb</td></tr>
+        <tr><td>Etched Ravine</td><td>Exalted Orb</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
 
 <hr>
 
