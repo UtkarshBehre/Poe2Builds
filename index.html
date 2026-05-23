@@ -133,8 +133,37 @@
     }
 
     .skills-tree {
-      flex: 0 0 25%;
       max-width: 25%;
+      margin: 16px auto 0;
+      text-align: center;
+    }
+
+    .gem-priority {
+      flex: 0 0 32%;
+      max-width: 32%;
+    }
+
+    .gem-priority h3 {
+      color: #c8a84b;
+      font-size: 0.95em;
+      margin-bottom: 6px;
+      padding-bottom: 3px;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    .gem-priority table {
+      margin: 0;
+      width: 100%;
+    }
+
+    .tier-header td {
+      background: #1a1a1a;
+      color: #e0e0e0;
+      font-weight: 600;
+      font-size: 0.85em;
+      padding: 5px 8px;
+      border: 1px solid #2a2a2a;
+      letter-spacing: 0.04em;
     }
 
     .copy-btn {
@@ -413,10 +442,40 @@
   </tbody>
 </table>
 
+<div class="gem-priority">
+  <h3>Gem Cutting Priority</h3>
+  <table>
+    <thead><tr><th>Gem</th><th>Skill</th></tr></thead>
+    <tbody>
+      <tr class="tier-header"><td colspan="2">Tier 2</td></tr>
+      <tr><td><span class="int">Frost Nexus</span></td><td><span class="dex">Twister</span></td></tr>
+      <tr><td><span class="str">Elemental Armament II</span></td><td><span class="dex">Twister</span></td></tr>
+      <tr><td><span class="str">Elemental Armament II</span></td><td><span class="int">Herald of Ice</span></td></tr>
+      <tr><td><span class="str">Elemental Armament II</span></td><td><span class="dex">Twister</span></td></tr>
+      <tr><td><span class="int">Elemental Focus</span></td><td><span class="dex">Ice-Tipped Arrows</span></td></tr>
+      <tr class="tier-header"><td colspan="2">Tier 3</td></tr>
+      <tr><td><span class="dex">Retreat II</span></td><td><span class="dex">Twister</span></td></tr>
+      <tr><td><span class="int">Elemental Focus</span></td><td><span class="dex">Ice-Tipped Arrows</span></td></tr>
+      <tr><td><span class="dex">Cooldown Recovery I</span></td><td><span class="dex">Barrage</span></td></tr>
+      <tr class="tier-header"><td colspan="2">Tier 4</td></tr>
+      <tr><td><span class="dex">Rapid Attacks II</span></td><td><span class="dex">Whirling Slash</span></td></tr>
+      <tr><td><span class="str">Rage II</span></td><td><span class="dex">Whirling Slash</span></td></tr>
+      <tr><td><span class="dex">Cooldown Recovery II</span></td><td><span class="dex">Ice-Tipped Arrows</span></td></tr>
+      <tr><td><span class="dex">Cooldown Recovery II</span></td><td><span class="dex">Barrage</span></td></tr>
+      <tr class="tier-header"><td colspan="2">Tier 5</td></tr>
+      <tr><td><span class="dex">Charged Mark</span></td><td><span class="int">Freezing Mark</span></td></tr>
+      <tr><td><span class="dex">Projectile Acceleration III</span></td><td><span class="dex">Twister</span></td></tr>
+      <tr><td><span class="str">Rage III</span></td><td><span class="dex">Whirling Slash</span></td></tr>
+      <tr><td><span class="dex">Rapid Attacks III</span></td><td><span class="dex">Whirling Slash</span></td></tr>
+      <tr><td><span class="dex">Rapid Attacks III</span></td><td><span class="str">Thunderous Leap</span></td></tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
 <div class="skills-tree">
   <img src="icons/Tree_Screenshot.png" alt="Passive Tree" class="passive-tree" onclick="this.classList.toggle('maximized')">
-  <p style="text-align:center; margin-top:6px; font-size:0.85em;"><span class="ws1">■ WS 1</span> &nbsp;·&nbsp; <span class="ws2">■ WS 2</span></p>
-</div>
+  <p style="margin-top:6px; font-size:0.85em;"><span class="ws1">■ WS 1</span> &nbsp;·&nbsp; <span class="ws2">■ WS 2</span></p>
 </div>
 
 <hr>
