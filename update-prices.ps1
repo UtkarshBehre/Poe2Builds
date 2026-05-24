@@ -6,7 +6,12 @@ param(
 
     [string]$Category = "",
 
-    [int]$Interval = 3
+    [int]$Interval = 30,
+
+    [int]$ProactivePause = 1,
+
+    # Skip items updated within this many hours (0 = update all)
+    [int]$MaxAge = 24
 )
 
 Set-StrictMode -Version Latest
@@ -32,6 +37,32 @@ function Get-Median([double[]]$values) {
 function Get-Mean([double[]]$values) {
     if ($values.Count -eq 0) { return $null }
     return [Math]::Round(($values | Measure-Object -Sum).Sum / $values.Count, 4)
+}
+
+function Get-RelativeTime([PSCustomObject]$item) {
+    $iso = if ($item.PSObject.Properties.Name -contains 'lastUpdated') { $item.lastUpdated } else { $null }
+    if ([string]::IsNullOrEmpty($iso)) { return 'never' }
+    $ts   = [DateTime]::Parse($iso).ToUniversalTime()
+    $diff = (Get-Date).ToUniversalTime() - $ts
+    if ($diff.TotalMinutes -lt 1)  { return 'just now' }
+    if ($diff.TotalHours   -lt 1)  { return "$([int]$diff.TotalMinutes)m ago" }
+    if ($diff.TotalDays    -lt 1)  { return "$([int]$diff.TotalHours)h ago" }
+    return "$([int]$diff.TotalDays)d ago"
+}
+
+function Test-ItemNeedsUpdate([PSCustomObject]$item, [int]$maxAgeHours) {
+    if ($maxAgeHours -eq 0) { return $true }
+    $iso = if ($item.PSObject.Properties.Name -contains 'lastUpdated') { $item.lastUpdated } else { $null }
+    if ([string]::IsNullOrEmpty($iso)) { return $true }
+    $ts       = [DateTime]::Parse($iso).ToUniversalTime()
+    $ageHours = ((Get-Date).ToUniversalTime() - $ts).TotalHours
+    return $ageHours -ge $maxAgeHours
+}
+
+function Save-Prices {
+    $newJson = $data | ConvertTo-Json -Depth 20 -Compress
+    $newHtml = $html.Substring(0, $jsonStart) + $newJson + $html.Substring($jsonEnd)
+    [System.IO.File]::WriteAllText($HtmlPath, $newHtml, [System.Text.Encoding]::UTF8)
 }
 
 function ConvertTo-ExaltedPrice([PSCustomObject]$priceObj, [int]$exPerDiv) {
@@ -137,11 +168,11 @@ function Invoke-TradeSearch([hashtable]$body, [string]$sessionId, [int]$interval
         } catch { }
     }
 
-    # Proactive rate-limit pause: every 5 searches wait 60s
+    # Proactive rate-limit pause: every 5 searches wait $script:proactivePauseSecs s
     $script:tradeCallCount++
     if ($script:tradeCallCount % 5 -eq 0) {
-        Write-Host "  [rate-limit pause] $($script:tradeCallCount) calls done, waiting 60s..." -ForegroundColor Cyan
-        Start-Sleep -Seconds 60
+        Write-Host "  [rate-limit pause] $($script:tradeCallCount) calls done, waiting $($script:proactivePauseSecs)s..." -ForegroundColor Cyan
+        Start-Sleep -Seconds $script:proactivePauseSecs
     }
 
     return @{ prices = $prices.ToArray(); count = $total }
@@ -234,16 +265,7 @@ foreach ($catName in $catsToProcess) {
 Write-Host "Processing $($catsToProcess.Count) categories, $totalBases bases total." -ForegroundColor Cyan
 Write-Host ""
 
-# ---------------------------------------------------------------------------
-# Brackets definition (shared across all bases)
-# ---------------------------------------------------------------------------
-$brackets = @(
-    @{ label = "75-80"; ilvlMin = 75; ilvlMax = 80 }
-    @{ label = "81";    ilvlMin = 81; ilvlMax = 81 }
-    @{ label = "82+";   ilvlMin = 82; ilvlMax = $null }
-)
-
-$qualityLevels = @(23, 25, 28)
+$qualityLevels = @(25)
 
 # ---------------------------------------------------------------------------
 # Main processing loop
@@ -251,6 +273,7 @@ $qualityLevels = @(23, 25, 28)
 
 $baseIdx = 0
 $script:tradeCallCount = 0
+$script:proactivePauseSecs = $ProactivePause * 60
 
 foreach ($catName in $catsToProcess) {
     $cfg   = $catConfig.$catName
@@ -266,6 +289,11 @@ foreach ($catName in $catsToProcess) {
         $baseIdx++
         $baseName = $base.name
         Write-Host "[$baseIdx/$totalBases] $baseName" -ForegroundColor Yellow
+
+        if (-not (Test-ItemNeedsUpdate $base $MaxAge)) {
+            Write-Host "  Skipping — last updated $(Get-RelativeTime $base)" -ForegroundColor DarkGray
+            continue
+        }
 
         # ---- Normal brackets ----
         for ($bi = 0; $bi -lt $base.brackets.Count; $bi++) {
@@ -338,6 +366,11 @@ foreach ($catName in $catsToProcess) {
                 }
             }
         }
+
+        # Mark item as updated and save incrementally
+        $base.lastUpdated = (Get-Date -Format 'o')
+        Save-Prices
+        Write-Host "  Saved." -ForegroundColor DarkGreen
     }
 }
 
