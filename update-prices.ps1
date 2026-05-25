@@ -291,13 +291,14 @@ foreach ($catName in $catsToProcess) {
         Write-Host "[$baseIdx/$totalBases] $baseName" -ForegroundColor Yellow
 
         if (-not (Test-ItemNeedsUpdate $base $MaxAge)) {
-            Write-Host "  Skipping — last updated $(Get-RelativeTime $base)" -ForegroundColor DarkGray
+            Write-Host "  Skipping - last updated $(Get-RelativeTime $base)" -ForegroundColor DarkGray
             continue
         }
 
         # ---- Normal brackets ----
-        for ($bi = 0; $bi -lt $base.brackets.Count; $bi++) {
-            $br      = $base.brackets[$bi]
+        $brackets = @($base.brackets)
+        for ($bi = 0; $bi -lt $brackets.Count; $bi++) {
+            $br      = $brackets[$bi]
             $ilvlMin = [int]$br.ilvlMin
             $ilvlMax = if ($null -eq $br.ilvlMax -or $br.ilvlMax -eq '') { $null } else { [int]$br.ilvlMax }
 
@@ -308,32 +309,32 @@ foreach ($catName in $catsToProcess) {
             $prices = [double[]]$result.prices
             $cnt    = [int]$result.count
 
-            $base.brackets[$bi].count      = $cnt
-            $base.brackets[$bi].min        = if ($prices.Count -gt 0) { ($prices | Measure-Object -Minimum).Minimum } else { $null }
-            $base.brackets[$bi].median10   = Get-Median $prices
-            $base.brackets[$bi].mean10     = Get-Mean   $prices
+            $br.count      = $cnt
+            $br.min        = if ($prices.Count -gt 0) { ($prices | Measure-Object -Minimum).Minimum } else { $null }
+            $br.median10   = Get-Median $prices
+            $br.mean10     = Get-Mean   $prices
             # median100/mean100: we only have 10 items, use same values for now
-            $base.brackets[$bi].median100  = $base.brackets[$bi].median10
-            $base.brackets[$bi].mean100    = $base.brackets[$bi].mean10
+            $br.median100  = $br.median10
+            $br.mean100    = $br.mean10
 
             $status = if ($prices.Count -gt 0) { 'OK' } elseif ($cnt -gt 0) { 'NO PRICED LISTINGS' } else { 'NO DATA' }
             $statusColor = if ($prices.Count -gt 0) { 'Green' } elseif ($cnt -gt 0) { 'DarkYellow' } else { 'DarkGray' }
-            Write-Host "  [$($br.label)] $status  count=$cnt min=$($base.brackets[$bi].min) med=$($base.brackets[$bi].median10)" -ForegroundColor $statusColor
+            Write-Host "  [$($br.label)] $status  count=$cnt min=$($br.min) med=$($br.median10)" -ForegroundColor $statusColor
 
             # Socket search (extra rune)
             if ($hasSockets) {
-                $bodyEx   = New-SearchBody $baseName $ilvlMin $ilvlMax ($maxSockets + 1) $null
+                $bodyEx   = New-SearchBody $baseName $ilvlMin $ilvlMax $maxSockets $null
                 $resultEx = Invoke-TradeSearch $bodyEx $Session $Interval $exPerDiv
 
                 $exPrices = [double[]]$resultEx.prices
                 $exCnt    = [int]$resultEx.count
 
-                $base.brackets[$bi].exCount = $exCnt
-                $base.brackets[$bi].exMin   = if ($exPrices.Count -gt 0) { ($exPrices | Measure-Object -Minimum).Minimum } else { $null }
+                $br.exCount = $exCnt
+                $br.exMin   = if ($exPrices.Count -gt 0) { ($exPrices | Measure-Object -Minimum).Minimum } else { $null }
 
                 $exStatus = if ($exPrices.Count -gt 0) { 'OK' } elseif ($exCnt -gt 0) { 'NO PRICED LISTINGS' } else { 'NO DATA' }
                 $exStatusColor = if ($exPrices.Count -gt 0) { 'Green' } elseif ($exCnt -gt 0) { 'DarkYellow' } else { 'DarkGray' }
-                Write-Host "  [$($br.label)] (sockets) $exStatus  exCount=$exCnt exMin=$($base.brackets[$bi].exMin)" -ForegroundColor $exStatusColor
+                Write-Host "  [$($br.label)] (sockets) $exStatus  exCount=$exCnt exMin=$($br.exMin)" -ForegroundColor $exStatusColor
             }
         }
 
@@ -343,8 +344,9 @@ foreach ($catName in $catsToProcess) {
                 $qKey = "q${q}Brackets"
                 if ($null -eq $base.$qKey) { continue }
 
-                for ($bi = 0; $bi -lt $base.$qKey.Count; $bi++) {
-                    $qbr     = $base.$qKey[$bi]
+                $qBrackets = @($base.$qKey)
+                for ($bi = 0; $bi -lt $qBrackets.Count; $bi++) {
+                    $qbr     = $qBrackets[$bi]
                     $ilvlMin = [int]$qbr.ilvlMin
                     $ilvlMax = if ($null -eq $qbr.ilvlMax -or $qbr.ilvlMax -eq '') { $null } else { [int]$qbr.ilvlMax }
 
@@ -354,21 +356,21 @@ foreach ($catName in $catsToProcess) {
                     $qPrices = [double[]]$resultQ.prices
                     $qCnt    = [int]$resultQ.count
 
-                    $base.$qKey[$bi].count     = $qCnt
-                    $base.$qKey[$bi].min       = if ($qPrices.Count -gt 0) { ($qPrices | Measure-Object -Minimum).Minimum } else { $null }
-                    $base.$qKey[$bi].median10  = Get-Median $qPrices
-                    $base.$qKey[$bi].mean10    = Get-Mean   $qPrices
-                    $base.$qKey[$bi].median100 = $base.$qKey[$bi].median10
-                    $base.$qKey[$bi].mean100   = $base.$qKey[$bi].mean10
+                    $qbr.count     = $qCnt
+                    $qbr.min       = if ($qPrices.Count -gt 0) { ($qPrices | Measure-Object -Minimum).Minimum } else { $null }
+                    $qbr.median10  = Get-Median $qPrices
+                    $qbr.mean10    = Get-Mean   $qPrices
+                    $qbr.median100 = $qbr.median10
+                    $qbr.mean100   = $qbr.mean10
                     $qStatus = if ($qPrices.Count -gt 0) { 'OK' } elseif ($qCnt -gt 0) { 'NO PRICED LISTINGS' } else { 'NO DATA' }
                     $qStatusColor = if ($qPrices.Count -gt 0) { 'Green' } elseif ($qCnt -gt 0) { 'DarkYellow' } else { 'DarkGray' }
-                    Write-Host "  [$($qbr.label)] (${q}+q) $qStatus  count=$qCnt min=$($base.$qKey[$bi].min)" -ForegroundColor $qStatusColor
+                    Write-Host "  [$($qbr.label)] (${q}+q) $qStatus  count=$qCnt min=$($qbr.min)" -ForegroundColor $qStatusColor
                 }
             }
         }
 
         # Mark item as updated and save incrementally
-        $base.lastUpdated = (Get-Date -Format 'o')
+        $base | Add-Member -NotePropertyName lastUpdated -NotePropertyValue (Get-Date -Format 'o') -Force
         Save-Prices
         Write-Host "  Saved." -ForegroundColor DarkGreen
     }
@@ -381,7 +383,7 @@ foreach ($catName in $catsToProcess) {
 Write-Host ""
 Write-Host "Saving prices to $HtmlPath ..." -ForegroundColor Cyan
 
-$data.lastUpdated = (Get-Date -Format "yyyy-MM-ddTHH:mm:ssZ")
+$data | Add-Member -NotePropertyName lastUpdated -NotePropertyValue (Get-Date -Format "yyyy-MM-ddTHH:mm:ssZ") -Force
 $newJson          = $data | ConvertTo-Json -Depth 20 -Compress
 
 $newHtml = $html.Substring(0, $jsonStart) + $newJson + $html.Substring($jsonEnd)
