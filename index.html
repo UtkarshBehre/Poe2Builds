@@ -270,6 +270,39 @@
     .r-cyan   { color: #40c8c8; font-weight: 600; }
     .r-white  { color: #ffffff; font-weight: 600; }
 
+    .tabs {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #2a2a2a;
+      padding-bottom: 0;
+    }
+
+    .tab-btn {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-bottom: none;
+      color: #888;
+      cursor: pointer;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 0.9em;
+      padding: 8px 20px;
+      border-radius: 4px 4px 0 0;
+      transition: background 0.15s, color 0.15s;
+      position: relative;
+      bottom: -2px;
+    }
+    .tab-btn:hover { background: #222; color: #ccc; }
+    .tab-btn.active {
+      background: #0d0d0d;
+      color: #e8c97a;
+      border-color: #2a2a2a;
+      border-bottom-color: #0d0d0d;
+    }
+
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
     .str     { color: #e05050; }
     .dex     { color: #50c050; }
     .int     { color: #6090e8; }
@@ -281,6 +314,14 @@
 <body>
 
 <h1 class="page-heading">Twisters Build - League Launch Guide</h1>
+
+<div class="tabs">
+  <button class="tab-btn active" onclick="showTab('campaign')">Campaign</button>
+  <button class="tab-btn" onclick="showTab('early-crafting')">Early Crafting</button>
+  <button class="tab-btn" onclick="showTab('endgame-crafting')">End Game Crafting</button>
+</div>
+
+<div id="tab-campaign" class="tab-panel active">
 
 <div class="meta">
   <p><strong>League Start Regex:</strong> <code id="regex-text">"!(uiv)" "spear|mov|[egdl] da.* to a"</code><button class="copy-btn" title="Copy regex" onclick="const btn=this;navigator.clipboard.writeText(document.getElementById('regex-text').textContent).then(()=>{btn.textContent='✓';btn.classList.add('copied');setTimeout(()=>{btn.textContent='⧉';btn.classList.remove('copied')},1500)})">⧉</button></p>
@@ -413,8 +454,6 @@
   </div>
 
   </div>
-
-</div>
 
 <div class="dmg-tiers">
   <h3>Lightning Damage to Attacks — Tier Cutoffs</h3>
@@ -564,6 +603,23 @@
   <p><strong>Legend:</strong> <code>I, II, III...</code> = Gem cutting levels &nbsp;|&nbsp; <code>D</code> = Drop after &nbsp;|&nbsp; <code>S</code> = Swap &nbsp;|&nbsp; <code>[text]</code> = Notes &nbsp;|&nbsp; <span class="ws1">WS 1</span> = Weapon Set 1 &nbsp;|&nbsp; <span class="ws2">WS 2</span> = Weapon Set 2</p>
   <p><strong>Colors:</strong> <span class="str">■ Strength (+90)</span> · <span class="dex">■ Dexterity (+110)</span> · <span class="int">■ Intelligence (+115)</span> · <span class="lineage">■ Lineage</span></p>
 </div>
+
+</div><!-- #tab-campaign -->
+
+<div id="tab-early-crafting" class="tab-panel">
+</div>
+
+<div id="tab-endgame-crafting" class="tab-panel">
+</div>
+
+<script>
+function showTab(id) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  event.currentTarget.classList.add('active');
+}
+</script>
 
 </body>
 </html>
