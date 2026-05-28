@@ -107,6 +107,16 @@ function Invoke-TradeSearch([hashtable]$body, [string]$sessionId, [int]$interval
                 $wait = 180 * $attempt
                 Write-Host "  429 on search (attempt $attempt), waiting ${wait}s..." -ForegroundColor Yellow
                 Start-Sleep -Seconds $wait
+            } elseif ($statusCode -eq 400) {
+                $errBody = ''
+                try {
+                    $stream = $_.Exception.Response.GetResponseStream()
+                    $reader = [System.IO.StreamReader]::new($stream)
+                    $errBody = $reader.ReadToEnd()
+                } catch {}
+                Write-Host "  400 Bad Request on search - skipping. API says: $errBody" -ForegroundColor Red
+                Start-Sleep -Seconds $interval
+                return @{ prices = @(); count = 0 }
             } else {
                 throw
             }
