@@ -309,6 +309,67 @@
     .lineage { color: #e8c060; }
     .ws1     { color: #e07828; font-style: normal; }
     .ws2     { color: #50c050; font-style: normal; }
+
+    .craft-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 16px;
+      margin: 16px 0;
+    }
+
+    .craft-card {
+      background: #111;
+      border: 1px solid #2a2a2a;
+      border-radius: 6px;
+      padding: 14px 16px;
+    }
+
+    .craft-card h3 {
+      color: #e8c97a;
+      font-size: 1em;
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #2a2a2a;
+      letter-spacing: 0.04em;
+    }
+
+    .craft-steps {
+      list-style: none;
+      counter-reset: step;
+      padding: 0;
+      margin: 0;
+    }
+
+    .craft-steps li {
+      counter-increment: step;
+      position: relative;
+      padding: 5px 0 5px 30px;
+      border-bottom: 1px solid #181818;
+      font-size: 0.92em;
+      line-height: 1.5;
+      color: #bbb;
+    }
+
+    .craft-steps li:last-child { border-bottom: none; }
+
+    .craft-steps li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 20px;
+      height: 20px;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 18px;
+      font-size: 0.78em;
+      color: #888;
+      font-family: 'Consolas', monospace;
+    }
+
+    .craft-note { color: #555; font-style: italic; }
   </style>
 </head>
 <body>
@@ -607,6 +668,48 @@
 </div><!-- #tab-campaign -->
 
 <div id="tab-early-crafting" class="tab-panel">
+
+<h2 class="page-heading">Early Crafting</h2>
+
+<div class="craft-grid">
+
+  <div class="craft-card">
+    <h3>Spear</h3>
+    <ol class="craft-steps">
+      <li><em class="craft-note">Steps to be added</em></li>
+    </ol>
+  </div>
+
+  <div class="craft-card">
+    <h3>Helmet</h3>
+    <ol class="craft-steps">
+      <li><em class="craft-note">Steps to be added</em></li>
+    </ol>
+  </div>
+
+  <div class="craft-card">
+    <h3>Body Armour</h3>
+    <ol class="craft-steps">
+      <li><em class="craft-note">Steps to be added</em></li>
+    </ol>
+  </div>
+
+  <div class="craft-card">
+    <h3>Gloves</h3>
+    <ol class="craft-steps">
+      <li><em class="craft-note">Steps to be added</em></li>
+    </ol>
+  </div>
+
+  <div class="craft-card">
+    <h3>Boots</h3>
+    <ol class="craft-steps">
+      <li><em class="craft-note">Steps to be added</em></li>
+    </ol>
+  </div>
+
+</div>
+
 </div>
 
 <div id="tab-endgame-crafting" class="tab-panel">
