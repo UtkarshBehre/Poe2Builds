@@ -370,6 +370,44 @@
     }
 
     .craft-note { color: #555; font-style: italic; }
+
+    .pill-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+
+    .pill-btn {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 20px;
+      color: #888;
+      cursor: pointer;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 0.85em;
+      padding: 5px 16px;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
+    }
+    .pill-btn:hover { background: #222; color: #ccc; border-color: #444; }
+    .pill-btn.active {
+      background: #1e2a1e;
+      color: #6ecf6e;
+      border-color: #4a8a4a;
+    }
+
+    .pill-panel { display: none; }
+    .pill-panel.active { display: block; }
+
+    .pill-coming-soon {
+      color: #444;
+      font-style: italic;
+      font-size: 0.95em;
+      padding: 30px 0;
+      text-align: center;
+      border: 1px dashed #222;
+      border-radius: 6px;
+    }
   </style>
 </head>
 <body>
@@ -1014,6 +1052,17 @@
 
 <h2 class="page-heading">Tablets Regex and Value</h2>
 
+<div class="pill-nav">
+  <button class="pill-btn active" onclick="showPill('breach', this)">Breach</button>
+  <button class="pill-btn" onclick="showPill('ritual', this)">Ritual</button>
+  <button class="pill-btn" onclick="showPill('delirium', this)">Delirium</button>
+  <button class="pill-btn" onclick="showPill('abyss', this)">Abyss</button>
+  <button class="pill-btn" onclick="showPill('irradiated', this)">Irradiated</button>
+  <button class="pill-btn" onclick="showPill('temple', this)">Temple</button>
+
+</div>
+
+<div id="pill-breach" class="pill-panel active">
 <h3 style="color:#c8a84b; font-size:0.95em; margin-bottom:6px; padding-bottom:3px; border-bottom:1px solid #2a2a2a;">Breach Tablet — Good Mod Combinations</h3>
 <p style="font-size:0.82em; color:#666; margin-bottom:8px;">
   <strong style="color:#888;">Prefixes:</strong>
@@ -1098,7 +1147,240 @@
   </tbody>
 </table>
 
+</div><!-- #pill-breach -->
+
+<div id="pill-ritual" class="pill-panel">
+<h3 style="color:#c8a84b; font-size:0.95em; margin-bottom:6px; padding-bottom:3px; border-bottom:1px solid #2a2a2a;">Ritual Tablet — Good Mod Combinations</h3>
+<p style="font-size:0.82em; color:#666; margin-bottom:8px;">
+  <strong style="color:#888;">Prefixes:</strong>
+  P1 = Pack Size in Map &nbsp;·&nbsp;
+  P2 = # of Rare Monsters
+</p>
+<table>
+  <thead>
+    <tr>
+      <th>Prefixes</th>
+      <th>Suffixes</th>
+      <th>Regex</th>
+      <th>Est. Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="tier-header"><td colspan="4">★ High Value Suffix — Standalone</td></tr>
+    <tr>
+      <td>—</td>
+      <td><span class="r-gold">★</span> Rerolling Favours Additional Times</td>
+      <td><code>&quot;allo&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td><span class="r-gold">★</span> Ritual Favours Chance to be Omens</td>
+      <td><code>&quot;l fa&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr class="tier-header"><td colspan="4"><span class="r-gold">★</span> Ritual Favours Chance to be Omens + Any Other Suffix</td></tr>
+    <tr>
+      <td>—</td>
+      <td><span class="r-gold">★</span> Omens + <span class="r-gold">★</span> Rerolling Favours Additional Times</td>
+      <td><code>&quot;l fa&quot; &quot;allo&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td><span class="r-gold">★</span> Omens + Deferring Favours Reduced Tribute</td>
+      <td><code>&quot;l fa&quot; &quot;rri&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td><span class="r-gold">★</span> Omens + Rerolling Favours Reduced Tribute</td>
+      <td><code>&quot;l fa&quot; &quot;^rer&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td><span class="r-gold">★</span> Omens + Monsters Sacrificed Grant Tribute</td>
+      <td><code>&quot;l fa&quot; &quot;iced&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr class="tier-header"><td colspan="4">Any 1 Good Prefix + <span class="r-gold">★</span> Omens + Any Other Suffix</td></tr>
+    <tr>
+      <td>Any of P1–P2</td>
+      <td><span class="r-gold">★</span> Omens + <span class="r-gold">★</span> Rerolling Favours Additional Times</td>
+      <td><code>&quot;ze i|f rare m&quot; &quot;l fa&quot; &quot;allo&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Any of P1–P2</td>
+      <td><span class="r-gold">★</span> Omens + Deferring Favours Reduced Tribute</td>
+      <td><code>&quot;ze i|f rare m&quot; &quot;l fa&quot; &quot;rri&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Any of P1–P2</td>
+      <td><span class="r-gold">★</span> Omens + Rerolling Favours Reduced Tribute</td>
+      <td><code>&quot;ze i|f rare m&quot; &quot;l fa&quot; &quot;^rer&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Any of P1–P2</td>
+      <td><span class="r-gold">★</span> Omens + Monsters Sacrificed Grant Tribute</td>
+      <td><code>&quot;ze i|f rare m&quot; &quot;l fa&quot; &quot;iced&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 </div>
+<div id="pill-delirium" class="pill-panel">
+  <p class="pill-coming-soon">Delirium Tablet — coming soon</p>
+</div>
+<div id="pill-abyss" class="pill-panel">
+<h3 style="color:#c8a84b; font-size:0.95em; margin-bottom:6px; padding-bottom:3px; border-bottom:1px solid #2a2a2a;">Abyss Tablet — Good Mod Combinations</h3>
+<p style="font-size:0.82em; color:#666; margin-bottom:8px;">
+  <strong style="color:#888;">Prefixes:</strong>
+  P1 = Monsters Effectiveness &nbsp;·&nbsp;
+  P2 = Rarity of Items Found &nbsp;·&nbsp;
+  P3 = # of Rare Monsters &nbsp;·&nbsp;
+  P4 = Monster Rarity
+  <br>
+  <strong style="color:#888;">Suffixes:</strong>
+  S1 <span class="r-gold">★</span> = Abyssal Monsters Effectiveness (per closed Pit) &nbsp;·&nbsp;
+  S2 <span class="r-gold">★</span> = Four Additional Abysses &nbsp;·&nbsp;
+  S3 <span class="r-gold">★</span> = Increased Chance for Abyssal Modifiers &nbsp;·&nbsp;
+  S4 = Abysses Spawn Increased Monsters &nbsp;·&nbsp;
+  S5 = Desecrated Currency &nbsp;·&nbsp;
+  S6 = Additional Random Modifiers
+</p>
+<table>
+  <thead>
+    <tr>
+      <th>Prefixes</th>
+      <th>Suffixes</th>
+      <th>Regex</th>
+      <th>Est. Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="tier-header"><td colspan="4">★ High Value Suffix — Standalone</td></tr>
+    <tr>
+      <td>—</td>
+      <td><span class="r-gold">★</span> S1 — Abyssal Monsters Effectiveness (per closed Pit)</td>
+      <td><code>&quot;t,&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td><span class="r-gold">★</span> S2 — Four Additional Abysses</td>
+      <td><code>&quot;four&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td><span class="r-gold">★</span> S3 — Increased Chance for Abyssal Modifiers</td>
+      <td><code>&quot;r ab&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr class="tier-header"><td colspan="4">Non-HV Suffix — Standalone</td></tr>
+    <tr>
+      <td>—</td>
+      <td>Any of S4–S6</td>
+      <td><code>&quot;n \d+%|cy|ndo&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr class="tier-header"><td colspan="4">★ High Value Suffix + Other Suffix</td></tr>
+    <tr>
+      <td>—</td>
+      <td><span class="r-gold">★</span> Any of S1–S3 + Any of S4–S6</td>
+      <td><code>&quot;t,|four|r ab&quot; &quot;n \d+%|cy|ndo&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr class="tier-header"><td colspan="4">★ High Value Suffix + Other Suffix + Any Prefix</td></tr>
+    <tr>
+      <td>Any of P1–P4</td>
+      <td><span class="r-gold">★</span> Any of S1–S3 + Any of S4–S6</td>
+      <td><code>&quot;eness$|ms f|f rare m|rity$&quot; &quot;t,|four|r ab&quot; &quot;n \d+%|cy|ndo&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div id="pill-irradiated" class="pill-panel">
+<h3 style="color:#c8a84b; font-size:0.95em; margin-bottom:6px; padding-bottom:3px; border-bottom:1px solid #2a2a2a;">Irradiated Tablet — Good Mod Combinations</h3>
+<p style="font-size:0.82em; color:#666; margin-bottom:8px;">
+  <strong style="color:#888;">Prefixes:</strong>
+  P1 <span class="r-gold">★</span> = Increased Quantity of Waystones Found &nbsp;·&nbsp;
+  P2 = Monsters Effectiveness &nbsp;·&nbsp;
+  P3 = Rarity of Items Found &nbsp;·&nbsp;
+  P4 = # of Rare Monsters &nbsp;·&nbsp;
+  P5 = Monster Rarity
+  <br>
+  <strong style="color:#888;">Suffixes:</strong>
+  S1 <span class="r-gold">★</span> = Additional Random Modifiers
+</p>
+<table>
+  <thead>
+    <tr>
+      <th>Prefixes</th>
+      <th>Suffixes</th>
+      <th>Regex</th>
+      <th>Est. Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="tier-header"><td colspan="4">★ High Value Mod — Standalone</td></tr>
+    <tr>
+      <td><span class="r-gold">★</span> P1 — Increased Quantity of Waystones Found</td>
+      <td>—</td>
+      <td><code>&quot;es f&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td><span class="r-gold">★</span> S1 — Additional Random Modifiers</td>
+      <td><code>&quot;ndo&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr class="tier-header"><td colspan="4">★ High Value Mod + Any Non-HV Prefix</td></tr>
+    <tr>
+      <td>Any of P2–P5</td>
+      <td><span class="r-gold">★</span> S1 — Additional Random Modifiers</td>
+      <td><code>&quot;eness$|ms f|f rare m|rity$&quot; &quot;ndo&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><span class="r-gold">★</span> P1 + Any of P2–P5</td>
+      <td>—</td>
+      <td><code>&quot;es f&quot; &quot;eness$|ms f|f rare m|rity$&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div id="pill-temple" class="pill-panel">
+<h3 style="color:#c8a84b; font-size:0.95em; margin-bottom:6px; padding-bottom:3px; border-bottom:1px solid #2a2a2a;">Temple Tablet — Good Mod Combinations</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Prefixes</th>
+      <th>Suffixes</th>
+      <th>Regex</th>
+      <th>Est. Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="tier-header"><td colspan="4">★ High Value Suffix — Standalone</td></tr>
+    <tr>
+      <td>—</td>
+      <td><span class="r-gold">★</span> Chance to Gain Additional Crystal from Vaal Beacons</td>
+      <td><code>&quot;o g&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</div><!-- #tab-tablets -->
 
 <script>
 function showTab(id) {
@@ -1106,6 +1388,12 @@ function showTab(id) {
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('tab-' + id).classList.add('active');
   event.currentTarget.classList.add('active');
+}
+function showPill(id, btn) {
+  document.querySelectorAll('.pill-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('pill-' + id).classList.add('active');
+  btn.classList.add('active');
 }
 function copyRegex(btn) {
   const text = btn.previousElementSibling.textContent;
