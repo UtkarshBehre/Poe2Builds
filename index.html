@@ -380,6 +380,7 @@
   <button class="tab-btn active" onclick="showTab('campaign')">Campaign</button>
   <button class="tab-btn" onclick="showTab('early-crafting')">Early Items</button>
   <button class="tab-btn" onclick="showTab('endgame-crafting')">End Game Crafting</button>
+  <button class="tab-btn" onclick="showTab('tablets')">Tablets Regex and Value</button>
 </div>
 
 <div id="tab-campaign" class="tab-panel active">
@@ -1009,12 +1010,110 @@
 <div id="tab-endgame-crafting" class="tab-panel">
 </div>
 
+<div id="tab-tablets" class="tab-panel">
+
+<h2 class="page-heading">Tablets Regex and Value</h2>
+
+<h3 style="color:#c8a84b; font-size:0.95em; margin-bottom:6px; padding-bottom:3px; border-bottom:1px solid #2a2a2a;">Breach Tablet — Good Mod Combinations</h3>
+<p style="font-size:0.82em; color:#666; margin-bottom:8px;">
+  <strong style="color:#888;">Prefixes:</strong>
+  P1 = Monsters Effectiveness &nbsp;·&nbsp;
+  P2 = Rarity of Items Found &nbsp;·&nbsp;
+  P3 = # of Rare Monsters &nbsp;·&nbsp;
+  P4 = Monster Rarity
+</p>
+<table>
+  <thead>
+    <tr>
+      <th>Prefixes</th>
+      <th>Suffixes</th>
+      <th>Regex</th>
+      <th>Est. Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="tier-header"><td colspan="4">★ High Value Suffix — Standalone</td></tr>
+    <tr>
+      <td>—</td>
+      <td><span class="r-gold">★</span> Unstable Breach Rare Monsters</td>
+      <td><code>&quot;wh&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td><span class="r-gold">★</span> Additional Random Modifiers</td>
+      <td><code>&quot;ndo&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr class="tier-header"><td colspan="4">Any 2 Good Suffixes</td></tr>
+    <tr>
+      <td>—</td>
+      <td>Rare Breach Monster Effectiveness + Hiveblood Quantity</td>
+      <td><code>&quot;h m&quot; &quot;eb&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td>Rare Breach Monster Effectiveness + Wombgifts Quantity</td>
+      <td><code>&quot;h m&quot; &quot;ts f&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td>Rare Breach Monster Effectiveness + Wombgifts Level Higher</td>
+      <td><code>&quot;h m&quot; &quot;^w&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td>Hiveblood Quantity + Wombgifts Quantity</td>
+      <td><code>&quot;eb&quot; &quot;ts f&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td>Hiveblood Quantity + Wombgifts Level Higher</td>
+      <td><code>&quot;eb&quot; &quot;^w&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>—</td>
+      <td>Wombgifts Quantity + Wombgifts Level Higher</td>
+      <td><code>&quot;ts f&quot; &quot;^w&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr class="tier-header"><td colspan="4">Any 1 Good Prefix + High Value Suffix</td></tr>
+    <tr>
+      <td>Any of P1–P4</td>
+      <td><span class="r-gold">★</span> Unstable Breach Rare Monsters</td>
+      <td><code>&quot;eness$|ms f|f rare m|rity$&quot; &quot;wh&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Any of P1–P4</td>
+      <td><span class="r-gold">★</span> Additional Random Modifiers</td>
+      <td><code>&quot;eness$|ms f|f rare m|rity$&quot; &quot;ndo&quot;</code> <button class="copy-btn" title="Copy regex" onclick="copyRegex(this)">⧉</button></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
 <script>
 function showTab(id) {
   document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('tab-' + id).classList.add('active');
   event.currentTarget.classList.add('active');
+}
+function copyRegex(btn) {
+  const text = btn.previousElementSibling.textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = '✓';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = '⧉'; btn.classList.remove('copied'); }, 1500);
+  });
 }
 </script>
 
