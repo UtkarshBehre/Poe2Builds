@@ -15,8 +15,8 @@ Support colors use the requirements verified on [PoE2DB's support index](https:/
 Read each tier from left to right:
 
 - **Tier 1:** Pierce I on Spark; Controlled Destruction on Spark; Overabundance I on Orb of Storms; Fortress I on Flame Wall; Spell Cascade on Flame Wall.
-- **Tier 2:** Considered Casting on Spark; Controlled Destruction on Orb of Storms; Short Fuse I on Frost Bomb; Potent Exposure on Frost Bomb; Harmonic Remnants II on Mana Remnants.
-- **Tier 3:** Pierce II on Spark; Prolonged Duration II on Spark; Remnant Potency II on Mana Remnants; Spell Echo on Comet; Elemental Focus on Comet.
+- **Tier 2:** Considered Casting on Spark; Controlled Destruction on Orb of Storms (move the existing gem from Spark; do not cut another); Short Fuse I on Frost Bomb; Potent Exposure on Frost Bomb; Harmonic Remnants II on Mana Remnants.
+- **Tier 3:** Pierce II on Spark; Prolonged Duration II on Spark; Remnant Potency II on Mana Remnants; Spell Echo on Comet; Elemental Focus on Comet; Fortress II on Flame Wall.
 - **Tier 4:** Short Fuse II on Frost Bomb; Remnant Potency III on Mana Remnants.
 - **Tier 5:** Pierce III on Spark; Projectile Acceleration III on Spark; Cold Mastery on Siphon Elements.
 
@@ -35,6 +35,44 @@ Read each tier from left to right:
 The supplied screenshot is shown beside Quest Choices in the guide. Click it to enlarge or restore it.
 
 ![Spark-Comet Passive Tree](../../icons/Spark_Comet_Tree_Screenshot.png)
+
+## Ascendancy: Stormweaver
+
+Take the connecting small passive first, then its notable:
+
+| Ascendancy | Small passive | Notable |
+|------------|---------------|---------|
+| 1st | Mana Regeneration | Constant Gale |
+| 2nd | Remnant Range | Refracted Infusion |
+| 3rd | Shock Chance | Strike Twice |
+| 4th | Shock Chance (after Strike Twice) | Shaper of Storms |
+
+The build declares `Sorceress1` (Stormweaver) and includes these eight nodes for levels 1-100, with allocation order in their hover notes. Node IDs and connections are verified against [GGG's passive-tree export](https://github.com/grindinggear/poe2-skilltree-export).
+
+## In-game Build Planner
+
+Import [spark-comet.build](./spark-comet.build) using [GGG's Build Planner instructions](https://www.pathofexile.com/developer/docs/game#buildplanner).
+
+After editing the build, run `.\sync-build.ps1` from the repository root. The [sync script](../../sync-build.ps1) validates the JSON and copies it to `%USERPROFILE%\OneDrive\Documents\My Games\Path of Exile 2\BuildPlanner`, verifying the copied file. It runs once and exits; there is no background watcher.
+
+The 13 skill IDs and 44 unique support IDs were checked against PoE2DB's `ItemType` metadata. Both `Metadata/Items/Gem/` and `Metadata/Items/Gems/` are valid prefixes for different entries; do not normalize them.
+
+All listed skill gems except the weapon-granted Galvanic Field are recommended for character levels 1-100. Fireball is also included so it can be cut for the trigger setups.
+
+| Character levels | Support recommendations |
+|------------------|-------------------------|
+| 1-46 | Only the 21 entries in Gem Cutting Priority above, attached to their specified skills. Hover notes retain each entry's priority group and order. |
+| 47-100 | The complete main-table support pools, including alternatives and successive tiers. Mana Remnants includes both Harmonic Remnants I and II, as confirmed. |
+
+These are recommendation ranges, not overrides of gem requirements or simultaneous socket setups. A support present in both ranges has separate non-overlapping recommendation entries.
+
+The character passive recommendations use the previous final level 53-80 tree for the entire level 1-100 range. Earlier-only branches are removed, final attribute choices replace stage-specific respec instructions, and shared / weapon-set 1 / weapon-set 2 allocations are preserved. This is the final-tree blueprint, not a leveling allocation order or an Atlas tree.
+
+The weapon-slot (`Weapon1`) Build Planner tooltip shows all three modifier cutoff groups from the guide for levels 1-100: extra lightning damage, all Spell Skill levels, and Fire Spell Skill levels (also applicable to Cold and Lightning). Each row lists the modifier tier, minimum item level, and roll. To keep it compact, the tooltip contains only rows, with blank lines between groups and the highest tier first within each group.
+
+GGG currently documents meta gems as unsupported. Cast on Elemental Ailment and Cast on Critical remain experimental entries with warnings; manually socket Flame Wall and Fireball into the chosen trigger. Their recommendation display still requires in-game verification.
+
+Lineage recommendations have been confirmed to display in-game. Zarokh's Refrain remains listed for Comet as an acquisition target: obtain it through drops or trade rather than cutting it from an Uncut Support Gem.
 
 ## Build Notes
 
@@ -88,7 +126,7 @@ lvl 5 -> Pierce III, Projectile Acceleration III
 
 
 Orb of Storms
-lvl 1 OverAbundance I, Compress Duration I, Innervate, Controlled Destruction
+lvl 1 OverAbundance I, Compress Duration I, Innervate, Controlled Destruction (move the existing gem from Spark; do not cut another)
 lvl 2 Harmonic Remnants I
 lvl 3 Harmonic Remnants II, Compress Duration II
 lvl 5 Shock Conductions, Chain III
