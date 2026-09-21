@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Twisters Build - League Launch Guide</title>
+  <title>PoE2 Builds - League Launch Guide</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -417,11 +417,30 @@
       border: 1px dashed #222;
       border-radius: 6px;
     }
+
+    .campaign-regex code {
+      overflow-wrap: anywhere;
+    }
+
+    .spark-skills th:first-child { width: 64px; }
+    .spark-skills th:nth-child(2) { width: 18%; }
+    .spark-skills td { overflow-wrap: anywhere; }
+
+    @media (max-width: 800px) {
+      body { padding: 16px; }
+      .tabs { flex-wrap: wrap; }
+      #spark-comet-details .skills-layout { flex-direction: column; }
+      #spark-comet-details .gem-priority { max-width: none; width: 100%; }
+      .spark-skills { table-layout: fixed; }
+      .spark-skills th:nth-child(2) { width: 28%; }
+      .spark-skills th { overflow-wrap: anywhere; }
+      .spark-skills th, .spark-skills td { padding: 6px; }
+    }
   </style>
 </head>
 <body>
 
-<h1 class="page-heading">Twisters Build - League Launch Guide</h1>
+<h1 class="page-heading">PoE2 Builds - League Launch Guide</h1>
 
 <div class="tabs">
   <button class="tab-btn active" onclick="showTab('campaign')">Campaign</button>
@@ -432,7 +451,12 @@
 
 <div id="tab-campaign" class="tab-panel active">
 
-<div class="meta">
+<div class="pill-nav" role="group" aria-label="Campaign build">
+  <button class="pill-btn active" type="button" data-build="twisters" aria-pressed="true" aria-controls="twisters-meta twisters-details" onclick="showCampaignBuild('twisters')">Twisters</button>
+  <button class="pill-btn" type="button" data-build="spark-comet" aria-pressed="false" aria-controls="spark-comet-meta spark-comet-details" onclick="showCampaignBuild('spark-comet')">Spark-Comet</button>
+</div>
+
+<div id="twisters-meta" class="meta" data-campaign-build="twisters">
   <p><strong>League Start Regex:</strong> <code id="regex-text">"!(uiv)" "spear|mov|[egdl] da.* to a"</code><button class="copy-btn" title="Copy regex" onclick="const btn=this;navigator.clipboard.writeText(document.getElementById('regex-text').textContent).then(()=>{btn.textContent='✓';btn.classList.add('copied');setTimeout(()=>{btn.textContent='⧉';btn.classList.remove('copied')},1500)})">⧉</button></p>
   <p><strong>Spear Progression:</strong></p>
   <div class="spear-grid">
@@ -480,6 +504,15 @@
     </div>
   </div>
   <p><strong>Sceptre:</strong> BUY THIS AT LEVEL 16. It's used for Malice and extra spirit.</p>
+</div>
+
+<div id="spark-comet-meta" class="meta campaign-regex" data-campaign-build="spark-comet" hidden>
+  <h2 class="page-heading">Spark-Comet - Vendor Regex by Act</h2>
+  <p><strong>Act 1:</strong> <code>"ld res|\d+% i.+mov|ell.*ge$|^\+.*all sp.*ls$|^\+.*re sp.*ls$|^\+.*ld sp.*ls$|^\+.*ng sp.*ls$|^\+.*ile skills$|o sp|s: st"</code> <button class="copy-btn" type="button" title="Copy Act 1 regex" aria-label="Copy Act 1 regex" onclick="copyRegex(this)">⧉</button></p>
+  <p><strong>Act 2:</strong> <code>"(re|ng) res|\d+% i.+mov|ell.*ge$|^\+.*all sp.*ls$|^\+.*re sp.*ls$|^\+.*ng sp.*ls$|^\+.*ile skills$|o sp|st spe|s: st"</code> <button class="copy-btn" type="button" title="Copy Act 2 regex" aria-label="Copy Act 2 regex" onclick="copyRegex(this)">⧉</button></p>
+  <p><strong>Acts 3-4:</strong> <code>"(ld|os) res|([32]0|[21]5)% i.+mov|ell.*ge$|^\+.*all sp.*ls$|^\+.*re sp.*ls$|^\+.*ng sp.*ls$|^\+.*ile skills$|o sp|st spe|s: st"</code> <button class="copy-btn" type="button" title="Copy Acts 3-4 regex" aria-label="Copy Acts 3-4 regex" onclick="copyRegex(this)">⧉</button></p>
+  <p><strong>Acts 5-6:</strong> <code>"(ld|os) res|([32]0|25)% i.+mov|ell.*ge$|^\+.*all sp.*ls$|^\+.*re sp.*ls$|^\+.*ng sp.*ls$|^\+.*ile skills$|o sp|st spe|s: st"</code> <button class="copy-btn" type="button" title="Copy Acts 5-6 regex" aria-label="Copy Acts 5-6 regex" onclick="copyRegex(this)">⧉</button></p>
+  <p><strong>Maps Vendor:</strong> <code>"(re|ld|ng|os) res|(30|25)% i.+mov|ell.*ge$|^\+.*all sp.*ls$|^\+.*ile skills$|o sp|st spe|s: st"</code> <button class="copy-btn" type="button" title="Copy Maps Vendor regex" aria-label="Copy Maps Vendor regex" onclick="copyRegex(this)">⧉</button></p>
 </div>
 
 <h2 class="page-heading">Campaign Zone Rewards</h2>
@@ -564,6 +597,7 @@
 
   </div>
 
+<div id="twisters-details" data-campaign-build="twisters">
 <div class="dmg-tiers">
   <h3>Lightning Damage to Attacks — Tier Cutoffs</h3>
   <div class="tier-row">
@@ -733,6 +767,169 @@
   <p><strong>Legend:</strong> <code>I, II, III...</code> = Gem cutting levels &nbsp;|&nbsp; <code>D</code> = Drop after &nbsp;|&nbsp; <code>S</code> = Swap &nbsp;|&nbsp; <code>[text]</code> = Notes &nbsp;|&nbsp; <span class="ws1">WS 1</span> = Weapon Set 1 &nbsp;|&nbsp; <span class="ws2">WS 2</span> = Weapon Set 2</p>
   <p><strong>Colors:</strong> <span class="str">■ Strength (+90)</span> · <span class="dex">■ Dexterity (+110)</span> · <span class="int">■ Intelligence (+115)</span> · <span class="lineage">■ Lineage</span></p>
 </div>
+</div><!-- #twisters-details -->
+
+<div id="spark-comet-details" data-campaign-build="spark-comet" hidden>
+<h2 class="page-heading">Spark-Comet - Modifier Tier Cutoffs</h2>
+<p><em>Each chip shows the modifier tier, minimum item level, and roll range from the supplied screenshots.</em></p>
+
+<div class="dmg-tiers">
+  <h3>Gain % of Damage as Extra Lightning Damage</h3>
+  <div class="tier-row">
+    <span class="tier-chip" title="Deadly"><span class="tc-tier">T6</span><span class="tc-lvl">5</span><span class="tc-val">26–30%</span></span>
+    <span class="tier-sep">›</span>
+    <span class="tier-chip" title="Lethal"><span class="tc-tier">T5</span><span class="tc-lvl">16</span><span class="tc-val">31–36%</span></span>
+    <span class="tier-sep">›</span>
+    <span class="tier-chip" title="Fatal"><span class="tc-tier">T4</span><span class="tc-lvl">33</span><span class="tc-val">37–42%</span></span>
+    <span class="tier-sep">›</span>
+    <span class="tier-chip" title="Vorpal"><span class="tc-tier">T3</span><span class="tc-lvl">46</span><span class="tc-val">43–48%</span></span>
+    <span class="tier-sep">›</span>
+    <span class="tier-chip" title="Electrifying"><span class="tc-tier">T2</span><span class="tc-lvl">60</span><span class="tc-val">49–54%</span></span>
+    <span class="tier-sep">›</span>
+    <span class="tier-chip" title="Stormbound"><span class="tc-tier">T1</span><span class="tc-lvl">80</span><span class="tc-val">55–60%</span></span>
+  </div>
+</div>
+
+<div class="dmg-tiers">
+  <h3>+ to Level of all Spell Skills</h3>
+  <div class="tier-row">
+    <span class="tier-chip" title="of the Mage"><span class="tc-tier">T7</span><span class="tc-lvl">5</span><span class="tc-val">+2</span></span>
+    <span class="tier-sep">›</span>
+    <span class="tier-chip" title="of the Enchanter"><span class="tc-tier">T5</span><span class="tc-lvl">25</span><span class="tc-val">+3</span></span>
+    <span class="tier-sep">›</span>
+    <span class="tier-chip" title="of the Evoker"><span class="tc-tier">T3</span><span class="tc-lvl">55</span><span class="tc-val">+4</span></span>
+    <span class="tier-sep">›</span>
+    <span class="tier-chip" title="of the Sorcerer"><span class="tc-tier">T2</span><span class="tc-lvl">78</span><span class="tc-val">+5–6</span></span>
+  </div>
+</div>
+
+<div class="dmg-tiers">
+  <h3>+ to Level of all Fire Spell Skills</h3>
+  <p><em>The same cutoffs apply to Cold and Lightning Spell Skills.</em></p>
+  <div class="tier-row">
+    <span class="tier-chip" title="of Coals"><span class="tc-tier">T8</span><span class="tc-lvl">2</span><span class="tc-val">+1</span></span>
+    <span class="tier-sep">›</span>
+    <span class="tier-chip" title="of Cinders"><span class="tc-tier">T6</span><span class="tc-lvl">18</span><span class="tc-val">+2</span></span>
+    <span class="tier-sep">›</span>
+    <span class="tier-chip" title="of Flames"><span class="tc-tier">T4</span><span class="tc-lvl">36</span><span class="tc-val">+3–4</span></span>
+    <span class="tier-sep">›</span>
+    <span class="tier-chip" title="of Immolation"><span class="tc-tier">T3</span><span class="tc-lvl">55</span><span class="tc-val">+5–6</span></span>
+    <span class="tier-sep">›</span>
+    <span class="tier-chip" title="of Inferno"><span class="tc-tier">T1</span><span class="tc-lvl">81</span><span class="tc-val">+7</span></span>
+  </div>
+</div>
+
+<h2 class="page-heading">Spark-Comet - Gems and Supports</h2>
+<div class="skills-layout">
+  <table class="spark-skills" aria-label="Spark-Comet gems and supports">
+    <thead><tr><th scope="col">Icon</th><th scope="col">Skill</th><th scope="col">Supports</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><img src="icons/Galvanic_Field_skill_icon.webp" alt="Galvanic Field"></td>
+        <td><strong>Galvanic Field</strong></td>
+        <td><span class="dex" title="Chain I, II, III">Chain</span> <em>[tiers I, II, III]</em> - <span class="dex" title="Bounty I, II">Bounty</span> <em>[tiers I, II]</em> - <span class="dex" title="Overabundance I, II">Overabundance</span> <em>[tiers I, II]</em> - <span class="dex" title="Momentum">Momentum</span> - <span class="dex" title="Mobility">Mobility</span> <em>[cutting levels not specified]</em></td>
+      </tr>
+      <tr>
+        <td><img src="icons/Contagion_skill_icon.webp" alt="Contagion"></td>
+        <td><strong>Contagion</strong></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><img src="icons/Spark_skill_icon.webp" alt="Spark"></td>
+        <td><strong>Spark</strong></td>
+        <td><span class="dex" title="Pierce I at cutting level 1; II at 3; III at 5">Pierce</span> <code>I, III, V</code> - <span class="int" title="Controlled Destruction at cutting level 1">Controlled Destruction</span> <code>I</code> - <span class="dex" title="Projectile Acceleration I at cutting level 1; II at 4; III at 5">Projectile Acceleration</span> <code>I, IV, V</code> - <span class="str" title="Prolonged Duration I at cutting level 1; II at 3">Prolonged Duration</span> <code>I, III</code> - <span class="int" title="Unleash at cutting level 1">Unleash</span> <code>I</code> - <span class="int" title="Considered Casting at cutting level 2">Considered Casting</span> <code>II</code> - <span class="dex" title="Lightning Penetration at cutting level 2">Lightning Penetration</span> <code>II</code> <em>[optional]</em> <em>[at cutting level I, choose Projectile Acceleration / Prolonged Duration / Unleash]</em></td>
+      </tr>
+      <tr>
+        <td><img src="icons/Orb_of_Storms_skill_icon.webp" alt="Orb of Storms"></td>
+        <td><strong>Orb of Storms</strong></td>
+        <td><span class="dex" title="Overabundance I at cutting level 1">Overabundance</span> <code>I</code> - <span class="str" title="Compressed Duration I at cutting level 1; II at 3">Compressed Duration</span> <code>I, III</code> - <span class="dex" title="Innervate at cutting level 1">Innervate</span> <code>I</code> - <span class="int" title="Controlled Destruction at cutting level 1">Controlled Destruction</span> <code>I</code> - <span class="int" title="Harmonic Remnants I at cutting level 2; II at 3">Harmonic Remnants</span> <code>II, III</code> - <span class="int" title="Shock Conduction at cutting level 5">Shock Conduction</span> <code>V</code> - <span class="dex" title="Chain III at cutting level 5">Chain</span> <code>V</code></td>
+      </tr>
+      <tr>
+        <td><img src="icons/Frost_Bomb_skill_icon.png" alt="Frost Bomb"></td>
+        <td><strong>Frost Bomb</strong></td>
+        <td><span class="str" title="Short Fuse I at cutting level 2; II at 4">Short Fuse</span> <code>II, IV</code> - <span class="int" title="Potent Exposure at cutting level 2">Potent Exposure</span> <code>II</code> - <span class="int" title="Harmonic Remnants I at cutting level 2; II at 3">Harmonic Remnants</span> <code>II, III</code> - <span class="dex" title="Overabundance I at cutting level 2">Overabundance</span> <code>II</code> - <span class="int" title="Spell Echo at cutting level 2">Spell Echo</span> <code>II</code> - <span class="dex" title="Second Wind II at cutting level 3; III at 5">Second Wind</span> <code>III, V</code> - <span class="dex" title="Cooldown Recovery II at cutting level 4">Cooldown Recovery</span> <code>IV</code></td>
+      </tr>
+      <tr>
+        <td><img src="icons/Flame_Wall_skill_icon.webp" alt="Flame Wall"></td>
+        <td><strong>Flame Wall</strong></td>
+        <td><span class="int" title="Fortress I at cutting level 1; II at 3">Fortress</span> <code>I, III</code> - <span class="int" title="Spell Cascade at cutting level 1">Spell Cascade</span> <code>I</code></td>
+      </tr>
+      <tr>
+        <td><img src="icons/Mana_Remnants_skill_icon.webp" alt="Mana Remnants"></td>
+        <td><strong>Mana Remnants <code>IV</code></strong></td>
+        <td><span class="int" title="Harmonic Remnants I at cutting levels 2 and 3, as listed in the build notes">Harmonic Remnants</span> <code>II, III</code> - <span class="str" title="Remnant Potency I at cutting level 2; II at 3; III at 4">Remnant Potency</span> <code>II, III, IV</code></td>
+      </tr>
+      <tr>
+        <td><img src="icons/Mana_Tempest_skill_icon.webp" alt="Mana Tempest"></td>
+        <td><strong>Mana Tempest <code>VII</code></strong></td>
+        <td><span class="dex" title="Cooldown Recovery II at cutting level 2, as listed in the build notes">Cooldown Recovery</span> <code>II</code> - <span class="int" title="Lightning Mastery at cutting level 5">Lightning Mastery</span> <code>V</code></td>
+      </tr>
+      <tr>
+        <td><img src="icons/Siphon_Elements_skill_icon.webp" alt="Siphon Elements"></td>
+        <td><strong>Siphon Elements <code>VIII</code></strong></td>
+        <td><span class="int" title="Harmonic Remnants II at cutting level 3">Harmonic Remnants</span> <code>III</code> - <span class="int" title="Cold Mastery at cutting level 5">Cold Mastery</span> <code>V</code></td>
+      </tr>
+      <tr>
+        <td><img src="icons/Comet_skill_icon.webp" alt="Comet"></td>
+        <td><strong>Comet <code>XI</code></strong></td>
+        <td><span class="int" title="Considered Casting at cutting level 2">Considered Casting</span> <code>II</code> - <span class="int" title="Rising Tempest at cutting level 2">Rising Tempest</span> <code>II</code> - <span class="int" title="Spell Echo at cutting level 3">Spell Echo</span> <code>III</code> - <span class="int" title="Elemental Focus at cutting level 3">Elemental Focus</span> <code>III</code> - <span class="int" title="Ambrosia II at cutting level 3">Ambrosia</span> <code>III</code> <em>[once mana flask has 100+ charges]</em> - <span class="str" title="Execute II at cutting level 3">Execute</span> <code>III</code> - <span class="lineage" title="Zarokh's Refrain at cutting level 5; Lineage support, +5 Int requirement">Zarokh's Refrain</span> <code>V</code></td>
+      </tr>
+      <tr>
+        <td><img src="icons/Elemental_Conflux_skill_icon.webp" alt="Elemental Conflux"></td>
+        <td><strong>Elemental Conflux <code>XIV</code></strong></td>
+        <td><span class="str" title="Prolonged Duration II at cutting level 4">Prolonged Duration</span> <code>IV</code> - <span class="str" title="Compressed Duration II at cutting level 4">Compressed Duration</span> <code>IV</code> - <span class="int" title="Cold Mastery at cutting level 5">Cold Mastery</span> <code>V</code></td>
+      </tr>
+      <tr>
+        <td><img src="icons/Cast_on_Elemental_Ailment_skill_icon.webp" alt="Cast on Elemental Ailment"></td>
+        <td><strong>Cast on Elemental Ailment <code>XIV</code></strong> <em>[100 Spirit; before crit swap]</em></td>
+        <td><strong>Skill gems:</strong> Flame Wall, Fireball - <span class="int" title="Boundless Energy I at cutting level 2; II at 4">Boundless Energy</span> <code>II, IV</code> - <span class="str" title="Ignite II at cutting level 3">Ignite</span> <code>III</code> - <span class="int" title="Energy Retention at cutting level 3">Energy Retention</span> <code>III</code></td>
+      </tr>
+      <tr>
+        <td><img src="icons/Cast_on_Critical_skill_icon.webp" alt="Cast on Critical"></td>
+        <td><strong>Cast on Critical <code>XIV</code></strong> <em>[+90 Spirit; replaces Cast on Elemental Ailment after crit swap]</em></td>
+        <td><strong>Skill gems:</strong> Flame Wall, Fireball - <span class="int" title="Boundless Energy I at cutting level 2; II at 4">Boundless Energy</span> <code>II, IV</code> - <span class="str" title="Ignite II at cutting level 3">Ignite</span> <code>III</code> - <span class="int" title="Energy Retention at cutting level 3">Energy Retention</span> <code>III</code></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="gem-priority">
+    <h3>Gem Cutting Priority</h3>
+    <table aria-label="Spark-Comet gem cutting priority">
+      <thead><tr><th scope="col">Gem</th><th scope="col">Skill</th></tr></thead>
+      <tbody>
+        <tr class="tier-header"><td colspan="2">Tier 1</td></tr>
+        <tr><td><span class="dex">Pierce I</span></td><td><span class="int">Spark</span></td></tr>
+        <tr><td><span class="int">Controlled Destruction</span></td><td><span class="int">Spark</span></td></tr>
+        <tr><td><span class="dex">Overabundance I</span></td><td><span class="int">Orb of Storms</span></td></tr>
+        <tr><td><span class="int">Fortress I</span></td><td><span class="int">Flame Wall</span></td></tr>
+        <tr><td><span class="int">Spell Cascade</span></td><td><span class="int">Flame Wall</span></td></tr>
+        <tr class="tier-header"><td colspan="2">Tier 2</td></tr>
+        <tr><td><span class="int">Considered Casting</span></td><td><span class="int">Spark</span></td></tr>
+        <tr><td><span class="int">Controlled Destruction</span></td><td><span class="int">Orb of Storms</span></td></tr>
+        <tr><td><span class="str">Short Fuse I</span></td><td><span class="int">Frost Bomb</span></td></tr>
+        <tr><td><span class="int">Potent Exposure</span></td><td><span class="int">Frost Bomb</span></td></tr>
+        <tr><td><span class="int">Harmonic Remnants II</span></td><td><span class="int">Mana Remnants</span></td></tr>
+        <tr class="tier-header"><td colspan="2">Tier 3</td></tr>
+        <tr><td><span class="dex">Pierce II</span></td><td><span class="int">Spark</span></td></tr>
+        <tr><td><span class="str">Prolonged Duration II</span></td><td><span class="int">Spark</span></td></tr>
+        <tr><td><span class="str">Remnant Potency II</span></td><td><span class="int">Mana Remnants</span></td></tr>
+        <tr><td><span class="int">Spell Echo</span></td><td><span class="int">Comet</span></td></tr>
+        <tr><td><span class="int">Elemental Focus</span></td><td><span class="int">Comet</span></td></tr>
+        <tr class="tier-header"><td colspan="2">Tier 4</td></tr>
+        <tr><td><span class="str">Short Fuse II</span></td><td><span class="int">Frost Bomb</span></td></tr>
+        <tr><td><span class="str">Remnant Potency III</span></td><td><span class="int">Mana Remnants</span></td></tr>
+        <tr class="tier-header"><td colspan="2">Tier 5</td></tr>
+        <tr><td><span class="dex">Pierce III</span></td><td><span class="int">Spark</span></td></tr>
+        <tr><td><span class="dex">Projectile Acceleration III</span></td><td><span class="int">Spark</span></td></tr>
+        <tr><td><span class="int">Cold Mastery</span></td><td><span class="int">Siphon Elements</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="meta" style="margin-top:16px; line-height:2;">
+  <p><strong>Legend:</strong> <code>I, II, III...</code> = Gem cutting levels &nbsp;|&nbsp; <code>[text]</code> = Notes &nbsp;|&nbsp; Hover a support name for its support tiers.</p>
+  <p><strong>Colors:</strong> <span class="str">■ Strength</span> · <span class="dex">■ Dexterity</span> · <span class="int">■ Intelligence</span> · <span class="lineage">■ Lineage</span></p>
+</div>
+</div><!-- #spark-comet-details -->
 
 </div><!-- #tab-campaign -->
 
@@ -1413,18 +1610,34 @@ function showTab(id) {
   event.currentTarget.classList.add('active');
 }
 function showPill(id, btn) {
-  document.querySelectorAll('.pill-panel').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+  const panel = btn.closest('.tab-panel');
+  panel.querySelectorAll('.pill-panel').forEach(p => p.classList.remove('active'));
+  panel.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('pill-' + id).classList.add('active');
   btn.classList.add('active');
 }
-function copyRegex(btn) {
+function showCampaignBuild(id) {
+  const campaign = document.getElementById('tab-campaign');
+  campaign.querySelectorAll('[data-campaign-build]').forEach(panel => {
+    panel.hidden = panel.dataset.campaignBuild !== id;
+  });
+  campaign.querySelectorAll('[data-build]').forEach(btn => {
+    const active = btn.dataset.build === id;
+    btn.classList.toggle('active', active);
+    btn.setAttribute('aria-pressed', String(active));
+  });
+}
+async function copyRegex(btn) {
   const text = btn.previousElementSibling.textContent;
-  navigator.clipboard.writeText(text).then(() => {
+  try {
+    await navigator.clipboard.writeText(text);
     btn.textContent = '✓';
     btn.classList.add('copied');
     setTimeout(() => { btn.textContent = '⧉'; btn.classList.remove('copied'); }, 1500);
-  });
+  } catch (error) {
+    console.error('Unable to copy regex:', error);
+    alert('Unable to copy the regex. Please select and copy the text manually.');
+  }
 }
 </script>
 

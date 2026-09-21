@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^@'\nconst fs = require\\('node:fs'\\);\nconst names = \\['Galvanic_Field', 'Contagion', 'Spark', 'Orb_of_Storms', 'Flame_Wall', 'Mana_Remnants', 'Mana_Tempest', 'Siphon_Elements', 'Comet', 'Elemental_Conflux', 'Cast_on_Elemental_Ailment', 'Cast_on_Critical'\\];\nfor \\(const name of names\\) \\{\n  const file = 'icons\\\\\\\\' \\+ name \\+ '_skill_icon\\.webp';\n  const bytes = fs\\.readFileSync\\(file\\);\n  if \\(bytes\\.toString\\('ascii', 0, 4\\) !== 'RIFF' \\|\\| bytes\\.toString\\('ascii', 8, 12\\) !== 'WEBP'\\) throw new Error\\('Invalid WebP: ' \\+ file\\);\n\\}\nconsole\\.log\\('PASS: all 12 new icons are valid WebP assets; Frost Bomb reuses the existing icon\\.'\\);\n'@ \\| node$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

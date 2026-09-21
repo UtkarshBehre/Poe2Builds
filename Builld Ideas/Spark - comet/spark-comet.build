@@ -1,0 +1,1232 @@
+{
+  "name": "Spark - Comet (Gem Draft v2)",
+  "author": "UtkarshBehre",
+  "description": "Gem and passive-tree draft. All skill and support hints cover character levels 1-100; normal gem requirements still apply. Listed supports include alternatives and successive tiers, not a single simultaneous socket setup. Passive stages follow the supplied screenshots for levels 1-16, 17-21, 22-37, 38-52, and 53-80. Shared nodes use weapon set 0; PoB red paths use set 1 and green paths use set 2. Attribute choices are hover notes and must be selected manually; some change between stages. The two Remnant Pickup Range nodes used at levels 22-52 are replaced by a different pair at level 53. Passive recommendations end at level 80; no later tree or ascendancy has been supplied. Gem level progression and separate non-crit/crit versions are deferred. Cast-on meta entries remain experimental. Manually socket Flame Wall and Fireball into Cast on Elemental Ailment before the crit swap, then into Cast on Critical afterwards, with the listed trigger supports. Zarokh's Refrain is a Lineage upgrade, not a cuttable gem. Format: https://www.pathofexile.com/developer/docs/game#buildplanner ; gem names and item IDs: https://poe2db.tw/us/ ; passive IDs: https://github.com/grindinggear/poe2-skilltree-export",
+  "passives": [
+    {
+      "id": "spells18",
+      "level_interval": [1, 80],
+      "weapon_set": 0,
+      "additional_text": "Spell Damage"
+    },
+    {
+      "id": "spells15",
+      "level_interval": [1, 80],
+      "weapon_set": 0,
+      "additional_text": "Spell Damage"
+    },
+    {
+      "id": "spell_criticals2__",
+      "level_interval": [1, 80],
+      "weapon_set": 0,
+      "additional_text": "Spell Damage"
+    },
+    {
+      "id": "spell_criticals1",
+      "level_interval": [1, 80],
+      "weapon_set": 0,
+      "additional_text": "Spell Damage"
+    },
+    {
+      "id": "witch_sorceress_notable1",
+      "level_interval": [1, 80],
+      "weapon_set": 0,
+      "additional_text": "Raw Power"
+    },
+    {
+      "id": "cast_speed10",
+      "level_interval": [1, 80],
+      "weapon_set": 0,
+      "additional_text": "Cast Speed"
+    },
+    {
+      "id": "cast_speed36_",
+      "level_interval": [1, 80],
+      "weapon_set": 0,
+      "additional_text": "Practiced Signs"
+    },
+    {
+      "id": "elemental14",
+      "level_interval": [1, 80],
+      "weapon_set": 0,
+      "additional_text": "Elemental Damage"
+    },
+    {
+      "id": "cold2",
+      "level_interval": [1, 80],
+      "weapon_set": 0,
+      "additional_text": "Elemental Damage"
+    },
+    {
+      "id": "cold34",
+      "level_interval": [1, 80],
+      "weapon_set": 0,
+      "additional_text": "Elemental Force"
+    },
+    {
+      "id": "sorcerer_start2",
+      "level_interval": [1, 80],
+      "weapon_set": 0,
+      "additional_text": "Elemental Damage"
+    },
+    {
+      "id": "elemental15",
+      "level_interval": [1, 80],
+      "weapon_set": 0,
+      "additional_text": "Elemental Damage"
+    },
+    {
+      "id": "intelligence15",
+      "level_interval": [1, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
+    },
+    {
+      "id": "intelligence35_",
+      "level_interval": [1, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\nLevels 1-37: <blue>{+5 Intelligence}.\nLevels 38-52: change to <red>{+5 Strength}.\nLevels 53-80: change back to <blue>{+5 Intelligence}."
+    },
+    {
+      "id": "intelligence83",
+      "level_interval": [1, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\nLevels 1-37: <blue>{+5 Intelligence}.\nLevels 38-52: change to <red>{+5 Strength}.\nLevels 53-80: change back to <blue>{+5 Intelligence}."
+    },
+    {
+      "id": "intelligence16",
+      "level_interval": [17, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
+    },
+    {
+      "id": "intelligence86",
+      "level_interval": [17, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
+    },
+    {
+      "id": "exploiting_elemental_ailments3",
+      "level_interval": [1, 80],
+      "weapon_set": 0,
+      "additional_text": "Damage against Ailments\nShared entry into the ailment cluster."
+    },
+    {
+      "id": "exploiting_elemental_ailments4",
+      "level_interval": [1, 80],
+      "weapon_set": 1,
+      "additional_text": "Damage against Ailments\nWeapon set 1."
+    },
+    {
+      "id": "exploiting_elemental_ailments5",
+      "level_interval": [1, 80],
+      "weapon_set": 1,
+      "additional_text": "Damage against Ailments\nWeapon set 1."
+    },
+    {
+      "id": "exploiting_elemental_ailments16",
+      "level_interval": [1, 80],
+      "weapon_set": 1,
+      "additional_text": "Exploit the Elements\nWeapon set 1."
+    },
+    {
+      "id": "lightning6",
+      "level_interval": [17, 80],
+      "weapon_set": 1,
+      "additional_text": "Infused Spell Damage\nWeapon set 1."
+    },
+    {
+      "id": "lightning34",
+      "level_interval": [17, 80],
+      "weapon_set": 1,
+      "additional_text": "Principal Infusion\nWeapon set 1."
+    },
+    {
+      "id": "sorcerer_start1",
+      "level_interval": [1, 80],
+      "weapon_set": 2,
+      "additional_text": "Elemental Ailment Chance\nWeapon set 2."
+    },
+    {
+      "id": "fire32",
+      "level_interval": [1, 80],
+      "weapon_set": 2,
+      "additional_text": "Affliction Enforcer\nWeapon set 2."
+    },
+    {
+      "id": "elemental60",
+      "level_interval": [17, 80],
+      "weapon_set": 0,
+      "additional_text": "Elemental Damage\nShared entry into the exposure cluster."
+    },
+    {
+      "id": "elemental58_",
+      "level_interval": [17, 80],
+      "weapon_set": 2,
+      "additional_text": "Exposure Effect\nWeapon set 2."
+    },
+    {
+      "id": "elemental59",
+      "level_interval": [17, 80],
+      "weapon_set": 2,
+      "additional_text": "Exposure Effect\nWeapon set 2."
+    },
+    {
+      "id": "elemental61_",
+      "level_interval": [17, 80],
+      "weapon_set": 2,
+      "additional_text": "Stripped Defences\nWeapon set 2."
+    },
+    {
+      "id": "intelligence37",
+      "level_interval": [22, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\nLevels 22-52: <blue>{+5 Intelligence}.\nLevels 53-80: change to <red>{+5 Strength}."
+    },
+    {
+      "id": "intelligence38",
+      "level_interval": [22, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\nLevels 22-52: <blue>{+5 Intelligence}.\nLevels 53-80: change to <red>{+5 Strength}."
+    },
+    {
+      "id": "intelligence2",
+      "level_interval": [22, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
+    },
+    {
+      "id": "intelligence49",
+      "level_interval": [22, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
+    },
+    {
+      "id": "attributes14",
+      "level_interval": [22, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
+    },
+    {
+      "id": "attributes13",
+      "level_interval": [22, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
+    },
+    {
+      "id": "jewel_slot1969",
+      "level_interval": [22, 80],
+      "weapon_set": 0,
+      "additional_text": "Jewel Socket\nAllocate this travel socket; no particular jewel has been specified."
+    },
+    {
+      "id": "intelligence51",
+      "level_interval": [22, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
+    },
+    {
+      "id": "passive_keystone_elemental_equilibrium",
+      "level_interval": [22, 80],
+      "weapon_set": 0,
+      "additional_text": "Elemental Equilibrium"
+    },
+    {
+      "id": "mana_regeneration31_",
+      "level_interval": [22, 80],
+      "weapon_set": 0,
+      "additional_text": "Mana Regeneration\nShared entry into the Arcane Surge cluster."
+    },
+    {
+      "id": "mana_regeneration26",
+      "level_interval": [22, 80],
+      "weapon_set": 1,
+      "additional_text": "Arcane Surge Effect\nWeapon set 1."
+    },
+    {
+      "id": "mana_regeneration27",
+      "level_interval": [22, 80],
+      "weapon_set": 1,
+      "additional_text": "Arcane Surge Effect\nWeapon set 1."
+    },
+    {
+      "id": "mana_regeneration28_",
+      "level_interval": [22, 80],
+      "weapon_set": 1,
+      "additional_text": "Touch the Arcane\nWeapon set 1."
+    },
+    {
+      "id": "elemental12",
+      "level_interval": [22, 80],
+      "weapon_set": 0,
+      "additional_text": "Elemental Damage"
+    },
+    {
+      "id": "elemental11_",
+      "level_interval": [22, 80],
+      "weapon_set": 0,
+      "additional_text": "Elemental Damage"
+    },
+    {
+      "id": "energy_shield42__",
+      "level_interval": [22, 80],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield"
+    },
+    {
+      "id": "energy_shield43",
+      "level_interval": [22, 80],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield"
+    },
+    {
+      "id": "energy_shield38",
+      "level_interval": [22, 80],
+      "weapon_set": 0,
+      "additional_text": "Heavy Buffer"
+    },
+    {
+      "id": "exploiting_elemental_ailments6",
+      "level_interval": [22, 80],
+      "weapon_set": 2,
+      "additional_text": "Ailment Chance\nWeapon set 2."
+    },
+    {
+      "id": "exploiting_elemental_ailments7",
+      "level_interval": [22, 80],
+      "weapon_set": 2,
+      "additional_text": "Ailment Chance\nWeapon set 2."
+    },
+    {
+      "id": "fire3",
+      "level_interval": [22, 80],
+      "weapon_set": 2,
+      "additional_text": "Elemental Ailment Chance\nWeapon set 2."
+    },
+    {
+      "id": "remnant6",
+      "level_interval": [22, 52],
+      "weapon_set": 2,
+      "additional_text": "Remnant Pickup Range\nWeapon set 2. Use this branch through level 52; at level 53 replace it with the pair near the central travel path."
+    },
+    {
+      "id": "remnant7",
+      "level_interval": [22, 52],
+      "weapon_set": 2,
+      "additional_text": "Remnant Pickup Range\nWeapon set 2. Use this branch through level 52; at level 53 replace it with the pair near the central travel path."
+    },
+    {
+      "id": "elemental39",
+      "level_interval": [38, 80],
+      "weapon_set": 0,
+      "additional_text": "All Natural"
+    },
+    {
+      "id": "elemental13",
+      "level_interval": [38, 80],
+      "weapon_set": 0,
+      "additional_text": "Elemental Damage"
+    },
+    {
+      "id": "elemental37_",
+      "level_interval": [38, 80],
+      "weapon_set": 0,
+      "additional_text": "Breaking Point"
+    },
+    {
+      "id": "cast_speed24",
+      "level_interval": [38, 80],
+      "weapon_set": 1,
+      "additional_text": "Cast Speed\nWeapon set 1."
+    },
+    {
+      "id": "cast_speed29",
+      "level_interval": [38, 80],
+      "weapon_set": 1,
+      "additional_text": "Cast Speed\nWeapon set 1."
+    },
+    {
+      "id": "cast_speed40",
+      "level_interval": [38, 80],
+      "weapon_set": 1,
+      "additional_text": "Hastening Barrier\nWeapon set 1."
+    },
+    {
+      "id": "attributes78",
+      "level_interval": [38, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
+    },
+    {
+      "id": "intelligence47",
+      "level_interval": [38, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
+    },
+    {
+      "id": "intelligence46",
+      "level_interval": [38, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
+    },
+    {
+      "id": "orb1",
+      "level_interval": [38, 80],
+      "weapon_set": 2,
+      "additional_text": "Spell Damage and Cast Speed\nWeapon set 2."
+    },
+    {
+      "id": "orb3",
+      "level_interval": [38, 80],
+      "weapon_set": 2,
+      "additional_text": "Spell Damage and Cast Speed\nWeapon set 2."
+    },
+    {
+      "id": "orb4",
+      "level_interval": [38, 80],
+      "weapon_set": 2,
+      "additional_text": "Spell Damage and Cast Speed\nWeapon set 2."
+    },
+    {
+      "id": "orb5",
+      "level_interval": [38, 80],
+      "weapon_set": 2,
+      "additional_text": "Secrets of the Orb\nWeapon set 2."
+    },
+    {
+      "id": "energy_shield41",
+      "level_interval": [38, 80],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield"
+    },
+    {
+      "id": "energy_shield29",
+      "level_interval": [38, 80],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield"
+    },
+    {
+      "id": "infusion11",
+      "level_interval": [38, 80],
+      "weapon_set": 1,
+      "additional_text": "Infusion Duration\nWeapon set 1."
+    },
+    {
+      "id": "infusion12",
+      "level_interval": [38, 80],
+      "weapon_set": 1,
+      "additional_text": "Infused Spell Damage\nWeapon set 1."
+    },
+    {
+      "id": "infusion13",
+      "level_interval": [38, 80],
+      "weapon_set": 1,
+      "additional_text": "Infused Spell Damage\nWeapon set 1."
+    },
+    {
+      "id": "infusion14",
+      "level_interval": [38, 80],
+      "weapon_set": 1,
+      "additional_text": "Infusion Consumption Chance\nWeapon set 1."
+    },
+    {
+      "id": "infusion15",
+      "level_interval": [38, 80],
+      "weapon_set": 1,
+      "additional_text": "Infusion Consumption Chance\nWeapon set 1."
+    },
+    {
+      "id": "infusion3",
+      "level_interval": [38, 80],
+      "weapon_set": 1,
+      "additional_text": "Everlasting Infusions\nWeapon set 1."
+    },
+    {
+      "id": "infusion4",
+      "level_interval": [38, 80],
+      "weapon_set": 1,
+      "additional_text": "Empowering Infusions\nWeapon set 1."
+    },
+    {
+      "id": "elemental53",
+      "level_interval": [38, 80],
+      "weapon_set": 0,
+      "additional_text": "Elemental Damage"
+    },
+    {
+      "id": "elemental21",
+      "level_interval": [38, 80],
+      "weapon_set": 0,
+      "additional_text": "Elemental Damage"
+    },
+    {
+      "id": "elemental34",
+      "level_interval": [38, 80],
+      "weapon_set": 2,
+      "additional_text": "Exposure Effect\nWeapon set 2."
+    },
+    {
+      "id": "elemental35",
+      "level_interval": [38, 80],
+      "weapon_set": 2,
+      "additional_text": "Exposure Effect\nWeapon set 2."
+    },
+    {
+      "id": "elemental36",
+      "level_interval": [38, 80],
+      "weapon_set": 2,
+      "additional_text": "Overexposure\nWeapon set 2."
+    },
+    {
+      "id": "intelligence6",
+      "level_interval": [38, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
+    },
+    {
+      "id": "mana22",
+      "level_interval": [38, 80],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield Delay"
+    },
+    {
+      "id": "mana24",
+      "level_interval": [38, 80],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield Delay"
+    },
+    {
+      "id": "mana40",
+      "level_interval": [38, 80],
+      "weapon_set": 0,
+      "additional_text": "Soul Bloom"
+    },
+    {
+      "id": "mana21",
+      "level_interval": [38, 80],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield Delay"
+    },
+    {
+      "id": "infusion10",
+      "level_interval": [53, 80],
+      "weapon_set": 2,
+      "additional_text": "Infusion Duration\nWeapon set 2."
+    },
+    {
+      "id": "infusion7",
+      "level_interval": [53, 80],
+      "weapon_set": 2,
+      "additional_text": "Infusion Chance\nWeapon set 2."
+    },
+    {
+      "id": "infusion6",
+      "level_interval": [53, 80],
+      "weapon_set": 2,
+      "additional_text": "Infusion Chance\nWeapon set 2."
+    },
+    {
+      "id": "infusion2",
+      "level_interval": [53, 80],
+      "weapon_set": 2,
+      "additional_text": "Infusing Power\nWeapon set 2."
+    },
+    {
+      "id": "energy_shield_recovery32_",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield Delay"
+    },
+    {
+      "id": "energy_shield_recovery33",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield Delay"
+    },
+    {
+      "id": "energy_shield_recovery18",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Dependable Ward"
+    },
+    {
+      "id": "slowed_enemies6",
+      "level_interval": [53, 80],
+      "weapon_set": 1,
+      "additional_text": "Duration\nWeapon set 1."
+    },
+    {
+      "id": "slowed_enemies8",
+      "level_interval": [53, 80],
+      "weapon_set": 1,
+      "additional_text": "Duration\nWeapon set 1."
+    },
+    {
+      "id": "slowed_enemies10",
+      "level_interval": [53, 80],
+      "weapon_set": 1,
+      "additional_text": "Chronomancy\nWeapon set 1."
+    },
+    {
+      "id": "energy_shield39",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Illuminated Crown"
+    },
+    {
+      "id": "attributes21",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
+    },
+    {
+      "id": "jewel_slot1972",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Jewel Socket\nAllocate this travel socket; no particular jewel has been specified."
+    },
+    {
+      "id": "intelligence57",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
+    },
+    {
+      "id": "intelligence56",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
+    },
+    {
+      "id": "intelligence45",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
+    },
+    {
+      "id": "cast_speed15_",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Cast Speed"
+    },
+    {
+      "id": "witch_sorceress_notable2",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Pure Energy"
+    },
+    {
+      "id": "energy_shield10_",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Stun and Ailment Threshold from Energy Shield"
+    },
+    {
+      "id": "energy_shield37",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Dampening Shield"
+    },
+    {
+      "id": "energy_shield_recovery24",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield Delay"
+    },
+    {
+      "id": "energy_shield_recovery14",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Rapid Recharge"
+    },
+    {
+      "id": "remnant1",
+      "level_interval": [53, 80],
+      "weapon_set": 2,
+      "additional_text": "Remnant Pickup Range\nWeapon set 2. New central branch; replaces the pair used through level 52."
+    },
+    {
+      "id": "remnant5",
+      "level_interval": [53, 80],
+      "weapon_set": 2,
+      "additional_text": "Remnant Pickup Range\nWeapon set 2. New central branch; replaces the pair used through level 52."
+    },
+    {
+      "id": "intelligence58",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
+    },
+    {
+      "id": "intelligence59",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
+    },
+    {
+      "id": "intelligence60",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
+    },
+    {
+      "id": "attributes1",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
+    },
+    {
+      "id": "intelligence102",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Intelligence"
+    },
+    {
+      "id": "energy_shield46_",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield"
+    },
+    {
+      "id": "energy_shield33_",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Patient Barrier"
+    },
+    {
+      "id": "duration12",
+      "level_interval": [53, 80],
+      "weapon_set": 1,
+      "additional_text": "Increased Duration\nWeapon set 1."
+    },
+    {
+      "id": "duration10",
+      "level_interval": [53, 80],
+      "weapon_set": 1,
+      "additional_text": "Increased Duration\nWeapon set 1."
+    },
+    {
+      "id": "duration6",
+      "level_interval": [53, 80],
+      "weapon_set": 1,
+      "additional_text": "Preservation\nWeapon set 1."
+    },
+    {
+      "id": "duration7",
+      "level_interval": [53, 80],
+      "weapon_set": 2,
+      "additional_text": "Reduced Duration\nWeapon set 2."
+    },
+    {
+      "id": "duration9_",
+      "level_interval": [53, 80],
+      "weapon_set": 2,
+      "additional_text": "Reduced Duration\nWeapon set 2."
+    },
+    {
+      "id": "duration11",
+      "level_interval": [53, 80],
+      "weapon_set": 2,
+      "additional_text": "Forthcoming\nWeapon set 2."
+    },
+    {
+      "id": "energy_shield_recovery26",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield Delay"
+    },
+    {
+      "id": "energy_shield_recovery27",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield Delay"
+    },
+    {
+      "id": "energy_shield_recovery28",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield Delay"
+    },
+    {
+      "id": "energy_shield_recovery22",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Convalescence"
+    },
+    {
+      "id": "intelligence84",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
+    },
+    {
+      "id": "energy_shield12",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield"
+    },
+    {
+      "id": "energy_shield16",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield"
+    },
+    {
+      "id": "energy_shield35",
+      "level_interval": [53, 80],
+      "weapon_set": 0,
+      "additional_text": "Melding"
+    }
+  ],
+  "skills": [
+    {
+      "id": "Metadata/Items/Gems/SkillGemGalvanicField",
+      "level_interval": [1, 100],
+      "additional_text": "<b>{Galvanic Field}\nGranted by a Galvanic Wand, rather than cut from an Uncut Skill Gem. Select its support options when using that weapon skill.\nSupport recommendations include successive tiers, not a simultaneous socket setup.\n<yellow>{Weapon-granted skill recommendation display needs checking in-game.}",
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gems/SupportGemChain",
+          "level_interval": [1, 100],
+          "additional_text": "Chain I"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemChainTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Chain II\nUpgrade from Chain I."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemChainThree",
+          "level_interval": [1, 100],
+          "additional_text": "Chain III\nUpgrade from Chain II."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemBounty",
+          "level_interval": [1, 100],
+          "additional_text": "Bounty I"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemBountyTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Bounty II\nUpgrade from Bounty I."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemOverabundance",
+          "level_interval": [1, 100],
+          "additional_text": "Overabundance I"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemOverabundanceTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Overabundance II\nUpgrade from Overabundance I."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemMomentum",
+          "level_interval": [1, 100],
+          "additional_text": "Momentum"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemMobility",
+          "level_interval": [1, 100],
+          "additional_text": "Mobility"
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gems/SkillGemContagion",
+      "level_interval": [1, 100],
+      "additional_text": "<b>{Contagion}\nRequires a level 1 Uncut Skill Gem. Recommended skill; no supports specified yet."
+    },
+    {
+      "id": "Metadata/Items/Gems/SkillGemSpark",
+      "level_interval": [1, 100],
+      "additional_text": "<b>{Spark}\nInitial support pool, not a final six-link. Early alternatives: Projectile Acceleration I / Prolonged Duration I / Unleash. Upgrade support tiers as available; do not equip multiple tiers of the same support together.\n<yellow>{Controlled Destruction belongs to the non-crit plan; review it when making the later crit version.}",
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gems/SupportGemPierce",
+          "level_interval": [1, 100],
+          "additional_text": "Pierce I"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemControlledDestruction",
+          "level_interval": [1, 100],
+          "additional_text": "Controlled Destruction\n<yellow>{Non-crit option. Revisit for the later crit version.}"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemAcceleration",
+          "level_interval": [1, 100],
+          "additional_text": "Projectile Acceleration I\nEarly alternative to Prolonged Duration I or Unleash."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemPersistence",
+          "level_interval": [1, 100],
+          "additional_text": "Prolonged Duration I\nEarly alternative to Projectile Acceleration I or Unleash."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemUnleash",
+          "level_interval": [1, 100],
+          "additional_text": "Unleash\nEarly alternative to Projectile Acceleration I or Prolonged Duration I."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemConsideredCasting",
+          "level_interval": [1, 100],
+          "additional_text": "Considered Casting"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemLightningPenetration",
+          "level_interval": [1, 100],
+          "additional_text": "Lightning Penetration\n<yellow>{Optional.}"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemPersistenceTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Prolonged Duration II\nUpgrade from Prolonged Duration I."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemPierceTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Pierce II\nUpgrade from Pierce I."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemAccelerationTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Projectile Acceleration II\nUpgrade from Projectile Acceleration I."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemPierceThree",
+          "level_interval": [1, 100],
+          "additional_text": "Pierce III\nUpgrade from Pierce II."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemAccelerationThree",
+          "level_interval": [1, 100],
+          "additional_text": "Projectile Acceleration III\nUpgrade from Projectile Acceleration II."
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gems/SkillGemOrbOfStorms",
+      "level_interval": [1, 100],
+      "additional_text": "<b>{Orb of Storms}\nSupport recommendations include early options and later upgrades, not a simultaneous socket setup.",
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gems/SupportGemOverabundance",
+          "level_interval": [1, 100],
+          "additional_text": "Overabundance I"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemFastForward",
+          "level_interval": [1, 100],
+          "additional_text": "Compressed Duration I"
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemInnervate",
+          "level_interval": [1, 100],
+          "additional_text": "Innervate"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemControlledDestruction",
+          "level_interval": [1, 100],
+          "additional_text": "Controlled Destruction\n<yellow>{Non-crit option. Revisit for the later crit version.}"
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemDissipate",
+          "level_interval": [1, 100],
+          "additional_text": "Harmonic Remnants I"
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemDissipateTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Harmonic Remnants II\nUpgrade from Harmonic Remnants I."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemFastForwardTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Compressed Duration II\nUpgrade from Compressed Duration I."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemCoursingCurrent",
+          "level_interval": [1, 100],
+          "additional_text": "Shock Conduction\nListed in the later support group in the original plan; the current gem is cut from a tier 2 Uncut Support Gem."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemChainThree",
+          "level_interval": [1, 100],
+          "additional_text": "Chain III"
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gems/SkillGemFrostBomb",
+      "level_interval": [1, 100],
+      "additional_text": "<b>{Frost Bomb}\nSupport recommendations include alternatives and successive tiers. Select supports for the current setup.",
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gems/SupportGemMagnifiedEffect",
+          "level_interval": [1, 100],
+          "additional_text": "Magnified Area I"
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemInnervate",
+          "level_interval": [1, 100],
+          "additional_text": "Innervate"
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemExpedite",
+          "level_interval": [1, 100],
+          "additional_text": "Short Fuse I"
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemStripAway",
+          "level_interval": [1, 100],
+          "additional_text": "Potent Exposure"
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemDissipate",
+          "level_interval": [1, 100],
+          "additional_text": "Harmonic Remnants I"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemOverabundance",
+          "level_interval": [1, 100],
+          "additional_text": "Overabundance I"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemSpellEcho",
+          "level_interval": [1, 100],
+          "additional_text": "Spell Echo"
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemDissipateTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Harmonic Remnants II\nUpgrade from Harmonic Remnants I."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemSecondWindTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Second Wind II\nRequires a tier 4 Uncut Support Gem, rather than the tier 3 group in the original plan."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemExpediteTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Short Fuse II\nUpgrade from Short Fuse I."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemIngenuityTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Cooldown Recovery II"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemSecondWindThree",
+          "level_interval": [1, 100],
+          "additional_text": "Second Wind III\nUpgrade from Second Wind II."
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gems/SkillGemFlameWall",
+      "level_interval": [1, 100],
+      "additional_text": "<b>{Flame Wall}\nEarly standalone setup: Fortress I and Spell Cascade, upgrading to Fortress II.\nLater plan: socket Flame Wall and Fireball into Cast on Elemental Ailment before the crit swap, then into Cast on Critical afterwards. Both trigger setups use Boundless Energy I/II, Ignite II, and Energy Retention.\n<yellow>{Triggered skill socketing must be done manually; this file does not encode nested skill gems.}",
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gems/SupportGemFortress",
+          "level_interval": [1, 100],
+          "additional_text": "Fortress I"
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemSpellCascade",
+          "level_interval": [1, 100],
+          "additional_text": "Spell Cascade"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemFortressTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Fortress II\nUpgrade from Fortress I."
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gem/SkillGemManaRemnants",
+      "level_interval": [1, 100],
+      "additional_text": "<b>{Mana Remnants}\nRequires a level 4 Uncut Spirit Gem.\nHarmonic Remnants I was listed in both support groups 2 and 3; retained once as written, without assuming an upgrade to II.",
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gem/SupportGemDissipate",
+          "level_interval": [1, 100],
+          "additional_text": "Harmonic Remnants I\nRetained for both original support groups 2 and 3."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemInterlude",
+          "level_interval": [1, 100],
+          "additional_text": "Remnant Potency I"
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemInterludeTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Remnant Potency II\nUpgrade from Remnant Potency I."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemInterludeThree",
+          "level_interval": [1, 100],
+          "additional_text": "Remnant Potency III\nUpgrade from Remnant Potency II."
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gems/SkillGemManaTempest",
+      "level_interval": [1, 100],
+      "additional_text": "<b>{Mana Tempest}\nRequires a level 7 Uncut Skill Gem.",
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gems/SupportGemIngenuityTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Cooldown Recovery II\nRequires a tier 4 Uncut Support Gem, rather than the tier 2 group in the revised plan."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemLightningMastery",
+          "level_interval": [1, 100],
+          "additional_text": "Lightning Mastery"
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gem/SkillGemSiphonElements",
+      "level_interval": [1, 100],
+      "additional_text": "<b>{Siphon Elements}\nRequires a level 8 Uncut Spirit Gem.",
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gem/SupportGemDissipateTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Harmonic Remnants II"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemColdMastery",
+          "level_interval": [1, 100],
+          "additional_text": "Cold Mastery"
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gems/SkillGemComet",
+      "level_interval": [1, 100],
+      "additional_text": "<b>{Comet}\nRequires a level 11 Uncut Skill Gem.\n<yellow>{Ambrosia II: use once the mana flask has 100+ charges.}\n<unique>{Zarokh's Refrain: planned Lineage upgrade. Obtain separately through drops or trade; it cannot be cut from an Uncut Support Gem.}\nLineage recommendation display is unverified; keep this note as the fallback.",
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gem/SupportGemConsideredCasting",
+          "level_interval": [1, 100],
+          "additional_text": "Considered Casting"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemRisingTempest",
+          "level_interval": [1, 100],
+          "additional_text": "Rising Tempest"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemSpellEcho",
+          "level_interval": [1, 100],
+          "additional_text": "Spell Echo\nPlanned for support group 3, but available from a tier 2 Uncut Support Gem."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemElementalFocus",
+          "level_interval": [1, 100],
+          "additional_text": "Elemental Focus"
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemAmbrosiaTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Ambrosia II\n<yellow>{Use once the mana flask has 100+ charges.}"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemExecuteTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Execute II\nRequires a tier 4 Uncut Support Gem, rather than the tier 3 group in the original plan."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemZarokhsRefrain",
+          "level_interval": [1, 100],
+          "additional_text": "<unique>{Zarokh's Refrain}\nLineage upgrade: acquire separately, not by cutting. Actual character-level requirement still applies despite the broad recommendation range. Display in the cutting window is experimental."
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gem/SkillGemElementalConflux",
+      "level_interval": [1, 100],
+      "additional_text": "<b>{Elemental Conflux}\nRequires a level 14 Uncut Spirit Gem.\nThe duration supports are planned for support group 4; both are available from tier 3 Uncut Support Gems.",
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gems/SupportGemPersistenceTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Prolonged Duration II"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemFastForwardTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Compressed Duration II"
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemColdMastery",
+          "level_interval": [1, 100],
+          "additional_text": "Cold Mastery"
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gems/SkillGemCastOnElementalAilment",
+      "level_interval": [1, 100],
+      "additional_text": "<b>{Cast on Elemental Ailment}\nRequires a level 14 Uncut Spirit Gem. Base reservation: 100 Spirit.\n<green>{Use before the crit swap.}\nManually socket Flame Wall and Fireball as the triggered skills. Planned supports: Boundless Energy I/II, Ignite II, Energy Retention.\n<yellow>{Experimental: GGG documents meta gems as unsupported. Verify this recommendation in-game; the same setup is recorded on Flame Wall and Fireball as a fallback.}",
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gem/SupportGemImpetus",
+          "level_interval": [1, 100],
+          "additional_text": "Boundless Energy I\nSupport for the Cast on Elemental Ailment setup."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemIgnitionTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Ignite II\nSupport for the Cast on Elemental Ailment setup."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemEnergyRetention",
+          "level_interval": [1, 100],
+          "additional_text": "Energy Retention\nSupport for the Cast on Elemental Ailment setup."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemImpetusTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Boundless Energy II\nUpgrade from Boundless Energy I for the Cast on Elemental Ailment setup."
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gem/SkillGemFireball",
+      "level_interval": [1, 100],
+      "additional_text": "<b>{Fireball}\nTrigger payload, not a separate main-skill recommendation. Manually socket alongside Flame Wall in Cast on Elemental Ailment before the crit swap, then in Cast on Critical afterwards.\nBoth triggers require a level 14 Uncut Spirit Gem and have 100 Spirit base reservation before modifiers. Both setups use Boundless Energy I/II, Ignite II, and Energy Retention.\nMeta-gem support in the planner is experimental."
+    },
+    {
+      "id": "Metadata/Items/Gems/SkillGemCastOnCritical",
+      "level_interval": [1, 100],
+      "additional_text": "<b>{Cast on Critical}\nRequires a level 14 Uncut Spirit Gem.\n<green>{Replace Cast on Elemental Ailment after the crit swap.}\nOriginal planning note: +90 Spirit. Current gem data lists 100 Spirit base reservation; verify the effective reservation and available Spirit for your character.\nManually socket Flame Wall and Fireball as the triggered skills. Planned supports: Boundless Energy I/II, Ignite II, Energy Retention.\n<yellow>{Experimental: GGG documents meta gems as unsupported. Verify this recommendation in-game; the same setup is recorded on Flame Wall and Fireball as a fallback.}",
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gem/SupportGemImpetus",
+          "level_interval": [1, 100],
+          "additional_text": "Boundless Energy I\nSupport for the Cast on Critical setup."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemIgnitionTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Ignite II\nSupport for the Cast on Critical setup."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemEnergyRetention",
+          "level_interval": [1, 100],
+          "additional_text": "Energy Retention\nSupport for the Cast on Critical setup."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemImpetusTwo",
+          "level_interval": [1, 100],
+          "additional_text": "Boundless Energy II\nUpgrade from Boundless Energy I for the Cast on Critical setup."
+        }
+      ]
+    }
+  ]
+}
