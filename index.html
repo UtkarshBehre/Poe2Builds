@@ -422,6 +422,18 @@
       overflow-wrap: anywhere;
     }
 
+    .modifier-cutoffs {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 12px;
+    }
+
+    .modifier-cutoffs .dmg-tiers h3 { font-size: 1.05em; }
+    .modifier-cutoffs .tier-row { font-size: 1em; gap: 6px 0; }
+    .modifier-cutoffs .tier-chip { padding: 5px 10px; }
+    .modifier-cutoffs .tier-chip .tc-val { font-size: 0.8em; }
+
     .spark-skills th:first-child { width: 64px; }
     .spark-skills th:nth-child(2) { width: 18%; }
     .spark-skills td { overflow-wrap: anywhere; }
@@ -429,8 +441,11 @@
     @media (max-width: 800px) {
       body { padding: 16px; }
       .tabs { flex-wrap: wrap; }
+      .modifier-cutoffs { grid-template-columns: 1fr; gap: 0; }
       #spark-comet-details .skills-layout { flex-direction: column; }
       #spark-comet-details .gem-priority { max-width: none; width: 100%; }
+      .quest-choices { flex-direction: column; }
+      .quest-choices .skills-tree { max-width: 100%; width: 100%; margin: 0; }
       .spark-skills { table-layout: fixed; }
       .spark-skills th:nth-child(2) { width: 28%; }
       .spark-skills th { overflow-wrap: anywhere; }
@@ -771,8 +786,8 @@
 
 <div id="spark-comet-details" data-campaign-build="spark-comet" hidden>
 <h2 class="page-heading">Spark-Comet - Modifier Tier Cutoffs</h2>
-<p><em>Each chip shows the modifier tier, minimum item level, and roll range from the supplied screenshots.</em></p>
 
+<div class="modifier-cutoffs">
 <div class="dmg-tiers">
   <h3>Gain % of Damage as Extra Lightning Damage</h3>
   <div class="tier-row">
@@ -790,6 +805,7 @@
   </div>
 </div>
 
+<div class="skill-level-cutoffs">
 <div class="dmg-tiers">
   <h3>+ to Level of all Spell Skills</h3>
   <div class="tier-row">
@@ -818,6 +834,9 @@
     <span class="tier-chip" title="of Inferno"><span class="tc-tier">T1</span><span class="tc-lvl">81</span><span class="tc-val">+7</span></span>
   </div>
 </div>
+
+</div><!-- .skill-level-cutoffs -->
+</div><!-- .modifier-cutoffs -->
 
 <h2 class="page-heading">Spark-Comet - Gems and Supports</h2>
 <div class="skills-layout">
@@ -925,6 +944,27 @@
     </table>
   </div>
 </div>
+<div class="quest-choices" style="display:flex; gap:24px; align-items:flex-start; margin: 16px 0;">
+  <div style="flex:1;">
+    <h3 style="color:#c8a84b; font-size:0.95em; margin-bottom:6px; padding-bottom:3px; border-bottom:1px solid #2a2a2a;">Quest Choices</h3>
+    <table aria-label="Spark-Comet quest choices">
+      <thead><tr><th scope="col">Quest</th><th scope="col">Choice</th></tr></thead>
+      <tbody>
+        <tr><td>Valley of the Titans</td><td>+1 Charm, 30% Charge Generation (Left)</td></tr>
+        <tr><td>Venom Crypts Vial</td><td>Elemental Ailment Threshold</td></tr>
+        <tr><td>Abandoned Prison Chapel</td><td>Mana Flask Recovery</td></tr>
+        <tr><td>Halls of the Dead Totems</td><td>+5% to Fire, Cold, and Lightning Resistances</td></tr>
+        <tr><td>Qimah The Seven Pillars</td><td>+5% to all Elemental Resistances</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="skills-tree">
+    <img src="icons/Spark_Comet_Tree_Screenshot.png" alt="Spark-Comet Passive Tree" title="Click to enlarge or restore" class="passive-tree" onclick="this.classList.toggle('maximized')">
+  </div>
+</div>
+
+<hr>
+
 <div class="meta" style="margin-top:16px; line-height:2;">
   <p><strong>Legend:</strong> <code>I, II, III...</code> = Gem cutting levels &nbsp;|&nbsp; <code>[text]</code> = Notes &nbsp;|&nbsp; Hover a support name for its support tiers.</p>
   <p><strong>Colors:</strong> <span class="str">■ Strength</span> · <span class="dex">■ Dexterity</span> · <span class="int">■ Intelligence</span> · <span class="lineage">■ Lineage</span></p>

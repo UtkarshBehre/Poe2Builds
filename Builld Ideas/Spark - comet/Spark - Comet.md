@@ -20,6 +20,22 @@ Read each tier from left to right:
 - **Tier 4:** Short Fuse II on Frost Bomb; Remnant Potency III on Mana Remnants.
 - **Tier 5:** Pierce III on Spark; Projectile Acceleration III on Spark; Cold Mastery on Siphon Elements.
 
+## Quest Choices
+
+| Quest | Choice |
+|-------|--------|
+| Valley of the Titans | +1 Charm, 30% Charge Generation (Left) |
+| Venom Crypts Vial | Elemental Ailment Threshold |
+| Abandoned Prison Chapel | Mana Flask Recovery |
+| Halls of the Dead Totems | +5% to Fire, Cold, and Lightning Resistances |
+| Qimah The Seven Pillars | +5% to all Elemental Resistances |
+
+## Passive Tree
+
+The supplied screenshot is shown beside Quest Choices in the guide. Click it to enlarge or restore it.
+
+![Spark-Comet Passive Tree](../../icons/Spark_Comet_Tree_Screenshot.png)
+
 ## Build Notes
 
 Galvanic Field -> Chain I, Chain II, Chain III, Bounty I, Bounty II, OverAbundance I, OverAbundance II, Momentum, mobility
