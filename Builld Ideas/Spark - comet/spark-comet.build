@@ -1128,9 +1128,9 @@
           "additional_text": "Short Fuse I\nCampaign cutting priority: tier 2 group, choice 3."
         },
         {
-          "id": "Metadata/Items/Gem/SupportGemStripAway",
+          "id": "Metadata/Items/Gems/SupportGemSpellEcho",
           "level_interval": [1, 46],
-          "additional_text": "Potent Exposure\nCampaign cutting priority: tier 2 group, choice 4."
+          "additional_text": "Spell Echo\nCampaign cutting priority: tier 2 group, choice 4."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemExpediteTwo",

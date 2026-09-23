@@ -15,7 +15,7 @@ Support colors use the requirements verified on [PoE2DB's support index](https:/
 Read each tier from left to right:
 
 - **Tier 1:** Pierce I on Spark; Controlled Destruction on Spark; Overabundance I on Orb of Storms; Fortress I on Flame Wall; Spell Cascade on Flame Wall.
-- **Tier 2:** Considered Casting on Spark; Controlled Destruction on Orb of Storms (move the existing gem from Spark; do not cut another); Short Fuse I on Frost Bomb; Potent Exposure on Frost Bomb; Harmonic Remnants II on Mana Remnants.
+- **Tier 2:** Considered Casting on Spark; Controlled Destruction on Orb of Storms (move the existing gem from Spark; do not cut another); Short Fuse I on Frost Bomb; Spell Echo on Frost Bomb; Harmonic Remnants II on Mana Remnants.
 - **Tier 3:** Pierce II on Spark; Prolonged Duration II on Spark; Remnant Potency II on Mana Remnants; Spell Echo on Comet; Elemental Focus on Comet; Fortress II on Flame Wall.
 - **Tier 4:** Short Fuse II on Frost Bomb; Remnant Potency III on Mana Remnants.
 - **Tier 5:** Pierce III on Spark; Projectile Acceleration III on Spark; Cold Mastery on Siphon Elements.
