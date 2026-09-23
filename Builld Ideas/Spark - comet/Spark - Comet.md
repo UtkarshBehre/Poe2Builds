@@ -47,7 +47,7 @@ Take the connecting small passive first, then its notable:
 | 3rd | Shock Chance | Strike Twice |
 | 4th | Shock Chance (after Strike Twice) | Shaper of Storms |
 
-The build declares `Sorceress1` (Stormweaver) and includes these eight nodes for levels 1-100, with allocation order in their hover notes. Node IDs and connections are verified against [GGG's passive-tree export](https://github.com/grindinggear/poe2-skilltree-export).
+The build declares `Sorceress1` (Stormweaver). This allocation order is retained as a reference; ascendancy nodes will be included in the appropriate leveling stages rather than as generic level 1-100 recommendations. Node IDs and connections are verified against [GGG's passive-tree export](https://github.com/grindinggear/poe2-skilltree-export).
 
 ## In-game Build Planner
 
@@ -66,7 +66,41 @@ All listed skill gems except the weapon-granted Galvanic Field are recommended f
 
 These are recommendation ranges, not overrides of gem requirements or simultaneous socket setups. A support present in both ranges has separate non-overlapping recommendation entries.
 
-The character passive recommendations use the previous final level 53-80 tree for the entire level 1-100 range. Earlier-only branches are removed, final attribute choices replace stage-specific respec instructions, and shared / weapon-set 1 / weapon-set 2 allocations are preserved. This is the final-tree blueprint, not a leveling allocation order or an Atlas tree.
+Passive recommendations are incremental: each range shows only nodes newly added or changed from the preceding screenshot, not the complete target tree. Unchanged earlier recommendations stop appearing, even if the player has not allocated them yet. At level 20, for example, only the 24 additions for levels 15-28 are recommended; none of the 19 nodes from levels 1-14 are repeated.
+
+| Character levels | New or changed recommendations |
+|------------------|--------------------------------|
+| 1-14 | 19 |
+| 15-28 | 24 |
+| 29-44 | 22 |
+| 45-54 | 20 |
+| 55-61 | 12 |
+| 62-65 | 16 |
+| 66-74 | 10 |
+| 75-84 | 10 |
+| 85-92 | 7 |
+| 93-95 | 17, including Raw Power's change from shared to weapon set 1 |
+| 96-100 | None |
+
+Respecs still require manual refunds. Hover notes on the new routes at levels 55-61 and 93-95 explain which old paths to refund. A changed weapon-set or attribute recommendation may show an earlier node again; unchanged recommendations do not.
+
+The complete screenshot targets are retained below as reference totals, not counts of highlighted recommendations:
+
+| Character levels | Screenshot target (reference only) |
+|------------------|--------------|
+| 1-14 | Level 14 screenshot: 13 shared nodes, 4 weapon-set-1 nodes toward Exploit the Elements, and 2 weapon-set-2 nodes toward Affliction Enforcer via the lower Elemental Ailment Chance node. The top travel attribute is +5 Dexterity; the two left travel attributes are +5 Intelligence. |
+| 15-28 | 27 shared nodes, 8 weapon-set-1 nodes, and 8 weapon-set-2 nodes. Adds shared Potent Incantation and a travel jewel socket, Empowering Infusions and Infusion Consumption Chance on set 1, and Secrets of the Orb plus Stripped Defences via the lower Elemental Damage node on set 2. The travel attributes beside Potent Incantation and the exposure cluster are +5 Strength; the new northern travel attributes are +5 Intelligence. |
+| 29-44 | 41 shared nodes, 12 weapon-set-1 nodes, and 12 weapon-set-2 nodes. Adds shared Hastening Barrier, two Energy Shield nodes, Frozen Limit, and northern travel with +5 Intelligence choices. Set 1 adds a second Infusion Consumption Chance node and Preservation through both Increased Duration nodes. Set 2 adds Overexposure via the right Exposure Effect node and one Reduced Duration node. |
+| 45-54 | 53 shared nodes, 16 weapon-set-1 nodes, and 16 weapon-set-2 nodes. Adds shared Practiced Signs, Heavy Buffer with the lower Energy Shield node, Convalescence through all three Energy Shield Delay nodes, and northeastern travel with a jewel socket and +5 Intelligence choices. Set 1 adds Everlasting Infusions and Turn the Clock Forward via the lower projectile branch. Set 2 completes Forthcoming and adds two Additional Remnant Chance nodes. |
+| 55-61 | 56 shared nodes, 20 weapon-set-1 nodes, and 20 weapon-set-2 nodes. Extends west through Energy Shield and two +5 Intelligence travel nodes. Set 1 adds Chronomancy via two Duration nodes and one Remnant Pickup Range node. Set 2 adds Remnant Attraction and respecs the inner Elemental Damage node below Overexposure into the outer-right route, also taking the left Exposure Effect and Elemental Ailment Chance nodes. |
+| 62-65 | 64 shared nodes and 24 per weapon set. Adds shared Shimmering Mirage through the lower threshold path (+5 Strength on its travel attribute), southeastern travel with two +5 Intelligence choices, and two Elemental Damage entry nodes. Set 1 adds Echoing Frost, Echoing Thunder, and Echoing Flames through their central Elemental Damage node. Set 2 adds Roil through three Spell Area of Effect nodes. |
+| 66-74 | 74 shared nodes and 24 per weapon set. Adds shared Soul Bloom through three Energy Shield Delay nodes, Hallowed from the lower threshold node, and Pure Energy via Cast Speed from Practiced Signs, continuing to Dampening Shield through the lower-left threshold node. Weapon-set branches are unchanged. |
+| 75-84 | 84 shared nodes and 24 per weapon set. Adds four +5 Intelligence travel nodes west along the upper route, Infusing Power via Infusion Duration and both Infusion Chance nodes, and shared Principal Infusion via the lower Infused Spell Damage node. Weapon-set branches are unchanged. |
+| 85-92 | 91 shared nodes and 24 per weapon set. Adds shared Illuminated Crown and a far-left route through a jewel socket and +5 Strength travel node to Touch the Arcane, taking Mana Regeneration and both Arcane Surge Effect nodes. Weapon-set branches are unchanged. |
+| 93-95 | Final screenshot: 94 shared nodes and 24 per weapon set. Replaces the early spell-damage chain with four +5 Intelligence travel nodes and makes Raw Power set-1-only, removing that set's Remnant Pickup Range node. Removes the lower elemental and Practiced Signs / Pure Energy paths; Affliction Enforcer (set 2), Principal Infusion (shared), and Dampening Shield (shared) are approached from above instead. Adds a +5 Intelligence travel node, Patient Barrier, Ether Flow, and Abasement. |
+| 96-100 | No passive recommendations specified. |
+
+Each range shows its additions and changes together, not an individual point-by-point order. Later-stage boundaries are 75-84, 85-92, and 93-95, switching at each new stage's start without overlap. There are no generic level 1-100 passive recommendations.
 
 The weapon-slot (`Weapon1`) Build Planner tooltip shows all three modifier cutoff groups from the guide for levels 1-100: extra lightning damage, all Spell Skill levels, and Fire Spell Skill levels (also applicable to Cold and Lightning). Each row lists the modifier tier, minimum item level, and roll. To keep it compact, the tooltip contains only rows, with blank lines between groups and the highest tier first within each group.
 

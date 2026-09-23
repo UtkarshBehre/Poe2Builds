@@ -1,818 +1,950 @@
 {
   "name": "Spark - Comet",
   "author": "UtkarshBehre",
-  "description": "Spark-Comet: priority supports at levels 1-46, full support options at 47-100, and the final passive tree for levels 1-100.",
+  "description": "Spark-Comet: priority supports at levels 1-46, full supports at 47-100, and new passive allocations per level range.",
   "ascendancy": "Sorceress1",
   "passives": [
     {
       "id": "spells18",
-      "level_interval": [1, 100],
+      "level_interval": [1, 14],
       "weapon_set": 0,
       "additional_text": "Spell Damage"
     },
     {
       "id": "spells15",
-      "level_interval": [1, 100],
+      "level_interval": [1, 14],
       "weapon_set": 0,
       "additional_text": "Spell Damage"
     },
     {
       "id": "spell_criticals2__",
-      "level_interval": [1, 100],
+      "level_interval": [1, 14],
       "weapon_set": 0,
       "additional_text": "Spell Damage"
     },
     {
       "id": "spell_criticals1",
-      "level_interval": [1, 100],
+      "level_interval": [1, 14],
       "weapon_set": 0,
       "additional_text": "Spell Damage"
     },
     {
       "id": "witch_sorceress_notable1",
-      "level_interval": [1, 100],
+      "level_interval": [1, 14],
       "weapon_set": 0,
       "additional_text": "Raw Power"
     },
     {
-      "id": "cast_speed10",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Cast Speed"
-    },
-    {
-      "id": "cast_speed36_",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Practiced Signs"
-    },
-    {
       "id": "elemental14",
-      "level_interval": [1, 100],
+      "level_interval": [1, 14],
       "weapon_set": 0,
       "additional_text": "Elemental Damage"
     },
     {
       "id": "cold2",
-      "level_interval": [1, 100],
+      "level_interval": [1, 14],
       "weapon_set": 0,
       "additional_text": "Elemental Damage"
     },
     {
       "id": "cold34",
-      "level_interval": [1, 100],
+      "level_interval": [1, 14],
       "weapon_set": 0,
       "additional_text": "Elemental Force"
     },
     {
       "id": "sorcerer_start2",
-      "level_interval": [1, 100],
+      "level_interval": [1, 14],
       "weapon_set": 0,
       "additional_text": "Elemental Damage"
     },
     {
       "id": "elemental15",
-      "level_interval": [1, 100],
+      "level_interval": [1, 14],
       "weapon_set": 0,
       "additional_text": "Elemental Damage"
     },
     {
       "id": "intelligence15",
-      "level_interval": [1, 100],
+      "level_interval": [1, 14],
       "weapon_set": 0,
-      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
+      "additional_text": "Attribute\n<green>{+5 Dexterity.}"
     },
     {
       "id": "intelligence35_",
-      "level_interval": [1, 100],
+      "level_interval": [1, 14],
       "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the final screenshot.}"
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
     },
     {
       "id": "intelligence83",
-      "level_interval": [1, 100],
+      "level_interval": [1, 14],
       "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the final screenshot.}"
-    },
-    {
-      "id": "intelligence16",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
-    },
-    {
-      "id": "intelligence86",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
     },
     {
       "id": "exploiting_elemental_ailments3",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Damage against Ailments\nShared entry into the ailment cluster."
+      "level_interval": [1, 14],
+      "weapon_set": 1,
+      "additional_text": "Damage against Ailments\nWeapon set 1."
     },
     {
       "id": "exploiting_elemental_ailments4",
-      "level_interval": [1, 100],
+      "level_interval": [1, 14],
       "weapon_set": 1,
       "additional_text": "Damage against Ailments\nWeapon set 1."
     },
     {
       "id": "exploiting_elemental_ailments5",
-      "level_interval": [1, 100],
+      "level_interval": [1, 14],
       "weapon_set": 1,
       "additional_text": "Damage against Ailments\nWeapon set 1."
     },
     {
       "id": "exploiting_elemental_ailments16",
-      "level_interval": [1, 100],
+      "level_interval": [1, 14],
       "weapon_set": 1,
       "additional_text": "Exploit the Elements\nWeapon set 1."
     },
     {
-      "id": "lightning6",
-      "level_interval": [1, 100],
-      "weapon_set": 1,
-      "additional_text": "Infused Spell Damage\nWeapon set 1."
-    },
-    {
-      "id": "lightning34",
-      "level_interval": [1, 100],
-      "weapon_set": 1,
-      "additional_text": "Principal Infusion\nWeapon set 1."
-    },
-    {
-      "id": "sorcerer_start1",
-      "level_interval": [1, 100],
+      "id": "fire3",
+      "level_interval": [1, 14],
       "weapon_set": 2,
       "additional_text": "Elemental Ailment Chance\nWeapon set 2."
     },
     {
       "id": "fire32",
-      "level_interval": [1, 100],
+      "level_interval": [1, 14],
       "weapon_set": 2,
       "additional_text": "Affliction Enforcer\nWeapon set 2."
     },
     {
+      "id": "intelligence16",
+      "level_interval": [15, 28],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<red>{+5 Strength.}"
+    },
+    {
+      "id": "spells1",
+      "level_interval": [15, 28],
+      "weapon_set": 0,
+      "additional_text": "Spell Damage"
+    },
+    {
+      "id": "spells3",
+      "level_interval": [15, 28],
+      "weapon_set": 0,
+      "additional_text": "Spell Damage"
+    },
+    {
+      "id": "spells12",
+      "level_interval": [15, 28],
+      "weapon_set": 0,
+      "additional_text": "Spell Damage"
+    },
+    {
+      "id": "spells33",
+      "level_interval": [15, 28],
+      "weapon_set": 0,
+      "additional_text": "Potent Incantation"
+    },
+    {
+      "id": "intelligence86",
+      "level_interval": [15, 28],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<red>{+5 Strength.}"
+    },
+    {
       "id": "elemental60",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Elemental Damage\nShared entry into the exposure cluster."
-    },
-    {
-      "id": "elemental58_",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Exposure Effect\nWeapon set 2."
-    },
-    {
-      "id": "elemental59",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Exposure Effect\nWeapon set 2."
-    },
-    {
-      "id": "elemental61_",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Stripped Defences\nWeapon set 2."
-    },
-    {
-      "id": "intelligence37",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<red>{+5 Strength, matching the final screenshot.}"
-    },
-    {
-      "id": "intelligence38",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<red>{+5 Strength, matching the final screenshot.}"
-    },
-    {
-      "id": "intelligence2",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
-    },
-    {
-      "id": "intelligence49",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
-    },
-    {
-      "id": "attributes14",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
-    },
-    {
-      "id": "attributes13",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
-    },
-    {
-      "id": "jewel_slot1969",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Jewel Socket\nAllocate this travel socket; no particular jewel has been specified."
-    },
-    {
-      "id": "intelligence51",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
-    },
-    {
-      "id": "passive_keystone_elemental_equilibrium",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Elemental Equilibrium"
-    },
-    {
-      "id": "mana_regeneration31_",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Mana Regeneration\nShared entry into the Arcane Surge cluster."
-    },
-    {
-      "id": "mana_regeneration26",
-      "level_interval": [1, 100],
-      "weapon_set": 1,
-      "additional_text": "Arcane Surge Effect\nWeapon set 1."
-    },
-    {
-      "id": "mana_regeneration27",
-      "level_interval": [1, 100],
-      "weapon_set": 1,
-      "additional_text": "Arcane Surge Effect\nWeapon set 1."
-    },
-    {
-      "id": "mana_regeneration28_",
-      "level_interval": [1, 100],
-      "weapon_set": 1,
-      "additional_text": "Touch the Arcane\nWeapon set 1."
-    },
-    {
-      "id": "elemental12",
-      "level_interval": [1, 100],
+      "level_interval": [15, 28],
       "weapon_set": 0,
       "additional_text": "Elemental Damage"
     },
     {
-      "id": "elemental11_",
-      "level_interval": [1, 100],
+      "id": "intelligence6",
+      "level_interval": [15, 28],
       "weapon_set": 0,
-      "additional_text": "Elemental Damage"
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
     },
     {
-      "id": "energy_shield42__",
-      "level_interval": [1, 100],
+      "id": "attributes21",
+      "level_interval": [15, 28],
       "weapon_set": 0,
-      "additional_text": "Energy Shield"
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
     },
     {
-      "id": "energy_shield43",
-      "level_interval": [1, 100],
+      "id": "jewel_slot1972",
+      "level_interval": [15, 28],
       "weapon_set": 0,
-      "additional_text": "Energy Shield"
-    },
-    {
-      "id": "energy_shield38",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Heavy Buffer"
-    },
-    {
-      "id": "exploiting_elemental_ailments6",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Ailment Chance\nWeapon set 2."
-    },
-    {
-      "id": "exploiting_elemental_ailments7",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Ailment Chance\nWeapon set 2."
-    },
-    {
-      "id": "fire3",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Elemental Ailment Chance\nWeapon set 2."
-    },
-    {
-      "id": "elemental39",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "All Natural"
-    },
-    {
-      "id": "elemental13",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Elemental Damage"
-    },
-    {
-      "id": "elemental37_",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Breaking Point"
-    },
-    {
-      "id": "cast_speed24",
-      "level_interval": [1, 100],
-      "weapon_set": 1,
-      "additional_text": "Cast Speed\nWeapon set 1."
-    },
-    {
-      "id": "cast_speed29",
-      "level_interval": [1, 100],
-      "weapon_set": 1,
-      "additional_text": "Cast Speed\nWeapon set 1."
-    },
-    {
-      "id": "cast_speed40",
-      "level_interval": [1, 100],
-      "weapon_set": 1,
-      "additional_text": "Hastening Barrier\nWeapon set 1."
-    },
-    {
-      "id": "attributes78",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
-    },
-    {
-      "id": "intelligence47",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
+      "additional_text": "Jewel Socket"
     },
     {
       "id": "intelligence46",
-      "level_interval": [1, 100],
+      "level_interval": [15, 28],
       "weapon_set": 0,
-      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
     },
     {
-      "id": "orb1",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Spell Damage and Cast Speed\nWeapon set 2."
-    },
-    {
-      "id": "orb3",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Spell Damage and Cast Speed\nWeapon set 2."
-    },
-    {
-      "id": "orb4",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Spell Damage and Cast Speed\nWeapon set 2."
-    },
-    {
-      "id": "orb5",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Secrets of the Orb\nWeapon set 2."
-    },
-    {
-      "id": "energy_shield41",
-      "level_interval": [1, 100],
+      "id": "intelligence47",
+      "level_interval": [15, 28],
       "weapon_set": 0,
-      "additional_text": "Energy Shield"
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
     },
     {
-      "id": "energy_shield29",
-      "level_interval": [1, 100],
+      "id": "attributes78",
+      "level_interval": [15, 28],
       "weapon_set": 0,
-      "additional_text": "Energy Shield"
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
     },
     {
       "id": "infusion11",
-      "level_interval": [1, 100],
-      "weapon_set": 1,
-      "additional_text": "Infusion Duration\nWeapon set 1."
+      "level_interval": [15, 28],
+      "weapon_set": 0,
+      "additional_text": "Infusion Duration"
     },
     {
       "id": "infusion12",
-      "level_interval": [1, 100],
+      "level_interval": [15, 28],
       "weapon_set": 1,
       "additional_text": "Infused Spell Damage\nWeapon set 1."
     },
     {
       "id": "infusion13",
-      "level_interval": [1, 100],
+      "level_interval": [15, 28],
       "weapon_set": 1,
       "additional_text": "Infused Spell Damage\nWeapon set 1."
     },
     {
-      "id": "infusion14",
-      "level_interval": [1, 100],
-      "weapon_set": 1,
-      "additional_text": "Infusion Consumption Chance\nWeapon set 1."
-    },
-    {
-      "id": "infusion15",
-      "level_interval": [1, 100],
-      "weapon_set": 1,
-      "additional_text": "Infusion Consumption Chance\nWeapon set 1."
-    },
-    {
-      "id": "infusion3",
-      "level_interval": [1, 100],
-      "weapon_set": 1,
-      "additional_text": "Everlasting Infusions\nWeapon set 1."
-    },
-    {
       "id": "infusion4",
-      "level_interval": [1, 100],
+      "level_interval": [15, 28],
       "weapon_set": 1,
       "additional_text": "Empowering Infusions\nWeapon set 1."
     },
     {
-      "id": "elemental53",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Elemental Damage"
-    },
-    {
-      "id": "elemental21",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Elemental Damage"
-    },
-    {
-      "id": "elemental34",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Exposure Effect\nWeapon set 2."
-    },
-    {
-      "id": "elemental35",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Exposure Effect\nWeapon set 2."
-    },
-    {
-      "id": "elemental36",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Overexposure\nWeapon set 2."
-    },
-    {
-      "id": "intelligence6",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
-    },
-    {
-      "id": "mana22",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Energy Shield Delay"
-    },
-    {
-      "id": "mana24",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Energy Shield Delay"
-    },
-    {
-      "id": "mana40",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Soul Bloom"
-    },
-    {
-      "id": "mana21",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Energy Shield Delay"
-    },
-    {
-      "id": "infusion10",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Infusion Duration\nWeapon set 2."
-    },
-    {
-      "id": "infusion7",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Infusion Chance\nWeapon set 2."
-    },
-    {
-      "id": "infusion6",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Infusion Chance\nWeapon set 2."
-    },
-    {
-      "id": "infusion2",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Infusing Power\nWeapon set 2."
-    },
-    {
-      "id": "energy_shield_recovery32_",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Energy Shield Delay"
-    },
-    {
-      "id": "energy_shield_recovery33",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Energy Shield Delay"
-    },
-    {
-      "id": "energy_shield_recovery18",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Dependable Ward"
-    },
-    {
-      "id": "slowed_enemies6",
-      "level_interval": [1, 100],
+      "id": "infusion14",
+      "level_interval": [15, 28],
       "weapon_set": 1,
-      "additional_text": "Duration\nWeapon set 1."
+      "additional_text": "Infusion Consumption Chance\nWeapon set 1."
     },
     {
-      "id": "slowed_enemies8",
-      "level_interval": [1, 100],
-      "weapon_set": 1,
-      "additional_text": "Duration\nWeapon set 1."
+      "id": "elemental57",
+      "level_interval": [15, 28],
+      "weapon_set": 2,
+      "additional_text": "Elemental Damage\nWeapon set 2."
     },
     {
-      "id": "slowed_enemies10",
-      "level_interval": [1, 100],
-      "weapon_set": 1,
-      "additional_text": "Chronomancy\nWeapon set 1."
+      "id": "elemental61_",
+      "level_interval": [15, 28],
+      "weapon_set": 2,
+      "additional_text": "Stripped Defences\nWeapon set 2."
     },
     {
-      "id": "energy_shield39",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Illuminated Crown"
+      "id": "orb1",
+      "level_interval": [15, 28],
+      "weapon_set": 2,
+      "additional_text": "Spell Damage and Cast Speed\nWeapon set 2."
     },
     {
-      "id": "attributes21",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
+      "id": "orb3",
+      "level_interval": [15, 28],
+      "weapon_set": 2,
+      "additional_text": "Spell Damage and Cast Speed\nWeapon set 2."
     },
     {
-      "id": "jewel_slot1972",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Jewel Socket\nAllocate this travel socket; no particular jewel has been specified."
+      "id": "orb4",
+      "level_interval": [15, 28],
+      "weapon_set": 2,
+      "additional_text": "Spell Damage and Cast Speed\nWeapon set 2."
     },
     {
-      "id": "intelligence57",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
+      "id": "orb5",
+      "level_interval": [15, 28],
+      "weapon_set": 2,
+      "additional_text": "Secrets of the Orb\nWeapon set 2."
     },
     {
-      "id": "intelligence56",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
-    },
-    {
-      "id": "intelligence45",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
-    },
-    {
-      "id": "cast_speed15_",
-      "level_interval": [1, 100],
+      "id": "cast_speed24",
+      "level_interval": [29, 44],
       "weapon_set": 0,
       "additional_text": "Cast Speed"
     },
     {
-      "id": "witch_sorceress_notable2",
-      "level_interval": [1, 100],
+      "id": "cast_speed29",
+      "level_interval": [29, 44],
       "weapon_set": 0,
-      "additional_text": "Pure Energy"
+      "additional_text": "Cast Speed"
     },
     {
-      "id": "energy_shield10_",
-      "level_interval": [1, 100],
+      "id": "cast_speed40",
+      "level_interval": [29, 44],
       "weapon_set": 0,
-      "additional_text": "Stun and Ailment Threshold from Energy Shield"
+      "additional_text": "Hastening Barrier"
     },
     {
-      "id": "energy_shield37",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Dampening Shield"
-    },
-    {
-      "id": "energy_shield_recovery24",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Energy Shield Delay"
-    },
-    {
-      "id": "energy_shield_recovery14",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Rapid Recharge"
-    },
-    {
-      "id": "remnant1",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Remnant Pickup Range\nWeapon set 2. Final central branch."
-    },
-    {
-      "id": "remnant5",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Remnant Pickup Range\nWeapon set 2. Final central branch."
-    },
-    {
-      "id": "intelligence58",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
-    },
-    {
-      "id": "intelligence59",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
-    },
-    {
-      "id": "intelligence60",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
-    },
-    {
-      "id": "attributes1",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<red>{+5 Strength, matching the screenshot.}"
-    },
-    {
-      "id": "intelligence102",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Intelligence"
-    },
-    {
-      "id": "energy_shield46_",
-      "level_interval": [1, 100],
+      "id": "energy_shield29",
+      "level_interval": [29, 44],
       "weapon_set": 0,
       "additional_text": "Energy Shield"
     },
     {
-      "id": "energy_shield33_",
-      "level_interval": [1, 100],
+      "id": "energy_shield41",
+      "level_interval": [29, 44],
       "weapon_set": 0,
-      "additional_text": "Patient Barrier"
+      "additional_text": "Energy Shield"
+    },
+    {
+      "id": "elemental53",
+      "level_interval": [29, 44],
+      "weapon_set": 0,
+      "additional_text": "Elemental Damage"
+    },
+    {
+      "id": "intelligence57",
+      "level_interval": [29, 44],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "intelligence56",
+      "level_interval": [29, 44],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "infusion19_",
+      "level_interval": [29, 44],
+      "weapon_set": 0,
+      "additional_text": "Infused Spell Damage"
+    },
+    {
+      "id": "infusion23",
+      "level_interval": [29, 44],
+      "weapon_set": 0,
+      "additional_text": "Frozen Limit"
+    },
+    {
+      "id": "intelligence45",
+      "level_interval": [29, 44],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "intelligence58",
+      "level_interval": [29, 44],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "intelligence59",
+      "level_interval": [29, 44],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "intelligence60",
+      "level_interval": [29, 44],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "infusion15",
+      "level_interval": [29, 44],
+      "weapon_set": 1,
+      "additional_text": "Infusion Consumption Chance\nWeapon set 1."
     },
     {
       "id": "duration12",
-      "level_interval": [1, 100],
+      "level_interval": [29, 44],
       "weapon_set": 1,
       "additional_text": "Increased Duration\nWeapon set 1."
     },
     {
       "id": "duration10",
-      "level_interval": [1, 100],
+      "level_interval": [29, 44],
       "weapon_set": 1,
       "additional_text": "Increased Duration\nWeapon set 1."
     },
     {
       "id": "duration6",
-      "level_interval": [1, 100],
+      "level_interval": [29, 44],
       "weapon_set": 1,
       "additional_text": "Preservation\nWeapon set 1."
     },
     {
+      "id": "elemental21",
+      "level_interval": [29, 44],
+      "weapon_set": 2,
+      "additional_text": "Elemental Damage\nWeapon set 2."
+    },
+    {
+      "id": "elemental35",
+      "level_interval": [29, 44],
+      "weapon_set": 2,
+      "additional_text": "Exposure Effect\nWeapon set 2."
+    },
+    {
+      "id": "elemental36",
+      "level_interval": [29, 44],
+      "weapon_set": 2,
+      "additional_text": "Overexposure\nWeapon set 2."
+    },
+    {
       "id": "duration7",
-      "level_interval": [1, 100],
+      "level_interval": [29, 44],
       "weapon_set": 2,
       "additional_text": "Reduced Duration\nWeapon set 2."
     },
     {
-      "id": "duration9_",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Reduced Duration\nWeapon set 2."
+      "id": "cast_speed10",
+      "level_interval": [45, 54],
+      "weapon_set": 0,
+      "additional_text": "Cast Speed"
     },
     {
-      "id": "duration11",
-      "level_interval": [1, 100],
-      "weapon_set": 2,
-      "additional_text": "Forthcoming\nWeapon set 2."
+      "id": "cast_speed36_",
+      "level_interval": [45, 54],
+      "weapon_set": 0,
+      "additional_text": "Practiced Signs"
+    },
+    {
+      "id": "energy_shield38",
+      "level_interval": [45, 54],
+      "weapon_set": 0,
+      "additional_text": "Heavy Buffer"
+    },
+    {
+      "id": "energy_shield43",
+      "level_interval": [45, 54],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield"
+    },
+    {
+      "id": "attributes1",
+      "level_interval": [45, 54],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
     },
     {
       "id": "energy_shield_recovery26",
-      "level_interval": [1, 100],
+      "level_interval": [45, 54],
       "weapon_set": 0,
       "additional_text": "Energy Shield Delay"
     },
     {
       "id": "energy_shield_recovery27",
-      "level_interval": [1, 100],
+      "level_interval": [45, 54],
       "weapon_set": 0,
       "additional_text": "Energy Shield Delay"
     },
     {
       "id": "energy_shield_recovery28",
-      "level_interval": [1, 100],
+      "level_interval": [45, 54],
       "weapon_set": 0,
       "additional_text": "Energy Shield Delay"
     },
     {
       "id": "energy_shield_recovery22",
-      "level_interval": [1, 100],
+      "level_interval": [45, 54],
       "weapon_set": 0,
       "additional_text": "Convalescence"
     },
     {
-      "id": "intelligence84",
-      "level_interval": [1, 100],
+      "id": "jewel_slot1979",
+      "level_interval": [45, 54],
       "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence, matching the screenshot.}"
+      "additional_text": "Jewel Socket"
     },
     {
-      "id": "energy_shield12",
-      "level_interval": [1, 100],
+      "id": "attributes24",
+      "level_interval": [45, 54],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "attributes23",
+      "level_interval": [45, 54],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "infusion3",
+      "level_interval": [45, 54],
+      "weapon_set": 1,
+      "additional_text": "Everlasting Infusions\nWeapon set 1."
+    },
+    {
+      "id": "projectile_spells1",
+      "level_interval": [45, 54],
+      "weapon_set": 1,
+      "additional_text": "Spell Damage\nWeapon set 1."
+    },
+    {
+      "id": "projectile_spells3",
+      "level_interval": [45, 54],
+      "weapon_set": 1,
+      "additional_text": "Spell Damage and Projectile Speed\nWeapon set 1."
+    },
+    {
+      "id": "projectile_spells9",
+      "level_interval": [45, 54],
+      "weapon_set": 1,
+      "additional_text": "Turn the Clock Forward\nWeapon set 1."
+    },
+    {
+      "id": "duration9_",
+      "level_interval": [45, 54],
+      "weapon_set": 2,
+      "additional_text": "Reduced Duration\nWeapon set 2."
+    },
+    {
+      "id": "duration11",
+      "level_interval": [45, 54],
+      "weapon_set": 2,
+      "additional_text": "Forthcoming\nWeapon set 2."
+    },
+    {
+      "id": "remnant17",
+      "level_interval": [45, 54],
+      "weapon_set": 2,
+      "additional_text": "Additional Remnant Chance\nWeapon set 2."
+    },
+    {
+      "id": "remnant12_",
+      "level_interval": [45, 54],
+      "weapon_set": 2,
+      "additional_text": "Additional Remnant Chance\nWeapon set 2."
+    },
+    {
+      "id": "energy_shield42__",
+      "level_interval": [55, 61],
       "weapon_set": 0,
       "additional_text": "Energy Shield"
     },
     {
-      "id": "energy_shield16",
-      "level_interval": [1, 100],
+      "id": "intelligence2",
+      "level_interval": [55, 61],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "intelligence38",
+      "level_interval": [55, 61],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "slowed_enemies6",
+      "level_interval": [55, 61],
+      "weapon_set": 1,
+      "additional_text": "Duration\nWeapon set 1."
+    },
+    {
+      "id": "slowed_enemies8",
+      "level_interval": [55, 61],
+      "weapon_set": 1,
+      "additional_text": "Duration\nWeapon set 1."
+    },
+    {
+      "id": "slowed_enemies10",
+      "level_interval": [55, 61],
+      "weapon_set": 1,
+      "additional_text": "Chronomancy\nWeapon set 1."
+    },
+    {
+      "id": "remnant6",
+      "level_interval": [55, 61],
+      "weapon_set": 1,
+      "additional_text": "Remnant Pickup Range\nWeapon set 1."
+    },
+    {
+      "id": "elemental49",
+      "level_interval": [55, 61],
+      "weapon_set": 2,
+      "additional_text": "Elemental Ailment Duration\nWeapon set 2.\nRespec: refund the inner Elemental Damage node below Overexposure."
+    },
+    {
+      "id": "elemental51",
+      "level_interval": [55, 61],
+      "weapon_set": 2,
+      "additional_text": "Elemental Ailment Chance\nWeapon set 2."
+    },
+    {
+      "id": "elemental34",
+      "level_interval": [55, 61],
+      "weapon_set": 2,
+      "additional_text": "Exposure Effect\nWeapon set 2."
+    },
+    {
+      "id": "elemental52",
+      "level_interval": [55, 61],
+      "weapon_set": 2,
+      "additional_text": "Elemental Ailment Chance\nWeapon set 2."
+    },
+    {
+      "id": "remnant14",
+      "level_interval": [55, 61],
+      "weapon_set": 2,
+      "additional_text": "Remnant Attraction\nWeapon set 2."
+    },
+    {
+      "id": "intelligence69",
+      "level_interval": [62, 65],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<red>{+5 Strength.}"
+    },
+    {
+      "id": "stun_threshold_from_energy_shield13",
+      "level_interval": [62, 65],
+      "weapon_set": 0,
+      "additional_text": "Stun and Ailment Threshold from Energy Shield"
+    },
+    {
+      "id": "stun_threshold_from_energy_shield20",
+      "level_interval": [62, 65],
+      "weapon_set": 0,
+      "additional_text": "Ailment Threshold from Energy Shield"
+    },
+    {
+      "id": "stun_threshold_from_energy_shield21",
+      "level_interval": [62, 65],
+      "weapon_set": 0,
+      "additional_text": "Shimmering Mirage"
+    },
+    {
+      "id": "intelligence62",
+      "level_interval": [62, 65],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "attributes68",
+      "level_interval": [62, 65],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "elemental43",
+      "level_interval": [62, 65],
+      "weapon_set": 0,
+      "additional_text": "Elemental Damage"
+    },
+    {
+      "id": "elemental44",
+      "level_interval": [62, 65],
+      "weapon_set": 0,
+      "additional_text": "Elemental Damage"
+    },
+    {
+      "id": "cold37",
+      "level_interval": [62, 65],
+      "weapon_set": 1,
+      "additional_text": "Echoing Frost\nWeapon set 1."
+    },
+    {
+      "id": "elemental46",
+      "level_interval": [62, 65],
+      "weapon_set": 1,
+      "additional_text": "Elemental Damage\nWeapon set 1."
+    },
+    {
+      "id": "lightning40",
+      "level_interval": [62, 65],
+      "weapon_set": 1,
+      "additional_text": "Echoing Thunder\nWeapon set 1."
+    },
+    {
+      "id": "fire34",
+      "level_interval": [62, 65],
+      "weapon_set": 1,
+      "additional_text": "Echoing Flames\nWeapon set 1."
+    },
+    {
+      "id": "area_spells8_",
+      "level_interval": [62, 65],
+      "weapon_set": 2,
+      "additional_text": "Spell Area of Effect\nWeapon set 2."
+    },
+    {
+      "id": "area_spells9",
+      "level_interval": [62, 65],
+      "weapon_set": 2,
+      "additional_text": "Spell Area of Effect\nWeapon set 2."
+    },
+    {
+      "id": "area_spells11",
+      "level_interval": [62, 65],
+      "weapon_set": 2,
+      "additional_text": "Spell Area of Effect\nWeapon set 2."
+    },
+    {
+      "id": "area_spells24",
+      "level_interval": [62, 65],
+      "weapon_set": 2,
+      "additional_text": "Roil\nWeapon set 2."
+    },
+    {
+      "id": "mana22",
+      "level_interval": [66, 74],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield Delay"
+    },
+    {
+      "id": "mana21",
+      "level_interval": [66, 74],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield Delay"
+    },
+    {
+      "id": "mana24",
+      "level_interval": [66, 74],
+      "weapon_set": 0,
+      "additional_text": "Energy Shield Delay"
+    },
+    {
+      "id": "mana40",
+      "level_interval": [66, 74],
+      "weapon_set": 0,
+      "additional_text": "Soul Bloom"
+    },
+    {
+      "id": "stun_threshold_from_energy_shield8",
+      "level_interval": [66, 74],
+      "weapon_set": 0,
+      "additional_text": "Stun and Ailment Threshold from Energy Shield"
+    },
+    {
+      "id": "stun_threshold_from_energy_shield12",
+      "level_interval": [66, 74],
+      "weapon_set": 0,
+      "additional_text": "Hallowed"
+    },
+    {
+      "id": "cast_speed15_",
+      "level_interval": [66, 74],
+      "weapon_set": 0,
+      "additional_text": "Cast Speed"
+    },
+    {
+      "id": "witch_sorceress_notable2",
+      "level_interval": [66, 74],
+      "weapon_set": 0,
+      "additional_text": "Pure Energy"
+    },
+    {
+      "id": "energy_shield10_",
+      "level_interval": [66, 74],
+      "weapon_set": 0,
+      "additional_text": "Stun and Ailment Threshold from Energy Shield"
+    },
+    {
+      "id": "energy_shield37",
+      "level_interval": [66, 74],
+      "weapon_set": 0,
+      "additional_text": "Dampening Shield"
+    },
+    {
+      "id": "intelligence54",
+      "level_interval": [75, 84],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "intelligence53_",
+      "level_interval": [75, 84],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "intelligence52",
+      "level_interval": [75, 84],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "intelligence51",
+      "level_interval": [75, 84],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "infusion10",
+      "level_interval": [75, 84],
+      "weapon_set": 0,
+      "additional_text": "Infusion Duration"
+    },
+    {
+      "id": "infusion7",
+      "level_interval": [75, 84],
+      "weapon_set": 0,
+      "additional_text": "Infusion Chance"
+    },
+    {
+      "id": "infusion6",
+      "level_interval": [75, 84],
+      "weapon_set": 0,
+      "additional_text": "Infusion Chance"
+    },
+    {
+      "id": "infusion2",
+      "level_interval": [75, 84],
+      "weapon_set": 0,
+      "additional_text": "Infusing Power"
+    },
+    {
+      "id": "lightning6",
+      "level_interval": [75, 84],
+      "weapon_set": 0,
+      "additional_text": "Infused Spell Damage"
+    },
+    {
+      "id": "lightning34",
+      "level_interval": [75, 84],
+      "weapon_set": 0,
+      "additional_text": "Principal Infusion"
+    },
+    {
+      "id": "energy_shield39",
+      "level_interval": [85, 92],
+      "weapon_set": 0,
+      "additional_text": "Illuminated Crown"
+    },
+    {
+      "id": "jewel_slot1969",
+      "level_interval": [85, 92],
+      "weapon_set": 0,
+      "additional_text": "Jewel Socket"
+    },
+    {
+      "id": "attributes13",
+      "level_interval": [85, 92],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<red>{+5 Strength.}"
+    },
+    {
+      "id": "mana_regeneration31_",
+      "level_interval": [85, 92],
+      "weapon_set": 0,
+      "additional_text": "Mana Regeneration"
+    },
+    {
+      "id": "mana_regeneration26",
+      "level_interval": [85, 92],
+      "weapon_set": 0,
+      "additional_text": "Arcane Surge Effect"
+    },
+    {
+      "id": "mana_regeneration27",
+      "level_interval": [85, 92],
+      "weapon_set": 0,
+      "additional_text": "Arcane Surge Effect"
+    },
+    {
+      "id": "mana_regeneration28_",
+      "level_interval": [85, 92],
+      "weapon_set": 0,
+      "additional_text": "Touch the Arcane"
+    },
+    {
+      "id": "witch_sorceress_notable1",
+      "level_interval": [93, 95],
+      "weapon_set": 1,
+      "additional_text": "Raw Power\nWeapon set 1.\nMove from shared to weapon set 1. Refund the set-1 Remnant Pickup Range node below the exposure-cluster Strength node."
+    },
+    {
+      "id": "intelligence11",
+      "level_interval": [93, 95],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}\nRespec: replace the three Spell Damage nodes leading to Raw Power with this outer attribute route. Keep the first Spell Damage node."
+    },
+    {
+      "id": "intelligence12",
+      "level_interval": [93, 95],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "intelligence13",
+      "level_interval": [93, 95],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "intelligence14",
+      "level_interval": [93, 95],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}\nRespec: refund the two lower Elemental Damage nodes below Elemental Force."
+    },
+    {
+      "id": "sorcerer_start3",
+      "level_interval": [93, 95],
+      "weapon_set": 0,
+      "additional_text": "Infused Spell Damage\nRespec: replace the lower Infused Spell Damage route to Principal Infusion."
+    },
+    {
+      "id": "intelligence17",
+      "level_interval": [93, 95],
+      "weapon_set": 0,
+      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
+    },
+    {
+      "id": "energy_shield11",
+      "level_interval": [93, 95],
+      "weapon_set": 0,
+      "additional_text": "Stun and Ailment Threshold from Energy Shield\nRespec: reach Dampening Shield from above. Refund its lower threshold node and the Practiced Signs / Pure Energy route, including both Cast Speed nodes."
+    },
+    {
+      "id": "intelligence102",
+      "level_interval": [93, 95],
+      "weapon_set": 0,
+      "additional_text": "Intelligence"
+    },
+    {
+      "id": "energy_shield46_",
+      "level_interval": [93, 95],
       "weapon_set": 0,
       "additional_text": "Energy Shield"
     },
     {
-      "id": "energy_shield35",
-      "level_interval": [1, 100],
+      "id": "energy_shield33_",
+      "level_interval": [93, 95],
       "weapon_set": 0,
-      "additional_text": "Melding"
+      "additional_text": "Patient Barrier"
     },
     {
-      "id": "AscendancySorceress1Small1",
-      "level_interval": [1, 100],
+      "id": "mana_regeneration32",
+      "level_interval": [93, 95],
       "weapon_set": 0,
-      "additional_text": "Mana Regeneration\n1st Ascendancy, point 1 of 2. Take before Constant Gale."
+      "additional_text": "Mana Regeneration"
     },
     {
-      "id": "AscendancySorceress1Notable1",
-      "level_interval": [1, 100],
+      "id": "mana_regeneration34",
+      "level_interval": [93, 95],
       "weapon_set": 0,
-      "additional_text": "Constant Gale\n1st Ascendancy, point 2 of 2."
+      "additional_text": "Mana Regeneration"
     },
     {
-      "id": "AscendancySorceress1Small10",
-      "level_interval": [1, 100],
+      "id": "mana_regeneration40",
+      "level_interval": [93, 95],
       "weapon_set": 0,
-      "additional_text": "Remnant Range\n2nd Ascendancy, point 1 of 2. Take before Refracted Infusion."
+      "additional_text": "Ether Flow"
     },
     {
-      "id": "AscendancySorceress1Notable10",
-      "level_interval": [1, 100],
+      "id": "stun_threshold_from_energy_shield18",
+      "level_interval": [93, 95],
       "weapon_set": 0,
-      "additional_text": "Refracted Infusion\n2nd Ascendancy, point 2 of 2."
+      "additional_text": "Stun Threshold from Energy Shield"
     },
     {
-      "id": "AscendancySorceress1Small5",
-      "level_interval": [1, 100],
+      "id": "stun_threshold_from_energy_shield19_",
+      "level_interval": [93, 95],
       "weapon_set": 0,
-      "additional_text": "Shock Chance\n3rd Ascendancy, point 1 of 2. Take before Strike Twice."
+      "additional_text": "Abasement"
     },
     {
-      "id": "AscendancySorceress1Notable5",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Strike Twice\n3rd Ascendancy, point 2 of 2."
-    },
-    {
-      "id": "AscendancySorceress1Small6",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Shock Chance\n4th Ascendancy, point 1 of 2. Take after Strike Twice, before Shaper of Storms."
-    },
-    {
-      "id": "AscendancySorceress1Notable6",
-      "level_interval": [1, 100],
-      "weapon_set": 0,
-      "additional_text": "Shaper of Storms\n4th Ascendancy, point 2 of 2."
+      "id": "sorcerer_start1",
+      "level_interval": [93, 95],
+      "weapon_set": 2,
+      "additional_text": "Elemental Ailment Chance\nWeapon set 2.\nRespec: replace the lower Elemental Ailment Chance route to Affliction Enforcer."
     }
   ],
   "skills": [
