@@ -72,8 +72,8 @@ Passive recommendations are incremental: each range shows only nodes newly added
 |------------------|--------------------------------|
 | 1-14 | 19 |
 | 15-28 | 24 |
-| 29-44 | 22 |
-| 45-54 | 20 |
+| 29-44 | 24 |
+| 45-54 | 18 |
 | 55-61 | 12 |
 | 62-65 | 16 |
 | 66-74 | 10 |
@@ -90,8 +90,8 @@ The complete screenshot targets are retained below as reference totals, not coun
 |------------------|--------------|
 | 1-14 | Level 14 screenshot: 13 shared nodes, 4 weapon-set-1 nodes toward Exploit the Elements, and 2 weapon-set-2 nodes toward Affliction Enforcer via the lower Elemental Ailment Chance node. The top travel attribute is +5 Dexterity; the two left travel attributes are +5 Intelligence. |
 | 15-28 | 27 shared nodes, 8 weapon-set-1 nodes, and 8 weapon-set-2 nodes. Adds shared Potent Incantation and a travel jewel socket, Empowering Infusions and Infusion Consumption Chance on set 1, and Secrets of the Orb plus Stripped Defences via the lower Elemental Damage node on set 2. The travel attributes beside Potent Incantation and the exposure cluster are +5 Strength; the new northern travel attributes are +5 Intelligence. |
-| 29-44 | 41 shared nodes, 12 weapon-set-1 nodes, and 12 weapon-set-2 nodes. Adds shared Hastening Barrier, two Energy Shield nodes, Frozen Limit, and northern travel with +5 Intelligence choices. Set 1 adds a second Infusion Consumption Chance node and Preservation through both Increased Duration nodes. Set 2 adds Overexposure via the right Exposure Effect node and one Reduced Duration node. |
-| 45-54 | 53 shared nodes, 16 weapon-set-1 nodes, and 16 weapon-set-2 nodes. Adds shared Practiced Signs, Heavy Buffer with the lower Energy Shield node, Convalescence through all three Energy Shield Delay nodes, and northeastern travel with a jewel socket and +5 Intelligence choices. Set 1 adds Everlasting Infusions and Turn the Clock Forward via the lower projectile branch. Set 2 completes Forthcoming and adds two Additional Remnant Chance nodes. |
+| 29-44 | 43 shared nodes, 12 weapon-set-1 nodes, and 12 weapon-set-2 nodes. Adds shared Practiced Signs via Cast Speed from Raw Power, Hastening Barrier, two Energy Shield nodes, Frozen Limit, and northern travel with +5 Intelligence choices. Set 1 adds a second Infusion Consumption Chance node and Preservation through both Increased Duration nodes. Set 2 adds Overexposure via the right Exposure Effect node and one Reduced Duration node. |
+| 45-54 | 53 shared nodes, 16 weapon-set-1 nodes, and 16 weapon-set-2 nodes. Adds shared Heavy Buffer with the lower Energy Shield node, Convalescence through all three Energy Shield Delay nodes, and northeastern travel with a jewel socket and +5 Intelligence choices. Set 1 adds Everlasting Infusions and Turn the Clock Forward via the lower projectile branch. Set 2 completes Forthcoming and adds two Additional Remnant Chance nodes. |
 | 55-61 | 56 shared nodes, 20 weapon-set-1 nodes, and 20 weapon-set-2 nodes. Extends west through Energy Shield and two +5 Intelligence travel nodes. Set 1 adds Chronomancy via two Duration nodes and one Remnant Pickup Range node. Set 2 adds Remnant Attraction and respecs the inner Elemental Damage node below Overexposure into the outer-right route, also taking the left Exposure Effect and Elemental Ailment Chance nodes. |
 | 62-65 | 64 shared nodes and 24 per weapon set. Adds shared Shimmering Mirage through the lower threshold path (+5 Strength on its travel attribute), southeastern travel with two +5 Intelligence choices, and two Elemental Damage entry nodes. Set 1 adds Echoing Frost, Echoing Thunder, and Echoing Flames through their central Elemental Damage node. Set 2 adds Roil through three Spell Area of Effect nodes. |
 | 66-74 | 74 shared nodes and 24 per weapon set. Adds shared Soul Bloom through three Energy Shield Delay nodes, Hallowed from the lower threshold node, and Pure Energy via Cast Speed from Practiced Signs, continuing to Dampening Shield through the lower-left threshold node. Weapon-set branches are unchanged. |

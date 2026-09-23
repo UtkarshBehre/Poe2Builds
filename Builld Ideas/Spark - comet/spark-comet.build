@@ -396,13 +396,13 @@
     },
     {
       "id": "cast_speed10",
-      "level_interval": [45, 54],
+      "level_interval": [29, 44],
       "weapon_set": 0,
       "additional_text": "Cast Speed"
     },
     {
       "id": "cast_speed36_",
-      "level_interval": [45, 54],
+      "level_interval": [29, 44],
       "weapon_set": 0,
       "additional_text": "Practiced Signs"
     },
