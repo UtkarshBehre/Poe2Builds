@@ -438,18 +438,57 @@
     .spark-skills th:nth-child(2) { width: 18%; }
     .spark-skills td { overflow-wrap: anywhere; }
 
+    .spark-priority-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 16px;
+      align-items: start;
+    }
+
+    .spark-priority-grid + .spark-priority-grid { margin-top: 24px; }
+
+    .spark-priority-grid table {
+      table-layout: fixed;
+      min-width: 0;
+      margin: 0;
+    }
+
+    .spark-priority-grid caption {
+      color: #c8a84b;
+      font-size: 0.95em;
+      font-weight: 600;
+      text-align: left;
+      margin-bottom: 6px;
+      padding-bottom: 3px;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    .spark-priority-grid th:first-child:not(:only-child) { width: 58%; }
+    .spark-priority-grid th, .spark-priority-grid td {
+      padding: 7px 8px;
+      overflow-wrap: anywhere;
+    }
+
+    @media (max-width: 1200px) {
+      .spark-priority-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
     @media (max-width: 800px) {
       body { padding: 16px; }
       .tabs { flex-wrap: wrap; }
       .modifier-cutoffs { grid-template-columns: 1fr; gap: 0; }
       #spark-comet-details .skills-layout { flex-direction: column; }
-      #spark-comet-details .gem-priority { max-width: none; width: 100%; }
+      .spark-priority-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .quest-choices { flex-direction: column; }
       .quest-choices .skills-tree { max-width: 100%; width: 100%; margin: 0; }
       .spark-skills { table-layout: fixed; }
       .spark-skills th:nth-child(2) { width: 28%; }
       .spark-skills th { overflow-wrap: anywhere; }
       .spark-skills th, .spark-skills td { padding: 6px; }
+    }
+
+    @media (max-width: 520px) {
+      .spark-priority-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -838,6 +877,181 @@
 </div><!-- .skill-level-cutoffs -->
 </div><!-- .modifier-cutoffs -->
 
+<section aria-labelledby="spark-priority-heading">
+  <h2 id="spark-priority-heading" class="page-heading">Spark-Comet - Gem Priorities</h2>
+  <div class="spark-priority-grid">
+    <table>
+      <caption>Tier 1</caption>
+      <thead><tr><th scope="col">Gem</th><th scope="col">Skill</th></tr></thead>
+      <tbody>
+        <tr><td><span class="dex">Pierce I</span></td><td><span class="int">Spark [1]</span></td></tr>
+        <tr><td><span class="int">Unleash</span></td><td><span class="int">Spark [2] [4]</span></td></tr>
+        <tr><td><span class="dex">Overabundance I</span></td><td><span class="int">Orb of Storms [1]</span></td></tr>
+        <tr><td><span class="int">Fortress I</span></td><td><span class="int">Flame Wall [1]</span></td></tr>
+        <tr><td><span class="int">Spell Cascade</span></td><td><span class="int">Flame Wall [2]</span></td></tr>
+        <tr><td><span class="dex">Shock</span></td><td><span class="int">Orb of Storms [2]</span></td></tr>
+        <tr><td><span class="dex">Innervate</span></td><td><span class="int">Orb of Storms [3]</span></td></tr>
+        <tr><td><span class="int">Clarity I</span></td><td><span class="int">Arctic Armour [1]</span></td></tr>
+        <tr><td><span class="int">Unleash</span> <em>[move from Spark until Spark is 5-link]</em></td><td><span class="int">Comet [1]</span></td></tr>
+        <tr><td><span class="int">Spell Cascade</span></td><td><span class="int">Frost Bomb [5]</span></td></tr>
+        <tr><td><span class="int">Deep Freeze</span></td><td><span class="int">Arctic Armour [5]</span></td></tr>
+        <tr><td><span class="int">Spell Cascade</span></td><td><span class="int">Cast on Elemental Ailment [4]</span></td></tr>
+        <tr><td><span class="int">Spell Cascade</span></td><td><span class="int">Cast on Critical [4]</span></td></tr>
+      </tbody>
+    </table>
+    <table>
+      <caption>Tier 2</caption>
+      <thead><tr><th scope="col">Gem</th><th scope="col">Skill</th></tr></thead>
+      <tbody>
+        <tr><td><span class="int">Considered Casting</span></td><td><span class="int">Spark [2]</span></td></tr>
+        <tr><td><span class="str">Short Fuse I</span></td><td><span class="int">Frost Bomb [1]</span></td></tr>
+        <tr><td><span class="int">Spell Echo</span></td><td><span class="int">Frost Bomb [2]</span></td></tr>
+        <tr><td><span class="int">Freeze</span></td><td><span class="int">Arctic Armour [2]</span></td></tr>
+        <tr><td><span class="int">Harmonic Remnants I</span></td><td><span class="int">Mana Remnants [1]</span></td></tr>
+        <tr><td><span class="str">Remnant Potency I</span></td><td><span class="int">Mana Remnants [2]</span></td></tr>
+        <tr><td><span class="int">Rising Tempest</span></td><td><span class="int">Spark [5]</span></td></tr>
+        <tr><td><span class="int">Potent Exposure</span></td><td><span class="int">Frost Bomb [3]</span></td></tr>
+        <tr><td><span class="int">Harmonic Remnants I</span></td><td><span class="int">Siphon Elements [1]</span></td></tr>
+        <tr><td><span class="dex">Second Wind I</span></td><td><span class="int">Mana Tempest [1]</span></td></tr>
+        <tr><td><span class="int">Considered Casting</span></td><td><span class="int">Comet [5]</span></td></tr>
+        <tr><td><span class="int">Boundless Energy I</span></td><td><span class="int">Cast on Elemental Ailment [5]</span></td></tr>
+        <tr><td><span class="int">Boundless Energy I</span></td><td><span class="int">Cast on Critical [5]</span></td></tr>
+        <tr><td><span class="int">Pinpoint Critical</span></td><td><span class="int">Spark [5]</span></td></tr>
+      </tbody>
+    </table>
+    <table>
+      <caption>Tier 3</caption>
+      <thead><tr><th scope="col">Gem</th><th scope="col">Skill</th></tr></thead>
+      <tbody>
+        <tr><td><span class="dex">Pierce II</span></td><td><span class="int">Spark [1]</span></td></tr>
+        <tr><td><span class="str">Remnant Potency II</span></td><td><span class="int">Mana Remnants [2]</span></td></tr>
+        <tr><td><span class="int">Spell Echo</span></td><td><span class="int">Comet [2]</span></td></tr>
+        <tr><td><span class="int">Fortress II</span></td><td><span class="int">Flame Wall [1]</span></td></tr>
+        <tr><td><span class="int">Harmonic Remnants II</span></td><td><span class="int">Mana Remnants [1]</span></td></tr>
+        <tr><td><span class="int">Harmonic Remnants II</span></td><td><span class="int">Siphon Elements [1]</span></td></tr>
+        <tr><td><span class="dex">Cooldown Recovery I</span></td><td><span class="int">Mana Tempest [2]</span></td></tr>
+        <tr><td><span class="str">Prolonged Duration II</span></td><td><span class="int">Flame Wall [3]</span></td></tr>
+        <tr><td><span class="str">Knockback</span></td><td><span class="int">Arctic Armour [3]</span></td></tr>
+        <tr><td><span class="int">Ambrosia II</span></td><td><span class="int">Comet [4]</span></td></tr>
+        <tr><td><span class="dex">Mobility</span></td><td><span class="int">Mana Tempest [4]</span></td></tr>
+        <tr><td><span class="int">Electromagnetism</span></td><td><span class="int">Orb of Storms [5]</span></td></tr>
+        <tr><td><span class="int">Energy Retention</span></td><td><span class="int">Cast on Elemental Ailment [3]</span></td></tr>
+        <tr><td><span class="int">Energy Retention</span></td><td><span class="int">Cast on Critical [3]</span></td></tr>
+        <tr><td><span class="int">Inexorable Critical I</span></td><td><span class="int">Comet [3]</span></td></tr>
+      </tbody>
+    </table>
+    <table>
+      <caption>Tier 4</caption>
+      <thead><tr><th scope="col">Gem</th><th scope="col">Skill</th></tr></thead>
+      <tbody>
+        <tr><td><span class="str">Short Fuse II</span></td><td><span class="int">Frost Bomb [1]</span></td></tr>
+        <tr><td><span class="str">Remnant Potency III</span></td><td><span class="int">Mana Remnants [2]</span></td></tr>
+        <tr><td><span class="dex">Projectile Acceleration II</span></td><td><span class="int">Spark [3]</span></td></tr>
+        <tr><td><span class="dex">Second Wind II</span></td><td><span class="int">Mana Tempest [1]</span></td></tr>
+        <tr><td><span class="dex">Cooldown Recovery II</span></td><td><span class="int">Mana Tempest [2]</span></td></tr>
+        <tr><td><span class="str">Execute II</span></td><td><span class="int">Comet [3]</span></td></tr>
+        <tr><td><span class="dex">Cooldown Recovery II</span></td><td><span class="int">Frost Bomb [4]</span></td></tr>
+        <tr><td><span class="dex">Cooldown Recovery II</span></td><td><span class="int">Arctic Armour [4]</span></td></tr>
+        <tr><td><span class="int">Boundless Energy II</span></td><td><span class="int">Cast on Elemental Ailment [5]</span></td></tr>
+        <tr><td><span class="int">Boundless Energy II</span></td><td><span class="int">Cast on Critical [5]</span></td></tr>
+      </tbody>
+    </table>
+    <table>
+      <caption>Tier 5</caption>
+      <thead><tr><th scope="col">Gem</th><th scope="col">Skill</th></tr></thead>
+      <tbody>
+        <tr><td><span class="dex">Pierce III</span></td><td><span class="int">Spark [1]</span></td></tr>
+        <tr><td><span class="dex">Projectile Acceleration III</span></td><td><span class="int">Spark [3]</span></td></tr>
+        <tr><td><span class="int">Cold Mastery</span></td><td><span class="int">Siphon Elements [2]</span></td></tr>
+        <tr><td><span class="dex">Second Wind III</span></td><td><span class="int">Mana Tempest [1]</span></td></tr>
+        <tr><td><span class="int">Lightning Mastery</span></td><td><span class="int">Mana Tempest [3]</span></td></tr>
+        <tr><td><span class="dex">Chain III</span></td><td><span class="int">Orb of Storms [4]</span></td></tr>
+        <tr><td><span class="int">Cold Mastery</span></td><td><span class="int">Elemental Conflux [1]</span></td></tr>
+        <tr><td><span class="int" title="Triggered skill gem; grouped under Tier 5, not a support gem.">Flame Wall</span></td><td><span class="int">Cast on Elemental Ailment [1]</span></td></tr>
+        <tr><td><span class="int" title="Triggered skill gem; grouped under Tier 5, not a support gem.">Flame Wall</span></td><td><span class="int">Cast on Critical [1]</span></td></tr>
+        <tr><td><span class="int" title="Triggered skill gem; grouped under Tier 5, not a support gem.">Comet</span></td><td><span class="int">Cast on Elemental Ailment [2]</span></td></tr>
+        <tr><td><span class="int" title="Triggered skill gem; grouped under Tier 5, not a support gem.">Comet</span></td><td><span class="int">Cast on Critical [2]</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="spark-priority-grid">
+    <table>
+      <caption>Lesser Jeweller's Orb Priority</caption>
+      <thead><tr><th scope="col">Gem</th></tr></thead>
+      <tbody>
+        <tr><td><span class="int">Spark</span></td></tr>
+        <tr><td><span class="int">Orb of Storms</span></td></tr>
+        <tr><td><span class="int">Frost Bomb</span></td></tr>
+        <tr><td><span class="int">Comet</span></td></tr>
+        <tr><td><span class="int">Flame Wall</span></td></tr>
+        <tr><td><span class="int">Arctic Armour</span></td></tr>
+        <tr><td><span class="int">Mana Tempest</span></td></tr>
+        <tr><td><span class="int">Mana Remnants</span></td></tr>
+      </tbody>
+    </table>
+    <table>
+      <caption>GCP Gem Priority</caption>
+      <thead><tr><th scope="col">Gem</th></tr></thead>
+      <tbody>
+        <tr><td><span class="int">Spark</span></td></tr>
+        <tr><td><span class="int">Orb of Storms</span></td></tr>
+        <tr><td><span class="int">Elemental Conflux</span></td></tr>
+        <tr><td><span class="int">Arctic Armour</span></td></tr>
+        <tr><td><span class="int">Frost Bomb</span></td></tr>
+        <tr><td><span class="int">Mana Remnants</span></td></tr>
+        <tr><td><span class="int">Comet</span></td></tr>
+        <tr><td><span class="int">Mana Tempest</span></td></tr>
+        <tr><td><span class="int">Siphon Elements</span></td></tr>
+        <tr><td><span class="int">Cast on Elemental Ailment</span></td></tr>
+        <tr><td><span class="int">Cast on Critical</span></td></tr>
+      </tbody>
+    </table>
+    <table>
+      <caption>Greater Jeweller's Orb Priority</caption>
+      <thead><tr><th scope="col">Gem</th></tr></thead>
+      <tbody>
+        <tr><td><span class="int">Spark</span></td></tr>
+        <tr><td><span class="int">Frost Bomb</span></td></tr>
+        <tr><td><span class="int">Comet</span></td></tr>
+        <tr><td><span class="int">Orb of Storms</span></td></tr>
+        <tr><td><span class="int">Arctic Armour</span></td></tr>
+        <tr><td><span class="int">Cast on Elemental Ailment</span></td></tr>
+        <tr><td><span class="int">Cast on Critical</span></td></tr>
+        <tr><td><span class="int">Mana Tempest</span></td></tr>
+      </tbody>
+    </table>
+    <table>
+      <caption>Perfect Jeweller's Orb Priority</caption>
+      <thead><tr><th scope="col">Gem</th></tr></thead>
+      <tbody>
+        <tr><td><span class="int">Spark</span></td></tr>
+        <tr><td><span class="int">Frost Bomb</span></td></tr>
+        <tr><td><span class="int">Comet</span></td></tr>
+        <tr><td><span class="int">Cast on Elemental Ailment</span></td></tr>
+        <tr><td><span class="int">Cast on Critical</span></td></tr>
+        <tr><td><span class="int">Orb of Storms</span></td></tr>
+        <tr><td><span class="int">Arctic Armour</span></td></tr>
+      </tbody>
+    </table>
+    <table>
+      <caption>Lineage Gems</caption>
+      <thead><tr><th scope="col">Gem</th><th scope="col">Skill</th></tr></thead>
+      <tbody>
+        <tr><td><span class="lineage" title="Obtain through drops or trade; cannot be cut from an Uncut Support Gem.">Zarokh's Refrain</span> <em>[drop / trade]</em></td><td><span class="int">Comet [2]</span></td></tr>
+        <tr><td><span class="lineage" title="Obtain through drops or trade; cannot be cut from an Uncut Support Gem.">Vilenta's Propulsion</span> <em>[drop / trade]</em></td><td><span class="int">Spark [3]</span></td></tr>
+        <tr><td><span class="lineage" title="Obtain through drops or trade; cannot be cut from an Uncut Support Gem.">Ixchel's Torment</span> <em>[drop / trade]</em></td><td><span class="int">Cast on Elemental Ailment [4]</span></td></tr>
+        <tr><td><span class="lineage" title="Obtain through drops or trade; cannot be cut from an Uncut Support Gem.">Arbiter's Ignition</span> <em>[drop / trade]</em></td><td><span class="int">Cast on Critical [4]</span></td></tr>
+        <tr><td><span class="lineage" title="Obtain through drops or trade; cannot be cut from an Uncut Support Gem.">Uhtred's Exodus</span> <em>[drop / trade]</em></td><td><span class="int">Elemental Conflux [1]</span></td></tr>
+        <tr><td><span class="lineage" title="Obtain through drops or trade; cannot be cut from an Uncut Support Gem.">Uhtred's Rite</span> <em>[drop / trade]</em></td><td><span class="int">Frost Bomb [5]</span></td></tr>
+        <tr><td><span class="lineage" title="Obtain through drops or trade; cannot be cut from an Uncut Support Gem.">Dominus' Grasp</span> <em>[drop / trade]</em></td><td><span class="int">Orb of Storms [4]</span></td></tr>
+        <tr><td><span class="lineage" title="Obtain through drops or trade; cannot be cut from an Uncut Support Gem.">Khatal's Rejuvenation</span> <em>[drop / trade]</em></td><td><span class="int">Mana Remnants [3]</span></td></tr>
+        <tr><td><span class="lineage" title="Obtain through drops or trade; cannot be cut from an Uncut Support Gem.">Uhtred's Omen</span> <em>[drop / trade]</em></td><td><span class="int">Siphon Elements [2]</span></td></tr>
+        <tr><td><span class="lineage" title="Obtain through drops or trade; cannot be cut from an Uncut Support Gem.">Breachlord's Rift</span> <em>[drop / trade]</em></td><td><span class="int">Arctic Armour [5]</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
 <h2 class="page-heading">Spark-Comet - Gems and Supports</h2>
 <div class="skills-layout">
   <table class="spark-skills" aria-label="Spark-Comet gems and supports">
@@ -856,7 +1070,7 @@
       <tr>
         <td><img src="icons/Spark_skill_icon.webp" alt="Spark"></td>
         <td><strong>Spark</strong></td>
-        <td><span class="dex" title="Pierce I at cutting level 1; II at 3; III at 5">Pierce</span> <code>I, III, V</code> - <span class="int" title="Controlled Destruction at cutting level 1">Controlled Destruction</span> <code>I</code> - <span class="dex" title="Projectile Acceleration I at cutting level 1; II at 4; III at 5">Projectile Acceleration</span> <code>I, IV, V</code> - <span class="str" title="Prolonged Duration I at cutting level 1; II at 3">Prolonged Duration</span> <code>I, III</code> - <span class="int" title="Unleash at cutting level 1">Unleash</span> <code>I</code> - <span class="int" title="Considered Casting at cutting level 2">Considered Casting</span> <code>II</code> - <span class="dex" title="Lightning Penetration at cutting level 2">Lightning Penetration</span> <code>II</code> <em>[optional]</em> <em>[at cutting level I, choose Projectile Acceleration / Prolonged Duration / Unleash]</em></td>
+        <td><span class="dex" title="Pierce I at cutting level 1; II at 3; III at 5">Pierce</span> <code>I, III, V</code> - <span class="int" title="Controlled Destruction at cutting level 1">Controlled Destruction</span> <code>I</code> - <span class="dex" title="Projectile Acceleration I at cutting level 1; II at 4; III at 5">Projectile Acceleration</span> <code>I, IV, V</code> - <span class="int" title="Unleash at cutting level 1">Unleash</span> <code>I</code> - <span class="int" title="Considered Casting at cutting level 2">Considered Casting</span> <code>II</code> - <span class="dex" title="Lightning Penetration at cutting level 2">Lightning Penetration</span> <code>II</code> <em>[optional]</em> <em>[at cutting level I, choose Projectile Acceleration / Unleash]</em></td>
       </tr>
       <tr>
         <td><img src="icons/Orb_of_Storms_skill_icon.webp" alt="Orb of Storms"></td>
@@ -877,6 +1091,11 @@
         <td><img src="icons/Mana_Remnants_skill_icon.webp" alt="Mana Remnants"></td>
         <td><strong>Mana Remnants <code>IV</code></strong></td>
         <td><span class="int" title="Harmonic Remnants I at cutting levels 2 and 3, as listed in the build notes">Harmonic Remnants</span> <code>II, III</code> - <span class="str" title="Remnant Potency I at cutting level 2; II at 3; III at 4">Remnant Potency</span> <code>II, III, IV</code></td>
+      </tr>
+      <tr>
+        <td><img src="icons/Arctic_Armour_skill_icon.webp" alt="Arctic Armour"></td>
+        <td><strong>Arctic Armour <code>IV</code></strong></td>
+        <td><span class="int" title="Clarity I at cutting level 1">Clarity I</span> <code>I</code> - <span class="int" title="Freeze at cutting level 2">Freeze</span> <code>II</code></td>
       </tr>
       <tr>
         <td><img src="icons/Mana_Tempest_skill_icon.webp" alt="Mana Tempest"></td>
@@ -910,40 +1129,6 @@
       </tr>
     </tbody>
   </table>
-  <div class="gem-priority">
-    <h3>Gem Cutting Priority</h3>
-    <table aria-label="Spark-Comet gem cutting priority">
-      <thead><tr><th scope="col">Gem</th><th scope="col">Skill</th></tr></thead>
-      <tbody>
-        <tr class="tier-header"><td colspan="2">Tier 1</td></tr>
-        <tr><td><span class="dex">Pierce I</span></td><td><span class="int">Spark</span></td></tr>
-        <tr><td><span class="int">Controlled Destruction</span></td><td><span class="int">Spark</span></td></tr>
-        <tr><td><span class="dex">Overabundance I</span></td><td><span class="int">Orb of Storms</span></td></tr>
-        <tr><td><span class="int">Fortress I</span></td><td><span class="int">Flame Wall</span></td></tr>
-        <tr><td><span class="int">Spell Cascade</span></td><td><span class="int">Flame Wall</span></td></tr>
-        <tr class="tier-header"><td colspan="2">Tier 2</td></tr>
-        <tr><td><span class="int">Considered Casting</span></td><td><span class="int">Spark</span></td></tr>
-        <tr><td><span class="int">Controlled Destruction</span> <em>[move from Spark]</em></td><td><span class="int">Orb of Storms</span></td></tr>
-        <tr><td><span class="str">Short Fuse I</span></td><td><span class="int">Frost Bomb</span></td></tr>
-        <tr><td><span class="int">Spell Echo</span></td><td><span class="int">Frost Bomb</span></td></tr>
-        <tr><td><span class="int">Harmonic Remnants II</span></td><td><span class="int">Mana Remnants</span></td></tr>
-        <tr class="tier-header"><td colspan="2">Tier 3</td></tr>
-        <tr><td><span class="dex">Pierce II</span></td><td><span class="int">Spark</span></td></tr>
-        <tr><td><span class="str">Prolonged Duration II</span></td><td><span class="int">Spark</span></td></tr>
-        <tr><td><span class="str">Remnant Potency II</span></td><td><span class="int">Mana Remnants</span></td></tr>
-        <tr><td><span class="int">Spell Echo</span></td><td><span class="int">Comet</span></td></tr>
-        <tr><td><span class="int">Elemental Focus</span></td><td><span class="int">Comet</span></td></tr>
-        <tr><td><span class="int">Fortress II</span></td><td><span class="int">Flame Wall</span></td></tr>
-        <tr class="tier-header"><td colspan="2">Tier 4</td></tr>
-        <tr><td><span class="str">Short Fuse II</span></td><td><span class="int">Frost Bomb</span></td></tr>
-        <tr><td><span class="str">Remnant Potency III</span></td><td><span class="int">Mana Remnants</span></td></tr>
-        <tr class="tier-header"><td colspan="2">Tier 5</td></tr>
-        <tr><td><span class="dex">Pierce III</span></td><td><span class="int">Spark</span></td></tr>
-        <tr><td><span class="dex">Projectile Acceleration III</span></td><td><span class="int">Spark</span></td></tr>
-        <tr><td><span class="int">Cold Mastery</span></td><td><span class="int">Siphon Elements</span></td></tr>
-      </tbody>
-    </table>
-  </div>
 </div>
 <div class="quest-choices" style="display:flex; gap:24px; align-items:flex-start; margin: 16px 0;">
   <div style="flex:1;">

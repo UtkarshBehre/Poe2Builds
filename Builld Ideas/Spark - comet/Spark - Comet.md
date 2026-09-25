@@ -2,7 +2,7 @@
 
 The [league launch guide](../../index.html) includes this setup under Campaign > Spark-Comet, alongside Twisters. Campaign Zone Rewards are shared; Spark-Comet uses the vendor regexes below instead of spear progression.
 
-Gem Cutting Priority lists which support to cut and where to socket it, in priority order within each uncut gem tier. Modifier cutoffs in the guide cover extra lightning damage, all Spell Skill levels, and Fire Spell Skill levels (also applicable to Cold and Lightning), using the supplied screenshots.
+Gem Priorities appears above the full gems-and-supports reference table. On wide screens, Tier 1-5 share the first row; Lesser Jeweller's Orb, GCP, Greater Jeweller's Orb, Perfect Jeweller's Orb, and Lineage Gems share the second row. Both rows wrap into fewer columns on smaller screens. Read each table from top to bottom. Modifier cutoffs in the guide cover extra lightning damage, all Spell Skill levels, and Fire Spell Skill levels (also applicable to Cold and Lightning), using the supplied screenshots.
 
 The regexes below contain Markdown escapes; the guide displays and copies the unescaped regex text for use in game.
 
@@ -12,13 +12,25 @@ Support colors use the requirements verified on [PoE2DB's support index](https:/
 
 ## Gem Cutting Priority
 
-Read each tier from left to right:
+Read each tier's table from top to bottom. These priorities are the source for the Build Planner recommendations; reference-only alternatives are not included unless listed here.
 
-- **Tier 1:** Pierce I on Spark; Controlled Destruction on Spark; Overabundance I on Orb of Storms; Fortress I on Flame Wall; Spell Cascade on Flame Wall.
-- **Tier 2:** Considered Casting on Spark; Controlled Destruction on Orb of Storms (move the existing gem from Spark; do not cut another); Short Fuse I on Frost Bomb; Spell Echo on Frost Bomb; Harmonic Remnants II on Mana Remnants.
-- **Tier 3:** Pierce II on Spark; Prolonged Duration II on Spark; Remnant Potency II on Mana Remnants; Spell Echo on Comet; Elemental Focus on Comet; Fortress II on Flame Wall.
-- **Tier 4:** Short Fuse II on Frost Bomb; Remnant Potency III on Mana Remnants.
-- **Tier 5:** Pierce III on Spark; Projectile Acceleration III on Spark; Cold Mastery on Siphon Elements.
+Bracketed numbers identify support slots within each skill. New supports take the next slot unless specified; upgrades reuse their slot. Unleash starts in Spark [2]; move it to Comet [1] until Spark is 5-link, then use Spark [4]. Considered Casting takes Spark [2]. Projectile Acceleration II uses Spark [3] at Tier 4; Projectile Acceleration III retains that slot at Tier 5. Zarokh's Refrain replaces Spell Echo in Comet [2] (both belong to the [Spell Echo category](https://poe2db.tw/us/Zarokhs_Refrain)). Build-file support notes include these slots, priority order, and relevant transfer or replacement instructions.
+
+- **Tier 1:** Pierce I on Spark [1]; Unleash on Spark [2] [4]; Overabundance I on Orb of Storms [1]; Fortress I on Flame Wall [1]; Spell Cascade on Flame Wall [2]; Shock on Orb of Storms [2]; Innervate on Orb of Storms [3]; Clarity I on Arctic Armour [1]; Unleash on Comet [1] (move from Spark until Spark is 5-link); Spell Cascade on Frost Bomb [5]; Deep Freeze on Arctic Armour [5]; Spell Cascade on Cast on Elemental Ailment [4]; Spell Cascade on Cast on Critical [4].
+- **Tier 2:** Considered Casting on Spark [2]; Short Fuse I on Frost Bomb [1]; Spell Echo on Frost Bomb [2]; Freeze on Arctic Armour [2]; Harmonic Remnants I on Mana Remnants [1]; Remnant Potency I on Mana Remnants [2]; Rising Tempest on Spark [5]; Potent Exposure on Frost Bomb [3]; Harmonic Remnants I on Siphon Elements [1]; Second Wind I on Mana Tempest [1]; Considered Casting on Comet [5]; Boundless Energy I on Cast on Elemental Ailment [5]; Boundless Energy I on Cast on Critical [5]; Pinpoint Critical on Spark [5].
+- **Tier 3:** Pierce II on Spark [1]; Remnant Potency II on Mana Remnants [2]; Spell Echo on Comet [2]; Fortress II on Flame Wall [1]; Harmonic Remnants II on Mana Remnants [1]; Harmonic Remnants II on Siphon Elements [1]; Cooldown Recovery I on Mana Tempest [2]; Prolonged Duration II on Flame Wall [3]; Knockback on Arctic Armour [3]; Ambrosia II on Comet [4]; Mobility on Mana Tempest [4]; Electromagnetism on Orb of Storms [5]; Energy Retention on Cast on Elemental Ailment [3]; Energy Retention on Cast on Critical [3]; Inexorable Critical I on Comet [3].
+- **Tier 4:** Short Fuse II on Frost Bomb [1]; Remnant Potency III on Mana Remnants [2]; Projectile Acceleration II on Spark [3]; Second Wind II on Mana Tempest [1]; Cooldown Recovery II on Mana Tempest [2]; Execute II on Comet [3]; Cooldown Recovery II on Frost Bomb [4]; Cooldown Recovery II on Arctic Armour [4]; Boundless Energy II on Cast on Elemental Ailment [5]; Boundless Energy II on Cast on Critical [5].
+- **Tier 5:** Pierce III on Spark [1]; Projectile Acceleration III on Spark [3]; Cold Mastery on Siphon Elements [2]; Second Wind III on Mana Tempest [1]; Lightning Mastery on Mana Tempest [3]; Chain III on Orb of Storms [4]; Cold Mastery on Elemental Conflux [1]; Flame Wall on Cast on Elemental Ailment [1]; Flame Wall on Cast on Critical [1]; Comet on Cast on Elemental Ailment [2]; Comet on Cast on Critical [2].
+- **Lineage:** Zarokh's Refrain on Comet [2]; Vilenta's Propulsion on Spark [3], replacing Projectile Acceleration; Ixchel's Torment on Cast on Elemental Ailment [4], replacing Spell Cascade; Arbiter's Ignition on Cast on Critical [4], replacing Spell Cascade; Uhtred's Exodus on Elemental Conflux [1], replacing Cold Mastery; Uhtred's Rite on Frost Bomb [5], replacing Spell Cascade; Dominus' Grasp on Orb of Storms [4], replacing Chain III; Khatal's Rejuvenation on Mana Remnants [3]; Uhtred's Omen on Siphon Elements [2], replacing Cold Mastery; Breachlord's Rift on Arctic Armour [5], replacing Deep Freeze (obtain Lineage gems through drops or trade, not by cutting an Uncut Support Gem).
+
+Flame Wall and Comet are triggered skill gems, grouped under Tier 5 for planning rather than cut from Uncut Support Gems.
+
+## Gem Upgrade Priority
+
+- **Lesser Jeweller's Orb:** Spark; Orb of Storms; Frost Bomb; Comet; Flame Wall; Arctic Armour; Mana Tempest; Mana Remnants.
+- **GCP:** Spark; Orb of Storms; Elemental Conflux; Arctic Armour; Frost Bomb; Mana Remnants; Comet; Mana Tempest; Siphon Elements; Cast on Elemental Ailment; Cast on Critical.
+- **Greater Jeweller's Orb:** Spark; Frost Bomb; Comet; Orb of Storms; Arctic Armour; Cast on Elemental Ailment; Cast on Critical; Mana Tempest.
+- **Perfect Jeweller's Orb:** Spark; Frost Bomb; Comet; Cast on Elemental Ailment; Cast on Critical; Orb of Storms; Arctic Armour.
 
 ## Quest Choices
 
@@ -55,16 +67,18 @@ Import [spark-comet.build](./spark-comet.build) using [GGG's Build Planner instr
 
 After editing the build, run `.\sync-build.ps1` from the repository root. The [sync script](../../sync-build.ps1) validates the JSON and copies it to `%USERPROFILE%\OneDrive\Documents\My Games\Path of Exile 2\BuildPlanner`, verifying the copied file. It runs once and exits; there is no background watcher.
 
-The 13 skill IDs and 44 unique support IDs were checked against PoE2DB's `ItemType` metadata. Both `Metadata/Items/Gem/` and `Metadata/Items/Gems/` are valid prefixes for different entries; do not normalize them.
+Skill and support IDs were checked against PoE2DB's `ItemType` metadata. Both `Metadata/Items/Gem/` and `Metadata/Items/Gems/` are valid prefixes for different entries; do not normalize them.
 
-All listed skill gems except the weapon-granted Galvanic Field are recommended for character levels 1-100. Fireball is also included so it can be cut for the trigger setups.
+The build contains 13 skill recommendations: Contagion appears only at character levels 1-2 (no supports specified), while the other 12 skills, including Arctic Armour, span levels 1-100. Weapon-granted Galvanic Field remains excluded. Flame Wall and Comet are the trigger payloads; the obsolete Fireball recommendation has been removed.
 
 | Character levels | Support recommendations |
 |------------------|-------------------------|
-| 1-46 | Only the 21 entries in Gem Cutting Priority above, attached to their specified skills. Hover notes retain each entry's priority group and order. |
-| 47-100 | The complete main-table support pools, including alternatives and successive tiers. Mana Remnants includes both Harmonic Remnants I and II, as confirmed. |
+| 1-70 | All 59 non-Lineage support associations from the priority tables, including successive tiers and same-slot alternatives. No Lineage recommendations. |
+| 71-100 | The same 59 support associations plus all 10 Lineage recommendations (69 total). |
 
-These are recommendation ranges, not overrides of gem requirements or simultaneous socket setups. A support present in both ranges has separate non-overlapping recommendation entries.
+These are recommendation ranges, not overrides of gem requirements or simultaneous socket setups. A support present in both ranges has separate non-overlapping recommendation entries. Each support's hover note includes its slot number(s), priority group/order, and relevant short guidance. Spell Echo on Comet retains its Tier 3 planning position while noting that it can be cut from Tier 2.
+
+Same-slot entries are upgrades or alternatives, not simultaneous supports: this includes Rising Tempest / Pinpoint Critical on Spark [5], Inexorable Critical I / Execute II on Comet [3], and the Lineage replacements. Ambrosia II retains the 100+ mana-flask-charge condition. The four Flame Wall / Comet trigger placements from Tier 5 are documented in skill notes rather than misrepresented as support gems.
 
 Passive recommendations are incremental: each range shows only nodes newly added or changed from the preceding screenshot, not the complete target tree. Unchanged earlier recommendations stop appearing, even if the player has not allocated them yet. At level 20, for example, only the 24 additions for levels 15-28 are recommended; none of the 19 nodes from levels 1-14 are repeated.
 
@@ -104,9 +118,9 @@ Each range shows its additions and changes together, not an individual point-by-
 
 The weapon-slot (`Weapon1`) Build Planner tooltip shows all three modifier cutoff groups from the guide for levels 1-100: extra lightning damage, all Spell Skill levels, and Fire Spell Skill levels (also applicable to Cold and Lightning). Each row lists the modifier tier, minimum item level, and roll. To keep it compact, the tooltip contains only rows, with blank lines between groups and the highest tier first within each group.
 
-GGG currently documents meta gems as unsupported. Cast on Elemental Ailment and Cast on Critical remain experimental entries with warnings; manually socket Flame Wall and Fireball into the chosen trigger. Their recommendation display still requires in-game verification.
+GGG currently documents meta gems as unsupported. Cast on Elemental Ailment and Cast on Critical remain experimental entries with warnings; manually socket Flame Wall [1] and Comet [2] into the chosen trigger. The setup is also recorded on the payload skills as a fallback. Their recommendation display still requires in-game verification.
 
-Lineage recommendations have been confirmed to display in-game. Zarokh's Refrain remains listed for Comet as an acquisition target: obtain it through drops or trade rather than cutting it from an Uncut Support Gem.
+Lineage recommendations have been confirmed to display in-game. All 10 Lineage associations are acquisition targets for levels 71-100 only: obtain them through drops or trade rather than cutting them from Uncut Support Gems.
 
 ## Build Notes
 
@@ -147,11 +161,11 @@ contagion
 
 
 Spark ->
-Lvl 1 -> Pierce I, Controlled Destruction, Projectile Acceleration I/Prolonged Duration I /Unleash
+Lvl 1 -> Pierce I, Controlled Destruction, Projectile Acceleration I / Unleash
 
 Lvl 2 -> Considered Casting, Lightning Pen (optional)
 
-lvl 3 -> Prolonged Duration II, Pierce II
+lvl 3 -> Pierce II
 
 lvl 4 -> Projectile Acceleration II
 
@@ -186,6 +200,12 @@ Mana Remnants requires gem 4 ->
 lvl 2 -> Harmonic Remnants I, Remnant Potency I
 lvl 3 -> Harmonic Remnants I, Remnant Potency II
 lvl 4 -> Remnant Potency III
+
+
+
+Arctic Armour requires gem 4 ->
+lvl 1 -> Clarity I
+lvl 2 -> Freeze
 
 
 

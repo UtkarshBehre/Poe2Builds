@@ -1,7 +1,7 @@
 {
   "name": "Spark - Comet",
   "author": "UtkarshBehre",
-  "description": "Spark-Comet: priority supports at levels 1-46, full supports at 47-100, and new passive allocations per level range.",
+  "description": "Priority supports at levels 1-70; Lineage added at 71-100. Incremental passive trees.",
   "ascendancy": "Sorceress1",
   "passives": [
     {
@@ -950,498 +950,730 @@
   "skills": [
     {
       "id": "Metadata/Items/Gems/SkillGemContagion",
-      "level_interval": [1, 100],
+      "level_interval": [1, 2],
       "additional_text": "<b>{Contagion}\nRequires a level 1 Uncut Skill Gem. Recommended skill; no supports specified yet."
     },
     {
       "id": "Metadata/Items/Gems/SkillGemSpark",
       "level_interval": [1, 100],
-      "additional_text": "<b>{Spark}\nInitial support pool, not a final six-link. Early alternatives: Projectile Acceleration I / Prolonged Duration I / Unleash. Upgrade support tiers as available; do not equip multiple tiers of the same support together.\n<yellow>{Controlled Destruction belongs to the non-crit plan; review it when making the later crit version.}",
+      "additional_text": "<b>{Spark}\nSame-slot supports are alternatives/upgrades, not simultaneous. Unleash starts in [2], then uses [4] once Spark is 5-link.",
       "support_skills": [
         {
           "id": "Metadata/Items/Gems/SupportGemPierce",
-          "level_interval": [1, 46],
-          "additional_text": "Pierce I\nCampaign cutting priority: tier 1 group, choice 1."
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemControlledDestruction",
-          "level_interval": [1, 46],
-          "additional_text": "Controlled Destruction\n<yellow>{Non-crit option. Revisit for the later crit version.}\nCampaign cutting priority: tier 1 group, choice 2."
-        },
-        {
-          "id": "Metadata/Items/Gem/SupportGemConsideredCasting",
-          "level_interval": [1, 46],
-          "additional_text": "Considered Casting\nCampaign cutting priority: tier 2 group, choice 1."
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemPierceTwo",
-          "level_interval": [1, 46],
-          "additional_text": "Pierce II\nUpgrade from Pierce I.\nCampaign cutting priority: tier 3 group, choice 1."
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemPersistenceTwo",
-          "level_interval": [1, 46],
-          "additional_text": "Prolonged Duration II\nUpgrade from Prolonged Duration I.\nCampaign cutting priority: tier 3 group, choice 2."
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemPierceThree",
-          "level_interval": [1, 46],
-          "additional_text": "Pierce III\nUpgrade from Pierce II.\nCampaign cutting priority: tier 5 group, choice 1."
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemAccelerationThree",
-          "level_interval": [1, 46],
-          "additional_text": "Projectile Acceleration III\nUpgrade from Projectile Acceleration II.\nCampaign cutting priority: tier 5 group, choice 2."
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemPierce",
-          "level_interval": [47, 100],
-          "additional_text": "Pierce I"
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemControlledDestruction",
-          "level_interval": [47, 100],
-          "additional_text": "Controlled Destruction\n<yellow>{Non-crit option. Revisit for the later crit version.}"
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemAcceleration",
-          "level_interval": [47, 100],
-          "additional_text": "Projectile Acceleration I\nEarly alternative to Prolonged Duration I or Unleash."
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemPersistence",
-          "level_interval": [47, 100],
-          "additional_text": "Prolonged Duration I\nEarly alternative to Projectile Acceleration I or Unleash."
+          "level_interval": [1, 70],
+          "additional_text": "Pierce I\nSlot [1]. T1 priority 1."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemUnleash",
-          "level_interval": [47, 100],
-          "additional_text": "Unleash\nEarly alternative to Projectile Acceleration I or Prolonged Duration I."
+          "level_interval": [1, 70],
+          "additional_text": "Unleash\nSlots [2] [4]. T1 priority 2.\nStart in [2]; use [4] once Spark is 5-link. Temporarily move to Comet before then."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemConsideredCasting",
-          "level_interval": [47, 100],
-          "additional_text": "Considered Casting"
+          "level_interval": [1, 70],
+          "additional_text": "Considered Casting\nSlot [2]. T2 priority 1.\nReplaces Unleash in [2]."
         },
         {
-          "id": "Metadata/Items/Gems/SupportGemLightningPenetration",
-          "level_interval": [47, 100],
-          "additional_text": "Lightning Penetration\n<yellow>{Optional.}"
+          "id": "Metadata/Items/Gems/SupportGemRisingTempest",
+          "level_interval": [1, 70],
+          "additional_text": "Rising Tempest\nSlot [5]. T2 priority 7."
         },
         {
-          "id": "Metadata/Items/Gems/SupportGemPersistenceTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Prolonged Duration II\nUpgrade from Prolonged Duration I."
+          "id": "Metadata/Items/Gems/SupportGemPinpointCritical",
+          "level_interval": [1, 70],
+          "additional_text": "Pinpoint Critical\nSlot [5]. T2 priority 14.\nCrit setup; replaces Rising Tempest in [5]."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemPierceTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Pierce II\nUpgrade from Pierce I."
+          "level_interval": [1, 70],
+          "additional_text": "Pierce II\nSlot [1]. T3 priority 1.\nUpgrade from Pierce I."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemAccelerationTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Projectile Acceleration II\nUpgrade from Projectile Acceleration I."
+          "level_interval": [1, 70],
+          "additional_text": "Projectile Acceleration II\nSlot [3]. T4 priority 3."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemPierceThree",
-          "level_interval": [47, 100],
-          "additional_text": "Pierce III\nUpgrade from Pierce II."
+          "level_interval": [1, 70],
+          "additional_text": "Pierce III\nSlot [1]. T5 priority 1.\nUpgrade from Pierce II."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemAccelerationThree",
-          "level_interval": [47, 100],
-          "additional_text": "Projectile Acceleration III\nUpgrade from Projectile Acceleration II."
+          "level_interval": [1, 70],
+          "additional_text": "Projectile Acceleration III\nSlot [3]. T5 priority 2.\nUpgrade from Projectile Acceleration II."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemPierce",
+          "level_interval": [71, 100],
+          "additional_text": "Pierce I\nSlot [1]. T1 priority 1."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemUnleash",
+          "level_interval": [71, 100],
+          "additional_text": "Unleash\nSlots [2] [4]. T1 priority 2.\nStart in [2]; use [4] once Spark is 5-link. Temporarily move to Comet before then."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemConsideredCasting",
+          "level_interval": [71, 100],
+          "additional_text": "Considered Casting\nSlot [2]. T2 priority 1.\nReplaces Unleash in [2]."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemRisingTempest",
+          "level_interval": [71, 100],
+          "additional_text": "Rising Tempest\nSlot [5]. T2 priority 7."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemPinpointCritical",
+          "level_interval": [71, 100],
+          "additional_text": "Pinpoint Critical\nSlot [5]. T2 priority 14.\nCrit setup; replaces Rising Tempest in [5]."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemPierceTwo",
+          "level_interval": [71, 100],
+          "additional_text": "Pierce II\nSlot [1]. T3 priority 1.\nUpgrade from Pierce I."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemAccelerationTwo",
+          "level_interval": [71, 100],
+          "additional_text": "Projectile Acceleration II\nSlot [3]. T4 priority 3."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemPierceThree",
+          "level_interval": [71, 100],
+          "additional_text": "Pierce III\nSlot [1]. T5 priority 1.\nUpgrade from Pierce II."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemAccelerationThree",
+          "level_interval": [71, 100],
+          "additional_text": "Projectile Acceleration III\nSlot [3]. T5 priority 2.\nUpgrade from Projectile Acceleration II."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemVilentasPropulsion",
+          "level_interval": [71, 100],
+          "additional_text": "<unique>{Vilenta's Propulsion}\nSlot [3]. Lineage priority 2.\nDrop/trade; cannot be cut from an Uncut Support Gem.\nReplaces Projectile Acceleration in this slot."
         }
       ]
     },
     {
       "id": "Metadata/Items/Gems/SkillGemOrbOfStorms",
       "level_interval": [1, 100],
-      "additional_text": "<b>{Orb of Storms}\nSupport recommendations include early options and later upgrades, not a simultaneous socket setup.",
+      "additional_text": "<b>{Orb of Storms}\nFollow the support slots; replace earlier supports in the same slot.",
       "support_skills": [
         {
           "id": "Metadata/Items/Gems/SupportGemOverabundance",
-          "level_interval": [1, 46],
-          "additional_text": "Overabundance I\nCampaign cutting priority: tier 1 group, choice 3."
+          "level_interval": [1, 70],
+          "additional_text": "Overabundance I\nSlot [1]. T1 priority 3."
         },
         {
-          "id": "Metadata/Items/Gems/SupportGemControlledDestruction",
-          "level_interval": [1, 46],
-          "additional_text": "Controlled Destruction\nMove the existing gem from Spark to Orb of Storms; do not cut another.\n<yellow>{Non-crit option. Revisit for the later crit version.}\nCampaign cutting priority: tier 2 group, choice 2."
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemOverabundance",
-          "level_interval": [47, 100],
-          "additional_text": "Overabundance I"
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemFastForward",
-          "level_interval": [47, 100],
-          "additional_text": "Compressed Duration I"
+          "id": "Metadata/Items/Gems/SupportGemConduction",
+          "level_interval": [1, 70],
+          "additional_text": "Shock\nSlot [2]. T1 priority 6."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemInnervate",
-          "level_interval": [47, 100],
-          "additional_text": "Innervate"
+          "level_interval": [1, 70],
+          "additional_text": "Innervate\nSlot [3]. T1 priority 7."
         },
         {
-          "id": "Metadata/Items/Gems/SupportGemControlledDestruction",
-          "level_interval": [47, 100],
-          "additional_text": "Controlled Destruction\nMove the existing gem from Spark to Orb of Storms; do not cut another.\n<yellow>{Non-crit option. Revisit for the later crit version.}"
-        },
-        {
-          "id": "Metadata/Items/Gem/SupportGemDissipate",
-          "level_interval": [47, 100],
-          "additional_text": "Harmonic Remnants I"
-        },
-        {
-          "id": "Metadata/Items/Gem/SupportGemDissipateTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Harmonic Remnants II\nUpgrade from Harmonic Remnants I."
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemFastForwardTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Compressed Duration II\nUpgrade from Compressed Duration I."
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemCoursingCurrent",
-          "level_interval": [47, 100],
-          "additional_text": "Shock Conduction\nListed in the later support group in the original plan; the current gem is cut from a tier 2 Uncut Support Gem."
+          "id": "Metadata/Items/Gem/SupportGemShockingRift",
+          "level_interval": [1, 70],
+          "additional_text": "Electromagnetism\nSlot [5]. T3 priority 12."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemChainThree",
-          "level_interval": [47, 100],
-          "additional_text": "Chain III"
+          "level_interval": [1, 70],
+          "additional_text": "Chain III\nSlot [4]. T5 priority 6."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemOverabundance",
+          "level_interval": [71, 100],
+          "additional_text": "Overabundance I\nSlot [1]. T1 priority 3."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemConduction",
+          "level_interval": [71, 100],
+          "additional_text": "Shock\nSlot [2]. T1 priority 6."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemInnervate",
+          "level_interval": [71, 100],
+          "additional_text": "Innervate\nSlot [3]. T1 priority 7."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemShockingRift",
+          "level_interval": [71, 100],
+          "additional_text": "Electromagnetism\nSlot [5]. T3 priority 12."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemChainThree",
+          "level_interval": [71, 100],
+          "additional_text": "Chain III\nSlot [4]. T5 priority 6."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemPietysMercy",
+          "level_interval": [71, 100],
+          "additional_text": "<unique>{Dominus' Grasp}\nSlot [4]. Lineage priority 7.\nDrop/trade; cannot be cut from an Uncut Support Gem.\nReplaces Chain III in this slot."
         }
       ]
     },
     {
       "id": "Metadata/Items/Gems/SkillGemFrostBomb",
       "level_interval": [1, 100],
-      "additional_text": "<b>{Frost Bomb}\nSupport recommendations include alternatives and successive tiers. Select supports for the current setup.",
+      "additional_text": "<b>{Frost Bomb}\nFollow the support slots; replace earlier supports in the same slot.",
       "support_skills": [
         {
+          "id": "Metadata/Items/Gem/SupportGemSpellCascade",
+          "level_interval": [1, 70],
+          "additional_text": "Spell Cascade\nSlot [5]. T1 priority 10."
+        },
+        {
           "id": "Metadata/Items/Gem/SupportGemExpedite",
-          "level_interval": [1, 46],
-          "additional_text": "Short Fuse I\nCampaign cutting priority: tier 2 group, choice 3."
+          "level_interval": [1, 70],
+          "additional_text": "Short Fuse I\nSlot [1]. T2 priority 2."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemSpellEcho",
-          "level_interval": [1, 46],
-          "additional_text": "Spell Echo\nCampaign cutting priority: tier 2 group, choice 4."
-        },
-        {
-          "id": "Metadata/Items/Gem/SupportGemExpediteTwo",
-          "level_interval": [1, 46],
-          "additional_text": "Short Fuse II\nUpgrade from Short Fuse I.\nCampaign cutting priority: tier 4 group, choice 1."
-        },
-        {
-          "id": "Metadata/Items/Gem/SupportGemExpedite",
-          "level_interval": [47, 100],
-          "additional_text": "Short Fuse I"
+          "level_interval": [1, 70],
+          "additional_text": "Spell Echo\nSlot [2]. T2 priority 3."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemStripAway",
-          "level_interval": [47, 100],
-          "additional_text": "Potent Exposure"
-        },
-        {
-          "id": "Metadata/Items/Gem/SupportGemDissipate",
-          "level_interval": [47, 100],
-          "additional_text": "Harmonic Remnants I"
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemOverabundance",
-          "level_interval": [47, 100],
-          "additional_text": "Overabundance I"
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemSpellEcho",
-          "level_interval": [47, 100],
-          "additional_text": "Spell Echo"
-        },
-        {
-          "id": "Metadata/Items/Gem/SupportGemDissipateTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Harmonic Remnants II\nUpgrade from Harmonic Remnants I."
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemSecondWindTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Second Wind II\nRequires a tier 4 Uncut Support Gem, rather than the tier 3 group in the original plan."
+          "level_interval": [1, 70],
+          "additional_text": "Potent Exposure\nSlot [3]. T2 priority 8."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemExpediteTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Short Fuse II\nUpgrade from Short Fuse I."
+          "level_interval": [1, 70],
+          "additional_text": "Short Fuse II\nSlot [1]. T4 priority 1.\nUpgrade from Short Fuse I."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemIngenuityTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Cooldown Recovery II"
+          "level_interval": [1, 70],
+          "additional_text": "Cooldown Recovery II\nSlot [4]. T4 priority 7."
         },
         {
-          "id": "Metadata/Items/Gems/SupportGemSecondWindThree",
-          "level_interval": [47, 100],
-          "additional_text": "Second Wind III\nUpgrade from Second Wind II."
+          "id": "Metadata/Items/Gem/SupportGemSpellCascade",
+          "level_interval": [71, 100],
+          "additional_text": "Spell Cascade\nSlot [5]. T1 priority 10."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemExpedite",
+          "level_interval": [71, 100],
+          "additional_text": "Short Fuse I\nSlot [1]. T2 priority 2."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemSpellEcho",
+          "level_interval": [71, 100],
+          "additional_text": "Spell Echo\nSlot [2]. T2 priority 3."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemStripAway",
+          "level_interval": [71, 100],
+          "additional_text": "Potent Exposure\nSlot [3]. T2 priority 8."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemExpediteTwo",
+          "level_interval": [71, 100],
+          "additional_text": "Short Fuse II\nSlot [1]. T4 priority 1.\nUpgrade from Short Fuse I."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemIngenuityTwo",
+          "level_interval": [71, 100],
+          "additional_text": "Cooldown Recovery II\nSlot [4]. T4 priority 7."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemUhtredsRite",
+          "level_interval": [71, 100],
+          "additional_text": "<unique>{Uhtred's Rite}\nSlot [5]. Lineage priority 6.\nDrop/trade; cannot be cut from an Uncut Support Gem.\nReplaces Spell Cascade in this slot."
         }
       ]
     },
     {
       "id": "Metadata/Items/Gems/SkillGemFlameWall",
       "level_interval": [1, 100],
-      "additional_text": "<b>{Flame Wall}\nEarly standalone setup: Fortress I and Spell Cascade, upgrading to Fortress II.\nLater plan: socket Flame Wall and Fireball into Cast on Elemental Ailment before the crit swap, then into Cast on Critical afterwards. Both trigger setups use Boundless Energy I/II, Ignite II, and Energy Retention.\n<yellow>{Triggered skill socketing must be done manually; this file does not encode nested skill gems.}",
+      "additional_text": "<b>{Flame Wall}\nStandalone supports use [1]-[3]. Also a trigger payload in slot [1] of Cast on Elemental Ailment or Cast on Critical, alongside Comet [2].\nManually socket: [1] Flame Wall; [2] Comet; [3] Energy Retention; [4] Spell Cascade; [5] Boundless Energy I/II.\n<yellow>{Experimental: GGG documents meta gems as unsupported. Triggered skill gems must be socketed manually.}",
       "support_skills": [
         {
           "id": "Metadata/Items/Gems/SupportGemFortress",
-          "level_interval": [1, 46],
-          "additional_text": "Fortress I\nCampaign cutting priority: tier 1 group, choice 4."
+          "level_interval": [1, 70],
+          "additional_text": "Fortress I\nSlot [1]. T1 priority 4."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemSpellCascade",
-          "level_interval": [1, 46],
-          "additional_text": "Spell Cascade\nCampaign cutting priority: tier 1 group, choice 5."
+          "level_interval": [1, 70],
+          "additional_text": "Spell Cascade\nSlot [2]. T1 priority 5."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemFortressTwo",
-          "level_interval": [1, 46],
-          "additional_text": "Fortress II\nUpgrade from Fortress I.\nCampaign cutting priority: tier 3 group, choice 6."
+          "level_interval": [1, 70],
+          "additional_text": "Fortress II\nSlot [1]. T3 priority 4.\nUpgrade from Fortress I."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemPersistenceTwo",
+          "level_interval": [1, 70],
+          "additional_text": "Prolonged Duration II\nSlot [3]. T3 priority 8."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemFortress",
-          "level_interval": [47, 100],
-          "additional_text": "Fortress I"
+          "level_interval": [71, 100],
+          "additional_text": "Fortress I\nSlot [1]. T1 priority 4."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemSpellCascade",
-          "level_interval": [47, 100],
-          "additional_text": "Spell Cascade"
+          "level_interval": [71, 100],
+          "additional_text": "Spell Cascade\nSlot [2]. T1 priority 5."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemFortressTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Fortress II\nUpgrade from Fortress I."
+          "level_interval": [71, 100],
+          "additional_text": "Fortress II\nSlot [1]. T3 priority 4.\nUpgrade from Fortress I."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemPersistenceTwo",
+          "level_interval": [71, 100],
+          "additional_text": "Prolonged Duration II\nSlot [3]. T3 priority 8."
         }
       ]
     },
     {
       "id": "Metadata/Items/Gem/SkillGemManaRemnants",
       "level_interval": [1, 100],
-      "additional_text": "<b>{Mana Remnants}\nRequires a level 4 Uncut Spirit Gem.\nLevels 1-46 follow the cutting priority table, including Harmonic Remnants II. Levels 47-100 include both Harmonic Remnants I and II, plus all three Remnant Potency tiers. Actual gem requirements still apply.",
+      "additional_text": "<b>{Mana Remnants}\nRequires a level 4 Uncut Spirit Gem. Upgrade supports within their assigned slots.",
       "support_skills": [
         {
-          "id": "Metadata/Items/Gem/SupportGemDissipateTwo",
-          "level_interval": [1, 46],
-          "additional_text": "Harmonic Remnants II\nCampaign cutting priority: tier 2 group, choice 5."
-        },
-        {
-          "id": "Metadata/Items/Gem/SupportGemInterludeTwo",
-          "level_interval": [1, 46],
-          "additional_text": "Remnant Potency II\nUpgrade from Remnant Potency I.\nCampaign cutting priority: tier 3 group, choice 3."
-        },
-        {
-          "id": "Metadata/Items/Gem/SupportGemInterludeThree",
-          "level_interval": [1, 46],
-          "additional_text": "Remnant Potency III\nUpgrade from Remnant Potency II.\nCampaign cutting priority: tier 4 group, choice 2."
-        },
-        {
           "id": "Metadata/Items/Gem/SupportGemDissipate",
-          "level_interval": [47, 100],
-          "additional_text": "Harmonic Remnants I\nRetained for both original support groups 2 and 3."
-        },
-        {
-          "id": "Metadata/Items/Gem/SupportGemDissipateTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Harmonic Remnants II"
+          "level_interval": [1, 70],
+          "additional_text": "Harmonic Remnants I\nSlot [1]. T2 priority 5."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemInterlude",
-          "level_interval": [47, 100],
-          "additional_text": "Remnant Potency I"
+          "level_interval": [1, 70],
+          "additional_text": "Remnant Potency I\nSlot [2]. T2 priority 6."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemInterludeTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Remnant Potency II\nUpgrade from Remnant Potency I."
+          "level_interval": [1, 70],
+          "additional_text": "Remnant Potency II\nSlot [2]. T3 priority 2.\nUpgrade from Remnant Potency I."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemDissipateTwo",
+          "level_interval": [1, 70],
+          "additional_text": "Harmonic Remnants II\nSlot [1]. T3 priority 5.\nUpgrade from Harmonic Remnants I."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemInterludeThree",
-          "level_interval": [47, 100],
-          "additional_text": "Remnant Potency III\nUpgrade from Remnant Potency II."
+          "level_interval": [1, 70],
+          "additional_text": "Remnant Potency III\nSlot [2]. T4 priority 2.\nUpgrade from Remnant Potency II."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemDissipate",
+          "level_interval": [71, 100],
+          "additional_text": "Harmonic Remnants I\nSlot [1]. T2 priority 5."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemInterlude",
+          "level_interval": [71, 100],
+          "additional_text": "Remnant Potency I\nSlot [2]. T2 priority 6."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemInterludeTwo",
+          "level_interval": [71, 100],
+          "additional_text": "Remnant Potency II\nSlot [2]. T3 priority 2.\nUpgrade from Remnant Potency I."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemDissipateTwo",
+          "level_interval": [71, 100],
+          "additional_text": "Harmonic Remnants II\nSlot [1]. T3 priority 5.\nUpgrade from Harmonic Remnants I."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemInterludeThree",
+          "level_interval": [71, 100],
+          "additional_text": "Remnant Potency III\nSlot [2]. T4 priority 2.\nUpgrade from Remnant Potency II."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemKhatalsRejuvenation",
+          "level_interval": [71, 100],
+          "additional_text": "<unique>{Khatal's Rejuvenation}\nSlot [3]. Lineage priority 8.\nDrop/trade; cannot be cut from an Uncut Support Gem."
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gems/SkillGemArcticArmour",
+      "level_interval": [1, 100],
+      "additional_text": "<b>{Arctic Armour}\nRequires a level 4 Uncut Spirit Gem. Base reservation: 30 Spirit.",
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gems/SupportGemClarity",
+          "level_interval": [1, 70],
+          "additional_text": "Clarity I\nSlot [1]. T1 priority 8."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemDeepFreeze",
+          "level_interval": [1, 70],
+          "additional_text": "Deep Freeze\nSlot [5]. T1 priority 11."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemGlaciation",
+          "level_interval": [1, 70],
+          "additional_text": "Freeze\nSlot [2]. T2 priority 4."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemBludgeon",
+          "level_interval": [1, 70],
+          "additional_text": "Knockback\nSlot [3]. T3 priority 9."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemIngenuityTwo",
+          "level_interval": [1, 70],
+          "additional_text": "Cooldown Recovery II\nSlot [4]. T4 priority 8."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemClarity",
+          "level_interval": [71, 100],
+          "additional_text": "Clarity I\nSlot [1]. T1 priority 8."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemDeepFreeze",
+          "level_interval": [71, 100],
+          "additional_text": "Deep Freeze\nSlot [5]. T1 priority 11."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemGlaciation",
+          "level_interval": [71, 100],
+          "additional_text": "Freeze\nSlot [2]. T2 priority 4."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemBludgeon",
+          "level_interval": [71, 100],
+          "additional_text": "Knockback\nSlot [3]. T3 priority 9."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemIngenuityTwo",
+          "level_interval": [71, 100],
+          "additional_text": "Cooldown Recovery II\nSlot [4]. T4 priority 8."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemBreachlordsRift",
+          "level_interval": [71, 100],
+          "additional_text": "<unique>{Breachlord's Rift}\nSlot [5]. Lineage priority 10.\nDrop/trade; cannot be cut from an Uncut Support Gem.\nReplaces Deep Freeze in this slot."
         }
       ]
     },
     {
       "id": "Metadata/Items/Gems/SkillGemManaTempest",
       "level_interval": [1, 100],
-      "additional_text": "<b>{Mana Tempest}\nRequires a level 7 Uncut Skill Gem.",
+      "additional_text": "<b>{Mana Tempest}\nRequires a level 7 Uncut Skill Gem. Upgrade supports within their assigned slots.",
       "support_skills": [
         {
+          "id": "Metadata/Items/Gems/SupportGemSecondWind",
+          "level_interval": [1, 70],
+          "additional_text": "Second Wind I\nSlot [1]. T2 priority 10."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemIngenuity",
+          "level_interval": [1, 70],
+          "additional_text": "Cooldown Recovery I\nSlot [2]. T3 priority 7."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemMobility",
+          "level_interval": [1, 70],
+          "additional_text": "Mobility\nSlot [4]. T3 priority 11."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemSecondWindTwo",
+          "level_interval": [1, 70],
+          "additional_text": "Second Wind II\nSlot [1]. T4 priority 4.\nUpgrade from Second Wind I."
+        },
+        {
           "id": "Metadata/Items/Gems/SupportGemIngenuityTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Cooldown Recovery II\nRequires a tier 4 Uncut Support Gem, rather than the tier 2 group in the revised plan."
+          "level_interval": [1, 70],
+          "additional_text": "Cooldown Recovery II\nSlot [2]. T4 priority 5.\nUpgrade from Cooldown Recovery I."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemSecondWindThree",
+          "level_interval": [1, 70],
+          "additional_text": "Second Wind III\nSlot [1]. T5 priority 4.\nUpgrade from Second Wind II."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemLightningMastery",
-          "level_interval": [47, 100],
-          "additional_text": "Lightning Mastery"
+          "level_interval": [1, 70],
+          "additional_text": "Lightning Mastery\nSlot [3]. T5 priority 5."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemSecondWind",
+          "level_interval": [71, 100],
+          "additional_text": "Second Wind I\nSlot [1]. T2 priority 10."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemIngenuity",
+          "level_interval": [71, 100],
+          "additional_text": "Cooldown Recovery I\nSlot [2]. T3 priority 7."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemMobility",
+          "level_interval": [71, 100],
+          "additional_text": "Mobility\nSlot [4]. T3 priority 11."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemSecondWindTwo",
+          "level_interval": [71, 100],
+          "additional_text": "Second Wind II\nSlot [1]. T4 priority 4.\nUpgrade from Second Wind I."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemIngenuityTwo",
+          "level_interval": [71, 100],
+          "additional_text": "Cooldown Recovery II\nSlot [2]. T4 priority 5.\nUpgrade from Cooldown Recovery I."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemSecondWindThree",
+          "level_interval": [71, 100],
+          "additional_text": "Second Wind III\nSlot [1]. T5 priority 4.\nUpgrade from Second Wind II."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemLightningMastery",
+          "level_interval": [71, 100],
+          "additional_text": "Lightning Mastery\nSlot [3]. T5 priority 5."
         }
       ]
     },
     {
       "id": "Metadata/Items/Gem/SkillGemSiphonElements",
       "level_interval": [1, 100],
-      "additional_text": "<b>{Siphon Elements}\nRequires a level 8 Uncut Spirit Gem.",
+      "additional_text": "<b>{Siphon Elements}\nRequires a level 8 Uncut Spirit Gem. Upgrade supports within their assigned slots.",
       "support_skills": [
         {
-          "id": "Metadata/Items/Gems/SupportGemColdMastery",
-          "level_interval": [1, 46],
-          "additional_text": "Cold Mastery\nCampaign cutting priority: tier 5 group, choice 3."
+          "id": "Metadata/Items/Gem/SupportGemDissipate",
+          "level_interval": [1, 70],
+          "additional_text": "Harmonic Remnants I\nSlot [1]. T2 priority 9."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemDissipateTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Harmonic Remnants II"
+          "level_interval": [1, 70],
+          "additional_text": "Harmonic Remnants II\nSlot [1]. T3 priority 6.\nUpgrade from Harmonic Remnants I."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemColdMastery",
-          "level_interval": [47, 100],
-          "additional_text": "Cold Mastery"
+          "level_interval": [1, 70],
+          "additional_text": "Cold Mastery\nSlot [2]. T5 priority 3."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemDissipate",
+          "level_interval": [71, 100],
+          "additional_text": "Harmonic Remnants I\nSlot [1]. T2 priority 9."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemDissipateTwo",
+          "level_interval": [71, 100],
+          "additional_text": "Harmonic Remnants II\nSlot [1]. T3 priority 6.\nUpgrade from Harmonic Remnants I."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemColdMastery",
+          "level_interval": [71, 100],
+          "additional_text": "Cold Mastery\nSlot [2]. T5 priority 3."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemUhtredsOmen",
+          "level_interval": [71, 100],
+          "additional_text": "<unique>{Uhtred's Omen}\nSlot [2]. Lineage priority 9.\nDrop/trade; cannot be cut from an Uncut Support Gem.\nReplaces Cold Mastery in this slot."
         }
       ]
     },
     {
       "id": "Metadata/Items/Gems/SkillGemComet",
       "level_interval": [1, 100],
-      "additional_text": "<b>{Comet}\nRequires a level 11 Uncut Skill Gem.\n<yellow>{Ambrosia II: use once the mana flask has 100+ charges.}\n<unique>{Zarokh's Refrain: planned Lineage upgrade. Obtain separately through drops or trade; it cannot be cut from an Uncut Support Gem.}",
+      "additional_text": "<b>{Comet}\nRequires a level 11 Uncut Skill Gem. Same-slot supports are alternatives/upgrades. Ambrosia II: use with a 100+ charge mana flask.\nAlso a trigger payload in slot [2] of Cast on Elemental Ailment or Cast on Critical, alongside Flame Wall [1].\nManually socket: [1] Flame Wall; [2] Comet; [3] Energy Retention; [4] Spell Cascade; [5] Boundless Energy I/II.\n<yellow>{Experimental: GGG documents meta gems as unsupported. Triggered skill gems must be socketed manually.}",
       "support_skills": [
         {
-          "id": "Metadata/Items/Gems/SupportGemSpellEcho",
-          "level_interval": [1, 46],
-          "additional_text": "Spell Echo\nPlanned for support group 3, but available from a tier 2 Uncut Support Gem.\nCampaign cutting priority: tier 3 group, choice 4."
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemElementalFocus",
-          "level_interval": [1, 46],
-          "additional_text": "Elemental Focus\nCampaign cutting priority: tier 3 group, choice 5."
+          "id": "Metadata/Items/Gems/SupportGemUnleash",
+          "level_interval": [1, 70],
+          "additional_text": "Unleash\nSlot [1]. T1 priority 9.\nMove from Spark until Spark is 5-link."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemConsideredCasting",
-          "level_interval": [47, 100],
-          "additional_text": "Considered Casting"
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemRisingTempest",
-          "level_interval": [47, 100],
-          "additional_text": "Rising Tempest"
+          "level_interval": [1, 70],
+          "additional_text": "Considered Casting\nSlot [5]. T2 priority 11."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemSpellEcho",
-          "level_interval": [47, 100],
-          "additional_text": "Spell Echo\nPlanned for support group 3, but available from a tier 2 Uncut Support Gem."
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemElementalFocus",
-          "level_interval": [47, 100],
-          "additional_text": "Elemental Focus"
+          "level_interval": [1, 70],
+          "additional_text": "Spell Echo\nSlot [2]. T3 priority 3.\nCuttable from T2; kept in the T3 priority group."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemAmbrosiaTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Ambrosia II\n<yellow>{Use once the mana flask has 100+ charges.}"
+          "level_interval": [1, 70],
+          "additional_text": "Ambrosia II\nSlot [4]. T3 priority 10.\nUse once the mana flask has 100+ charges."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemInevitableCritical",
+          "level_interval": [1, 70],
+          "additional_text": "Inexorable Critical I\nSlot [3]. T3 priority 15.\nAlternative to Execute II in [3]."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemExecuteTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Execute II\nRequires a tier 4 Uncut Support Gem, rather than the tier 3 group in the original plan."
+          "level_interval": [1, 70],
+          "additional_text": "Execute II\nSlot [3]. T4 priority 6.\nAlternative to Inexorable Critical I in [3]."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemUnleash",
+          "level_interval": [71, 100],
+          "additional_text": "Unleash\nSlot [1]. T1 priority 9.\nMove from Spark until Spark is 5-link."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemConsideredCasting",
+          "level_interval": [71, 100],
+          "additional_text": "Considered Casting\nSlot [5]. T2 priority 11."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemSpellEcho",
+          "level_interval": [71, 100],
+          "additional_text": "Spell Echo\nSlot [2]. T3 priority 3.\nCuttable from T2; kept in the T3 priority group."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemAmbrosiaTwo",
+          "level_interval": [71, 100],
+          "additional_text": "Ambrosia II\nSlot [4]. T3 priority 10.\nUse once the mana flask has 100+ charges."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemInevitableCritical",
+          "level_interval": [71, 100],
+          "additional_text": "Inexorable Critical I\nSlot [3]. T3 priority 15.\nAlternative to Execute II in [3]."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemExecuteTwo",
+          "level_interval": [71, 100],
+          "additional_text": "Execute II\nSlot [3]. T4 priority 6.\nAlternative to Inexorable Critical I in [3]."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemZarokhsRefrain",
-          "level_interval": [47, 100],
-          "additional_text": "<unique>{Zarokh's Refrain}\nLineage upgrade: shown as an acquisition recommendation. Obtain through drops or trade, not by cutting. Actual character-level requirement still applies."
+          "level_interval": [71, 100],
+          "additional_text": "<unique>{Zarokh's Refrain}\nSlot [2]. Lineage priority 1.\nDrop/trade; cannot be cut from an Uncut Support Gem.\nReplaces Spell Echo in this slot."
         }
       ]
     },
     {
       "id": "Metadata/Items/Gem/SkillGemElementalConflux",
       "level_interval": [1, 100],
-      "additional_text": "<b>{Elemental Conflux}\nRequires a level 14 Uncut Spirit Gem.\nThe duration supports are planned for support group 4; both are available from tier 3 Uncut Support Gems.",
+      "additional_text": "<b>{Elemental Conflux}\nRequires a level 14 Uncut Spirit Gem. Follow the support slot recommendations.",
       "support_skills": [
         {
-          "id": "Metadata/Items/Gems/SupportGemPersistenceTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Prolonged Duration II"
-        },
-        {
-          "id": "Metadata/Items/Gems/SupportGemFastForwardTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Compressed Duration II"
+          "id": "Metadata/Items/Gems/SupportGemColdMastery",
+          "level_interval": [1, 70],
+          "additional_text": "Cold Mastery\nSlot [1]. T5 priority 7."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemColdMastery",
-          "level_interval": [47, 100],
-          "additional_text": "Cold Mastery"
+          "level_interval": [71, 100],
+          "additional_text": "Cold Mastery\nSlot [1]. T5 priority 7."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemUhtredsExodus",
+          "level_interval": [71, 100],
+          "additional_text": "<unique>{Uhtred's Exodus}\nSlot [1]. Lineage priority 5.\nDrop/trade; cannot be cut from an Uncut Support Gem.\nReplaces Cold Mastery in this slot."
         }
       ]
     },
     {
       "id": "Metadata/Items/Gems/SkillGemCastOnElementalAilment",
       "level_interval": [1, 100],
-      "additional_text": "<b>{Cast on Elemental Ailment}\nRequires a level 14 Uncut Spirit Gem. Base reservation: 100 Spirit.\n<green>{Use before the crit swap.}\nManually socket Flame Wall and Fireball as the triggered skills. Planned supports: Boundless Energy I/II, Ignite II, Energy Retention.\n<yellow>{Experimental: GGG documents meta gems as unsupported. Verify this recommendation in-game; the same setup is recorded on Flame Wall and Fireball as a fallback.}",
+      "additional_text": "<b>{Cast on Elemental Ailment}\nRequires a level 14 Uncut Spirit Gem. Base reservation: 100 Spirit. Use before the crit swap.\nManually socket: [1] Flame Wall; [2] Comet; [3] Energy Retention; [4] Spell Cascade; [5] Boundless Energy I/II.\n<yellow>{Experimental: GGG documents meta gems as unsupported. Triggered skill gems must be socketed manually.}",
       "support_skills": [
         {
-          "id": "Metadata/Items/Gem/SupportGemImpetus",
-          "level_interval": [47, 100],
-          "additional_text": "Boundless Energy I\nSupport for the Cast on Elemental Ailment setup."
+          "id": "Metadata/Items/Gem/SupportGemSpellCascade",
+          "level_interval": [1, 70],
+          "additional_text": "Spell Cascade\nSlot [4]. T1 priority 12."
         },
         {
-          "id": "Metadata/Items/Gems/SupportGemIgnitionTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Ignite II\nSupport for the Cast on Elemental Ailment setup."
+          "id": "Metadata/Items/Gem/SupportGemImpetus",
+          "level_interval": [1, 70],
+          "additional_text": "Boundless Energy I\nSlot [5]. T2 priority 12."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemEnergyRetention",
-          "level_interval": [47, 100],
-          "additional_text": "Energy Retention\nSupport for the Cast on Elemental Ailment setup."
+          "level_interval": [1, 70],
+          "additional_text": "Energy Retention\nSlot [3]. T3 priority 13."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemImpetusTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Boundless Energy II\nUpgrade from Boundless Energy I for the Cast on Elemental Ailment setup."
+          "level_interval": [1, 70],
+          "additional_text": "Boundless Energy II\nSlot [5]. T4 priority 9.\nUpgrade from Boundless Energy I."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemSpellCascade",
+          "level_interval": [71, 100],
+          "additional_text": "Spell Cascade\nSlot [4]. T1 priority 12."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemImpetus",
+          "level_interval": [71, 100],
+          "additional_text": "Boundless Energy I\nSlot [5]. T2 priority 12."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemEnergyRetention",
+          "level_interval": [71, 100],
+          "additional_text": "Energy Retention\nSlot [3]. T3 priority 13."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemImpetusTwo",
+          "level_interval": [71, 100],
+          "additional_text": "Boundless Energy II\nSlot [5]. T4 priority 9.\nUpgrade from Boundless Energy I."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemFlukeTwo",
+          "level_interval": [71, 100],
+          "additional_text": "<unique>{Ixchel's Torment}\nSlot [4]. Lineage priority 3.\nDrop/trade; cannot be cut from an Uncut Support Gem.\nReplaces Spell Cascade in this slot."
         }
       ]
     },
     {
-      "id": "Metadata/Items/Gem/SkillGemFireball",
-      "level_interval": [1, 100],
-      "additional_text": "<b>{Fireball}\nTrigger payload, not a separate main-skill recommendation. Manually socket alongside Flame Wall in Cast on Elemental Ailment before the crit swap, then in Cast on Critical afterwards.\nBoth triggers require a level 14 Uncut Spirit Gem and have 100 Spirit base reservation before modifiers. Both setups use Boundless Energy I/II, Ignite II, and Energy Retention.\nMeta-gem support in the planner is experimental."
-    },
-    {
       "id": "Metadata/Items/Gems/SkillGemCastOnCritical",
       "level_interval": [1, 100],
-      "additional_text": "<b>{Cast on Critical}\nRequires a level 14 Uncut Spirit Gem.\n<green>{Replace Cast on Elemental Ailment after the crit swap.}\nOriginal planning note: +90 Spirit. Current gem data lists 100 Spirit base reservation; verify the effective reservation and available Spirit for your character.\nManually socket Flame Wall and Fireball as the triggered skills. Planned supports: Boundless Energy I/II, Ignite II, Energy Retention.\n<yellow>{Experimental: GGG documents meta gems as unsupported. Verify this recommendation in-game; the same setup is recorded on Flame Wall and Fireball as a fallback.}",
+      "additional_text": "<b>{Cast on Critical}\nRequires a level 14 Uncut Spirit Gem. Base reservation: 100 Spirit before modifiers; check available Spirit. Replaces Cast on Elemental Ailment after the crit swap.\nManually socket: [1] Flame Wall; [2] Comet; [3] Energy Retention; [4] Spell Cascade; [5] Boundless Energy I/II.\n<yellow>{Experimental: GGG documents meta gems as unsupported. Triggered skill gems must be socketed manually.}",
       "support_skills": [
         {
-          "id": "Metadata/Items/Gem/SupportGemImpetus",
-          "level_interval": [47, 100],
-          "additional_text": "Boundless Energy I\nSupport for the Cast on Critical setup."
+          "id": "Metadata/Items/Gem/SupportGemSpellCascade",
+          "level_interval": [1, 70],
+          "additional_text": "Spell Cascade\nSlot [4]. T1 priority 13."
         },
         {
-          "id": "Metadata/Items/Gems/SupportGemIgnitionTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Ignite II\nSupport for the Cast on Critical setup."
+          "id": "Metadata/Items/Gem/SupportGemImpetus",
+          "level_interval": [1, 70],
+          "additional_text": "Boundless Energy I\nSlot [5]. T2 priority 13."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemEnergyRetention",
-          "level_interval": [47, 100],
-          "additional_text": "Energy Retention\nSupport for the Cast on Critical setup."
+          "level_interval": [1, 70],
+          "additional_text": "Energy Retention\nSlot [3]. T3 priority 14."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemImpetusTwo",
-          "level_interval": [47, 100],
-          "additional_text": "Boundless Energy II\nUpgrade from Boundless Energy I for the Cast on Critical setup."
+          "level_interval": [1, 70],
+          "additional_text": "Boundless Energy II\nSlot [5]. T4 priority 10.\nUpgrade from Boundless Energy I."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemSpellCascade",
+          "level_interval": [71, 100],
+          "additional_text": "Spell Cascade\nSlot [4]. T1 priority 13."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemImpetus",
+          "level_interval": [71, 100],
+          "additional_text": "Boundless Energy I\nSlot [5]. T2 priority 13."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemEnergyRetention",
+          "level_interval": [71, 100],
+          "additional_text": "Energy Retention\nSlot [3]. T3 priority 14."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemImpetusTwo",
+          "level_interval": [71, 100],
+          "additional_text": "Boundless Energy II\nSlot [5]. T4 priority 10.\nUpgrade from Boundless Energy I."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemArbitersIgnition",
+          "level_interval": [71, 100],
+          "additional_text": "<unique>{Arbiter's Ignition}\nSlot [4]. Lineage priority 4.\nDrop/trade; cannot be cut from an Uncut Support Gem.\nReplaces Spell Cascade in this slot."
         }
       ]
     }
