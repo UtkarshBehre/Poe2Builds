@@ -128,31 +128,25 @@ Galvanic Field -> Chain I, Chain II, Chain III, Bounty I, Bounty II, OverAbundan
 
 
 
-Act 1: "ld res|\\d+% i.+mov|ell.\*ge$|^\\+.\*all sp.\*ls$|^\\+.\*re sp.\*ls$|^\\+.\*ld sp.\*ls$|^\\+.\*ng sp.\*ls$|^\\+.\*ile skills$|o sp|s: st"
+Act 1: "ld res|\\d+% i.+mov|ell.\*ge$|\\d l.+da|^\\+.\*all sp.\*ls$|^\\+.\*ld sp.\*ls$|^\\+.\*ng sp.\*ls$|^\\+.\*ile skills$|o sp|s: (am|ri)"
 
 
 
 Act 2:
 
-"(re|ng) res|\\d+% i.+mov|ell.\*ge$|^\\+.\*all sp.\*ls$|^\\+.\*re sp.\*ls$|^\\+.\*ng sp.\*ls$|^\\+.\*ile skills$|o sp|st spe|s: st"
+"y: r|(re|ng) res|\\d+% i.+mov|ell.\*ge$|\\d l.+da|^\\+.\*all sp.\*ls$|^\\+.\*ld sp.\*ls$|^\\+.\*ng sp.\*ls$|^\\+.\*ile skills$|o sp|s: (am|ri)"
 
 
 
-Act 3,4
+Acts 3-6:
 
-"(ld|os) res|(\[32]0|\[21]5)% i.+mov|ell.\*ge$|^\\+.\*all sp.\*ls$|^\\+.\*re sp.\*ls$|^\\+.\*ng sp.\*ls$|^\\+.\*ile skills$|o sp|st spe|s: st"
-
-
-
-Act 5,6:
-
-"(ld|os) res|(\[32]0|25)% i.+mov|ell.\*ge$|^\\+.\*all sp.\*ls$|^\\+.\*re sp.\*ls$|^\\+.\*ng sp.\*ls$|^\\+.\*ile skills$|o sp|st spe|s: st"
+"y: r|(re|ld|ng) res|(\[32]0|\[21]5)% i.+mov|ell.\*ge$|\\d l.+da|^\\+.\*all sp.\*ls$|^\\+.\*ld sp.\*ls$|^\\+.\*ng sp.\*ls$|^\\+.\*ile skills$|o sp|s: (am|ri)"
 
 
 
 Maps Vendor
 
-"(re|ld|ng|os) res|(30|25)% i.+mov|ell.\*ge$|^\\+.\*all sp.\*ls$|^\\+.\*ile skills$|o sp|st spe|s: st"
+"y: r|(re|ld|ng) res|(30|25)% i.+mov|ell.\*ge$|\\d l.+da|^\\+.\*all sp.\*ls$|^\\+.\*ld sp.\*ls$|^\\+.\*ng sp.\*ls$|^\\+.\*ile skills$|o sp|d rari|s: (am|ri|be|st)"
 
 
 
