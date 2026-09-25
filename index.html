@@ -155,7 +155,7 @@
       flex-wrap: wrap;
       gap: 2px 0;
       align-items: center;
-      font-size: 0.85em;
+      font-size: 1em;
       color: #aaa;
     }
 
@@ -170,9 +170,10 @@
       line-height: 1.3;
     }
 
-    .dmg-tiers .tier-chip .tc-tier { font-size: 0.78em; color: #666; }
+    .dmg-tiers .tier-chip .tc-tier { font-size: 1em; color: #b8875e; }
     .dmg-tiers .tier-chip .tc-lvl  { font-size: 1em;    color: #e0c97a; font-weight: 600; }
-    .dmg-tiers .tier-chip .tc-val  { font-size: 0.72em; color: #888; white-space: nowrap; }
+    .dmg-tiers .tier-chip .tc-lvl small { font-size: 0.75em; }
+    .dmg-tiers .tier-chip .tc-val  { font-size: 1em; color: #6090e8; white-space: nowrap; }
 
     .dmg-tiers .tier-sep {
       color: #444;
@@ -430,9 +431,8 @@
     }
 
     .modifier-cutoffs .dmg-tiers h3 { font-size: 1.05em; }
-    .modifier-cutoffs .tier-row { font-size: 1em; gap: 6px 0; }
+    .modifier-cutoffs .tier-row { gap: 6px 0; }
     .modifier-cutoffs .tier-chip { padding: 5px 10px; }
-    .modifier-cutoffs .tier-chip .tc-val { font-size: 0.8em; }
 
     .spark-skills th:first-child { width: 64px; }
     .spark-skills th:nth-child(2) { width: 18%; }
@@ -655,46 +655,46 @@
 <div class="dmg-tiers">
   <h3>Lightning Damage to Attacks — Tier Cutoffs</h3>
   <div class="tier-row">
-    <span class="tier-chip"><span class="tc-tier">T10</span><span class="tc-lvl">1</span><span class="tc-val">1 to 4–6</span></span>
+    <span class="tier-chip"><span class="tc-tier">T10</span><span class="tc-lvl"><small>ilvl:</small> 1</span><span class="tc-val">1 to 4–6</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip"><span class="tc-tier">T9</span><span class="tc-lvl">8</span><span class="tc-val">1 to 13–19</span></span>
+    <span class="tier-chip"><span class="tc-tier">T9</span><span class="tc-lvl"><small>ilvl:</small> 8</span><span class="tc-val">1 to 13–19</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip"><span class="tc-tier">T8</span><span class="tc-lvl">16</span><span class="tc-val">1–2 to 20–30</span></span>
+    <span class="tier-chip"><span class="tc-tier">T8</span><span class="tc-lvl"><small>ilvl:</small> 16</span><span class="tc-val">1–2 to 20–30</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip"><span class="tc-tier">T7</span><span class="tc-lvl">33</span><span class="tc-val">1–2 to 36–52</span></span>
+    <span class="tier-chip"><span class="tc-tier">T7</span><span class="tc-lvl"><small>ilvl:</small> 33</span><span class="tc-val">1–2 to 36–52</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip"><span class="tc-tier">T6</span><span class="tc-lvl">46</span><span class="tc-val">1–3 to 55–60</span></span>
+    <span class="tier-chip"><span class="tc-tier">T6</span><span class="tc-lvl"><small>ilvl:</small> 46</span><span class="tc-val">1–3 to 55–60</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip"><span class="tc-tier">T5</span><span class="tc-lvl">54</span><span class="tc-val">1–4 to 63–82</span></span>
+    <span class="tier-chip"><span class="tc-tier">T5</span><span class="tc-lvl"><small>ilvl:</small> 54</span><span class="tc-val">1–4 to 63–82</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip"><span class="tc-tier">T4</span><span class="tc-lvl">60</span><span class="tc-val">1–6 to 85–107</span></span>
+    <span class="tier-chip"><span class="tc-tier">T4</span><span class="tc-lvl"><small>ilvl:</small> 60</span><span class="tc-val">1–6 to 85–107</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip"><span class="tc-tier">T3</span><span class="tc-lvl">65</span><span class="tc-val">1–8 to 111–152</span></span>
+    <span class="tier-chip"><span class="tc-tier">T3</span><span class="tc-lvl"><small>ilvl:</small> 65</span><span class="tc-val">1–8 to 111–152</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip"><span class="tc-tier">T2</span><span class="tc-lvl">75</span><span class="tc-val">1–10 to 157–196</span></span>
+    <span class="tier-chip"><span class="tc-tier">T2</span><span class="tc-lvl"><small>ilvl:</small> 75</span><span class="tc-val">1–10 to 157–196</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip"><span class="tc-tier">T1</span><span class="tc-lvl">81</span><span class="tc-val">1–12 to 202–234</span></span>
+    <span class="tier-chip"><span class="tc-tier">T1</span><span class="tc-lvl"><small>ilvl:</small> 81</span><span class="tc-val">1–12 to 202–234</span></span>
   </div>
 </div>
 
 <div class="dmg-tiers">
   <h3>Attack Speed — Tier Cutoffs</h3>
   <div class="tier-row">
-    <span class="tier-chip"><span class="tc-tier">T8</span><span class="tc-lvl">1</span><span class="tc-val">5–6%</span></span>
+    <span class="tier-chip"><span class="tc-tier">T8</span><span class="tc-lvl"><small>ilvl:</small> 1</span><span class="tc-val">5–6%</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip"><span class="tc-tier">T7</span><span class="tc-lvl">11</span><span class="tc-val">8–10%</span></span>
+    <span class="tier-chip"><span class="tc-tier">T7</span><span class="tc-lvl"><small>ilvl:</small> 11</span><span class="tc-val">8–10%</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip"><span class="tc-tier">T6</span><span class="tc-lvl">22</span><span class="tc-val">11–13%</span></span>
+    <span class="tier-chip"><span class="tc-tier">T6</span><span class="tc-lvl"><small>ilvl:</small> 22</span><span class="tc-val">11–13%</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip"><span class="tc-tier">T5</span><span class="tc-lvl">30</span><span class="tc-val">14–16%</span></span>
+    <span class="tier-chip"><span class="tc-tier">T5</span><span class="tc-lvl"><small>ilvl:</small> 30</span><span class="tc-val">14–16%</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip"><span class="tc-tier">T4</span><span class="tc-lvl">37</span><span class="tc-val">17–19%</span></span>
+    <span class="tier-chip"><span class="tc-tier">T4</span><span class="tc-lvl"><small>ilvl:</small> 37</span><span class="tc-val">17–19%</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip"><span class="tc-tier">T3</span><span class="tc-lvl">45</span><span class="tc-val">20–22%</span></span>
+    <span class="tier-chip"><span class="tc-tier">T3</span><span class="tc-lvl"><small>ilvl:</small> 45</span><span class="tc-val">20–22%</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip"><span class="tc-tier">T2</span><span class="tc-lvl">60</span><span class="tc-val">23–25%</span></span>
+    <span class="tier-chip"><span class="tc-tier">T2</span><span class="tc-lvl"><small>ilvl:</small> 60</span><span class="tc-val">23–25%</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip"><span class="tc-tier">T1</span><span class="tc-lvl">77</span><span class="tc-val">26–28%</span></span>
+    <span class="tier-chip"><span class="tc-tier">T1</span><span class="tc-lvl"><small>ilvl:</small> 77</span><span class="tc-val">26–28%</span></span>
   </div>
 </div>
 
@@ -830,17 +830,17 @@
 <div class="dmg-tiers">
   <h3>Gain % of Damage as Extra Lightning Damage</h3>
   <div class="tier-row">
-    <span class="tier-chip" title="Deadly"><span class="tc-tier">T6</span><span class="tc-lvl">5</span><span class="tc-val">26–30%</span></span>
+    <span class="tier-chip" title="Deadly"><span class="tc-tier">T6</span><span class="tc-lvl"><small>ilvl:</small> 5</span><span class="tc-val">26–30%</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip" title="Lethal"><span class="tc-tier">T5</span><span class="tc-lvl">16</span><span class="tc-val">31–36%</span></span>
+    <span class="tier-chip" title="Lethal"><span class="tc-tier">T5</span><span class="tc-lvl"><small>ilvl:</small> 16</span><span class="tc-val">31–36%</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip" title="Fatal"><span class="tc-tier">T4</span><span class="tc-lvl">33</span><span class="tc-val">37–42%</span></span>
+    <span class="tier-chip" title="Fatal"><span class="tc-tier">T4</span><span class="tc-lvl"><small>ilvl:</small> 33</span><span class="tc-val">37–42%</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip" title="Vorpal"><span class="tc-tier">T3</span><span class="tc-lvl">46</span><span class="tc-val">43–48%</span></span>
+    <span class="tier-chip" title="Vorpal"><span class="tc-tier">T3</span><span class="tc-lvl"><small>ilvl:</small> 46</span><span class="tc-val">43–48%</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip" title="Electrifying"><span class="tc-tier">T2</span><span class="tc-lvl">60</span><span class="tc-val">49–54%</span></span>
+    <span class="tier-chip" title="Electrifying"><span class="tc-tier">T2</span><span class="tc-lvl"><small>ilvl:</small> 60</span><span class="tc-val">49–54%</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip" title="Stormbound"><span class="tc-tier">T1</span><span class="tc-lvl">80</span><span class="tc-val">55–60%</span></span>
+    <span class="tier-chip" title="Stormbound"><span class="tc-tier">T1</span><span class="tc-lvl"><small>ilvl:</small> 80</span><span class="tc-val">55–60%</span></span>
   </div>
 </div>
 
@@ -848,13 +848,13 @@
 <div class="dmg-tiers">
   <h3>+ to Level of all Spell Skills</h3>
   <div class="tier-row">
-    <span class="tier-chip" title="of the Mage"><span class="tc-tier">T7</span><span class="tc-lvl">5</span><span class="tc-val">+2</span></span>
+    <span class="tier-chip" title="of the Mage"><span class="tc-tier">T7</span><span class="tc-lvl"><small>ilvl:</small> 5</span><span class="tc-val">+2</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip" title="of the Enchanter"><span class="tc-tier">T5</span><span class="tc-lvl">25</span><span class="tc-val">+3</span></span>
+    <span class="tier-chip" title="of the Enchanter"><span class="tc-tier">T5</span><span class="tc-lvl"><small>ilvl:</small> 25</span><span class="tc-val">+3</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip" title="of the Evoker"><span class="tc-tier">T3</span><span class="tc-lvl">55</span><span class="tc-val">+4</span></span>
+    <span class="tier-chip" title="of the Evoker"><span class="tc-tier">T3</span><span class="tc-lvl"><small>ilvl:</small> 55</span><span class="tc-val">+4</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip" title="of the Sorcerer"><span class="tc-tier">T2</span><span class="tc-lvl">78</span><span class="tc-val">+5–6</span></span>
+    <span class="tier-chip" title="of the Sorcerer"><span class="tc-tier">T2</span><span class="tc-lvl"><small>ilvl:</small> 78</span><span class="tc-val">+5–6</span></span>
   </div>
 </div>
 
@@ -862,15 +862,15 @@
   <h3>+ to Level of all Fire Spell Skills</h3>
   <p><em>The same cutoffs apply to Cold and Lightning Spell Skills.</em></p>
   <div class="tier-row">
-    <span class="tier-chip" title="of Coals"><span class="tc-tier">T8</span><span class="tc-lvl">2</span><span class="tc-val">+1</span></span>
+    <span class="tier-chip" title="of Coals"><span class="tc-tier">T8</span><span class="tc-lvl"><small>ilvl:</small> 2</span><span class="tc-val">+1</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip" title="of Cinders"><span class="tc-tier">T6</span><span class="tc-lvl">18</span><span class="tc-val">+2</span></span>
+    <span class="tier-chip" title="of Cinders"><span class="tc-tier">T6</span><span class="tc-lvl"><small>ilvl:</small> 18</span><span class="tc-val">+2</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip" title="of Flames"><span class="tc-tier">T4</span><span class="tc-lvl">36</span><span class="tc-val">+3–4</span></span>
+    <span class="tier-chip" title="of Flames"><span class="tc-tier">T4</span><span class="tc-lvl"><small>ilvl:</small> 36</span><span class="tc-val">+3–4</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip" title="of Immolation"><span class="tc-tier">T3</span><span class="tc-lvl">55</span><span class="tc-val">+5–6</span></span>
+    <span class="tier-chip" title="of Immolation"><span class="tc-tier">T3</span><span class="tc-lvl"><small>ilvl:</small> 55</span><span class="tc-val">+5–6</span></span>
     <span class="tier-sep">›</span>
-    <span class="tier-chip" title="of Inferno"><span class="tc-tier">T1</span><span class="tc-lvl">81</span><span class="tc-val">+7</span></span>
+    <span class="tier-chip" title="of Inferno"><span class="tc-tier">T1</span><span class="tc-lvl"><small>ilvl:</small> 81</span><span class="tc-val">+7</span></span>
   </div>
 </div>
 
