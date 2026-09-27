@@ -28,6 +28,8 @@ Early Items > Spark-Comet groups recommendations into separate equipment-slot ta
 | Jewels | Time-Lost Jewel | Double crit damage bonus + crit chance, if 5-mod jewel crafting remains available |
 | Jewels | Sapphire Jewel | Double crit damage bonus + crit chance, if 5-mod jewel crafting remains available |
 | Jewels | Prism of Belief | +3 to level of Spark |
+| Jewels | From Nothing | Eldritch Battery |
+| Flasks | Lavianga's Spirits (Gargantuan Mana Flask) | |
 | Weapons | Adonia's Ego | Pinnacle of Power consumes all power charges for 15% more spell damage per charge consumed |
 | Offhand | Deathrattle | 20% chance for Energy Shield Recharge to start when you Kill an Enemy |
 | Offhand | Effigy of Cruelty | Critical Hits with Spells apply (1—3) Stacks of Critical Weakness |
@@ -86,7 +88,7 @@ The Early Items summary table collects the spell and projectile skill-level sour
 
 The build selector beside the page title controls Campaign, Early Items, and Crafting. Select Twisters or Spark-Comet once; switching tabs retains that selection, and changing builds keeps the current tab open. Twisters is the initial selection. Campaign Zone Rewards and Tablets remain shared.
 
-Crafting has four stages: Early crafting, Mid to end game crafting, End game crafting, and Mirror tier crafting. A left sidebar selects Weapon, Offhand, Helmet, Body Armour, Gloves, Boots, Belt, Rings, Amulet, or Jewels; it wraps above the content on small screens. The content area shows recipes matching the selected build, stage, and category, with an empty state when none have been added. Each craft has a header row with a blank step heading, the base item type above the item column, and the required rarity and modifiers above the notes column. The rows contain Step 1, Step 2, etc., the item to use, and notes. Stage and category selections remain selected when switching tabs or builds; the initial selection is Early crafting / Weapon.
+Crafting has two stages: Endgame crafting and Mirror tier crafting. Budget and progression crafts are included under Endgame; premium foundations are under Mirror tier, without guaranteeing mirror-quality results. A left sidebar selects Weapon, Offhand, Helmet, Body Armour, Gloves, Boots, Belt, Rings, Amulet, or Jewels; it wraps above the content on small screens. Recipes are filtered by build, stage, and category. Each craft has a blank step heading, the base item type above the item column, and required rarity/modifiers above the notes column. Rows contain Step 1, Step 2, etc., the item to use, and notes with retry instructions. Stage and category selections remain selected when switching tabs or builds; the initial selection is Endgame crafting / Weapon.
 
 Spark-Comet Early Items notes automatically highlight whole words, case-insensitively: ES / Energy Shield in a navy-blue shade lightened for the dark background, Mana in aquamarine, Spirit in green, and Critical / Crit in red. Item names and other sections retain their existing styling; these Markdown notes remain plain text.
 
@@ -100,29 +102,125 @@ Support colors use the requirements verified on [PoE2DB's support index](https:/
 
 ## Crafting
 
-### Early crafting - Weapon
+Routes use 0.5-era mechanics, not live price estimates. Set a spending cap for every retry loop. Removed recombinator methods and unverified rune-swap finishes are excluded.
+
+- **Light + Annul** means activate Omen of Light, then use an Orb of Annulment to remove the desecrated modifier. This is not a safe repair for bad ordinary exalts.
+- Activate directional omens before their currency. Sinistral/Dextral Necromancy selects the prefix/suffix side, not a guaranteed reveal.
+- Abyssal Echoes offers one reveal-option reroll. Perfect Exalted Orbs do not guarantee T1. Ancient Jawbone raises minimum modifier level to 40, not guaranteed top tier.
+- Lightning Spell Skills improve Spark, not Comet. Natural all-spell and lightning-level suffixes are not independent stackable level modifiers.
+- Normally only one crafted modifier is allowed, separately from the one-desecrated-modifier limit. Dual-crafted routes need Astrid's Creativity; keep it installed.
+- Finish sockets/augments only after deciding the item is worth keeping. Use each base's available socket limit. Corruption and sanctification are not routine safe steps.
+
+Mechanics sources: [0.5.0 changes](https://www.pathofexile.com/forum/view-thread/3932540), [crafted modifiers](https://poe2db.tw/us/Crafted_Modifiers), [Omen of Light](https://poe2db.tw/us/Omen_of_Light), [staff modifiers](https://poe2db.tw/us/Staves#ModifiersCalc), [wand modifiers](https://poe2db.tw/us/Wands#ModifiersCalc).
+
+### Endgame crafting - Weapon
 
 <table>
   <thead>
-    <tr><th></th><th>Magic Staff</th><th>+4 or +5 to all Spell Skills and gain % damage</th></tr>
+    <tr><th></th><th>Magic Staff - Budget</th><th>+4 or +5 to all Spell Skills and a gain % damage prefix. No conflicting spell-damage prefix.</th></tr>
   </thead>
   <tbody>
-    <tr><td>Step 1</td><td>Greater Essence of Sorcery</td><td>Use on the magic staff to add % spell damage.</td></tr>
-    <tr><td>Step 2</td><td>Preserved Jawbone + Sinistral Necromancy (if cheap)</td><td>Use to reveal another gain % damage modifier.</td></tr>
-    <tr><td>Step 3</td><td>Exalted Orbs or Greater Exalted Orbs (if cheap)<br>Artificer's Orbs<br>Greater Iron Runes or Greater Glacial Runes</td><td>Slam to fill the remaining modifiers, add sockets until the staff has two, then fill both sockets with the chosen runes.</td></tr>
+    <tr><td>Step 1</td><td>Greater Essence of Sorcery</td><td>Upgrade to rare and add spell damage; use cheaper Sorcery if appropriate. A conflicting starting prefix means replacing the base.</td></tr>
+    <tr><td>Step 2</td><td>Preserved Jawbone + Sinistral Necromancy (if cheap)</td><td>With a prefix slot open, activate the omen before the Jawbone and reveal another eligible gain % damage modifier. If it misses, keep/sell or replace a cheap base; on a valuable base, Light + Annul and repeat Step 2.</td></tr>
+    <tr><td>Step 3</td><td>Exalted Orbs or Greater Exalted Orbs (if cheap)<br>Artificer's Orbs<br>Greater Iron Runes or Greater Glacial Runes</td><td>Fill remaining modifiers within budget, add available sockets and insert runes. Bad ordinary exalt: accept/sell or restart with a new base; Light cannot safely repair it.</td></tr>
   </tbody>
 </table>
 
+Sources: [Sorcery](https://poe2db.tw/us/Greater_Essence_of_Sorcery), [Sinistral Necromancy](https://poe2db.tw/us/Omen_of_Sinistral_Necromancy), [Iron](https://poe2db.tw/us/Greater_Iron_Rune), [Glacial](https://poe2db.tw/us/Greater_Glacial_Rune). Budget adaptation of the existing craft.
+
 <table>
   <thead>
-    <tr><th></th><th>Rare Staff</th><th>Any 3 prefixes from the 3 gain % damage modifiers and % spell damage; any suffixes, potentially with an empty suffix slot or critical hit chance for spells</th></tr>
+    <tr><th></th><th>Magic Wand - Budget</th><th>Affordable all Spell Skills or Lightning Spell Skills suffix and a useful gain % damage prefix. No conflicting spell-damage prefix.</th></tr>
   </thead>
   <tbody>
-    <tr><td>Step 1</td><td>Preserved Jawbone + Dextral Necromancy</td><td>Use to reveal critical hit chance for spells.</td></tr>
-    <tr><td>Step 2</td><td>Perfect Essence of Sorcery</td><td>Ensure all suffixes are filled before using the essence.</td></tr>
-    <tr><td>Step 3</td><td>Exalted Orbs or Greater Exalted Orbs (if cheap)<br>Artificer's Orbs<br>Greater Iron Runes or Greater Glacial Runes</td><td>Slam to fill the remaining modifiers, add sockets until the staff has two, then fill both sockets with the chosen runes.</td></tr>
+    <tr><td>Step 1</td><td>Essence of Sorcery</td><td>Use an affordable Lesser, normal or Greater essence to upgrade to rare and add spell damage.</td></tr>
+    <tr><td>Step 2</td><td>Preserved Jawbone + Sinistral Necromancy (optional)</td><td>Activate Sinistral first if targeting an open prefix, apply the Jawbone and reveal a useful wand modifier. Gnawed Jawbone only works at item level 64 or below. Miss: keep/sell or restart; for a valuable item only, Light + Annul and repeat Step 2.</td></tr>
+    <tr><td>Step 3</td><td>Exalted Orbs or Greater Exalted Orbs (if cheap)<br>Artificer's Orbs<br>Greater Iron Runes or Greater Glacial Runes</td><td>Fill remaining modifiers within budget and finish available sockets/runes. Do not use the staff socket limit or staff-only modifier pool. Bad ordinary exalt: accept/sell or restart.</td></tr>
   </tbody>
 </table>
+
+Sources: [Sorcery](https://poe2db.tw/us/Greater_Essence_of_Sorcery), [Gnawed Jawbone](https://poe2db.tw/us/Gnawed_Jawbone), [wand pool](https://poe2db.tw/us/Wands#ModifiersCalc).
+
+<table>
+  <thead>
+    <tr><th></th><th>Rare Staff - Preserve Prefixes</th><th>Any 3 natural, noncrafted prefixes from the three gain % damage modifiers and % spell damage. No existing spell-level suffix or desecrated modifier. Prefer one disposable suffix and two open suffix slots.</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Step 1</td><td>Dextral Crystallisation + Perfect Essence of Sorcery<br>Exalted Orb (only if no suffix exists)</td><td>If no suffix exists, exalt once; full prefixes force a suffix. Activate Dextral Crystallisation and replace a suffix with +5 all Spell Skills before investing in a reveal. Reject conflicting crafted/level mods or a base leaving no space for Step 2.</td></tr>
+    <tr><td>Step 2</td><td>Preserved Jawbone<br>Abyssal Echoes (optional)</td><td>Desecrate an open suffix and reveal spell critical chance or cast speed. Full prefixes already force the suffix side. Activate Echoes before revealing for one reroll. Miss: Light + Annul and repeat Step 2 within budget.</td></tr>
+    <tr><td>Step 3</td><td>Exalted Orbs or Greater Exalted Orbs (if cheap)<br>Artificer's Orbs<br>Greater Iron Runes or Greater Glacial Runes</td><td>Fill any final suffix and finish available sockets/runes. A bad ordinary suffix cannot be selectively removed with Light; accept/sell rather than blindly annulling.</td></tr>
+  </tbody>
+</table>
+
+Sources: [PaintMaster (0.5 update)](https://mobalytics.gg/poe-2/profile/paintmaster/guides/recoup-chronomancer-gear-crafting-guide), [Perfect Sorcery](https://poe2db.tw/us/Perfect_Essence_of_Sorcery), [Dextral Crystallisation](https://poe2db.tw/us/Omen_of_Dextral_Crystallisation). Reordered from the original craft so Perfect Sorcery does not remove a freshly unveiled crit suffix.
+
+<table>
+  <thead>
+    <tr><th></th><th>Magic Staff - Crit / Cast Speed</th><th>+5 or +6 Lightning Spell Skills and one useful damage prefix. Guide recommends item level 70+. Lightning levels help Spark, not Comet.</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Step 1</td><td>Greater Essence of Seeking</td><td>Upgrade to rare with spell critical chance, retaining the starting level suffix and damage prefix.</td></tr>
+    <tr><td>Step 2</td><td>Dextral Necromancy + Preserved Jawbone</td><td>Activate the omen, desecrate a suffix and leave it unrevealed. All suffix positions are occupied.</td></tr>
+    <tr><td>Step 3</td><td>Omen of Greater Exaltation + Greater Exalted Orb</td><td>Add two random prefixes only with both prefix slots open. Bad prefixes: use/sell or restart Step 1 with a new magic base; Light cannot repair them.</td></tr>
+    <tr><td>Step 4</td><td>Abyssal Echoes (optional) + reveal</td><td>Reveal cast speed, with one Echoes reroll if used. Miss with valuable prefixes: Light + Annul, return to Step 2, then skip Step 3 because prefixes are full. Otherwise stop.</td></tr>
+    <tr><td>Step 5</td><td>Artificer's Orbs + Greater Iron Runes or Greater Glacial Runes</td><td>Modifiers are full. Finish available sockets/runes; no further exalt is needed.</td></tr>
+  </tbody>
+</table>
+
+Sources: [PaintMaster low-budget weapon route](https://mobalytics.gg/poe-2/profile/paintmaster/guides/recoup-chronomancer-gear-crafting-guide), [Seeking](https://poe2db.tw/us/Greater_Essence_of_Seeking), [Greater Exaltation](https://poe2db.tw/us/Omen_of_Greater_Exaltation).
+
+<table>
+  <thead>
+    <tr><th></th><th>Fractured Wand - High Budget</th><th>Rare item level 81+ wand with fractured +5 Lightning Spell Skills. Published example: Dueling Wand. Buy the fracture; no fracture success is guaranteed.</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Step 1</td><td>Orbs of Annulment / Exalted Orb + Chaos Orbs</td><td>Clean up to exactly one mutable mod; exalt if none remain. Chaos that mod until spell critical chance, retaining the fracture. Miss: repeat the Chaos roll within budget.</td></tr>
+    <tr><td>Step 2</td><td>Sinistral Exaltation + Exalted Orb<br>Sinistral Crystallisation + Transcendent Alloy</td><td>Add a disposable prefix, then replace it with the alloy's cast-speed / extra-cold suffix using the respective omens. All suffixes are full: the completed-suffix checkpoint.</td></tr>
+    <tr><td>Step 3</td><td>Preserved Jawbone + reveal<br>Abyssal Echoes (optional)</td><td>Reveal plain maximum mana as a temporary prefix blocker. Miss: Light + Annul and repeat Step 3 within budget.</td></tr>
+    <tr><td>Step 4</td><td>Omen of Greater Exaltation + Greater or Perfect Exalted Orb</td><td>Add two random prefixes. Bad ordinary prefixes: accept/sell or destructively rebuild from Step 1 around the fracture; Light cannot selectively fix them.</td></tr>
+    <tr><td>Step 5</td><td>Omen of Light + Orb of Annulment<br>Preserved Jawbone + reveal</td><td>Remove the mana blocker and reveal a useful wand damage prefix. Miss: repeat Step 5 within budget.</td></tr>
+    <tr><td>Step 6</td><td>Artificer's Orbs + Hedgewitch Assandra's Rune of Wisdom</td><td>Add an available socket and insert the +1 all-spells rune. Result: +6 effective lightning spell levels, not +6 all spells. No further exalt is needed.</td></tr>
+  </tbody>
+</table>
+
+Sources: [BigDaddy Gaming wand guide (0.5)](https://mobalytics.gg/poe-2/profile/bigdaddygaming/guides/0-5-7-wand-crafting-guide), [0.5.3 wand alloy restoration](https://www.pathofexile.com/forum/view-thread/3968601), [Hedgewitch rune](https://poe2db.tw/us/Hedgewitch_Assandras_Rune_of_Wisdom).
+
+### Mirror tier crafting - Weapon
+
+These are premium foundations with random outcomes, not promises of mirror-tier value.
+
+<table>
+  <thead>
+    <tr><th></th><th>Magic Staff - Premium Foundation</th><th>Item level 81+, +7 Lightning Spell Skills and one disposable prefix. Lightning levels do not improve Comet.</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Step 1</td><td>Greater Essence of Seeking</td><td>Upgrade to rare with spell critical chance, retaining +7 lightning and the disposable prefix.</td></tr>
+    <tr><td>Step 2</td><td>Artificer's Orb + Astrid's Creativity</td><td>Add a socket if needed and insert Astrid to permit a second crafted mod. Keep it installed.</td></tr>
+    <tr><td>Step 3</td><td>Sinistral Crystallisation + Transcendent Alloy</td><td>Activate the omen and replace the disposable prefix with the alloy's cast-speed / extra-cold suffix. Suffixes are full and prefixes empty.</td></tr>
+    <tr><td>Step 4</td><td>Preserved Jawbone + reveal<br>Abyssal Echoes (optional)</td><td>Reveal plain maximum mana as a temporary prefix blocker. Miss: Light + Annul and repeat Step 4 within budget.</td></tr>
+    <tr><td>Step 5</td><td>Omen of Greater Exaltation + Perfect Exalted Orb</td><td>Add two random prefixes, not guaranteed T1 or ideal mods. Bad prefixes: accept/sell or restart Step 1 with a new magic base.</td></tr>
+    <tr><td>Step 6</td><td>Omen of Light + Orb of Annulment<br>Preserved or Ancient Jawbone + reveal</td><td>Remove the mana blocker and reveal a useful final staff prefix. Miss: repeat Step 6 within budget. Ancient Jawbone does not guarantee top-tier mods.</td></tr>
+    <tr><td>Step 7</td><td>Artificer's Orbs + caster runes for remaining sockets</td><td>Modifiers are full. Finish available sockets without replacing Astrid. No routine corruption or sanctification gamble.</td></tr>
+  </tbody>
+</table>
+
+Sources: [PaintMaster high-budget weapon route](https://mobalytics.gg/poe-2/profile/paintmaster/guides/recoup-chronomancer-gear-crafting-guide), [Astrid](https://poe2db.tw/us/Astrids_Creativity), [Transcendent Alloy](https://poe2db.tw/us/Transcendent_Alloy).
+
+<table>
+  <thead>
+    <tr><th></th><th>Fractured Wand - Dual-Alloy Foundation</th><th>Item level 81+ rare wand with fractured +5 Lightning Spell Skills, natural spell critical chance, and a Transcendent Alloy suffix. All prefixes empty: the High Budget Wand's completed-suffix checkpoint.</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Step 1</td><td>Completed-suffix base<br>Artificer's Orb + Astrid's Creativity</td><td>Buy this exact base or complete Steps 1-2 of the Endgame Fractured Wand route, stopping before its blocker. Install Astrid for two crafted mods; do not start with leftover prefixes.</td></tr>
+    <tr><td>Step 2</td><td>Preserved Jawbone<br>Sinistral Crystallisation + Celestial Alloy</td><td>Add an unrevealed sacrificial prefix, activate the omen, and replace it with the alloy's mana / +1 all-spells prefix.</td></tr>
+    <tr><td>Step 3</td><td>Preserved Jawbone + reveal<br>Abyssal Echoes (optional)</td><td>Reveal hybrid spell damage / mana as the temporary blocker. Miss: Light + Annul and repeat Step 3 within budget. Keep the Celestial Alloy prefix.</td></tr>
+    <tr><td>Step 4</td><td>Perfect Exalted Orb</td><td>Add one ordinary prefix; only one slot is open. Miss: keep/sell or rebuild; Light cannot remove this specific ordinary mod.</td></tr>
+    <tr><td>Step 5</td><td>Omen of Light + Orb of Annulment<br>Preserved or Ancient Jawbone + reveal</td><td>Remove the hybrid blocker and reveal the final useful wand prefix. Miss: repeat Step 5 within budget.</td></tr>
+    <tr><td>Step 6</td><td>Remaining legal socket / augment options</td><td>Keep Astrid installed. +5 lightning and +1 all spells means +6 effective lightning levels. The unverified Astrid-to-Hedgewitch swap is excluded; no promised +7 finish or mirror quality.</td></tr>
+  </tbody>
+</table>
+
+Sources: [BigDaddy Gaming expensive wand branch](https://mobalytics.gg/poe-2/profile/bigdaddygaming/guides/0-5-7-wand-crafting-guide), [Celestial Alloy](https://poe2db.tw/us/Celestial_Alloy), [Astrid](https://poe2db.tw/us/Astrids_Creativity). The supported two-craft setup is retained without the unverified rune swap.
 
 ## Gem Cutting Priority
 
