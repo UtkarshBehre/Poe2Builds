@@ -6,20 +6,20 @@ Early Items > Spark-Comet groups recommendations into separate equipment-slot ta
 
 | Slot | Item | Modifier / Notes |
 |------|------|------------------|
-| Helmet | Devouring Diadem | Very early defensive helmet |
-| Helmet | Atziri's Disdain | Great rarity early helmet |
+| Helmet | Devouring Diadem | Every 3 seconds, Consume a nearby Corpse to Recover 20% of maximum Life |
+| Helmet | Atziri's Disdain | 10-20% rarity<br>gain 10% life as extra ES |
 | Helmet | Crown of Victor | Early +1 all skills helmet with rarity |
-| Body Armour | Prayers for Rain | Early body armour |
-| Body Armour | Cloak of Defiance | Early body armour |
-| Body Armour | Waveshaper | Early body armour if you have mana regen |
+| Body Armour | Prayers for Rain | 30% slower start of ES Recharge<br>ES Recharge is not interrupted by Damage if Recharge began Recently |
+| Body Armour | Cloak of Defiance | (50—100)% increased Mana Regeneration Rate<br>50% of Damage is taken from Mana before Life |
+| Body Armour | Waveshaper | 20-40 spirit + 60 res<br>Increases and Reductions to Mana Regeneration Rate also apply to Energy Shield Recharge Rate |
 | Body Armour | Temporalis | Endgame body armour |
 | Gloves | Maligaro's Virtuosity (Fine Bracers) | Fixed 250% crit dmg bonus, perfect with Pinpoint |
-| Gloves | Doedre's Tenure | Alternative damage gloves to Maligaro's for non-crit |
-| Gloves | Nightscale (Pauscale Gloves) | Decent mana regen option with crit |
+| Gloves | Doedre's Tenure | 100% increased spell damage but 25% reduced cast speed |
+| Gloves | Nightscale (Pauscale Gloves) | 150% increased mana regen if you've crit recently, but can't regen without a recent crit |
 | Jewellery | Dream Fragments | |
-| Jewellery | The Everlasting Gaze | Good early amulet |
-| Jewellery | Choir of the Storm | Great early crit amulet |
-| Jewellery | Beacon of Azis | Great amulet for crit and early boss rushing |
+| Jewellery | The Everlasting Gaze | 75% mana regen and mana gained as ES |
+| Jewellery | Choir of the Storm | Critical Hits Ignore Enemy Monster Lightning Resistance |
+| Jewellery | Beacon of Azis | +40-45 to spirit<br>Critical Hits ignore Enemy Monster Elemental Resistances |
 | Jewellery | Shavronne's Satchel (Belt) | ES from life flask |
 | Jewellery | Nascent Hope (Charm) | |
 | Jewellery | Beira's Anguish (Charm) | |
@@ -27,9 +27,10 @@ Early Items > Spark-Comet groups recommendations into separate equipment-slot ta
 | Jewellery | Rite of Passage (Charm) | CAT for crit, speed \| OWL for es, dmg, gain cold |
 | Jewels | Time-Lost Jewel | Double crit damage bonus + crit chance, if 5-mod jewel crafting remains available |
 | Jewels | Sapphire Jewel | Double crit damage bonus + crit chance, if 5-mod jewel crafting remains available |
-| Weapons | Adonia's Ego | Offhand for power charge consumption |
-| Offhand | Deathrattle | Offhand for early survival |
-| Offhand | Effigy of Cruelty | Offhand once switched to crit |
+| Jewels | Prism of Belief | +3 to level of Spark |
+| Weapons | Adonia's Ego | Pinnacle of Power consumes all power charges for 15% more spell damage per charge consumed |
+| Offhand | Deathrattle | 20% chance for Energy Shield Recharge to start when you Kill an Enemy |
+| Offhand | Effigy of Cruelty | Critical Hits with Spells apply (1—3) Stacks of Critical Weakness |
 | Exclusive Mods and Augments | Legacy of Lifesprig | +2 all spell |
 | Exclusive Mods and Augments | Belt (Genesis Tree) | 80(50—55)% increased \[Spell\] |
 | Exclusive Mods and Augments | Belt (Genesis Tree) | 80+(80—89) to maximum Energy Shield |
@@ -58,8 +59,32 @@ Early Items > Spark-Comet groups recommendations into separate equipment-slot ta
 | Exclusive Mods and Augments | Normal Jewels (Liquid Disgust emotion) | Recover % mana on kill |
 | Exclusive Mods and Augments | Normal Jewels (Liquid Envy emotion) | Spell damage |
 | Exclusive Mods and Augments | Normal Jewels (Diluted Liquid Ire emotion) | Energy Shield |
+| Exclusive Mods and Augments | Hedgewitch Assandra's Rune of Wisdom (Augment) | +1 to level of all Spell Skills. |
 
-Adonia's Ego is a [Siphoning Wand](https://poe2db.tw/us/Adonias_Ego), so it is grouped under Weapons while retaining the offhand-use note. Deathrattle and Effigy of Cruelty are Focus items, grouped under Offhand.
+Adonia's Ego is a [Siphoning Wand](https://poe2db.tw/us/Adonias_Ego), so it is grouped under Weapons, though it is reserved for the offhand setup. Deathrattle and Effigy of Cruelty are Focus items, grouped under Offhand.
+
+### + to Spell and Projectile Skills Sources (Main-Hand Setup)
+
+The Early Items summary table collects the spell and projectile skill-level sources recorded so far for the main-hand setup, including the campaign weapon cutoffs. Adonia's Ego is excluded from this summary because it is reserved for the offhand setup; its equipment recommendation remains unchanged. This is not an exhaustive list or a combined total; elemental-only bonuses are excluded.
+
+| Source | Bonus / Notes |
+|--------|---------------|
+| Corrupted skill | +21 from corrupted skill |
+| Weapon modifier | Up to +6 to level of all Spell Skills. |
+| Weapon (Sanctify) | +1 to level of all Spell Skills. |
+| Wands and Staves (Celestial Alloy) | +1 to level of all Spell Skills AND +150 mana. |
+| Legacy of Lifesprig | +2 to level of all Spell Skills. |
+| Hedgewitch Assandra's Rune of Wisdom (Augment) | +1 to level of all Spell Skills. |
+| Amulet modifier | +4 to level of all Spell Skills. |
+| Amulet (Sanctify) | +1 to level of all Spell Skills. |
+| Crown of Victor (Helmet) | +1 all skills, including Spell Skills. Also has rarity. |
+| Ring (Genesis Tree) | +1 to level of all Spell Skills. |
+| Gloves (Kolr's Hunt) | +2 to all Projectile Skills. Projectile skills only, not all spells. |
+| Prism of Belief (Jewel) | +3 to level of Spark. Spark only, not all spells. |
+
+### Guide Layout
+
+Spark-Comet Early Items notes automatically highlight whole words, case-insensitively: ES / Energy Shield in a navy-blue shade lightened for the dark background, Mana in aquamarine, Spirit in green, and Critical / Crit in red. Item names and other sections retain their existing styling; these Markdown notes remain plain text.
 
 Gem Priorities appears above the full gems-and-supports reference table. On wide screens, Tier 1-5 share the first row; Lesser Jeweller's Orb, GCP, Greater Jeweller's Orb, Perfect Jeweller's Orb, and Lineage Gems share the second row. Both rows wrap into fewer columns on smaller screens. Read each table from top to bottom. Modifier cutoffs in the guide cover extra lightning damage, all Spell Skill levels, and Fire Spell Skill levels (also applicable to Cold and Lightning), using the supplied screenshots.
 
