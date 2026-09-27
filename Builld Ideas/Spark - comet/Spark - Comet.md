@@ -84,6 +84,10 @@ The Early Items summary table collects the spell and projectile skill-level sour
 
 ### Guide Layout
 
+The build selector beside the page title controls Campaign, Early Items, and Crafting. Select Twisters or Spark-Comet once; switching tabs retains that selection, and changing builds keeps the current tab open. Twisters is the initial selection. Campaign Zone Rewards and Tablets remain shared.
+
+Crafting has four stages: Early crafting, Mid to end game crafting, End game crafting, and Mirror tier crafting. A left sidebar selects Weapon, Offhand, Helmet, Body Armour, Gloves, Boots, Belt, Rings, Amulet, or Jewels; it wraps above the content on small screens. The content area shows recipes matching the selected build, stage, and category, with an empty state when none have been added. Each craft has a header row with a blank step heading, the base item type above the item column, and the required rarity and modifiers above the notes column. The rows contain Step 1, Step 2, etc., the item to use, and notes. Stage and category selections remain selected when switching tabs or builds; the initial selection is Early crafting / Weapon.
+
 Spark-Comet Early Items notes automatically highlight whole words, case-insensitively: ES / Energy Shield in a navy-blue shade lightened for the dark background, Mana in aquamarine, Spirit in green, and Critical / Crit in red. Item names and other sections retain their existing styling; these Markdown notes remain plain text.
 
 Gem Priorities appears above the full gems-and-supports reference table. On wide screens, Tier 1-5 share the first row; Lesser Jeweller's Orb, GCP, Greater Jeweller's Orb, Perfect Jeweller's Orb, and Lineage Gems share the second row. Both rows wrap into fewer columns on smaller screens. Read each table from top to bottom. Modifier cutoffs in the guide cover extra lightning damage, all Spell Skill levels, and Fire Spell Skill levels (also applicable to Cold and Lightning), using the supplied screenshots.
@@ -93,6 +97,32 @@ The regexes below contain Markdown escapes; the guide displays and copies the un
 The gems table follows the Twisters layout: Icon, Skill, and Supports, with attribute-colored support names and Roman-numeral cutting-level badges. Hover a support name for the support tiers from these notes. Galvanic Field has no cutting levels specified, so its support tiers are shown explicitly instead. Skill icons and support attribute colors are sourced from [PoE2DB](https://poe2db.tw/us/Skill_Gems); icons are stored locally so the guide does not depend on remote image loading.
 
 Support colors use the requirements verified on [PoE2DB's support index](https://poe2db.tw/us/Support_Gems), not elemental tags. Zarokh's Refrain retains the guide's gold Lineage styling (its attribute requirement is +5 Int). The guide uses the canonical names Compressed Duration and Shock Conduction for the corresponding entries below.
+
+## Crafting
+
+### Early crafting - Weapon
+
+<table>
+  <thead>
+    <tr><th></th><th>Magic Staff</th><th>+4 or +5 to all Spell Skills and gain % damage</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Step 1</td><td>Greater Essence of Sorcery</td><td>Use on the magic staff to add % spell damage.</td></tr>
+    <tr><td>Step 2</td><td>Preserved Jawbone + Sinistral Necromancy (if cheap)</td><td>Use to reveal another gain % damage modifier.</td></tr>
+    <tr><td>Step 3</td><td>Exalted Orbs or Greater Exalted Orbs (if cheap)<br>Artificer's Orbs<br>Greater Iron Runes or Greater Glacial Runes</td><td>Slam to fill the remaining modifiers, add sockets until the staff has two, then fill both sockets with the chosen runes.</td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr><th></th><th>Rare Staff</th><th>Any 3 prefixes from the 3 gain % damage modifiers and % spell damage; any suffixes, potentially with an empty suffix slot or critical hit chance for spells</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Step 1</td><td>Preserved Jawbone + Dextral Necromancy</td><td>Use to reveal critical hit chance for spells.</td></tr>
+    <tr><td>Step 2</td><td>Perfect Essence of Sorcery</td><td>Ensure all suffixes are filled before using the essence.</td></tr>
+    <tr><td>Step 3</td><td>Exalted Orbs or Greater Exalted Orbs (if cheap)<br>Artificer's Orbs<br>Greater Iron Runes or Greater Glacial Runes</td><td>Slam to fill the remaining modifiers, add sockets until the staff has two, then fill both sockets with the chosen runes.</td></tr>
+  </tbody>
+</table>
 
 ## Gem Cutting Priority
 

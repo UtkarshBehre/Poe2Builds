@@ -32,6 +32,24 @@
 
     .page-heading { color: #6bb8c8; }
 
+    .page-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px 24px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #333;
+    }
+
+    .page-header h1 {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    .page-header .pill-nav { margin-bottom: 0; }
+
     p { margin: 6px 0; }
 
     strong { color: #e0e0e0; }
@@ -409,6 +427,51 @@
     .pill-panel { display: none; }
     .pill-panel.active { display: block; }
 
+    .crafting-layout {
+      display: grid;
+      grid-template-columns: 180px minmax(0, 1fr);
+      gap: 24px;
+      align-items: start;
+    }
+
+    .crafting-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .crafting-sidebar .pill-btn {
+      border-radius: 6px;
+      padding: 9px 12px;
+      text-align: left;
+    }
+
+    #tab-crafting button:focus-visible {
+      outline: 2px solid #6bb8c8;
+      outline-offset: 3px;
+    }
+
+    .crafting-content {
+      min-width: 0;
+      padding: 20px;
+      border: 1px solid #2a2a2a;
+      border-radius: 6px;
+      background: #111;
+    }
+
+    .crafting-context { color: #aaa; margin: 0 0 8px; }
+    .crafting-empty { color: #aaa; margin-top: 16px; }
+
+    .crafting-recipe {
+      table-layout: fixed;
+      margin-top: 20px;
+    }
+
+    .crafting-recipe th, .crafting-recipe td { overflow-wrap: anywhere; }
+    .crafting-recipe col:first-child { width: 72px; }
+    .crafting-recipe col:nth-child(2) { width: 35%; }
+    .crafting-recipe td:first-child { white-space: nowrap; }
+
     .pill-coming-soon {
       color: #444;
       font-style: italic;
@@ -490,6 +553,8 @@
     @media (max-width: 800px) {
       body { padding: 16px; }
       .tabs { flex-wrap: wrap; }
+      .crafting-layout { grid-template-columns: 1fr; gap: 16px; }
+      .crafting-sidebar { flex-direction: row; flex-wrap: wrap; }
       .modifier-cutoffs { grid-template-columns: 1fr; gap: 0; }
       #spark-comet-details .skills-layout { flex-direction: column; }
       .spark-priority-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -508,23 +573,24 @@
 </head>
 <body>
 
-<h1 class="page-heading">PoE2 Builds - League Launch Guide</h1>
+<header class="page-header">
+  <h1 class="page-heading">PoE2 Builds - League Launch Guide</h1>
+  <div class="pill-nav build-selector" role="group" aria-label="Build">
+    <button class="pill-btn active" type="button" data-build="twisters" aria-pressed="true" aria-controls="twisters-meta twisters-details pill-early-twisters crafting-recipes" onclick="showBuild('twisters')">Twisters</button>
+    <button class="pill-btn" type="button" data-build="spark-comet" aria-pressed="false" aria-controls="spark-comet-meta spark-comet-details pill-early-spark-comet crafting-recipes" onclick="showBuild('spark-comet')">Spark-Comet</button>
+  </div>
+</header>
 
 <div class="tabs">
-  <button class="tab-btn active" onclick="showTab('campaign')">Campaign</button>
-  <button class="tab-btn" onclick="showTab('early-crafting')">Early Items</button>
-  <button class="tab-btn" onclick="showTab('endgame-crafting')">End Game Crafting</button>
-  <button class="tab-btn" onclick="showTab('tablets')">Tablets Regex and Value</button>
+  <button class="tab-btn active" onclick="showTab('campaign', this)">Campaign</button>
+  <button class="tab-btn" onclick="showTab('early-crafting', this)">Early Items</button>
+  <button class="tab-btn" onclick="showTab('crafting', this)">Crafting</button>
+  <button class="tab-btn" onclick="showTab('tablets', this)">Tablets Regex and Value</button>
 </div>
 
 <div id="tab-campaign" class="tab-panel active">
 
-<div class="pill-nav" role="group" aria-label="Campaign build">
-  <button class="pill-btn active" type="button" data-build="twisters" aria-pressed="true" aria-controls="twisters-meta twisters-details" onclick="showCampaignBuild('twisters')">Twisters</button>
-  <button class="pill-btn" type="button" data-build="spark-comet" aria-pressed="false" aria-controls="spark-comet-meta spark-comet-details" onclick="showCampaignBuild('spark-comet')">Spark-Comet</button>
-</div>
-
-<div id="twisters-meta" class="meta" data-campaign-build="twisters">
+<div id="twisters-meta" class="meta" data-build-panel="twisters">
   <p><strong>League Start Regex:</strong> <code id="regex-text">"!(uiv)" "spear|mov|[egdl] da.* to a"</code><button class="copy-btn" title="Copy regex" onclick="const btn=this;navigator.clipboard.writeText(document.getElementById('regex-text').textContent).then(()=>{btn.textContent='✓';btn.classList.add('copied');setTimeout(()=>{btn.textContent='⧉';btn.classList.remove('copied')},1500)})">⧉</button></p>
   <p><strong>Spear Progression:</strong></p>
   <div class="spear-grid">
@@ -574,7 +640,7 @@
   <p><strong>Sceptre:</strong> BUY THIS AT LEVEL 16. It's used for Malice and extra spirit.</p>
 </div>
 
-<div id="spark-comet-meta" class="meta campaign-regex" data-campaign-build="spark-comet" hidden>
+<div id="spark-comet-meta" class="meta campaign-regex" data-build-panel="spark-comet" hidden>
   <h2 class="page-heading">Spark-Comet - Vendor Regex by Act</h2>
   <p><strong>Act 1:</strong> <code>"ld res|\d+% i.+mov|ell.*ge$|\d l.+da|^\+.*all sp.*ls$|^\+.*ld sp.*ls$|^\+.*ng sp.*ls$|^\+.*ile skills$|o sp|s: (am|ri)"</code> <button class="copy-btn" type="button" title="Copy Act 1 regex" aria-label="Copy Act 1 regex" onclick="copyRegex(this)">⧉</button></p>
   <p><strong>Act 2:</strong> <code>"y: r|(re|ng) res|\d+% i.+mov|ell.*ge$|\d l.+da|^\+.*all sp.*ls$|^\+.*ld sp.*ls$|^\+.*ng sp.*ls$|^\+.*ile skills$|o sp|s: (am|ri)"</code> <button class="copy-btn" type="button" title="Copy Act 2 regex" aria-label="Copy Act 2 regex" onclick="copyRegex(this)">⧉</button></p>
@@ -664,7 +730,7 @@
 
   </div>
 
-<div id="twisters-details" data-campaign-build="twisters">
+<div id="twisters-details" data-build-panel="twisters">
 <div class="dmg-tiers">
   <h3>Lightning Damage to Attacks — Tier Cutoffs</h3>
   <div class="tier-row">
@@ -836,7 +902,7 @@
 </div>
 </div><!-- #twisters-details -->
 
-<div id="spark-comet-details" data-campaign-build="spark-comet" hidden>
+<div id="spark-comet-details" data-build-panel="spark-comet" hidden>
 <h2 class="page-heading">Spark-Comet - Modifier Tier Cutoffs</h2>
 
 <div class="modifier-cutoffs">
@@ -1176,12 +1242,7 @@
 
 <h2 class="page-heading">Early Items</h2>
 
-<div class="pill-nav" role="group" aria-label="Early items build">
-  <button class="pill-btn active" type="button" aria-pressed="true" aria-controls="pill-early-twisters" onclick="showPill('early-twisters', this)">Twisters</button>
-  <button class="pill-btn" type="button" aria-pressed="false" aria-controls="pill-early-spark-comet" onclick="showPill('early-spark-comet', this)">Spark-Comet</button>
-</div>
-
-<div id="pill-early-twisters" class="pill-panel active">
+<div id="pill-early-twisters" data-build-panel="twisters">
 <div style="display:flex; gap:24px; align-items:flex-start; margin-bottom:20px;">
 <div style="flex:2;">
 <h2 class="page-heading" style="margin-top:0;">Items to Buy Progression</h2>
@@ -1496,7 +1557,7 @@
 
 </div><!-- #pill-early-twisters -->
 
-<div id="pill-early-spark-comet" class="pill-panel">
+<div id="pill-early-spark-comet" data-build-panel="spark-comet" hidden>
 <h2 class="page-heading">Items by Equipment Slot</h2>
 <div class="spark-early-items">
 <table>
@@ -1850,7 +1911,81 @@
 
 </div><!-- #tab-early-crafting -->
 
-<div id="tab-endgame-crafting" class="tab-panel">
+<div id="tab-crafting" class="tab-panel">
+<h2 class="page-heading">Crafting</h2>
+
+<div class="pill-nav" role="group" aria-label="Crafting stage" data-crafting-nav>
+  <button class="pill-btn active" type="button" data-crafting-stage="early" aria-pressed="true" aria-controls="crafting-recipes" onclick="selectCraftingOption(this)">Early crafting</button>
+  <button class="pill-btn" type="button" data-crafting-stage="mid-to-endgame" aria-pressed="false" aria-controls="crafting-recipes" onclick="selectCraftingOption(this)">Mid to end game crafting</button>
+  <button class="pill-btn" type="button" data-crafting-stage="endgame" aria-pressed="false" aria-controls="crafting-recipes" onclick="selectCraftingOption(this)">End game crafting</button>
+  <button class="pill-btn" type="button" data-crafting-stage="mirror" aria-pressed="false" aria-controls="crafting-recipes" onclick="selectCraftingOption(this)">Mirror tier crafting</button>
+</div>
+
+<div class="crafting-layout">
+  <nav class="crafting-sidebar" aria-label="Crafting item category" data-crafting-nav>
+    <button class="pill-btn active" type="button" data-crafting-category="weapon" aria-pressed="true" aria-controls="crafting-recipes" onclick="selectCraftingOption(this)">Weapon</button>
+    <button class="pill-btn" type="button" data-crafting-category="offhand" aria-pressed="false" aria-controls="crafting-recipes" onclick="selectCraftingOption(this)">Offhand</button>
+    <button class="pill-btn" type="button" data-crafting-category="helmet" aria-pressed="false" aria-controls="crafting-recipes" onclick="selectCraftingOption(this)">Helmet</button>
+    <button class="pill-btn" type="button" data-crafting-category="body-armour" aria-pressed="false" aria-controls="crafting-recipes" onclick="selectCraftingOption(this)">Body Armour</button>
+    <button class="pill-btn" type="button" data-crafting-category="gloves" aria-pressed="false" aria-controls="crafting-recipes" onclick="selectCraftingOption(this)">Gloves</button>
+    <button class="pill-btn" type="button" data-crafting-category="boots" aria-pressed="false" aria-controls="crafting-recipes" onclick="selectCraftingOption(this)">Boots</button>
+    <button class="pill-btn" type="button" data-crafting-category="belt" aria-pressed="false" aria-controls="crafting-recipes" onclick="selectCraftingOption(this)">Belt</button>
+    <button class="pill-btn" type="button" data-crafting-category="rings" aria-pressed="false" aria-controls="crafting-recipes" onclick="selectCraftingOption(this)">Rings</button>
+    <button class="pill-btn" type="button" data-crafting-category="amulet" aria-pressed="false" aria-controls="crafting-recipes" onclick="selectCraftingOption(this)">Amulet</button>
+    <button class="pill-btn" type="button" data-crafting-category="jewels" aria-pressed="false" aria-controls="crafting-recipes" onclick="selectCraftingOption(this)">Jewels</button>
+  </nav>
+  <section id="crafting-recipes" class="crafting-content" aria-labelledby="crafting-item-heading" aria-live="polite">
+    <p id="crafting-context" class="crafting-context">Twisters / Early crafting</p>
+    <h3 id="crafting-item-heading" class="page-heading">Weapon</h3>
+    <p class="crafting-empty">No crafts added for this selection yet.</p>
+    <table class="crafting-recipe" data-craft-build="spark-comet" data-craft-stage="early" data-craft-category="weapon" aria-labelledby="early-staff-base" hidden>
+      <colgroup><col><col><col></colgroup>
+      <thead>
+        <tr><th scope="col"></th><th id="early-staff-base" scope="col">Magic Staff</th><th scope="col">+4 or +5 to all Spell Skills and gain % damage</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Step 1</td>
+          <td>Greater Essence of Sorcery</td>
+          <td>Use on the magic staff to add % spell damage.</td>
+        </tr>
+        <tr>
+          <td>Step 2</td>
+          <td>Preserved Jawbone + Sinistral Necromancy (if cheap)</td>
+          <td>Use to reveal another gain % damage modifier.</td>
+        </tr>
+        <tr>
+          <td>Step 3</td>
+          <td>Exalted Orbs or Greater Exalted Orbs (if cheap)<br>Artificer's Orbs<br>Greater Iron Runes or Greater Glacial Runes</td>
+          <td>Slam to fill the remaining modifiers, add sockets until the staff has two, then fill both sockets with the chosen runes.</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="crafting-recipe" data-craft-build="spark-comet" data-craft-stage="early" data-craft-category="weapon" aria-labelledby="early-rare-staff-base" hidden>
+      <colgroup><col><col><col></colgroup>
+      <thead>
+        <tr><th scope="col"></th><th id="early-rare-staff-base" scope="col">Rare Staff</th><th scope="col">Any 3 prefixes from the 3 gain % damage modifiers and % spell damage; any suffixes, potentially with an empty suffix slot or critical hit chance for spells</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Step 1</td>
+          <td>Preserved Jawbone + Dextral Necromancy</td>
+          <td>Use to reveal critical hit chance for spells.</td>
+        </tr>
+        <tr>
+          <td>Step 2</td>
+          <td>Perfect Essence of Sorcery</td>
+          <td>Ensure all suffixes are filled before using the essence.</td>
+        </tr>
+        <tr>
+          <td>Step 3</td>
+          <td>Exalted Orbs or Greater Exalted Orbs (if cheap)<br>Artificer's Orbs<br>Greater Iron Runes or Greater Glacial Runes</td>
+          <td>Slam to fill the remaining modifiers, add sockets until the staff has two, then fill both sockets with the chosen runes.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</div>
 </div>
 
 <div id="tab-tablets" class="tab-panel">
@@ -2242,11 +2377,11 @@ function highlightItemNoteKeywords() {
 }
 highlightItemNoteKeywords();
 
-function showTab(id) {
+function showTab(id, btn) {
   document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('tab-' + id).classList.add('active');
-  event.currentTarget.classList.add('active');
+  btn.classList.add('active');
 }
 function showPill(id, btn) {
   const panel = btn.closest('.tab-panel');
@@ -2259,17 +2394,43 @@ function showPill(id, btn) {
   btn.classList.add('active');
   if (btn.hasAttribute('aria-pressed')) btn.setAttribute('aria-pressed', 'true');
 }
-function showCampaignBuild(id) {
-  const campaign = document.getElementById('tab-campaign');
-  campaign.querySelectorAll('[data-campaign-build]').forEach(panel => {
-    panel.hidden = panel.dataset.campaignBuild !== id;
+function showBuild(id) {
+  document.querySelectorAll('[data-build-panel]').forEach(panel => {
+    panel.hidden = panel.dataset.buildPanel !== id;
   });
-  campaign.querySelectorAll('[data-build]').forEach(btn => {
+  document.querySelectorAll('.build-selector [data-build]').forEach(btn => {
     const active = btn.dataset.build === id;
     btn.classList.toggle('active', active);
     btn.setAttribute('aria-pressed', String(active));
   });
+  updateCraftingSelection();
 }
+function selectCraftingOption(btn) {
+  btn.closest('[data-crafting-nav]').querySelectorAll('button').forEach(option => {
+    const active = option === btn;
+    option.classList.toggle('active', active);
+    option.setAttribute('aria-pressed', String(active));
+  });
+  updateCraftingSelection();
+}
+function updateCraftingSelection() {
+  const build = document.querySelector('.build-selector [aria-pressed="true"]');
+  const stage = document.querySelector('[data-crafting-stage][aria-pressed="true"]');
+  const category = document.querySelector('[data-crafting-category][aria-pressed="true"]');
+  document.getElementById('crafting-context').textContent = build.textContent + ' / ' + stage.textContent;
+  document.getElementById('crafting-item-heading').textContent = category.textContent;
+  let hasRecipes = false;
+  document.querySelectorAll('.crafting-recipe').forEach(recipe => {
+    const matches = recipe.dataset.craftBuild === build.dataset.build
+      && recipe.dataset.craftStage === stage.dataset.craftingStage
+      && recipe.dataset.craftCategory === category.dataset.craftingCategory;
+    recipe.hidden = !matches;
+    if (matches) hasRecipes = true;
+  });
+  document.querySelector('.crafting-empty').hidden = hasRecipes;
+}
+updateCraftingSelection();
+
 async function copyRegex(btn) {
   const text = btn.previousElementSibling.textContent;
   try {
