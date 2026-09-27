@@ -447,13 +447,22 @@
 
     .spark-priority-grid + .spark-priority-grid { margin-top: 24px; }
 
-    .spark-priority-grid table {
+    .spark-early-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+      gap: 16px;
+      align-items: start;
+    }
+
+    .spark-early-items th, .spark-early-items td { overflow-wrap: anywhere; }
+
+    .spark-priority-grid table, .spark-early-items table {
       table-layout: fixed;
       min-width: 0;
       margin: 0;
     }
 
-    .spark-priority-grid caption {
+    .spark-priority-grid caption, .spark-early-items caption {
       color: #c8a84b;
       font-size: 0.95em;
       font-weight: 600;
@@ -1162,6 +1171,12 @@
 
 <h2 class="page-heading">Early Items</h2>
 
+<div class="pill-nav" role="group" aria-label="Early items build">
+  <button class="pill-btn active" type="button" aria-pressed="true" aria-controls="pill-early-twisters" onclick="showPill('early-twisters', this)">Twisters</button>
+  <button class="pill-btn" type="button" aria-pressed="false" aria-controls="pill-early-spark-comet" onclick="showPill('early-spark-comet', this)">Spark-Comet</button>
+</div>
+
+<div id="pill-early-twisters" class="pill-panel active">
 <div style="display:flex; gap:24px; align-items:flex-start; margin-bottom:20px;">
 <div style="flex:2;">
 <h2 class="page-heading" style="margin-top:0;">Items to Buy Progression</h2>
@@ -1474,7 +1489,296 @@
 
 </div>
 
-</div>
+</div><!-- #pill-early-twisters -->
+
+<div id="pill-early-spark-comet" class="pill-panel">
+<h2 class="page-heading">Items by Equipment Slot</h2>
+<div class="spark-early-items">
+<table>
+  <caption>Helmet</caption>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Modifier / Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Devouring Diadem</strong></td>
+      <td>Very early defensive helmet</td>
+    </tr>
+    <tr>
+      <td><strong>Atziri's Disdain</strong></td>
+      <td>Great rarity early helmet</td>
+    </tr>
+    <tr>
+      <td><strong>Crown of Victor</strong></td>
+      <td>Early +1 all skills helmet with rarity</td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <caption>Body Armour</caption>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Modifier / Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Prayers for Rain</strong></td>
+      <td>Early body armour</td>
+    </tr>
+    <tr>
+      <td><strong>Cloak of Defiance</strong></td>
+      <td>Early body armour</td>
+    </tr>
+    <tr>
+      <td><strong>Waveshaper</strong></td>
+      <td>Early body armour if you have mana regen</td>
+    </tr>
+    <tr>
+      <td><strong>Temporalis</strong></td>
+      <td>Endgame body armour</td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <caption>Gloves</caption>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Modifier / Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Maligaro's Virtuosity</strong> <em>(Fine Bracers)</em></td>
+      <td>Fixed 250% crit dmg bonus, perfect with Pinpoint</td>
+    </tr>
+    <tr>
+      <td><strong>Doedre's Tenure</strong></td>
+      <td>Alternative damage gloves to Maligaro's for non-crit</td>
+    </tr>
+    <tr>
+      <td><strong>Nightscale</strong> <em>(Pauscale Gloves)</em></td>
+      <td>Decent mana regen option with crit</td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <caption>Jewellery</caption>
+  <thead>
+    <tr><th>Item</th><th>Modifier / Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Dream Fragments</strong></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>The Everlasting Gaze</strong></td>
+      <td>Good early amulet</td>
+    </tr>
+    <tr>
+      <td><strong>Choir of the Storm</strong></td>
+      <td>Great early crit amulet</td>
+    </tr>
+    <tr>
+      <td><strong>Beacon of Azis</strong></td>
+      <td>Great amulet for crit and early boss rushing</td>
+    </tr>
+    <tr>
+      <td><strong>Shavronne's Satchel</strong> <em>(Belt)</em></td>
+      <td>ES from life flask</td>
+    </tr>
+    <tr>
+      <td><strong>Nascent Hope</strong> <em>(Charm)</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Beira's Anguish</strong> <em>(Charm)</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Arakaali's Gift</strong> <em>(Charm)</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Rite of Passage</strong> <em>(Charm)</em></td>
+      <td>CAT for crit, speed | OWL for es, dmg, gain cold</td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <caption>Jewels</caption>
+  <thead>
+    <tr><th>Item</th><th>Modifier / Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Time-Lost Jewel</strong></td>
+      <td>Double crit damage bonus + crit chance, if 5-mod jewel crafting remains available</td>
+    </tr>
+    <tr>
+      <td><strong>Sapphire Jewel</strong></td>
+      <td>Double crit damage bonus + crit chance, if 5-mod jewel crafting remains available</td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <caption>Weapons</caption>
+  <thead>
+    <tr><th>Item</th><th>Modifier / Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Adonia's Ego</strong></td>
+      <td>Offhand for power charge consumption</td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <caption>Offhand</caption>
+  <thead>
+    <tr><th>Item</th><th>Modifier / Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Deathrattle</strong></td>
+      <td>Offhand for early survival</td>
+    </tr>
+    <tr>
+      <td><strong>Effigy of Cruelty</strong></td>
+      <td>Offhand once switched to crit</td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <caption>Exclusive Mods and Augments</caption>
+  <thead>
+    <tr><th>Item</th><th>Modifier / Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Legacy of Lifesprig</strong></td>
+      <td>+2 all spell</td>
+    </tr>
+    <tr>
+      <td><strong>Belt</strong> <em>(Genesis Tree)</em></td>
+      <td>80(50—55)% increased [Spell]</td>
+    </tr>
+    <tr>
+      <td><strong>Belt</strong> <em>(Genesis Tree)</em></td>
+      <td>80+(80—89) to maximum Energy Shield</td>
+    </tr>
+    <tr>
+      <td><strong>Ring</strong> <em>(Genesis Tree)</em></td>
+      <td>+1 to level of all Spell Skills</td>
+    </tr>
+    <tr>
+      <td><strong>Ring</strong> <em>(Genesis Tree)</em></td>
+      <td>Critical hit chance for spells</td>
+    </tr>
+    <tr>
+      <td><strong>Ring</strong> <em>(Genesis Tree)</em></td>
+      <td>Critical damage bonus</td>
+    </tr>
+    <tr>
+      <td><strong>Ring</strong> <em>(Genesis Tree)</em></td>
+      <td>Spell damage</td>
+    </tr>
+    <tr>
+      <td><strong>Ring</strong> <em>(Genesis Tree)</em></td>
+      <td>Up to 39% increased Arcane Surge effect</td>
+    </tr>
+    <tr>
+      <td><strong>Amulet</strong> <em>(Genesis Tree)</em></td>
+      <td>Cast on Critical skill</td>
+    </tr>
+    <tr>
+      <td><strong>Amulet</strong> <em>(Genesis Tree)</em></td>
+      <td>Cast on Elemental Ailment skill</td>
+    </tr>
+    <tr>
+      <td><strong>Amulets and Rings</strong> <em>(Essence of the Breach)</em></td>
+      <td>+20% to maximum quality</td>
+    </tr>
+    <tr>
+      <td><strong>Wands and Staves</strong> <em>(Celestial Alloy)</em></td>
+      <td>+150 mana AND +1 to level of all Spell Skills</td>
+    </tr>
+    <tr>
+      <td><strong>Boots</strong> <em>(Uhtred's Sidereus Augment)</em></td>
+      <td>40% skill effect duration</td>
+    </tr>
+    <tr>
+      <td><strong>Boots</strong> <em>(Uhtred's Sidereus Augment)</em></td>
+      <td>15% chance to not remove Charges</td>
+    </tr>
+    <tr>
+      <td><strong>Boots</strong> <em>(Cyclonic Alloy)</em></td>
+      <td>18% skill effect duration</td>
+    </tr>
+    <tr>
+      <td><strong>Gloves</strong> <em>(Kolr's Hunt)</em></td>
+      <td>+2 to all Projectile Skills</td>
+    </tr>
+    <tr>
+      <td><strong>Gloves</strong> <em>(Kolr's Hunt)</em></td>
+      <td>30% critical hit chance</td>
+    </tr>
+    <tr>
+      <td><strong>Gloves</strong> <em>(Kolr's Hunt)</em></td>
+      <td>40% projectile damage and projectile speed</td>
+    </tr>
+    <tr>
+      <td><strong>Gloves</strong> <em>(Essence of Hysteria)</em></td>
+      <td>25% crit damage bonus</td>
+    </tr>
+    <tr>
+      <td><strong>Gloves</strong> <em>(Swift Alloy)</em></td>
+      <td>10% cast speed</td>
+    </tr>
+    <tr>
+      <td><strong>Time-Lost Jewels</strong> <em>(Ancient Potent Liquid Melancholy emotion)</em></td>
+      <td>Upgrades radius to Very Large</td>
+    </tr>
+    <tr>
+      <td><strong>Any Jewel</strong> <em>(Ancient Potent Liquid Contempt emotion)</em></td>
+      <td>+1 suffix or prefix mod</td>
+    </tr>
+    <tr>
+      <td><strong>Normal Jewels</strong> <em>(Potent Liquid Ferocity emotion)</em></td>
+      <td>60% increased effect of prefixes or suffixes</td>
+    </tr>
+    <tr>
+      <td><strong>Normal Jewels</strong> <em>(Liquid Despair emotion)</em></td>
+      <td>Critical spell chance</td>
+    </tr>
+    <tr>
+      <td><strong>Normal Jewels</strong> <em>(Concentrated Liquid Fear emotion)</em></td>
+      <td>Critical spell damage</td>
+    </tr>
+    <tr>
+      <td><strong>Normal Jewels</strong> <em>(Liquid Disgust emotion)</em></td>
+      <td>Recover % mana on kill</td>
+    </tr>
+    <tr>
+      <td><strong>Normal Jewels</strong> <em>(Liquid Envy emotion)</em></td>
+      <td>Spell damage</td>
+    </tr>
+    <tr>
+      <td><strong>Normal Jewels</strong> <em>(Diluted Liquid Ire emotion)</em></td>
+      <td>Energy Shield</td>
+    </tr>
+  </tbody>
+</table>
+</div><!-- .spark-early-items -->
+</div><!-- #pill-early-spark-comet -->
+
+</div><!-- #tab-early-crafting -->
 
 <div id="tab-endgame-crafting" class="tab-panel">
 </div>
@@ -1837,9 +2141,13 @@ function showTab(id) {
 function showPill(id, btn) {
   const panel = btn.closest('.tab-panel');
   panel.querySelectorAll('.pill-panel').forEach(p => p.classList.remove('active'));
-  panel.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+  panel.querySelectorAll('.pill-btn').forEach(b => {
+    b.classList.remove('active');
+    if (b.hasAttribute('aria-pressed')) b.setAttribute('aria-pressed', 'false');
+  });
   document.getElementById('pill-' + id).classList.add('active');
   btn.classList.add('active');
+  if (btn.hasAttribute('aria-pressed')) btn.setAttribute('aria-pressed', 'true');
 }
 function showCampaignBuild(id) {
   const campaign = document.getElementById('tab-campaign');

@@ -2,6 +2,65 @@
 
 The [league launch guide](../../index.html) includes this setup under Campaign > Spark-Comet, alongside Twisters. Campaign Zone Rewards are shared; Spark-Comet uses the vendor regexes below instead of spear progression.
 
+Early Items > Spark-Comet groups recommendations into separate equipment-slot tables, with an additional Exclusive Mods and Augments table. Jewellery includes belts and charms. There is no standalone Boots table; boot modifiers remain in Exclusive Mods and Augments. The existing early-item lists remain under Twisters.
+
+| Slot | Item | Modifier / Notes |
+|------|------|------------------|
+| Helmet | Devouring Diadem | Very early defensive helmet |
+| Helmet | Atziri's Disdain | Great rarity early helmet |
+| Helmet | Crown of Victor | Early +1 all skills helmet with rarity |
+| Body Armour | Prayers for Rain | Early body armour |
+| Body Armour | Cloak of Defiance | Early body armour |
+| Body Armour | Waveshaper | Early body armour if you have mana regen |
+| Body Armour | Temporalis | Endgame body armour |
+| Gloves | Maligaro's Virtuosity (Fine Bracers) | Fixed 250% crit dmg bonus, perfect with Pinpoint |
+| Gloves | Doedre's Tenure | Alternative damage gloves to Maligaro's for non-crit |
+| Gloves | Nightscale (Pauscale Gloves) | Decent mana regen option with crit |
+| Jewellery | Dream Fragments | |
+| Jewellery | The Everlasting Gaze | Good early amulet |
+| Jewellery | Choir of the Storm | Great early crit amulet |
+| Jewellery | Beacon of Azis | Great amulet for crit and early boss rushing |
+| Jewellery | Shavronne's Satchel (Belt) | ES from life flask |
+| Jewellery | Nascent Hope (Charm) | |
+| Jewellery | Beira's Anguish (Charm) | |
+| Jewellery | Arakaali's Gift (Charm) | |
+| Jewellery | Rite of Passage (Charm) | CAT for crit, speed \| OWL for es, dmg, gain cold |
+| Jewels | Time-Lost Jewel | Double crit damage bonus + crit chance, if 5-mod jewel crafting remains available |
+| Jewels | Sapphire Jewel | Double crit damage bonus + crit chance, if 5-mod jewel crafting remains available |
+| Weapons | Adonia's Ego | Offhand for power charge consumption |
+| Offhand | Deathrattle | Offhand for early survival |
+| Offhand | Effigy of Cruelty | Offhand once switched to crit |
+| Exclusive Mods and Augments | Legacy of Lifesprig | +2 all spell |
+| Exclusive Mods and Augments | Belt (Genesis Tree) | 80(50—55)% increased \[Spell\] |
+| Exclusive Mods and Augments | Belt (Genesis Tree) | 80+(80—89) to maximum Energy Shield |
+| Exclusive Mods and Augments | Ring (Genesis Tree) | +1 to level of all Spell Skills |
+| Exclusive Mods and Augments | Ring (Genesis Tree) | Critical hit chance for spells |
+| Exclusive Mods and Augments | Ring (Genesis Tree) | Critical damage bonus |
+| Exclusive Mods and Augments | Ring (Genesis Tree) | Spell damage |
+| Exclusive Mods and Augments | Ring (Genesis Tree) | Up to 39% increased Arcane Surge effect |
+| Exclusive Mods and Augments | Amulet (Genesis Tree) | Cast on Critical skill |
+| Exclusive Mods and Augments | Amulet (Genesis Tree) | Cast on Elemental Ailment skill |
+| Exclusive Mods and Augments | Amulets and Rings (Essence of the Breach) | +20% to maximum quality |
+| Exclusive Mods and Augments | Wands and Staves (Celestial Alloy) | +150 mana AND +1 to level of all Spell Skills |
+| Exclusive Mods and Augments | Boots (Uhtred's Sidereus Augment) | 40% skill effect duration |
+| Exclusive Mods and Augments | Boots (Uhtred's Sidereus Augment) | 15% chance to not remove Charges |
+| Exclusive Mods and Augments | Boots (Cyclonic Alloy) | 18% skill effect duration |
+| Exclusive Mods and Augments | Gloves (Kolr's Hunt) | +2 to all Projectile Skills |
+| Exclusive Mods and Augments | Gloves (Kolr's Hunt) | 30% critical hit chance |
+| Exclusive Mods and Augments | Gloves (Kolr's Hunt) | 40% projectile damage and projectile speed |
+| Exclusive Mods and Augments | Gloves (Essence of Hysteria) | 25% crit damage bonus |
+| Exclusive Mods and Augments | Gloves (Swift Alloy) | 10% cast speed |
+| Exclusive Mods and Augments | Time-Lost Jewels (Ancient Potent Liquid Melancholy emotion) | Upgrades radius to Very Large |
+| Exclusive Mods and Augments | Any Jewel (Ancient Potent Liquid Contempt emotion) | +1 suffix or prefix mod |
+| Exclusive Mods and Augments | Normal Jewels (Potent Liquid Ferocity emotion) | 60% increased effect of prefixes or suffixes |
+| Exclusive Mods and Augments | Normal Jewels (Liquid Despair emotion) | Critical spell chance |
+| Exclusive Mods and Augments | Normal Jewels (Concentrated Liquid Fear emotion) | Critical spell damage |
+| Exclusive Mods and Augments | Normal Jewels (Liquid Disgust emotion) | Recover % mana on kill |
+| Exclusive Mods and Augments | Normal Jewels (Liquid Envy emotion) | Spell damage |
+| Exclusive Mods and Augments | Normal Jewels (Diluted Liquid Ire emotion) | Energy Shield |
+
+Adonia's Ego is a [Siphoning Wand](https://poe2db.tw/us/Adonias_Ego), so it is grouped under Weapons while retaining the offhand-use note. Deathrattle and Effigy of Cruelty are Focus items, grouped under Offhand.
+
 Gem Priorities appears above the full gems-and-supports reference table. On wide screens, Tier 1-5 share the first row; Lesser Jeweller's Orb, GCP, Greater Jeweller's Orb, Perfect Jeweller's Orb, and Lineage Gems share the second row. Both rows wrap into fewer columns on smaller screens. Read each table from top to bottom. Modifier cutoffs in the guide cover extra lightning damage, all Spell Skill levels, and Fire Spell Skill levels (also applicable to Cold and Lightning), using the supplied screenshots.
 
 The regexes below contain Markdown escapes; the guide displays and copies the unescaped regex text for use in game.
