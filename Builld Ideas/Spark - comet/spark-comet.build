@@ -1,952 +1,9 @@
 {
   "name": "Spark - Comet",
   "author": "UtkarshBehre",
-  "description": "Gems: levels 1-52 T1-T4; 53-70 T1-T5; 71-100 all plus Lineage. T5-only skills start at 53. Incremental passive trees.",
+  "description": "Gems: levels 1-52 T1-T4; 53-70 T1-T5; 71-100 all plus Lineage. T5-only skills start at 53. Passive recommendations disabled.",
   "ascendancy": "Sorceress1",
-  "passives": [
-    {
-      "id": "spells18",
-      "level_interval": [1, 14],
-      "weapon_set": 0,
-      "additional_text": "Spell Damage"
-    },
-    {
-      "id": "spells15",
-      "level_interval": [1, 14],
-      "weapon_set": 0,
-      "additional_text": "Spell Damage"
-    },
-    {
-      "id": "spell_criticals2__",
-      "level_interval": [1, 14],
-      "weapon_set": 0,
-      "additional_text": "Spell Damage"
-    },
-    {
-      "id": "spell_criticals1",
-      "level_interval": [1, 14],
-      "weapon_set": 0,
-      "additional_text": "Spell Damage"
-    },
-    {
-      "id": "witch_sorceress_notable1",
-      "level_interval": [1, 14],
-      "weapon_set": 0,
-      "additional_text": "Raw Power"
-    },
-    {
-      "id": "elemental14",
-      "level_interval": [1, 14],
-      "weapon_set": 0,
-      "additional_text": "Elemental Damage"
-    },
-    {
-      "id": "cold2",
-      "level_interval": [1, 14],
-      "weapon_set": 0,
-      "additional_text": "Elemental Damage"
-    },
-    {
-      "id": "cold34",
-      "level_interval": [1, 14],
-      "weapon_set": 0,
-      "additional_text": "Elemental Force"
-    },
-    {
-      "id": "sorcerer_start2",
-      "level_interval": [1, 14],
-      "weapon_set": 0,
-      "additional_text": "Elemental Damage"
-    },
-    {
-      "id": "elemental15",
-      "level_interval": [1, 14],
-      "weapon_set": 0,
-      "additional_text": "Elemental Damage"
-    },
-    {
-      "id": "intelligence15",
-      "level_interval": [1, 14],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<green>{+5 Dexterity.}"
-    },
-    {
-      "id": "intelligence35_",
-      "level_interval": [1, 14],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "intelligence83",
-      "level_interval": [1, 14],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "exploiting_elemental_ailments3",
-      "level_interval": [1, 14],
-      "weapon_set": 1,
-      "additional_text": "Damage against Ailments\nWeapon set 1."
-    },
-    {
-      "id": "exploiting_elemental_ailments4",
-      "level_interval": [1, 14],
-      "weapon_set": 1,
-      "additional_text": "Damage against Ailments\nWeapon set 1."
-    },
-    {
-      "id": "exploiting_elemental_ailments5",
-      "level_interval": [1, 14],
-      "weapon_set": 1,
-      "additional_text": "Damage against Ailments\nWeapon set 1."
-    },
-    {
-      "id": "exploiting_elemental_ailments16",
-      "level_interval": [1, 14],
-      "weapon_set": 1,
-      "additional_text": "Exploit the Elements\nWeapon set 1."
-    },
-    {
-      "id": "fire3",
-      "level_interval": [1, 14],
-      "weapon_set": 2,
-      "additional_text": "Elemental Ailment Chance\nWeapon set 2."
-    },
-    {
-      "id": "fire32",
-      "level_interval": [1, 14],
-      "weapon_set": 2,
-      "additional_text": "Affliction Enforcer\nWeapon set 2."
-    },
-    {
-      "id": "intelligence16",
-      "level_interval": [15, 28],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<red>{+5 Strength.}"
-    },
-    {
-      "id": "spells1",
-      "level_interval": [15, 28],
-      "weapon_set": 0,
-      "additional_text": "Spell Damage"
-    },
-    {
-      "id": "spells3",
-      "level_interval": [15, 28],
-      "weapon_set": 0,
-      "additional_text": "Spell Damage"
-    },
-    {
-      "id": "spells12",
-      "level_interval": [15, 28],
-      "weapon_set": 0,
-      "additional_text": "Spell Damage"
-    },
-    {
-      "id": "spells33",
-      "level_interval": [15, 28],
-      "weapon_set": 0,
-      "additional_text": "Potent Incantation"
-    },
-    {
-      "id": "intelligence86",
-      "level_interval": [15, 28],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<red>{+5 Strength.}"
-    },
-    {
-      "id": "elemental60",
-      "level_interval": [15, 28],
-      "weapon_set": 0,
-      "additional_text": "Elemental Damage"
-    },
-    {
-      "id": "intelligence6",
-      "level_interval": [15, 28],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "attributes21",
-      "level_interval": [15, 28],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "jewel_slot1972",
-      "level_interval": [15, 28],
-      "weapon_set": 0,
-      "additional_text": "Jewel Socket"
-    },
-    {
-      "id": "intelligence46",
-      "level_interval": [15, 28],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "intelligence47",
-      "level_interval": [15, 28],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "attributes78",
-      "level_interval": [15, 28],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "infusion11",
-      "level_interval": [15, 28],
-      "weapon_set": 0,
-      "additional_text": "Infusion Duration"
-    },
-    {
-      "id": "infusion12",
-      "level_interval": [15, 28],
-      "weapon_set": 1,
-      "additional_text": "Infused Spell Damage\nWeapon set 1."
-    },
-    {
-      "id": "infusion13",
-      "level_interval": [15, 28],
-      "weapon_set": 1,
-      "additional_text": "Infused Spell Damage\nWeapon set 1."
-    },
-    {
-      "id": "infusion4",
-      "level_interval": [15, 28],
-      "weapon_set": 1,
-      "additional_text": "Empowering Infusions\nWeapon set 1."
-    },
-    {
-      "id": "infusion14",
-      "level_interval": [15, 28],
-      "weapon_set": 1,
-      "additional_text": "Infusion Consumption Chance\nWeapon set 1."
-    },
-    {
-      "id": "elemental57",
-      "level_interval": [15, 28],
-      "weapon_set": 2,
-      "additional_text": "Elemental Damage\nWeapon set 2."
-    },
-    {
-      "id": "elemental61_",
-      "level_interval": [15, 28],
-      "weapon_set": 2,
-      "additional_text": "Stripped Defences\nWeapon set 2."
-    },
-    {
-      "id": "orb1",
-      "level_interval": [15, 28],
-      "weapon_set": 2,
-      "additional_text": "Spell Damage and Cast Speed\nWeapon set 2."
-    },
-    {
-      "id": "orb3",
-      "level_interval": [15, 28],
-      "weapon_set": 2,
-      "additional_text": "Spell Damage and Cast Speed\nWeapon set 2."
-    },
-    {
-      "id": "orb4",
-      "level_interval": [15, 28],
-      "weapon_set": 2,
-      "additional_text": "Spell Damage and Cast Speed\nWeapon set 2."
-    },
-    {
-      "id": "orb5",
-      "level_interval": [15, 28],
-      "weapon_set": 2,
-      "additional_text": "Secrets of the Orb\nWeapon set 2."
-    },
-    {
-      "id": "cast_speed24",
-      "level_interval": [29, 44],
-      "weapon_set": 0,
-      "additional_text": "Cast Speed"
-    },
-    {
-      "id": "cast_speed29",
-      "level_interval": [29, 44],
-      "weapon_set": 0,
-      "additional_text": "Cast Speed"
-    },
-    {
-      "id": "cast_speed40",
-      "level_interval": [29, 44],
-      "weapon_set": 0,
-      "additional_text": "Hastening Barrier"
-    },
-    {
-      "id": "energy_shield29",
-      "level_interval": [29, 44],
-      "weapon_set": 0,
-      "additional_text": "Energy Shield"
-    },
-    {
-      "id": "energy_shield41",
-      "level_interval": [29, 44],
-      "weapon_set": 0,
-      "additional_text": "Energy Shield"
-    },
-    {
-      "id": "elemental53",
-      "level_interval": [29, 44],
-      "weapon_set": 0,
-      "additional_text": "Elemental Damage"
-    },
-    {
-      "id": "intelligence57",
-      "level_interval": [29, 44],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "intelligence56",
-      "level_interval": [29, 44],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "infusion19_",
-      "level_interval": [29, 44],
-      "weapon_set": 0,
-      "additional_text": "Infused Spell Damage"
-    },
-    {
-      "id": "infusion23",
-      "level_interval": [29, 44],
-      "weapon_set": 0,
-      "additional_text": "Frozen Limit"
-    },
-    {
-      "id": "intelligence45",
-      "level_interval": [29, 44],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "intelligence58",
-      "level_interval": [29, 44],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "intelligence59",
-      "level_interval": [29, 44],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "intelligence60",
-      "level_interval": [29, 44],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "infusion15",
-      "level_interval": [29, 44],
-      "weapon_set": 1,
-      "additional_text": "Infusion Consumption Chance\nWeapon set 1."
-    },
-    {
-      "id": "duration12",
-      "level_interval": [29, 44],
-      "weapon_set": 1,
-      "additional_text": "Increased Duration\nWeapon set 1."
-    },
-    {
-      "id": "duration10",
-      "level_interval": [29, 44],
-      "weapon_set": 1,
-      "additional_text": "Increased Duration\nWeapon set 1."
-    },
-    {
-      "id": "duration6",
-      "level_interval": [29, 44],
-      "weapon_set": 1,
-      "additional_text": "Preservation\nWeapon set 1."
-    },
-    {
-      "id": "elemental21",
-      "level_interval": [29, 44],
-      "weapon_set": 2,
-      "additional_text": "Elemental Damage\nWeapon set 2."
-    },
-    {
-      "id": "elemental35",
-      "level_interval": [29, 44],
-      "weapon_set": 2,
-      "additional_text": "Exposure Effect\nWeapon set 2."
-    },
-    {
-      "id": "elemental36",
-      "level_interval": [29, 44],
-      "weapon_set": 2,
-      "additional_text": "Overexposure\nWeapon set 2."
-    },
-    {
-      "id": "duration7",
-      "level_interval": [29, 44],
-      "weapon_set": 2,
-      "additional_text": "Reduced Duration\nWeapon set 2."
-    },
-    {
-      "id": "cast_speed10",
-      "level_interval": [29, 44],
-      "weapon_set": 0,
-      "additional_text": "Cast Speed"
-    },
-    {
-      "id": "cast_speed36_",
-      "level_interval": [29, 44],
-      "weapon_set": 0,
-      "additional_text": "Practiced Signs"
-    },
-    {
-      "id": "energy_shield38",
-      "level_interval": [45, 54],
-      "weapon_set": 0,
-      "additional_text": "Heavy Buffer"
-    },
-    {
-      "id": "energy_shield43",
-      "level_interval": [45, 54],
-      "weapon_set": 0,
-      "additional_text": "Energy Shield"
-    },
-    {
-      "id": "attributes1",
-      "level_interval": [45, 54],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "energy_shield_recovery26",
-      "level_interval": [45, 54],
-      "weapon_set": 0,
-      "additional_text": "Energy Shield Delay"
-    },
-    {
-      "id": "energy_shield_recovery27",
-      "level_interval": [45, 54],
-      "weapon_set": 0,
-      "additional_text": "Energy Shield Delay"
-    },
-    {
-      "id": "energy_shield_recovery28",
-      "level_interval": [45, 54],
-      "weapon_set": 0,
-      "additional_text": "Energy Shield Delay"
-    },
-    {
-      "id": "energy_shield_recovery22",
-      "level_interval": [45, 54],
-      "weapon_set": 0,
-      "additional_text": "Convalescence"
-    },
-    {
-      "id": "jewel_slot1979",
-      "level_interval": [45, 54],
-      "weapon_set": 0,
-      "additional_text": "Jewel Socket"
-    },
-    {
-      "id": "attributes24",
-      "level_interval": [45, 54],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "attributes23",
-      "level_interval": [45, 54],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "infusion3",
-      "level_interval": [45, 54],
-      "weapon_set": 1,
-      "additional_text": "Everlasting Infusions\nWeapon set 1."
-    },
-    {
-      "id": "projectile_spells1",
-      "level_interval": [45, 54],
-      "weapon_set": 1,
-      "additional_text": "Spell Damage\nWeapon set 1."
-    },
-    {
-      "id": "projectile_spells3",
-      "level_interval": [45, 54],
-      "weapon_set": 1,
-      "additional_text": "Spell Damage and Projectile Speed\nWeapon set 1."
-    },
-    {
-      "id": "projectile_spells9",
-      "level_interval": [45, 54],
-      "weapon_set": 1,
-      "additional_text": "Turn the Clock Forward\nWeapon set 1."
-    },
-    {
-      "id": "duration9_",
-      "level_interval": [45, 54],
-      "weapon_set": 2,
-      "additional_text": "Reduced Duration\nWeapon set 2."
-    },
-    {
-      "id": "duration11",
-      "level_interval": [45, 54],
-      "weapon_set": 2,
-      "additional_text": "Forthcoming\nWeapon set 2."
-    },
-    {
-      "id": "remnant17",
-      "level_interval": [45, 54],
-      "weapon_set": 2,
-      "additional_text": "Additional Remnant Chance\nWeapon set 2."
-    },
-    {
-      "id": "remnant12_",
-      "level_interval": [45, 54],
-      "weapon_set": 2,
-      "additional_text": "Additional Remnant Chance\nWeapon set 2."
-    },
-    {
-      "id": "energy_shield42__",
-      "level_interval": [55, 61],
-      "weapon_set": 0,
-      "additional_text": "Energy Shield"
-    },
-    {
-      "id": "intelligence2",
-      "level_interval": [55, 61],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "intelligence38",
-      "level_interval": [55, 61],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "slowed_enemies6",
-      "level_interval": [55, 61],
-      "weapon_set": 1,
-      "additional_text": "Duration\nWeapon set 1."
-    },
-    {
-      "id": "slowed_enemies8",
-      "level_interval": [55, 61],
-      "weapon_set": 1,
-      "additional_text": "Duration\nWeapon set 1."
-    },
-    {
-      "id": "slowed_enemies10",
-      "level_interval": [55, 61],
-      "weapon_set": 1,
-      "additional_text": "Chronomancy\nWeapon set 1."
-    },
-    {
-      "id": "remnant6",
-      "level_interval": [55, 61],
-      "weapon_set": 1,
-      "additional_text": "Remnant Pickup Range\nWeapon set 1."
-    },
-    {
-      "id": "elemental49",
-      "level_interval": [55, 61],
-      "weapon_set": 2,
-      "additional_text": "Elemental Ailment Duration\nWeapon set 2.\nRespec: refund the inner Elemental Damage node below Overexposure."
-    },
-    {
-      "id": "elemental51",
-      "level_interval": [55, 61],
-      "weapon_set": 2,
-      "additional_text": "Elemental Ailment Chance\nWeapon set 2."
-    },
-    {
-      "id": "elemental34",
-      "level_interval": [55, 61],
-      "weapon_set": 2,
-      "additional_text": "Exposure Effect\nWeapon set 2."
-    },
-    {
-      "id": "elemental52",
-      "level_interval": [55, 61],
-      "weapon_set": 2,
-      "additional_text": "Elemental Ailment Chance\nWeapon set 2."
-    },
-    {
-      "id": "remnant14",
-      "level_interval": [55, 61],
-      "weapon_set": 2,
-      "additional_text": "Remnant Attraction\nWeapon set 2."
-    },
-    {
-      "id": "intelligence69",
-      "level_interval": [62, 65],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<red>{+5 Strength.}"
-    },
-    {
-      "id": "stun_threshold_from_energy_shield13",
-      "level_interval": [62, 65],
-      "weapon_set": 0,
-      "additional_text": "Stun and Ailment Threshold from Energy Shield"
-    },
-    {
-      "id": "stun_threshold_from_energy_shield20",
-      "level_interval": [62, 65],
-      "weapon_set": 0,
-      "additional_text": "Ailment Threshold from Energy Shield"
-    },
-    {
-      "id": "stun_threshold_from_energy_shield21",
-      "level_interval": [62, 65],
-      "weapon_set": 0,
-      "additional_text": "Shimmering Mirage"
-    },
-    {
-      "id": "intelligence62",
-      "level_interval": [62, 65],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "attributes68",
-      "level_interval": [62, 65],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "elemental43",
-      "level_interval": [62, 65],
-      "weapon_set": 0,
-      "additional_text": "Elemental Damage"
-    },
-    {
-      "id": "elemental44",
-      "level_interval": [62, 65],
-      "weapon_set": 0,
-      "additional_text": "Elemental Damage"
-    },
-    {
-      "id": "cold37",
-      "level_interval": [62, 65],
-      "weapon_set": 1,
-      "additional_text": "Echoing Frost\nWeapon set 1."
-    },
-    {
-      "id": "elemental46",
-      "level_interval": [62, 65],
-      "weapon_set": 1,
-      "additional_text": "Elemental Damage\nWeapon set 1."
-    },
-    {
-      "id": "lightning40",
-      "level_interval": [62, 65],
-      "weapon_set": 1,
-      "additional_text": "Echoing Thunder\nWeapon set 1."
-    },
-    {
-      "id": "fire34",
-      "level_interval": [62, 65],
-      "weapon_set": 1,
-      "additional_text": "Echoing Flames\nWeapon set 1."
-    },
-    {
-      "id": "area_spells8_",
-      "level_interval": [62, 65],
-      "weapon_set": 2,
-      "additional_text": "Spell Area of Effect\nWeapon set 2."
-    },
-    {
-      "id": "area_spells9",
-      "level_interval": [62, 65],
-      "weapon_set": 2,
-      "additional_text": "Spell Area of Effect\nWeapon set 2."
-    },
-    {
-      "id": "area_spells11",
-      "level_interval": [62, 65],
-      "weapon_set": 2,
-      "additional_text": "Spell Area of Effect\nWeapon set 2."
-    },
-    {
-      "id": "area_spells24",
-      "level_interval": [62, 65],
-      "weapon_set": 2,
-      "additional_text": "Roil\nWeapon set 2."
-    },
-    {
-      "id": "mana22",
-      "level_interval": [66, 74],
-      "weapon_set": 0,
-      "additional_text": "Energy Shield Delay"
-    },
-    {
-      "id": "mana21",
-      "level_interval": [66, 74],
-      "weapon_set": 0,
-      "additional_text": "Energy Shield Delay"
-    },
-    {
-      "id": "mana24",
-      "level_interval": [66, 74],
-      "weapon_set": 0,
-      "additional_text": "Energy Shield Delay"
-    },
-    {
-      "id": "mana40",
-      "level_interval": [66, 74],
-      "weapon_set": 0,
-      "additional_text": "Soul Bloom"
-    },
-    {
-      "id": "stun_threshold_from_energy_shield8",
-      "level_interval": [66, 74],
-      "weapon_set": 0,
-      "additional_text": "Stun and Ailment Threshold from Energy Shield"
-    },
-    {
-      "id": "stun_threshold_from_energy_shield12",
-      "level_interval": [66, 74],
-      "weapon_set": 0,
-      "additional_text": "Hallowed"
-    },
-    {
-      "id": "cast_speed15_",
-      "level_interval": [66, 74],
-      "weapon_set": 0,
-      "additional_text": "Cast Speed"
-    },
-    {
-      "id": "witch_sorceress_notable2",
-      "level_interval": [66, 74],
-      "weapon_set": 0,
-      "additional_text": "Pure Energy"
-    },
-    {
-      "id": "energy_shield10_",
-      "level_interval": [66, 74],
-      "weapon_set": 0,
-      "additional_text": "Stun and Ailment Threshold from Energy Shield"
-    },
-    {
-      "id": "energy_shield37",
-      "level_interval": [66, 74],
-      "weapon_set": 0,
-      "additional_text": "Dampening Shield"
-    },
-    {
-      "id": "intelligence54",
-      "level_interval": [75, 84],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "intelligence53_",
-      "level_interval": [75, 84],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "intelligence52",
-      "level_interval": [75, 84],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "intelligence51",
-      "level_interval": [75, 84],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "infusion10",
-      "level_interval": [75, 84],
-      "weapon_set": 0,
-      "additional_text": "Infusion Duration"
-    },
-    {
-      "id": "infusion7",
-      "level_interval": [75, 84],
-      "weapon_set": 0,
-      "additional_text": "Infusion Chance"
-    },
-    {
-      "id": "infusion6",
-      "level_interval": [75, 84],
-      "weapon_set": 0,
-      "additional_text": "Infusion Chance"
-    },
-    {
-      "id": "infusion2",
-      "level_interval": [75, 84],
-      "weapon_set": 0,
-      "additional_text": "Infusing Power"
-    },
-    {
-      "id": "lightning6",
-      "level_interval": [75, 84],
-      "weapon_set": 0,
-      "additional_text": "Infused Spell Damage"
-    },
-    {
-      "id": "lightning34",
-      "level_interval": [75, 84],
-      "weapon_set": 0,
-      "additional_text": "Principal Infusion"
-    },
-    {
-      "id": "energy_shield39",
-      "level_interval": [85, 92],
-      "weapon_set": 0,
-      "additional_text": "Illuminated Crown"
-    },
-    {
-      "id": "jewel_slot1969",
-      "level_interval": [85, 92],
-      "weapon_set": 0,
-      "additional_text": "Jewel Socket"
-    },
-    {
-      "id": "attributes13",
-      "level_interval": [85, 92],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<red>{+5 Strength.}"
-    },
-    {
-      "id": "mana_regeneration31_",
-      "level_interval": [85, 92],
-      "weapon_set": 0,
-      "additional_text": "Mana Regeneration"
-    },
-    {
-      "id": "mana_regeneration26",
-      "level_interval": [85, 92],
-      "weapon_set": 0,
-      "additional_text": "Arcane Surge Effect"
-    },
-    {
-      "id": "mana_regeneration27",
-      "level_interval": [85, 92],
-      "weapon_set": 0,
-      "additional_text": "Arcane Surge Effect"
-    },
-    {
-      "id": "mana_regeneration28_",
-      "level_interval": [85, 92],
-      "weapon_set": 0,
-      "additional_text": "Touch the Arcane"
-    },
-    {
-      "id": "witch_sorceress_notable1",
-      "level_interval": [93, 95],
-      "weapon_set": 1,
-      "additional_text": "Raw Power\nWeapon set 1.\nMove from shared to weapon set 1. Refund the set-1 Remnant Pickup Range node below the exposure-cluster Strength node."
-    },
-    {
-      "id": "intelligence11",
-      "level_interval": [93, 95],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}\nRespec: replace the three Spell Damage nodes leading to Raw Power with this outer attribute route. Keep the first Spell Damage node."
-    },
-    {
-      "id": "intelligence12",
-      "level_interval": [93, 95],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "intelligence13",
-      "level_interval": [93, 95],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "intelligence14",
-      "level_interval": [93, 95],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}\nRespec: refund the two lower Elemental Damage nodes below Elemental Force."
-    },
-    {
-      "id": "sorcerer_start3",
-      "level_interval": [93, 95],
-      "weapon_set": 0,
-      "additional_text": "Infused Spell Damage\nRespec: replace the lower Infused Spell Damage route to Principal Infusion."
-    },
-    {
-      "id": "intelligence17",
-      "level_interval": [93, 95],
-      "weapon_set": 0,
-      "additional_text": "Attribute\n<blue>{+5 Intelligence.}"
-    },
-    {
-      "id": "energy_shield11",
-      "level_interval": [93, 95],
-      "weapon_set": 0,
-      "additional_text": "Stun and Ailment Threshold from Energy Shield\nRespec: reach Dampening Shield from above. Refund its lower threshold node and the Practiced Signs / Pure Energy route, including both Cast Speed nodes."
-    },
-    {
-      "id": "intelligence102",
-      "level_interval": [93, 95],
-      "weapon_set": 0,
-      "additional_text": "Intelligence"
-    },
-    {
-      "id": "energy_shield46_",
-      "level_interval": [93, 95],
-      "weapon_set": 0,
-      "additional_text": "Energy Shield"
-    },
-    {
-      "id": "energy_shield33_",
-      "level_interval": [93, 95],
-      "weapon_set": 0,
-      "additional_text": "Patient Barrier"
-    },
-    {
-      "id": "mana_regeneration32",
-      "level_interval": [93, 95],
-      "weapon_set": 0,
-      "additional_text": "Mana Regeneration"
-    },
-    {
-      "id": "mana_regeneration34",
-      "level_interval": [93, 95],
-      "weapon_set": 0,
-      "additional_text": "Mana Regeneration"
-    },
-    {
-      "id": "mana_regeneration40",
-      "level_interval": [93, 95],
-      "weapon_set": 0,
-      "additional_text": "Ether Flow"
-    },
-    {
-      "id": "stun_threshold_from_energy_shield18",
-      "level_interval": [93, 95],
-      "weapon_set": 0,
-      "additional_text": "Stun Threshold from Energy Shield"
-    },
-    {
-      "id": "stun_threshold_from_energy_shield19_",
-      "level_interval": [93, 95],
-      "weapon_set": 0,
-      "additional_text": "Abasement"
-    },
-    {
-      "id": "sorcerer_start1",
-      "level_interval": [93, 95],
-      "weapon_set": 2,
-      "additional_text": "Elemental Ailment Chance\nWeapon set 2.\nRespec: replace the lower Elemental Ailment Chance route to Affliction Enforcer."
-    }
-  ],
+  "passives": [],
   "skills": [
     {
       "id": "Metadata/Items/Gems/SkillGemContagion",
@@ -976,7 +33,7 @@
         {
           "id": "Metadata/Items/Gems/SupportGemAccelerationTwo",
           "level_interval": [1, 52],
-          "additional_text": "Projectile Acceleration II\nSlot [3]. T4 priority 2."
+          "additional_text": "Projectile Acceleration II\nSlot [3]. T4 priority 1."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemRisingTempest",
@@ -1001,7 +58,7 @@
         {
           "id": "Metadata/Items/Gems/SupportGemAccelerationTwo",
           "level_interval": [53, 70],
-          "additional_text": "Projectile Acceleration II\nSlot [3]. T4 priority 2."
+          "additional_text": "Projectile Acceleration II\nSlot [3]. T4 priority 1."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemRisingTempest",
@@ -1022,6 +79,11 @@
           "id": "Metadata/Items/Gems/SupportGemPinpointCritical",
           "level_interval": [53, 70],
           "additional_text": "Pinpoint Critical\nSlot [5]. T5 priority 13."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemZenithTwo",
+          "level_interval": [53, 70],
+          "additional_text": "Zenith II\nSlot [4]. T5 priority 42."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemUnleash",
@@ -1041,7 +103,7 @@
         {
           "id": "Metadata/Items/Gems/SupportGemAccelerationTwo",
           "level_interval": [71, 100],
-          "additional_text": "Projectile Acceleration II\nSlot [3]. T4 priority 2."
+          "additional_text": "Projectile Acceleration II\nSlot [3]. T4 priority 1."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemRisingTempest",
@@ -1062,6 +124,11 @@
           "id": "Metadata/Items/Gems/SupportGemPinpointCritical",
           "level_interval": [71, 100],
           "additional_text": "Pinpoint Critical\nSlot [5]. T5 priority 13."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemZenithTwo",
+          "level_interval": [71, 100],
+          "additional_text": "Zenith II\nSlot [4]. T5 priority 42."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemVilentasPropulsion",
@@ -1088,12 +155,12 @@
         {
           "id": "Metadata/Items/Gem/SupportGemConsideredCasting",
           "level_interval": [1, 52],
-          "additional_text": "Considered Casting\nSlots [2] [3]. T2 priority 1."
+          "additional_text": "Considered Casting\nSlots [2] [3]. T2 priority 2."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemUnleash",
           "level_interval": [1, 52],
-          "additional_text": "Unleash\nSlot [2]. T2 priority 2.\nafter orb limit node"
+          "additional_text": "Unleash\nSlot [2]. T2 priority 3.\nafter orb limit node"
         },
         {
           "id": "Metadata/Items/Gems/SupportGemOverabundance",
@@ -1108,12 +175,12 @@
         {
           "id": "Metadata/Items/Gem/SupportGemConsideredCasting",
           "level_interval": [53, 70],
-          "additional_text": "Considered Casting\nSlots [2] [3]. T2 priority 1."
+          "additional_text": "Considered Casting\nSlots [2] [3]. T2 priority 2."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemUnleash",
           "level_interval": [53, 70],
-          "additional_text": "Unleash\nSlot [2]. T2 priority 2.\nafter orb limit node"
+          "additional_text": "Unleash\nSlot [2]. T2 priority 3.\nafter orb limit node"
         },
         {
           "id": "Metadata/Items/Gems/SupportGemChainThree",
@@ -1143,12 +210,12 @@
         {
           "id": "Metadata/Items/Gem/SupportGemConsideredCasting",
           "level_interval": [71, 100],
-          "additional_text": "Considered Casting\nSlots [2] [3]. T2 priority 1."
+          "additional_text": "Considered Casting\nSlots [2] [3]. T2 priority 2."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemUnleash",
           "level_interval": [71, 100],
-          "additional_text": "Unleash\nSlot [2]. T2 priority 2.\nafter orb limit node"
+          "additional_text": "Unleash\nSlot [2]. T2 priority 3.\nafter orb limit node"
         },
         {
           "id": "Metadata/Items/Gems/SupportGemChainThree",
@@ -1183,9 +250,19 @@
           "additional_text": "Prolonged Duration I\nSlot [1]. T1 priority 5."
         },
         {
+          "id": "Metadata/Items/Gem/SupportGemExpedite",
+          "level_interval": [1, 52],
+          "additional_text": "Short Fuse I\nSlot [2]. T2 priority 1."
+        },
+        {
           "id": "Metadata/Items/Gem/SupportGemStripAway",
           "level_interval": [1, 52],
-          "additional_text": "Potent Exposure\nSlot [2]. T2 priority 3."
+          "additional_text": "Potent Exposure\nSlot [3]. T2 priority 4."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemSpellEcho",
+          "level_interval": [1, 52],
+          "additional_text": "Spell Echo\nSlot [3]. T2 priority 8.\nAlternative to Potent Exposure in this slot."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemPersistenceTwo",
@@ -1193,14 +270,14 @@
           "additional_text": "Prolonged Duration II\nSlot [1]. T3 priority 2."
         },
         {
-          "id": "Metadata/Items/Gem/SupportGemLongFuse",
+          "id": "Metadata/Items/Gem/SupportGemExpediteTwo",
           "level_interval": [1, 52],
-          "additional_text": "Long Fuse I\nSlot [3]. T4 priority 1."
+          "additional_text": "Short Fuse II\nSlot [2]. T4 priority 2.\nUpgrade from Short Fuse I."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemIngenuityTwo",
           "level_interval": [1, 52],
-          "additional_text": "Cooldown Recovery II\nSlot [4]. T4 priority 6."
+          "additional_text": "Cooldown Recovery II\nSlot [4]. T4 priority 7."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemPersistence",
@@ -1208,9 +285,19 @@
           "additional_text": "Prolonged Duration I\nSlot [1]. T1 priority 5."
         },
         {
+          "id": "Metadata/Items/Gem/SupportGemExpedite",
+          "level_interval": [53, 70],
+          "additional_text": "Short Fuse I\nSlot [2]. T2 priority 1."
+        },
+        {
           "id": "Metadata/Items/Gem/SupportGemStripAway",
           "level_interval": [53, 70],
-          "additional_text": "Potent Exposure\nSlot [2]. T2 priority 3."
+          "additional_text": "Potent Exposure\nSlot [3]. T2 priority 4."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemSpellEcho",
+          "level_interval": [53, 70],
+          "additional_text": "Spell Echo\nSlot [3]. T2 priority 8.\nAlternative to Potent Exposure in this slot."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemPersistenceTwo",
@@ -1218,14 +305,14 @@
           "additional_text": "Prolonged Duration II\nSlot [1]. T3 priority 2."
         },
         {
-          "id": "Metadata/Items/Gem/SupportGemLongFuse",
+          "id": "Metadata/Items/Gem/SupportGemExpediteTwo",
           "level_interval": [53, 70],
-          "additional_text": "Long Fuse I\nSlot [3]. T4 priority 1."
+          "additional_text": "Short Fuse II\nSlot [2]. T4 priority 2.\nUpgrade from Short Fuse I."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemIngenuityTwo",
           "level_interval": [53, 70],
-          "additional_text": "Cooldown Recovery II\nSlot [4]. T4 priority 6."
+          "additional_text": "Cooldown Recovery II\nSlot [4]. T4 priority 7."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemPersistence",
@@ -1233,9 +320,19 @@
           "additional_text": "Prolonged Duration I\nSlot [1]. T1 priority 5."
         },
         {
+          "id": "Metadata/Items/Gem/SupportGemExpedite",
+          "level_interval": [71, 100],
+          "additional_text": "Short Fuse I\nSlot [2]. T2 priority 1."
+        },
+        {
           "id": "Metadata/Items/Gem/SupportGemStripAway",
           "level_interval": [71, 100],
-          "additional_text": "Potent Exposure\nSlot [2]. T2 priority 3."
+          "additional_text": "Potent Exposure\nSlot [3]. T2 priority 4."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemSpellEcho",
+          "level_interval": [71, 100],
+          "additional_text": "Spell Echo\nSlot [3]. T2 priority 8.\nAlternative to Potent Exposure in this slot."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemPersistenceTwo",
@@ -1243,14 +340,14 @@
           "additional_text": "Prolonged Duration II\nSlot [1]. T3 priority 2."
         },
         {
-          "id": "Metadata/Items/Gem/SupportGemLongFuse",
+          "id": "Metadata/Items/Gem/SupportGemExpediteTwo",
           "level_interval": [71, 100],
-          "additional_text": "Long Fuse I\nSlot [3]. T4 priority 1."
+          "additional_text": "Short Fuse II\nSlot [2]. T4 priority 2.\nUpgrade from Short Fuse I."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemIngenuityTwo",
           "level_interval": [71, 100],
-          "additional_text": "Cooldown Recovery II\nSlot [4]. T4 priority 6."
+          "additional_text": "Cooldown Recovery II\nSlot [4]. T4 priority 7."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemUhtredsRite",
@@ -1260,6 +357,11 @@
       ]
     },
     {
+      "id": "Metadata/Items/Gems/SkillGemWolfPounce",
+      "level_interval": [1, 6],
+      "additional_text": "<b>{Pounce}\nRequires a level 3 Uncut Skill Gem. No supports recommended."
+    },
+    {
       "id": "Metadata/Items/Gems/SkillGemFlameWall",
       "level_interval": [1, 100],
       "additional_text": "<b>{Flame Wall}\nSame-slot supports are alternatives/upgrades, not simultaneous.\nLevels 1-52: T1-T4 priorities. Levels 53-70: T1-T5 priorities. Levels 71-100: T1-T5 plus Lineage.\nFrom level 53, manually socket: [1] Flame Wall; [2] Comet; [3] Energy Retention; [4] Spell Cascade; [5] Boundless Energy I/II.\nFrom level 71, slot [4] also offers Ixchel's Torment for Cast on Elemental Ailment or Arbiter's Ignition for Cast on Critical.\n<yellow>{Experimental: GGG documents meta gems as unsupported. Triggered skill gems must be socketed manually.}",
@@ -1267,12 +369,12 @@
         {
           "id": "Metadata/Items/Gems/SupportGemFortress",
           "level_interval": [1, 52],
-          "additional_text": "Fortress I\nSlot [1]. T2 priority 4."
+          "additional_text": "Fortress I\nSlot [1]. T2 priority 5."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemSpellCascade",
           "level_interval": [1, 52],
-          "additional_text": "Spell Cascade\nSlot [2]. T2 priority 6."
+          "additional_text": "Spell Cascade\nSlot [2]. T2 priority 7."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemFortressTwo",
@@ -1287,12 +389,12 @@
         {
           "id": "Metadata/Items/Gems/SupportGemFortress",
           "level_interval": [53, 70],
-          "additional_text": "Fortress I\nSlot [1]. T2 priority 4."
+          "additional_text": "Fortress I\nSlot [1]. T2 priority 5."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemSpellCascade",
           "level_interval": [53, 70],
-          "additional_text": "Spell Cascade\nSlot [2]. T2 priority 6."
+          "additional_text": "Spell Cascade\nSlot [2]. T2 priority 7."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemFortressTwo",
@@ -1307,12 +409,12 @@
         {
           "id": "Metadata/Items/Gems/SupportGemFortress",
           "level_interval": [71, 100],
-          "additional_text": "Fortress I\nSlot [1]. T2 priority 4."
+          "additional_text": "Fortress I\nSlot [1]. T2 priority 5."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemSpellCascade",
           "level_interval": [71, 100],
-          "additional_text": "Spell Cascade\nSlot [2]. T2 priority 6."
+          "additional_text": "Spell Cascade\nSlot [2]. T2 priority 7."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemFortressTwo",
@@ -1394,34 +496,34 @@
       "additional_text": "<b>{Arctic Armour}\nSame-slot supports are alternatives/upgrades, not simultaneous.\nLevels 1-52: T1-T4 priorities. Levels 53-70: T1-T5 priorities. Levels 71-100: T1-T5 plus Lineage.\nRequires a level 4 Uncut Spirit Gem. Base reservation: 30 Spirit.",
       "support_skills": [
         {
-          "id": "Metadata/Items/Gems/SupportGemDeepFreeze",
+          "id": "Metadata/Items/Gems/SupportGemControlledDestruction",
           "level_interval": [1, 52],
-          "additional_text": "Deep Freeze\nSlot [1]. T1 priority 6."
+          "additional_text": "Controlled Destruction\nSlot [1]. T1 priority 6."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemGlaciation",
           "level_interval": [1, 52],
-          "additional_text": "Freeze\nSlot [2]. T2 priority 5."
+          "additional_text": "Freeze\nSlot [2]. T2 priority 6."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemIngenuityTwo",
           "level_interval": [1, 52],
-          "additional_text": "Cooldown Recovery II\nSlot [4]. T4 priority 7."
+          "additional_text": "Cooldown Recovery II\nSlot [4]. T4 priority 8."
         },
         {
-          "id": "Metadata/Items/Gems/SupportGemDeepFreeze",
+          "id": "Metadata/Items/Gems/SupportGemControlledDestruction",
           "level_interval": [53, 70],
-          "additional_text": "Deep Freeze\nSlot [1]. T1 priority 6."
+          "additional_text": "Controlled Destruction\nSlot [1]. T1 priority 6."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemGlaciation",
           "level_interval": [53, 70],
-          "additional_text": "Freeze\nSlot [2]. T2 priority 5."
+          "additional_text": "Freeze\nSlot [2]. T2 priority 6."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemIngenuityTwo",
           "level_interval": [53, 70],
-          "additional_text": "Cooldown Recovery II\nSlot [4]. T4 priority 7."
+          "additional_text": "Cooldown Recovery II\nSlot [4]. T4 priority 8."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemBludgeon",
@@ -1429,19 +531,19 @@
           "additional_text": "Knockback\nSlot [3]. T5 priority 33."
         },
         {
-          "id": "Metadata/Items/Gems/SupportGemDeepFreeze",
+          "id": "Metadata/Items/Gems/SupportGemControlledDestruction",
           "level_interval": [71, 100],
-          "additional_text": "Deep Freeze\nSlot [1]. T1 priority 6."
+          "additional_text": "Controlled Destruction\nSlot [1]. T1 priority 6."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemGlaciation",
           "level_interval": [71, 100],
-          "additional_text": "Freeze\nSlot [2]. T2 priority 5."
+          "additional_text": "Freeze\nSlot [2]. T2 priority 6."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemIngenuityTwo",
           "level_interval": [71, 100],
-          "additional_text": "Cooldown Recovery II\nSlot [4]. T4 priority 7."
+          "additional_text": "Cooldown Recovery II\nSlot [4]. T4 priority 8."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemBludgeon",
@@ -1471,14 +573,19 @@
           "additional_text": "Cooldown Recovery I\nSlot [2]. T3 priority 7."
         },
         {
+          "id": "Metadata/Items/Gems/SupportGemInspirationTwo",
+          "level_interval": [1, 52],
+          "additional_text": "Efficiency II\nSlot [1]. T4 priority 4."
+        },
+        {
           "id": "Metadata/Items/Gems/SupportGemIngenuityTwo",
           "level_interval": [1, 52],
-          "additional_text": "Cooldown Recovery II\nSlot [2]. T4 priority 4."
+          "additional_text": "Cooldown Recovery II\nSlot [2]. T4 priority 5."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemSecondWindTwo",
           "level_interval": [1, 52],
-          "additional_text": "Second Wind II\nSlot [3]. T4 priority 5."
+          "additional_text": "Second Wind II\nSlot [3]. T4 priority 6."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemInspiration",
@@ -1491,14 +598,19 @@
           "additional_text": "Cooldown Recovery I\nSlot [2]. T3 priority 7."
         },
         {
+          "id": "Metadata/Items/Gems/SupportGemInspirationTwo",
+          "level_interval": [53, 70],
+          "additional_text": "Efficiency II\nSlot [1]. T4 priority 4."
+        },
+        {
           "id": "Metadata/Items/Gems/SupportGemIngenuityTwo",
           "level_interval": [53, 70],
-          "additional_text": "Cooldown Recovery II\nSlot [2]. T4 priority 4."
+          "additional_text": "Cooldown Recovery II\nSlot [2]. T4 priority 5."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemSecondWindTwo",
           "level_interval": [53, 70],
-          "additional_text": "Second Wind II\nSlot [3]. T4 priority 5."
+          "additional_text": "Second Wind II\nSlot [3]. T4 priority 6."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemSecondWindThree",
@@ -1526,14 +638,19 @@
           "additional_text": "Cooldown Recovery I\nSlot [2]. T3 priority 7."
         },
         {
+          "id": "Metadata/Items/Gems/SupportGemInspirationTwo",
+          "level_interval": [71, 100],
+          "additional_text": "Efficiency II\nSlot [1]. T4 priority 4."
+        },
+        {
           "id": "Metadata/Items/Gems/SupportGemIngenuityTwo",
           "level_interval": [71, 100],
-          "additional_text": "Cooldown Recovery II\nSlot [2]. T4 priority 4."
+          "additional_text": "Cooldown Recovery II\nSlot [2]. T4 priority 5."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemSecondWindTwo",
           "level_interval": [71, 100],
-          "additional_text": "Second Wind II\nSlot [3]. T4 priority 5."
+          "additional_text": "Second Wind II\nSlot [3]. T4 priority 6."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemSecondWindThree",
