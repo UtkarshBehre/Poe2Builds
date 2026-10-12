@@ -134,6 +134,11 @@
           "id": "Metadata/Items/Gems/SupportGemVilentasPropulsion",
           "level_interval": [71, 100],
           "additional_text": "<unique>{Vilenta's Propulsion}\nSlot [3]. Lineage priority 2.\nDrop/trade; cannot be cut from an Uncut Support Gem."
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemTrickstersShard",
+          "level_interval": [71, 100],
+          "additional_text": "<unique>{Trickster's Shard}\nSlot [2]. Lineage priority 11.\nDrop/trade; cannot be cut from an Uncut Support Gem."
         }
       ]
     },
@@ -877,12 +882,12 @@
     {
       "id": "Metadata/Items/Gems/SkillGemCastOnElementalAilment",
       "level_interval": [53, 100],
-      "additional_text": "<b>{Cast on Elemental Ailment}\nSame-slot supports are alternatives/upgrades, not simultaneous.\nLevels 1-52: T1-T4 priorities. Levels 53-70: T1-T5 priorities. Levels 71-100: T1-T5 plus Lineage.\nThis skill is recommended from level 53.\nRequires a level 14 Uncut Spirit Gem. Base reservation: 100 Spirit. Use before the crit swap.\nFrom level 53, manually socket: [1] Flame Wall; [2] Comet; [3] Energy Retention; [4] Spell Cascade; [5] Boundless Energy I/II.\nFrom level 71, slot [4] also offers Ixchel's Torment for Cast on Elemental Ailment or Arbiter's Ignition for Cast on Critical.\n<yellow>{Experimental: GGG documents meta gems as unsupported. Triggered skill gems must be socketed manually.}",
+      "additional_text": "<b>{Cast on Elemental Ailment}\nSame-slot supports are alternatives/upgrades, not simultaneous.\nLevels 1-52: T1-T4 priorities. Levels 53-70: T1-T5 priorities. Levels 71-100: T1-T5 plus Lineage.\nThis skill is recommended from level 53.\nRequires a level 14 Uncut Spirit Gem. Base reservation: 100 Spirit. Use before the crit swap.\nFrom level 53, manually socket: [1] Comet; [2] Spell Cascade; [3] Pinpoint Critical; [4] Energy Retention; [5] Boundless Energy I/II.\nFrom level 71, slot [2] also offers Ixchel's Torment for Cast on Elemental Ailment or Arbiter's Ignition for Cast on Critical.\n<yellow>{Experimental: GGG documents meta gems as unsupported. Triggered skill gems must be socketed manually.}",
       "support_skills": [
         {
           "id": "Metadata/Items/Gem/SupportGemSpellCascade",
           "level_interval": [53, 70],
-          "additional_text": "Spell Cascade\nSlot [4]. T5 priority 20."
+          "additional_text": "Spell Cascade\nSlot [2]. T5 priority 20."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemImpetus",
@@ -892,17 +897,22 @@
         {
           "id": "Metadata/Items/Gem/SupportGemEnergyRetention",
           "level_interval": [53, 70],
-          "additional_text": "Energy Retention\nSlot [3]. T5 priority 24."
+          "additional_text": "Energy Retention\nSlot [4]. T5 priority 24."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemImpetusTwo",
           "level_interval": [53, 70],
           "additional_text": "Boundless Energy II\nSlot [5]. T5 priority 26."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemPinpointCritical",
+          "level_interval": [53, 70],
+          "additional_text": "Pinpoint Critical\nSlot [3]. T5 priority 28."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemSpellCascade",
           "level_interval": [71, 100],
-          "additional_text": "Spell Cascade\nSlot [4]. T5 priority 20."
+          "additional_text": "Spell Cascade\nSlot [2]. T5 priority 20."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemImpetus",
@@ -912,7 +922,7 @@
         {
           "id": "Metadata/Items/Gem/SupportGemEnergyRetention",
           "level_interval": [71, 100],
-          "additional_text": "Energy Retention\nSlot [3]. T5 priority 24."
+          "additional_text": "Energy Retention\nSlot [4]. T5 priority 24."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemImpetusTwo",
@@ -920,21 +930,26 @@
           "additional_text": "Boundless Energy II\nSlot [5]. T5 priority 26."
         },
         {
+          "id": "Metadata/Items/Gems/SupportGemPinpointCritical",
+          "level_interval": [71, 100],
+          "additional_text": "Pinpoint Critical\nSlot [3]. T5 priority 28."
+        },
+        {
           "id": "Metadata/Items/Gem/SupportGemFlukeTwo",
           "level_interval": [71, 100],
-          "additional_text": "<unique>{Ixchel's Torment}\nSlot [4]. Lineage priority 3.\nDrop/trade; cannot be cut from an Uncut Support Gem."
+          "additional_text": "<unique>{Ixchel's Torment}\nSlot [2]. Lineage priority 3.\nDrop/trade; cannot be cut from an Uncut Support Gem."
         }
       ]
     },
     {
       "id": "Metadata/Items/Gems/SkillGemCastOnCritical",
       "level_interval": [53, 100],
-      "additional_text": "<b>{Cast on Critical}\nSame-slot supports are alternatives/upgrades, not simultaneous.\nLevels 1-52: T1-T4 priorities. Levels 53-70: T1-T5 priorities. Levels 71-100: T1-T5 plus Lineage.\nThis skill is recommended from level 53.\nRequires a level 14 Uncut Spirit Gem. Base reservation: 100 Spirit before modifiers; check available Spirit. Replaces Cast on Elemental Ailment after the crit swap.\nFrom level 53, manually socket: [1] Flame Wall; [2] Comet; [3] Energy Retention; [4] Spell Cascade; [5] Boundless Energy I/II.\nFrom level 71, slot [4] also offers Ixchel's Torment for Cast on Elemental Ailment or Arbiter's Ignition for Cast on Critical.\n<yellow>{Experimental: GGG documents meta gems as unsupported. Triggered skill gems must be socketed manually.}",
+      "additional_text": "<b>{Cast on Critical}\nSame-slot supports are alternatives/upgrades, not simultaneous.\nLevels 1-52: T1-T4 priorities. Levels 53-70: T1-T5 priorities. Levels 71-100: T1-T5 plus Lineage.\nThis skill is recommended from level 53.\nRequires a level 14 Uncut Spirit Gem. Base reservation: 100 Spirit before modifiers; check available Spirit. Replaces Cast on Elemental Ailment after the crit swap.\nFrom level 53, manually socket: [1] Comet; [2] Spell Cascade; [3] Pinpoint Critical; [4] Energy Retention; [5] Boundless Energy I/II.\nFrom level 71, slot [2] also offers Ixchel's Torment for Cast on Elemental Ailment or Arbiter's Ignition for Cast on Critical.\n<yellow>{Experimental: GGG documents meta gems as unsupported. Triggered skill gems must be socketed manually.}",
       "support_skills": [
         {
           "id": "Metadata/Items/Gem/SupportGemSpellCascade",
           "level_interval": [53, 70],
-          "additional_text": "Spell Cascade\nSlot [4]. T5 priority 21."
+          "additional_text": "Spell Cascade\nSlot [2]. T5 priority 21."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemImpetus",
@@ -944,17 +959,22 @@
         {
           "id": "Metadata/Items/Gem/SupportGemEnergyRetention",
           "level_interval": [53, 70],
-          "additional_text": "Energy Retention\nSlot [3]. T5 priority 25."
+          "additional_text": "Energy Retention\nSlot [4]. T5 priority 25."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemImpetusTwo",
           "level_interval": [53, 70],
           "additional_text": "Boundless Energy II\nSlot [5]. T5 priority 27."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemPinpointCritical",
+          "level_interval": [53, 70],
+          "additional_text": "Pinpoint Critical\nSlot [3]. T5 priority 29."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemSpellCascade",
           "level_interval": [71, 100],
-          "additional_text": "Spell Cascade\nSlot [4]. T5 priority 21."
+          "additional_text": "Spell Cascade\nSlot [2]. T5 priority 21."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemImpetus",
@@ -964,7 +984,7 @@
         {
           "id": "Metadata/Items/Gem/SupportGemEnergyRetention",
           "level_interval": [71, 100],
-          "additional_text": "Energy Retention\nSlot [3]. T5 priority 25."
+          "additional_text": "Energy Retention\nSlot [4]. T5 priority 25."
         },
         {
           "id": "Metadata/Items/Gem/SupportGemImpetusTwo",
@@ -972,9 +992,14 @@
           "additional_text": "Boundless Energy II\nSlot [5]. T5 priority 27."
         },
         {
+          "id": "Metadata/Items/Gems/SupportGemPinpointCritical",
+          "level_interval": [71, 100],
+          "additional_text": "Pinpoint Critical\nSlot [3]. T5 priority 29."
+        },
+        {
           "id": "Metadata/Items/Gem/SupportGemArbitersIgnition",
           "level_interval": [71, 100],
-          "additional_text": "<unique>{Arbiter's Ignition}\nSlot [4]. Lineage priority 4.\nDrop/trade; cannot be cut from an Uncut Support Gem."
+          "additional_text": "<unique>{Arbiter's Ignition}\nSlot [2]. Lineage priority 4.\nDrop/trade; cannot be cut from an Uncut Support Gem."
         }
       ]
     }
