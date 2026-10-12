@@ -86,6 +86,11 @@
           "additional_text": "Zenith II\nSlot [4]. T5 priority 42."
         },
         {
+          "id": "Metadata/Items/Gems/SupportGemPersistenceTwo",
+          "level_interval": [53, 70],
+          "additional_text": "Prolonged Duration II\nSlot [4]. T5 priority 43."
+        },
+        {
           "id": "Metadata/Items/Gems/SupportGemUnleash",
           "level_interval": [71, 100],
           "additional_text": "Unleash\nSlot [2]. T1 priority 1."
@@ -129,6 +134,11 @@
           "id": "Metadata/Items/Gem/SupportGemZenithTwo",
           "level_interval": [71, 100],
           "additional_text": "Zenith II\nSlot [4]. T5 priority 42."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemPersistenceTwo",
+          "level_interval": [71, 100],
+          "additional_text": "Prolonged Duration II\nSlot [4]. T5 priority 43."
         },
         {
           "id": "Metadata/Items/Gems/SupportGemVilentasPropulsion",
