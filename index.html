@@ -687,7 +687,7 @@
   <p><strong>Act 1 / early Act 2:</strong> <code>"y: r|(re|ld|ng) res|\d+% i.+mov|ell.*ge$|^\+.*ion skills$|^\+.*all sp.*ls$|^\+.*re sp.*ls$|^\+.*ng sp.*ls$|^\+.*os sp.*ls$|^\+.*ile skills$|o sp|\d.+m life|s: (am|ri|be|sc|st)"</code> <button class="copy-btn" type="button" title="Copy Act 1 and early Act 2 vendor regex" aria-label="Copy Act 1 and early Act 2 vendor regex" onclick="copyRegex(this)">⧉</button></p>
   <p><strong>Act 2 onwards:</strong> <code>"y: r|(re|ld|ng) res|\d+% i.+mov|^\+.*ion skills$|o sp|\d.+m life|s: (am|ri|be|sc)"</code> <button class="copy-btn" type="button" title="Copy Act 2 onwards vendor regex" aria-label="Copy Act 2 onwards vendor regex" onclick="copyRegex(this)">⧉</button></p>
   <p><strong>Do not overlevel utility:</strong> keep Thunderstorm at <strong>gem level 5</strong>; don't spend skill-gem upgrades on Contagion or Pounce.</p>
-  <p><strong>Downloads:</strong> <a href="Builld%20Ideas/Sand%20Djinn/sand-djinn-campaign.build" download>Our staged GuyThatDies-based build</a> &middot; <a href="#djinn-sources">Five original author exports and source notes</a>.</p>
+  <p><strong>Downloads:</strong> <a href="Builld%20Ideas/Sand%20Djinn/1%20to%2019%20Djinn.build" download>1 to 19 Djinn</a> &middot; <a href="Builld%20Ideas/Sand%20Djinn/19%20Djinn%20swap.build" download>19 Djinn swap</a> &middot; <a href="Builld%20Ideas/Sand%20Djinn/20-58%20Djinn.build" download>20-58 Djinn</a> &middot; <a href="#djinn-sources">Source guide and snapshot notes</a>.</p>
 </div>
 
 <h2 class="page-heading">Campaign Zone Rewards</h2>
@@ -1381,11 +1381,11 @@
     <tr><td>Levels 1-5</td><td>Spark for opening clear; Firebolt or a strong weapon spell for bosses. Cut Frost Bomb from Renly and Contagion from Clearfell. Pre-cut Essence Drain for level 6 when a suitable uncut gem is available. Move Unleash between clear and boss skills.</td><td>Firebolt / Chaos Bolt are weapon-granted. After the Rust King, buy a Withered Wand for Chaos Bolt if you have no stronger +level weapon.</td></tr>
     <tr><td>Levels 6-13</td><td>Replace Spark with Essence Drain + Contagion. ED gets Zenith I / Chain I; move Unleash onto Contagion for clear or onto your weapon spell for bosses. Cut Pounce from Lachlann and prepare Orb of Storms from Crowbell.</td><td>Upgrade ED before Orb of Storms. Do not spend upgrades on Contagion or Pounce. Add Arctic Armour at 10 if Spirit permits.</td></tr>
     <tr><td>Level 14 to first trial</td><td>Cut Ember Fusillade from Leitis for single target with Controlled Destruction. Move Zenith I from ED to Ember for bosses and back for clear. Use the prepared Orb of Storms.</td><td>Save the Executioner / Gallows support rewards for Magnified Area I and Concentrated Area at the Djinn swap. These are alternatives in one slot.</td></tr>
-    <tr><td>Act 2, first ascendancy around 19</td><td>Swap to Kelari / Deception, Pounce, Thunderstorm and Skeletal Sniper. Follow the author's swap tree, equip sceptre + shield and prioritize +1 minion level on sceptre / helmet.</td><td>Complete the trial first. Our file switches at 19; if your trial is delayed, keep the spell setup and use the separate Ember export until ready.</td></tr>
+    <tr><td>Act 2, first ascendancy around 19</td><td>Swap to Kelari / Deception, Pounce, Thunderstorm and Skeletal Sniper. Follow the author's swap tree, equip sceptre + shield and prioritize +1 minion level on sceptre / helmet.</td><td>Complete the trial first, then manually select the level-19 snapshot. If delayed past 19, keep the spell snapshot selected until ready; its gem recommendations remain visible at all levels.</td></tr>
     <tr><td>After the swap</td><td>Bidding I goes in Deception [1]. Use Magnified Area I in [2] for clear or Concentrated Area for bosses. Pounce uses Mark for Death / duration; Thunderstorm uses Living Lightning.</td><td>Keep Thunderstorm at gem level 5. Pounce needs the wolf talisman on weapon swap. Retire Arctic Armour to free Spirit for the new roster.</td></tr>
     <tr><td>Act 3 / level 36</td><td>Source T3 order: Magnified Area II from the Sandswept Marsh league reward, then Muster from the Venom Crypts sarcophagus. Add Muster in Deception [3] at 36, once the socket is unlocked.</td><td>Use a cheap Sandswept Marsh wasp for Bind Spectre. Muster counts different active reviving types, not repeated copies of one type. A league reward may differ outside this event.</td></tr>
     <tr><td>Act 4 / interludes</td><td>Take Bidding II from Isle of Kin's Beast Pen. Add different minion types as skill gems and Spirit allow: Sniper, Arsonist, Frost Mage, Spectre, Reaver, Storm Mage and Brute.</td><td>Don't try to reserve the whole roster before you can afford it. Thunderstorm's extra duration / area links are spare-gem utility, not a reason to delay core damage.</td></tr>
-    <tr><td>Passive routing / campaign exit</td><td>Use the original stage trees. The later guide routes through Bringer of Order, then Pure Energy / Dampening Shield, then Heavy Buffer, refunding the superseded travel attributes.</td><td>No Fire Djinn, Pain Offering, Powered Zealot farming or Lineage shopping is added to this campaign setup. Choose an endgame transition separately.</td></tr>
+    <tr><td>Passive routing / campaign exit</td><td>Use the author's target trees included in our three snapshots. The later guide routes through Bringer of Order, then Pure Energy / Dampening Shield, then Heavy Buffer, refunding the superseded travel attributes.</td><td>No Fire Djinn, Pain Offering, Powered Zealot farming or Lineage shopping is added to this campaign setup. Choose an endgame transition separately.</td></tr>
   </tbody>
 </table>
 <div class="meta">
@@ -1500,7 +1500,17 @@
 </section>
 
 <h2 class="page-heading">Sand Djinn - Gems and Supports</h2>
-<p>Numbered slots match the cutting table. Earlier support ranks remain available until you find an upgrade. The author names stages 14-19 and a level-19 swap; our file resolves that overlap as <strong>14-18 spells, 19+ Djinn after the trial</strong>. Other levels are availability / planning checkpoints, not guaranteed rewards.</p>
+<div id="djinn-gem-variants">
+<div class="pill-nav" role="group" aria-label="Djinn gem setup">
+  <button class="pill-btn active" type="button" aria-pressed="true" aria-controls="djinn-gems-campaign" onclick="selectDjinnGems(this)">Campaign</button>
+  <button class="pill-btn" type="button" aria-pressed="false" aria-controls="djinn-gems-blaze" onclick="selectDjinnGems(this)">BlazeworksTV - SSF entry</button>
+  <button class="pill-btn" type="button" aria-pressed="false" aria-controls="djinn-gems-lily" onclick="selectDjinnGems(this)">ds_lily - Dominion</button>
+  <button class="pill-btn" type="button" aria-pressed="false" aria-controls="djinn-gems-phaze" onclick="selectDjinnGems(this)">PhazePlays - Sandscorcher</button>
+</div>
+<p><strong>Endgame comparison:</strong> shortlisted for an SSF / minimal-trade league-start path toward <strong>Arbiter of Divinity</strong> under 0.5.5. These are sourced gem setups, not independently verified kills of that boss with these exact links or budgets. Start with the SSF entry setup; the other selectors show progression options, not required purchases.</p>
+<p>Sources checked 14 October 2026. Endgame supports below belong to the <strong>parent Djinn</strong> (Kelari / Ruzhan / Navira); command skills share those links and are not separate six-links. Each row is one skill's setup; alternatives share a numbered slot. Endgame slot numbers follow the source's listed order, not campaign cutting priorities. Support colors follow <a href="https://poe2db.tw/us/Support_Gems">attribute requirements</a>; gold names are drop / trade-only Lineage supports. Endgame setups are separate from the campaign priorities and downloadable snapshots.</p>
+<section id="djinn-gems-campaign" data-djinn-gem-panel aria-label="Campaign gem setup">
+<p>Numbered slots match the cutting table. Earlier support ranks remain useful until you find an upgrade. The table shows the intended progression: <strong>14-18 spells, 19+ Djinn after the trial</strong>. All three downloadable snapshots show every included skill and support at <strong>character levels 1-100</strong>, even before a gem is usable. Their names describe the intended stage, not visibility filters: manually choose the spell snapshot until the trial is complete, then the Djinn swap snapshot, then the later campaign snapshot. Recommendations are preparation targets, not guaranteed unlocks, rewards or available sockets.</p>
 <table class="spark-skills" aria-label="Sand Djinn gems and supports">
   <thead><tr><th scope="col">Icon</th><th scope="col">Skill</th><th scope="col">Supports</th></tr></thead>
   <tbody>
@@ -1647,22 +1657,337 @@
   </tbody>
 </table>
 
+</section>
+
+<section id="djinn-gems-blaze" data-djinn-gem-panel aria-labelledby="djinn-blaze-heading" hidden>
+  <h3 id="djinn-blaze-heading">BlazeworksTV - Sand + Fire / SSF entry</h3>
+  <p><a href="https://mobalytics.gg/poe-2/builds/minion2win-varashta-campaign-build-guide?ws-ngf5-f7d82102-7e77-4a44-ad24-33b67e8ae7bf=activeVariantId%2C6">Source: Early Endgame (65-85)</a> &middot; 0.5.5 HC / SSF guide. Best starting comparison here: this snapshot has no Lineage supports. It is an entry-to-endgame setup, not a claim that level 65 gear is enough for Arbiter.</p>
+  <table class="spark-skills djinn-endgame" aria-label="BlazeworksTV endgame gems and supports">
+    <thead><tr><th scope="col">Icon</th><th scope="col">Skill</th><th scope="col">Supports</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/SorceressSummonSandDjinn.webp" alt="Kelari, the Tainted Sands" loading="lazy"></td>
+        <td><strong>Kelari, the Tainted Sands</strong><br><em>Deception / Brutality</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Bidding II</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Muster</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Magnified Area II</span></div>
+          <div class="support-slot"><code>[4]</code> <span class="str">Heft</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/SorceressSummonFireDjinn.webp" alt="Ruzhan, the Blazing Sword" loading="lazy"></td>
+        <td><strong>Ruzhan, the Blazing Sword</strong><br><em>Trap / Brand</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Bidding II</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Muster</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Concentrated Area</span></div>
+          <div class="support-slot"><code>[4]</code> <span class="str">Fire Penetration II</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/WitchPainOffering.webp" alt="Pain Offering" loading="lazy"></td>
+        <td><strong>Pain Offering</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Magnified Area II</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="str">Prolonged Duration II</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/DruidSummonWolf.webp" alt="Wolf Pack" loading="lazy"></td>
+        <td><strong>Wolf Pack</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Loyalty</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Last Gasp</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="str">Meat Shield II</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witcharcherskeleton.webp" alt="Skeletal Sniper" loading="lazy"></td>
+        <td><strong>Skeletal Sniper</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Last Gasp</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="dex">Rapid Attacks II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Minion Mastery</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/WitchWarriorSkeleton.webp" alt="Skeletal Warrior" loading="lazy"></td>
+        <td><strong>Skeletal Warrior</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Last Gasp</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="str">Meat Shield II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Minion Mastery</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchreaverskeleton.webp" alt="Skeletal Reaver" loading="lazy"></td>
+        <td><strong>Skeletal Reaver</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Last Gasp</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="str">Meat Shield II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Minion Mastery</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/WitchClericSkeleton.webp" alt="Skeletal Cleric" loading="lazy"></td>
+        <td><strong>Skeletal Cleric</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Last Gasp</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="str">Meat Shield II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Minion Mastery</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchstormskeleton.webp" alt="Skeletal Storm Mage" loading="lazy"></td>
+        <td><strong>Skeletal Storm Mage</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Last Gasp</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Rapid Casting II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="dex">Shock</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchbindspectre.webp" alt="Bind Spectre" loading="lazy"></td>
+        <td><strong>Bind Spectre</strong><br><em>Powered Zealot</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Wildshards II</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="dex">Pierce II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="dex">Shock</span></div>
+          <div class="support-slot"><code>[4]</code> <span class="dex">Projectile Acceleration III</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/convalescenceskillicon.webp" alt="Convalescence" loading="lazy"></td>
+        <td><strong>Convalescence</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="str">Prolonged Duration II</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="dex">Second Wind III</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="dex">Cooldown Recovery II</span></div></td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong>Crucial:</strong> use one of each listed minion type for Muster, within your Spirit budget. The spectre is the lightning-projectile Powered Zealot from Etched Ravine, not an arbitrary spectre. The source drops Pounce / Thunderstorm only after anointing <strong>Splintering Force</strong>; until then retain their campaign utility. Its CI transition also requires enough Spirit for Convalescence on both weapon sets. Do not copy CI before your ES gear is ready.</p>
+  <p><strong>Bossing:</strong> wait for Archon of Undeath, apply Pain Offering and Kelari's Brutality, then chain Deception. The author's later stages add Lineage gems and Dominion; those are not included in this budget snapshot.</p>
+</section>
+
+<section id="djinn-gems-lily" data-djinn-gem-panel aria-labelledby="djinn-lily-heading" hidden>
+  <h3 id="djinn-lily-heading">ds_lily - Kelari carry / triple Djinn with Dominion</h3>
+  <p><a href="https://mobalytics.gg/poe-2/builds/djinn-sorceress-end-game">Source: Triple Djinn w/ Dominion Anoint (main setup)</a> &middot; 0.5.5 endgame guide. A progression target once you can obtain the anoint, rather than an immediate league-start swap. Navira and Ruzhan are utility here; Kelari remains the main damage source.</p>
+  <table class="spark-skills djinn-endgame" aria-label="ds_lily endgame gems and supports">
+    <thead><tr><th scope="col">Icon</th><th scope="col">Skill</th><th scope="col">Supports</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/SorceressSummonSandDjinn.webp" alt="Kelari, the Tainted Sands" loading="lazy"></td>
+        <td><strong>Kelari, the Tainted Sands</strong><br><em>Deception / Brutality</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Muster</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Bidding III</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Hulking Minions</span></div>
+          <div class="support-slot"><code>[4]</code> <span class="int">Magnified Area II</span> <em>[clear]</em> / <span class="int">Concentrated Area</span> <em>[boss swap]</em></div>
+          <div class="support-slot"><code>[5]</code> <span class="lineage" title="Drop / trade only">Kurgal's Leash</span> / <span class="str">Execute II</span> <em>[SSF substitution from author]</em></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/SorceressSummonWaterDjinn.webp" alt="Navira, the Last Mirage" loading="lazy"></td>
+        <td><strong>Navira, the Last Mirage</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="str">Prolonged Duration II</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Rapid Casting II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Bidding III</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/SorceressSummonFireDjinn.webp" alt="Ruzhan, the Blazing Sword" loading="lazy"></td>
+        <td><strong>Ruzhan, the Blazing Sword</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="str">Efficiency II</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchbindspectre.webp" alt="Bind Spectre" loading="lazy"></td>
+        <td><strong>Bind Spectre</strong><br><em>Powered Zealot</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Muster</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Wildshards II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="dex">Pierce III</span></div>
+          <div class="support-slot"><code>[4]</code> <span class="dex">Overcharge</span></div>
+          <div class="support-slot"><code>[5]</code> <span class="lineage" title="Drop / trade only">Tecrod's Revenge</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witcharsonistskeleton.webp" alt="Skeletal Arsonist" loading="lazy"></td>
+        <td><strong>Skeletal Arsonist</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="str">Armour Break III</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="str">Armour Demolisher II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Last Gasp</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchreaverskeleton.webp" alt="Skeletal Reaver" loading="lazy"></td>
+        <td><strong>Skeletal Reaver</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="str">Armour Break III</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="str">Armour Demolisher II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Last Gasp</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witcharcherskeleton.webp" alt="Skeletal Sniper" loading="lazy"></td>
+        <td><strong>Skeletal Sniper</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="str">Armour Break III</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="str">Armour Demolisher II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Last Gasp</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchbruteskeleton.webp" alt="Skeletal Brute" loading="lazy"></td>
+        <td><strong>Skeletal Brute</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="str">Armour Break III</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="str">Armour Demolisher II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Last Gasp</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/WitchWarriorSkeleton.webp" alt="Skeletal Warrior" loading="lazy"></td>
+        <td><strong>Skeletal Warrior</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="str">Armour Break III</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="str">Armour Demolisher II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Last Gasp</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchstormskeleton.webp" alt="Skeletal Storm Mage" loading="lazy"></td>
+        <td><strong>Skeletal Storm Mage</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="dex">Shock</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="dex">Overcharge</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Muster</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/WitchClericSkeleton.webp" alt="Skeletal Cleric" loading="lazy"></td>
+        <td><strong>Skeletal Cleric</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Rapid Casting II</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Last Gasp</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="str">Meat Shield II</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchfrostskeleton.webp" alt="Skeletal Frost Mage" loading="lazy"></td>
+        <td><strong>Skeletal Frost Mage</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Last Gasp</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Feeding Frenzy II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Muster</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/ExpeditionRunicFortress.webp" alt="Refutation" loading="lazy"></td>
+        <td><strong>Refutation</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="str">Prolonged Duration II</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="dex">Cooldown Recovery II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Rapid Casting II</span></div></td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong>Crucial:</strong> Dominion is the gate for the advertised continuous Archon / Deception playstyle. It uses <strong>Potent Liquid Contempt + Concentrated Liquid Suffering + Concentrated Liquid Isolation</strong>, not Ancient emotions. Without it, use the source's Fire/Sand Pre Dominion variant rather than assuming permanent uptime. Use Ruzhan's Brand to trigger Archon when needed; keep casting Kelari's Brutality for Critical Weakness and to activate Kurgal's Leash if equipped.</p>
+  <p><strong>SSF / low-trade:</strong> the author explicitly offers Execute II instead of Kurgal's Leash. Tecrod's Revenge is still a Lineage drop in the displayed spectre setup; do not treat this exact five-support spectre as a guaranteed league-start loadout. Use one of each minion; Powered Zealot is the Spark variant from Etched Ravine. The author allows replacing a skeleton with Convalescence for recovery. Unspec Heavy Buffer when switching to CI. Expensive showcased gear such as Mageblood is not a purchase requirement here; follow the source's rare-gear alternatives.</p>
+</section>
+
+<section id="djinn-gems-phaze" data-djinn-gem-panel aria-labelledby="djinn-phaze-heading" hidden>
+  <h3 id="djinn-phaze-heading">PhazePlays - Sandscorcher / Sand + Fire damage</h3>
+  <p><a href="https://mobalytics.gg/poe-2/builds/sandscorcher-disciple-of-varashta">Source: Sandscorcher</a> &middot; titled 0.5, currently tagged 0.5.5 / SSF / HC. A more invested comparison: its displayed Kelari links require two Lineage drops. The author claims league-start all-content capability; that is not independent proof of an Arbiter of Divinity kill on this exact budget.</p>
+  <table class="spark-skills djinn-endgame" aria-label="PhazePlays endgame gems and supports">
+    <thead><tr><th scope="col">Icon</th><th scope="col">Skill</th><th scope="col">Supports</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/SorceressSummonSandDjinn.webp" alt="Kelari, the Tainted Sands" loading="lazy"></td>
+        <td><strong>Kelari, the Tainted Sands</strong><br><em>Deception / Brutality</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Bidding II</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Muster</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Hulking Minions</span></div>
+          <div class="support-slot"><code>[4]</code> <span class="lineage" title="Drop / trade only">Kurgal's Leash</span></div>
+          <div class="support-slot"><code>[5]</code> <span class="lineage" title="Drop / trade only">Vorana's Siege</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/SorceressSummonFireDjinn.webp" alt="Ruzhan, the Blazing Sword" loading="lazy"></td>
+        <td><strong>Ruzhan, the Blazing Sword</strong><br><em>Trap / Brand</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Bidding III</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Muster</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="str">Long Fuse II</span></div>
+          <div class="support-slot"><code>[4]</code> <span class="int">Hulking Minions</span></div>
+          <div class="support-slot"><code>[5]</code> <span class="int">Magnified Area II</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchreaverskeleton.webp" alt="Skeletal Reaver" loading="lazy"></td>
+        <td><strong>Skeletal Reaver</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="str">Fire Attunement</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Muster</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Feeding Frenzy II</span></div>
+          <div class="support-slot"><code>[4]</code> <span class="str">Minion Splash II</span></div>
+          <div class="support-slot"><code>[5]</code> <span class="str">Armour Break III</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchstormskeleton.webp" alt="Skeletal Storm Mage" loading="lazy"></td>
+        <td><strong>Skeletal Storm Mage</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="dex">Shock</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="dex">Overcharge</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Muster</span></div>
+          <div class="support-slot"><code>[4]</code> <span class="int">Feeding Frenzy II</span></div>
+          <div class="support-slot"><code>[5]</code> <span class="dex">Lightning Attunement</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchbindspectre.webp" alt="Bind Spectre" loading="lazy"></td>
+        <td><strong>Bind Spectre</strong><br><em>Powered Zealot</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Muster</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="dex">Pierce III</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Feeding Frenzy II</span></div>
+          <div class="support-slot"><code>[4]</code> <span class="int">Wildshards II</span></div>
+          <div class="support-slot"><code>[5]</code> <span class="dex">Projectile Acceleration II</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witcharcherskeleton.webp" alt="Skeletal Sniper" loading="lazy"></td>
+        <td><strong>Skeletal Sniper</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Muster</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Feeding Frenzy II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="dex">Multishot II</span></div>
+          <div class="support-slot"><code>[4]</code> <span class="str">Heft</span></div>
+          <div class="support-slot"><code>[5]</code> <span class="str">Armour Break III</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchfrostskeleton.webp" alt="Skeletal Frost Mage" loading="lazy"></td>
+        <td><strong>Skeletal Frost Mage</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Rapid Casting II</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Muster</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Cold Attunement</span></div>
+          <div class="support-slot"><code>[4]</code> <span class="dex">Multishot II</span></div>
+          <div class="support-slot"><code>[5]</code> <span class="int">Concentrated Area</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witcharsonistskeleton.webp" alt="Skeletal Arsonist" loading="lazy"></td>
+        <td><strong>Skeletal Arsonist</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="str">Fire Attunement</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Muster</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="dex">Multishot II</span></div>
+          <div class="support-slot"><code>[4]</code> <span class="int">Feeding Frenzy II</span></div>
+          <div class="support-slot"><code>[5]</code> <span class="str">Heft</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/WitchClericSkeleton.webp" alt="Skeletal Cleric" loading="lazy"></td>
+        <td><strong>Skeletal Cleric</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="lineage" title="Drop / trade only">Brutus' Brain</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Rapid Casting II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Minion Mastery</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/4K/elementalweakness.webp" alt="Elemental Weakness" loading="lazy"></td>
+        <td><strong>Elemental Weakness</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Heightened Curse</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="str">Efficiency II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Focused Curse</span></div>
+          <div class="support-slot"><code>[4]</code> <span class="int">Magnified Area II</span></div>
+          <div class="support-slot"><code>[5]</code> <span class="int">Cursed Ground</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="icons/Frost_Bomb_skill_icon.png" alt="Frost Bomb" loading="lazy"></td>
+        <td><strong>Frost Bomb</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Potent Exposure</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="dex">Overabundance I</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Spell Echo</span></div>
+          <div class="support-slot"><code>[4]</code> <span class="dex">Cooldown Recovery II</span></div>
+          <div class="support-slot"><code>[5]</code> <span class="int">Magnified Area II</span></div></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/WitchWarriorSkeleton.webp" alt="Skeletal Warrior" loading="lazy"></td>
+        <td><strong>Skeletal Warrior</strong></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="dex">Culling Strike II</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Hulking Minions</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Muster</span></div>
+          <div class="support-slot"><code>[4]</code> <span class="str">Armour Break III</span></div></td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong>Crucial:</strong> one of each minion, but <strong>two Clerics</strong>; spare Spirit goes to spectres. Use the Spark Powered Zealot from Etched Ravine. This version adds curse / exposure buttons for bossing. The guide reports Ruzhan's triggered exposure overriding Frost Bomb's stronger exposure and advises placing Frost Bomb slightly away from the boss so Ruzhan's attack misses; treat this as a source-reported, patch-sensitive caveat.</p>
+  <p><strong>SSF / low-trade:</strong> Kurgal's Leash and Vorana's Siege are acquisition gates for these exact main links, not ordinary gem cuts; stay with the SSF entry links while farming. Brutus' Brain on Cleric is also a later upgrade. Preserve reliable armour break: the author recommends Armour Break III on Kelari early, then Splintering Force, and only later Dominion with another armour-break source. Do not assume the listed skeleton links fully replace Kelari's instant armour break. Uul-Netol's Embrace is an expensive alternative, not a league-start requirement.</p>
+</section>
+</div><!-- #djinn-gem-variants -->
+
 <section id="djinn-sources" class="djinn-sources" aria-labelledby="djinn-sources-heading">
   <h2 id="djinn-sources-heading" class="page-heading">Sand Djinn - GuyThatDies Sources and Build Files</h2>
-  <p><strong>Our version:</strong> <a href="Builld%20Ideas/Sand%20Djinn/sand-djinn-campaign.build" download>Sand Djinn - GuyThatDies Campaign</a> combines the five stages with our explicit slots and priorities. Passives remain empty; use the author's original trees below. Recommendations continuing to 100 preserve the campaign setup, not a new endgame prescription.</p>
-  <p><strong>Original author exports:</strong> downloaded from <a href="https://mobalytics.gg/poe-2/profile/guythatdies/builds/0-4-varashta-levelling">GuyThatDies's guide</a> on 12 October 2026, unchanged except for local filenames. Original author, names, trees and gem data are preserved. These are separate stage snapshots with broad ranges, not a single automatically staged build; select the appropriate snapshot in-game.</p>
+  <p><strong>Three manual snapshots:</strong> these replace the old custom all-in-one campaign build. Every included skill and support uses <strong>level_interval [1, 100]</strong>. Only your selected file determines the gem recommendations; the stage names do not restrict their visibility. No internal gem-level transitions are applied.</p>
   <ul>
-<li><a href="Builld%20Ideas/Sand%20Djinn/guythatdies-source-01-opening.build" download>Levels 1-5: Opening spells - original GuyThatDies export</a><br><small>SHA-256: <code>41ac18cb09b93edb1b73d216043990cd81fa33050ac62336f17a53eef911f323</code></small></li>
-<li><a href="Builld%20Ideas/Sand%20Djinn/guythatdies-source-02-essence-drain.build" download>Levels 6-13: Essence Drain - original GuyThatDies export</a><br><small>SHA-256: <code>ac33ee903b38ab16425780456b69e4d89af24889a43001a21aa03ab222e8a5c7</code></small></li>
-<li><a href="Builld%20Ideas/Sand%20Djinn/guythatdies-source-03-ember-fusillade.build" download>Levels 14-19: Ember Fusillade - original GuyThatDies export</a><br><small>SHA-256: <code>aaf2fac5cb46e6ac16bd4fa2f96d84d683901743cf7b60a4ce0983ff72ebb840</code></small></li>
-<li><a href="Builld%20Ideas/Sand%20Djinn/guythatdies-source-04-djinn-swap.build" download>Level 19: Djinn swap - original GuyThatDies export</a><br><small>SHA-256: <code>58e1e044ae4ee4f0649cf70cf1c92b0c458c71872fc3638cf1620cecae222855</code></small></li>
-<li><a href="Builld%20Ideas/Sand%20Djinn/guythatdies-source-05-campaign.build" download>Levels 20-58: Campaign Djinn - original GuyThatDies export</a><br><small>SHA-256: <code>1b973a47248b790bb0d8ceb68739edf35ff2ca8121c385c7f523c934ed8e8787</code></small></li>
+    <li><a href="Builld%20Ideas/Sand%20Djinn/1%20to%2019%20Djinn.build" download>1 to 19 Djinn</a>: combines all skills and supports from the first three exports, with duplicate entries merged, plus Thunderstorm / Living Lightning from the Djinn swap snapshot and Prolonged Duration I for Pounce for early preparation. Keep Thunderstorm at gem level 5. Uses the final pre-Djinn (14-19) tree as one static target. Equipment notes preserve the three stages' recommendations together.</li>
+    <li><a href="Builld%20Ideas/Sand%20Djinn/19%20Djinn%20swap.build" download>19 Djinn swap</a>: the author's swap snapshot, renamed with all skill/support ranges set to 1-100. Tree and equipment recommendations are copied unchanged.</li>
+    <li><a href="Builld%20Ideas/Sand%20Djinn/20-58%20Djinn.build" download>20-58 Djinn</a>: the author's later campaign snapshot, renamed with all skill/support ranges set to 1-100. Pounce and Thunderstorm also recommend Prolonged Duration I as an alternative until Prolonged Duration II is available; do not equip both ranks together. Tree and equipment recommendations are copied unchanged.</li>
   </ul>
+  <p><strong>How to read these:</strong> trees are full source targets, not an instruction to allocate every node at the stage's first level. Only gem recommendations are unfiltered across levels 1-100; equipment retains its existing level filters. Shared Unleash / Zenith recommendations are gem transfers, and Concentrated / Magnified Area are alternatives, not simultaneous links.</p>
+  <p><strong>Source attribution:</strong> our snapshots are derived from the five stage exports downloaded from <a href="https://mobalytics.gg/poe-2/profile/guythatdies/builds/0-4-varashta-levelling">GuyThatDies's guide</a> on 12 October 2026. The separate original files have been retired in favor of the three snapshots above. See the author's guide for the original progression; our range changes, merged preparation recommendations and Kelari metadata adjustment are documented here.</p>
   <p><strong>Source precedence:</strong> the stage-specific skill lists and instructions are used where the initial overview differs. In particular, the Ember stage has an unsupported Orb of Storms, and its instructions transfer Zenith between ED and Ember. Concentrated / Magnified Area are explicitly a swap, despite appearing together in exported support arrays. The T3 core order is Magnified Area II, then Muster.</p>
   <p><strong>Speed evidence:</strong> <a href="https://www.youtube.com/watch?v=Jla2a4H8XKI">the author's 3:35 full campaign video</a> links directly to this guide. The timestamp and guide were checked, not every minute independently replayed; no additional assertion about race rules, trading or permanent bonuses is made.</p>
-  <p><strong>Mechanics:</strong> <a href="https://poe2db.tw/us/Kelaris_Deception">Deception</a>, <a href="https://poe2db.tw/us/Muster">Muster</a>, <a href="https://poe2db.tw/us/Zenith_I">Zenith I</a> and the other skill/support metadata were checked on PoE2DB. Higher-tier support intervals in our file use approximate Act 3 / Act 4 checkpoints; follow actual drops and sockets.</p>
-  <p><strong>Sniper metadata:</strong> <a href="https://poe2db.tw/us/Skeletal_Sniper">PoE2DB's Sniper entry</a> uses the legacy <code>SkillGemSkeletalWarrior</code> item ID and documents the old Warrior gem's conversion to Sniper in 0.2. Our file follows that entry. The author's exports use <code>SkillGemSkeletalSniper</code> and are preserved unchanged; both recommendations refer to Skeletal Sniper, not an extra Warrior gem to cut.</p>
-  <p><strong>Planner limitations:</strong> <a href="https://www.pathofexile.com/developer/docs/game">GGG's experimental format</a> does not support meta gems. Pounce, weapon-granted skills and ascendancy-granted skills may need manual setup. Weapon-slot notes repeat the important links and the Thunderstorm level cap. File synchronization does not prove in-game rendering.</p>
+  <p><strong>Mechanics:</strong> <a href="https://poe2db.tw/us/Kelaris_Deception">Deception</a>, <a href="https://poe2db.tw/us/Muster">Muster</a>, <a href="https://poe2db.tw/us/Zenith_I">Zenith I</a> and the other skill/support metadata were checked on PoE2DB. The new files deliberately show higher-tier supports early; follow actual drops and sockets before equipping them.</p>
+  <p><strong>Sniper metadata:</strong> <a href="https://poe2db.tw/us/Skeletal_Sniper">PoE2DB's Sniper entry</a> uses the legacy <code>SkillGemSkeletalWarrior</code> item ID and documents the old Warrior gem's conversion to Sniper in 0.2. The new snapshots retain the author's <code>SkillGemSkeletalSniper</code> ID rather than remapping it; this refers to Skeletal Sniper, not an extra Warrior gem to cut.</p>
+  <p><strong>Planner limitations:</strong> <a href="https://www.pathofexile.com/developer/docs/game">GGG's experimental format</a> does not support meta gems. Pounce, weapon-granted skills and ascendancy-granted skills may need manual setup. Our two post-trial snapshots attach Kelari's supports to the parent <a href="https://www.poe2wiki.net/wiki/Kelari,_the_Tainted_Sands">Kelari, the Tainted Sands</a> metadata ID, <code>Metadata/Items/Gem/SkillGemAscendancySummonSandDjinn</code>, instead of the author's Deception command ID. This parent-skill mapping was confirmed working in-game on 14 October 2026. Refer to the tables above for manual links and keep Thunderstorm at gem level 5. File synchronization alone does not prove in-game rendering of other skills.</p>
 </section>
 </div><!-- #sand-djinn-details -->
 
@@ -3051,6 +3376,17 @@ function showBuild(id) {
     btn.setAttribute('aria-pressed', String(active));
   });
   updateCraftingSelection();
+}
+function selectDjinnGems(btn) {
+  const container = btn.closest('#djinn-gem-variants');
+  container.querySelectorAll('.pill-nav button').forEach(option => {
+    const active = option === btn;
+    option.classList.toggle('active', active);
+    option.setAttribute('aria-pressed', String(active));
+  });
+  container.querySelectorAll('[data-djinn-gem-panel]').forEach(panel => {
+    panel.hidden = panel.id !== btn.getAttribute('aria-controls');
+  });
 }
 function selectCraftingOption(btn) {
   btn.closest('[data-crafting-nav]').querySelectorAll('button').forEach(option => {

@@ -1,0 +1,652 @@
+{
+  "author": "GuyThatDies",
+  "link": "https://mobalytics.gg/poe-2/profile/guythatdies/builds/0-4-varashta-levelling",
+  "ascendancy": "Sorceress3",
+  "inventory_slots": [
+    {
+      "additional_text": "Rattling Sceptre\n1. Allies in your Presence deal 35% increased Damage\n2. +2 to Level of all Minion Skills\n3. Allies in your Presence have 26% increased Critical Hit Chance\n4. 20% increased Spirit",
+      "inventory_id": "Weapon1",
+      "level_interval": [
+        1,
+        100
+      ],
+      "slot_x": 0,
+      "slot_y": 0
+    },
+    {
+      "additional_text": "Changeling Talisman",
+      "inventory_id": "Weapon2",
+      "level_interval": [
+        1,
+        100
+      ],
+      "slot_x": 0,
+      "slot_y": 0
+    },
+    {
+      "additional_text": "Sigil Crest Shield",
+      "inventory_id": "Offhand1",
+      "level_interval": [
+        7,
+        100
+      ],
+      "slot_x": 0,
+      "slot_y": 0
+    },
+    {
+      "additional_text": "Gold Circlet\n1. +2 to Level of all Minion Skills",
+      "inventory_id": "Helm1",
+      "level_interval": [
+        40,
+        100
+      ],
+      "slot_x": 0,
+      "slot_y": 0
+    },
+    {
+      "additional_text": "Altar Robe\n1. +60 to maximum Life\n2. +34 to Spirit",
+      "inventory_id": "BodyArmour1",
+      "level_interval": [
+        40,
+        100
+      ],
+      "slot_x": 0,
+      "slot_y": 0
+    },
+    {
+      "additional_text": "Pauascale Gloves\n1. +40 to maximum Life",
+      "inventory_id": "Gloves1",
+      "level_interval": [
+        45,
+        100
+      ],
+      "slot_x": 0,
+      "slot_y": 0
+    },
+    {
+      "additional_text": "Flax Sandals\n1. 20% increased Movement Speed",
+      "inventory_id": "Boots1",
+      "level_interval": [
+        45,
+        100
+      ],
+      "slot_x": 0,
+      "slot_y": 0
+    },
+    {
+      "additional_text": "Solar Amulet\n1. +2 to Level of all Minion Skills",
+      "inventory_id": "Amulet1",
+      "level_interval": [
+        30,
+        100
+      ],
+      "slot_x": 0,
+      "slot_y": 0
+    },
+    {
+      "additional_text": "Rawhide Belt",
+      "inventory_id": "Belt1",
+      "slot_x": 0,
+      "slot_y": 0
+    },
+    {
+      "additional_text": "Topaz Ring",
+      "inventory_id": "Ring1",
+      "level_interval": [
+        16,
+        100
+      ],
+      "slot_x": 0,
+      "slot_y": 0
+    },
+    {
+      "additional_text": "Ruby Ring",
+      "inventory_id": "Ring2",
+      "level_interval": [
+        8,
+        100
+      ],
+      "slot_x": 0,
+      "slot_y": 0
+    },
+    {
+      "additional_text": "Transcendent Life Flask",
+      "inventory_id": "Flask1",
+      "level_interval": [
+        50,
+        100
+      ],
+      "slot_x": 0,
+      "slot_y": 0
+    },
+    {
+      "additional_text": "Transcendent Mana Flask",
+      "inventory_id": "Flask1",
+      "level_interval": [
+        50,
+        100
+      ],
+      "slot_x": 1,
+      "slot_y": 0
+    },
+    {
+      "additional_text": "Thawing Charm",
+      "inventory_id": "Charm1",
+      "level_interval": [
+        12,
+        100
+      ],
+      "slot_x": 0,
+      "slot_y": 0
+    },
+    {
+      "additional_text": "Staunching Charm",
+      "inventory_id": "Charm1",
+      "level_interval": [
+        18,
+        100
+      ],
+      "slot_x": 1,
+      "slot_y": 0
+    }
+  ],
+  "name": "20-58 Djinn",
+  "passives": [
+    {
+      "id": "intelligence15"
+    },
+    {
+      "id": "intelligence35_"
+    },
+    {
+      "id": "intelligence83"
+    },
+    {
+      "id": "intelligence37"
+    },
+    {
+      "id": "intelligence38"
+    },
+    {
+      "id": "intelligence2"
+    },
+    {
+      "id": "intelligence49"
+    },
+    {
+      "id": "minion_offence41"
+    },
+    {
+      "id": "minion_offence42"
+    },
+    {
+      "id": "minion_offence44_"
+    },
+    {
+      "id": "minion_offence50"
+    },
+    {
+      "id": "minion_offence45"
+    },
+    {
+      "id": "minion_offence49"
+    },
+    {
+      "id": "spells53"
+    },
+    {
+      "id": "spells55"
+    },
+    {
+      "id": "spells59"
+    },
+    {
+      "id": "minion_offence43"
+    },
+    {
+      "id": "minion_offence47_"
+    },
+    {
+      "id": "minion_offence18"
+    },
+    {
+      "id": "minion_offence17"
+    },
+    {
+      "id": "minion_offence39"
+    },
+    {
+      "id": "minion_offence6"
+    },
+    {
+      "id": "minion_offence5"
+    },
+    {
+      "id": "minion_offence3"
+    },
+    {
+      "id": "minion_offence40"
+    },
+    {
+      "id": "attributes78"
+    },
+    {
+      "id": "attributes62"
+    },
+    {
+      "id": "minion_reservation11"
+    },
+    {
+      "id": "minion_reservation12"
+    },
+    {
+      "id": "minion_reservation13_"
+    },
+    {
+      "id": "minion_reservation15_"
+    },
+    {
+      "id": "minion_reservation16"
+    },
+    {
+      "id": "intelligence47"
+    },
+    {
+      "id": "minion_reservation1"
+    },
+    {
+      "id": "minion_offence29"
+    },
+    {
+      "id": "minion_offence31"
+    },
+    {
+      "id": "minion_offence30_"
+    },
+    {
+      "id": "minion_offence33_"
+    },
+    {
+      "id": "minion_reservation4"
+    },
+    {
+      "id": "minion_reservation14"
+    },
+    {
+      "id": "attributes14"
+    },
+    {
+      "id": "attributes13"
+    },
+    {
+      "id": "jewel_slot1969"
+    },
+    {
+      "id": "intelligence51"
+    },
+    {
+      "id": "minion_offence7"
+    },
+    {
+      "id": "minion_offence9"
+    },
+    {
+      "id": "minion_offence10_"
+    },
+    {
+      "id": "minion_offence11"
+    },
+    {
+      "id": "minion_offence12_"
+    },
+    {
+      "id": "minion_offence14"
+    },
+    {
+      "id": "intelligence41__"
+    },
+    {
+      "id": "intelligence71"
+    },
+    {
+      "id": "attributes3"
+    },
+    {
+      "id": "sentinels5"
+    },
+    {
+      "id": "sentinels4"
+    },
+    {
+      "id": "sentinels1"
+    },
+    {
+      "id": "sentinels2"
+    },
+    {
+      "id": "sentinels10"
+    },
+    {
+      "id": "energy_shield15"
+    },
+    {
+      "id": "energy_shield14"
+    },
+    {
+      "id": "energy_shield21"
+    },
+    {
+      "id": "energy_shield27"
+    },
+    {
+      "id": "witch_sorceress_notable2"
+    },
+    {
+      "id": "energy_shield10_"
+    },
+    {
+      "id": "energy_shield37"
+    },
+    {
+      "id": "energy_shield11"
+    },
+    {
+      "id": "intelligence17"
+    },
+    {
+      "id": "intelligence16"
+    },
+    {
+      "id": "energy_shield42__"
+    },
+    {
+      "id": "energy_shield43"
+    },
+    {
+      "id": "energy_shield38"
+    },
+    {
+      "id": "energy_shield41"
+    },
+    {
+      "id": "energy_shield29"
+    },
+    {
+      "id": "intelligence52"
+    },
+    {
+      "id": "intelligence53_"
+    },
+    {
+      "id": "intelligence54"
+    },
+    {
+      "id": "intelligence45"
+    },
+    {
+      "id": "minion_offence35"
+    },
+    {
+      "id": "minion_offence34"
+    },
+    {
+      "id": "energy_shield9"
+    },
+    {
+      "id": "energy_shield22"
+    },
+    {
+      "id": "energy_shield36"
+    },
+    {
+      "id": "intelligence13"
+    },
+    {
+      "id": "intelligence14"
+    },
+    {
+      "id": "intelligence15"
+    },
+    {
+      "id": "intelligence17"
+    },
+    {
+      "id": "intelligence84"
+    },
+    {
+      "id": "intelligence85"
+    },
+    {
+      "id": "strength44"
+    },
+    {
+      "id": "intelligence11"
+    },
+    {
+      "id": "intelligence12"
+    },
+    {
+      "id": "intelligence16"
+    }
+  ],
+  "skills": [
+    {
+      "id": "Metadata/Items/Gems/SkillGemWolfPounce",
+      "level_interval": [
+        1,
+        100
+      ],
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gem/SupportGemSingleOut",
+          "level_interval": [
+            1,
+            100
+          ]
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemPersistence",
+          "level_interval": [
+            1,
+            100
+          ],
+          "additional_text": "Prolonged Duration I\nUse until Prolonged Duration II is available; alternatives for the same support slot, not simultaneous links."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemPersistenceTwo",
+          "level_interval": [
+            1,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gem/SkillGemAscendancySummonSandDjinn",
+      "level_interval": [
+        1,
+        100
+      ],
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gem/SupportGemBiddingTwo",
+          "level_interval": [
+            1,
+            100
+          ]
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemConcentratedEffect",
+          "level_interval": [
+            1,
+            100
+          ]
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemMagnifiedEffectTwo",
+          "level_interval": [
+            1,
+            100
+          ]
+        },
+        {
+          "id": "Metadata/Items/Gem/SupportGemMuster",
+          "level_interval": [
+            1,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gems/SkillGemThunderstorm",
+      "level_interval": [
+        1,
+        100
+      ],
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gem/SupportGemLivingLightning",
+          "level_interval": [
+            1,
+            100
+          ]
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemPersistence",
+          "level_interval": [
+            1,
+            100
+          ],
+          "additional_text": "Prolonged Duration I\nUse until Prolonged Duration II is available; alternatives for the same support slot, not simultaneous links."
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemPersistenceTwo",
+          "level_interval": [
+            1,
+            100
+          ]
+        },
+        {
+          "id": "Metadata/Items/Gems/SupportGemMagnifiedEffectTwo",
+          "level_interval": [
+            1,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gems/SkillGemSkeletalSniper",
+      "level_interval": [
+        1,
+        100
+      ],
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gem/SupportGemLastGasp",
+          "level_interval": [
+            1,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gems/SkillGemSkeletalArsonist",
+      "level_interval": [
+        1,
+        100
+      ],
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gem/SupportGemLastGasp",
+          "level_interval": [
+            1,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gems/SkillGemSkeletalFrostMage",
+      "level_interval": [
+        1,
+        100
+      ],
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gem/SupportGemLastGasp",
+          "level_interval": [
+            1,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gems/SkillGemBindSpectre",
+      "level_interval": [
+        1,
+        100
+      ],
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gem/SupportGemLastGasp",
+          "level_interval": [
+            1,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gems/SkillGemSkeletalReaver",
+      "level_interval": [
+        1,
+        100
+      ],
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gem/SupportGemLastGasp",
+          "level_interval": [
+            1,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gems/SkillGemSkeletalStormMage",
+      "level_interval": [
+        1,
+        100
+      ],
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gem/SupportGemLastGasp",
+          "level_interval": [
+            1,
+            100
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Metadata/Items/Gems/SkillGemSkeletalBrute",
+      "level_interval": [
+        1,
+        100
+      ],
+      "support_skills": [
+        {
+          "id": "Metadata/Items/Gem/SupportGemLastGasp",
+          "level_interval": [
+            1,
+            100
+          ]
+        }
+      ]
+    }
+  ]
+}
