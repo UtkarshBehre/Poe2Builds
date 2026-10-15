@@ -497,6 +497,16 @@
       border-radius: 6px;
     }
 
+    [data-build-panel="sand-djinn"] a { color: #86b4e8; }
+    [data-build-panel="sand-djinn"] a:hover { color: #bedbff; }
+    .djinn-progression { table-layout: fixed; }
+    .djinn-progression th:first-child { width: 20%; }
+    .djinn-progression td, .djinn-progression th { overflow-wrap: anywhere; }
+    .djinn-sources { scroll-margin-top: 180px; overflow-wrap: anywhere; }
+    .djinn-sources ul { padding-left: 20px; }
+    .djinn-sources li { margin: 8px 0; }
+    .build-selector button:focus-visible { outline: 2px solid #6bb8c8; outline-offset: 3px; }
+
     .campaign-regex code {
       overflow-wrap: anywhere;
     }
@@ -596,6 +606,7 @@
   <div class="pill-nav build-selector" role="group" aria-label="Build">
     <button class="pill-btn active" type="button" data-build="twisters" aria-pressed="true" aria-controls="twisters-meta twisters-details pill-early-twisters crafting-recipes" onclick="showBuild('twisters')">Twisters</button>
     <button class="pill-btn" type="button" data-build="spark-comet" aria-pressed="false" aria-controls="spark-comet-meta spark-comet-details pill-early-spark-comet crafting-recipes" onclick="showBuild('spark-comet')">Spark-Comet</button>
+    <button class="pill-btn" type="button" data-build="sand-djinn" aria-pressed="false" aria-controls="sand-djinn-meta sand-djinn-details pill-early-sand-djinn crafting-recipes" onclick="showBuild('sand-djinn')">Sand Djinn</button>
   </div>
 </div>
 
@@ -666,6 +677,17 @@
   <p><strong>Act 2:</strong> <code>"y: r|(re|ng) res|\d+% i.+mov|ell.*ge$|\d l.+da|^\+.*all sp.*ls$|^\+.*ld sp.*ls$|^\+.*ng sp.*ls$|^\+.*ile skills$|o sp|s: (am|ri)"</code> <button class="copy-btn" type="button" title="Copy Act 2 regex" aria-label="Copy Act 2 regex" onclick="copyRegex(this)">⧉</button></p>
   <p><strong>Acts 3-6:</strong> <code>"y: r|(re|ld|ng) res|([32]0|[21]5)% i.+mov|ell.*ge$|\d l.+da|^\+.*all sp.*ls$|^\+.*ld sp.*ls$|^\+.*ng sp.*ls$|^\+.*ile skills$|o sp|s: (am|ri)"</code> <button class="copy-btn" type="button" title="Copy Acts 3-6 regex" aria-label="Copy Acts 3-6 regex" onclick="copyRegex(this)">⧉</button></p>
   <p><strong>Maps Vendor:</strong> <code>"y: r|(re|ld|ng) res|(30|25)% i.+mov|ell.*ge$|\d l.+da|^\+.*all sp.*ls$|^\+.*ld sp.*ls$|^\+.*ng sp.*ls$|^\+.*ile skills$|o sp|d rari|s: (am|ri|be|st)"</code> <button class="copy-btn" type="button" title="Copy Maps Vendor regex" aria-label="Copy Maps Vendor regex" onclick="copyRegex(this)">⧉</button></p>
+</div>
+
+<div id="sand-djinn-meta" class="meta campaign-regex" data-build-panel="sand-djinn" hidden>
+  <h2 class="page-heading">Sand Djinn - GuyThatDies Campaign / Disciple of Varashta</h2>
+  <p><strong>Route:</strong> Opening spells &rarr; Essence Drain / Contagion at 6 &rarr; Ember Fusillade for bosses at 14 &rarr; Sand Djinn after first ascendancy, around 19. This page now follows <a href="https://mobalytics.gg/poe-2/profile/guythatdies/builds/0-4-varashta-levelling">GuyThatDies's leveling setup</a>, not the earlier grenade route.</p>
+  <p><strong>Speed reference:</strong> <a href="https://www.youtube.com/watch?v=Jla2a4H8XKI">GuyThatDies: level 1 to maps in 3:35</a>. His timestamps mark Act 2 at 36:28, ascendancy at 56:10, Act 3 at 1:27:22, Act 4 at 2:10:13 and the first interlude at 2:59:32. This is a runner's result, not a guaranteed first-attempt or ordinary-league SSF time.</p>
+  <p><strong>Patch / scope:</strong> the linked guide is titled 0.5 and tagged 0.5.5 FR; checked 12 October 2026. No purchased unique or Lineage support is required by the listed setup. Reward sources involving a league mechanic are league-dependent.</p>
+  <p><strong>Act 1 / early Act 2:</strong> <code>"y: r|(re|ld|ng) res|\d+% i.+mov|ell.*ge$|^\+.*ion skills$|^\+.*all sp.*ls$|^\+.*re sp.*ls$|^\+.*ng sp.*ls$|^\+.*os sp.*ls$|^\+.*ile skills$|o sp|\d.+m life|s: (am|ri|be|sc|st)"</code> <button class="copy-btn" type="button" title="Copy Act 1 and early Act 2 vendor regex" aria-label="Copy Act 1 and early Act 2 vendor regex" onclick="copyRegex(this)">⧉</button></p>
+  <p><strong>Act 2 onwards:</strong> <code>"y: r|(re|ld|ng) res|\d+% i.+mov|^\+.*ion skills$|o sp|\d.+m life|s: (am|ri|be|sc)"</code> <button class="copy-btn" type="button" title="Copy Act 2 onwards vendor regex" aria-label="Copy Act 2 onwards vendor regex" onclick="copyRegex(this)">⧉</button></p>
+  <p><strong>Do not overlevel utility:</strong> keep Thunderstorm at <strong>gem level 5</strong>; don't spend skill-gem upgrades on Contagion or Pounce.</p>
+  <p><strong>Downloads:</strong> <a href="Builld%20Ideas/Sand%20Djinn/sand-djinn-campaign.build" download>Our staged GuyThatDies-based build</a> &middot; <a href="#djinn-sources">Five original author exports and source notes</a>.</p>
 </div>
 
 <h2 class="page-heading">Campaign Zone Rewards</h2>
@@ -1350,6 +1372,299 @@
   <p><strong>Colors:</strong> <span class="str">■ Strength</span> · <span class="dex">■ Dexterity</span> · <span class="int">■ Intelligence</span> · <span class="lineage">■ Lineage</span></p>
 </div>
 </div><!-- #spark-comet-details -->
+
+<div id="sand-djinn-details" data-build-panel="sand-djinn" hidden>
+<h2 class="page-heading">Sand Djinn - GuyThatDies Campaign Progression</h2>
+<table class="djinn-progression">
+  <thead><tr><th scope="col">Checkpoint</th><th scope="col">Skills / next action</th><th scope="col">Important gate</th></tr></thead>
+  <tbody>
+    <tr><td>Levels 1-5</td><td>Spark for opening clear; Firebolt or a strong weapon spell for bosses. Cut Frost Bomb from Renly and Contagion from Clearfell. Pre-cut Essence Drain for level 6 when a suitable uncut gem is available. Move Unleash between clear and boss skills.</td><td>Firebolt / Chaos Bolt are weapon-granted. After the Rust King, buy a Withered Wand for Chaos Bolt if you have no stronger +level weapon.</td></tr>
+    <tr><td>Levels 6-13</td><td>Replace Spark with Essence Drain + Contagion. ED gets Zenith I / Chain I; move Unleash onto Contagion for clear or onto your weapon spell for bosses. Cut Pounce from Lachlann and prepare Orb of Storms from Crowbell.</td><td>Upgrade ED before Orb of Storms. Do not spend upgrades on Contagion or Pounce. Add Arctic Armour at 10 if Spirit permits.</td></tr>
+    <tr><td>Level 14 to first trial</td><td>Cut Ember Fusillade from Leitis for single target with Controlled Destruction. Move Zenith I from ED to Ember for bosses and back for clear. Use the prepared Orb of Storms.</td><td>Save the Executioner / Gallows support rewards for Magnified Area I and Concentrated Area at the Djinn swap. These are alternatives in one slot.</td></tr>
+    <tr><td>Act 2, first ascendancy around 19</td><td>Swap to Kelari / Deception, Pounce, Thunderstorm and Skeletal Sniper. Follow the author's swap tree, equip sceptre + shield and prioritize +1 minion level on sceptre / helmet.</td><td>Complete the trial first. Our file switches at 19; if your trial is delayed, keep the spell setup and use the separate Ember export until ready.</td></tr>
+    <tr><td>After the swap</td><td>Bidding I goes in Deception [1]. Use Magnified Area I in [2] for clear or Concentrated Area for bosses. Pounce uses Mark for Death / duration; Thunderstorm uses Living Lightning.</td><td>Keep Thunderstorm at gem level 5. Pounce needs the wolf talisman on weapon swap. Retire Arctic Armour to free Spirit for the new roster.</td></tr>
+    <tr><td>Act 3 / level 36</td><td>Source T3 order: Magnified Area II from the Sandswept Marsh league reward, then Muster from the Venom Crypts sarcophagus. Add Muster in Deception [3] at 36, once the socket is unlocked.</td><td>Use a cheap Sandswept Marsh wasp for Bind Spectre. Muster counts different active reviving types, not repeated copies of one type. A league reward may differ outside this event.</td></tr>
+    <tr><td>Act 4 / interludes</td><td>Take Bidding II from Isle of Kin's Beast Pen. Add different minion types as skill gems and Spirit allow: Sniper, Arsonist, Frost Mage, Spectre, Reaver, Storm Mage and Brute.</td><td>Don't try to reserve the whole roster before you can afford it. Thunderstorm's extra duration / area links are spare-gem utility, not a reason to delay core damage.</td></tr>
+    <tr><td>Passive routing / campaign exit</td><td>Use the original stage trees. The later guide routes through Bringer of Order, then Pure Energy / Dampening Shield, then Heavy Buffer, refunding the superseded travel attributes.</td><td>No Fire Djinn, Pain Offering, Powered Zealot farming or Lineage shopping is added to this campaign setup. Choose an endgame transition separately.</td></tr>
+  </tbody>
+</table>
+<div class="meta">
+  <p><strong>Before ascendancy:</strong> ED + Contagion clears packs; weapon spells, then Ember Fusillade, handle single target. Unleash and Zenith destinations in the table are <strong>gem transfers</strong>, not instructions to cut duplicates for every opening skill.</p>
+  <p><strong>After ascendancy:</strong> use Pounce to mark, Thunderstorm for lightning utility / Living Lightning, then Deception. Swap the area support for bossing. Consecutive Deception casts benefit from surviving clones; learn the cooldown rhythm rather than importing a different build's rotation.</p>
+  <p><strong>Spirit:</strong> one of each affordable reviving minion type improves Muster. Last Gasp supports those minions; it is not a support for the invulnerable Djinn itself. The level-20-to-58 source list is a progression target, not a claim that every minion fits at level 20.</p>
+</div>
+
+<h2 class="page-heading">Sand Djinn - Scaling and Gear Checks</h2>
+<div class="modifier-cutoffs">
+  <div class="dmg-tiers"><h3>Before ascendancy: Caster weapon / focus</h3><p>Source priority: useful skill levels, damage gained as extra, increased damage, cast speed, then critical stats. Check whether the modifier actually affects the spell you're using; do not assume elemental levels help Essence Drain.</p></div>
+  <div class="dmg-tiers"><h3>After ascendancy: Minion levels</h3><p>Prioritize +minion levels on sceptre / helmet, then nearby-allies damage and critical modifiers on the weapon. Your own spell damage is not a replacement for Djinn scaling. Keep movement boots, life, resistances, ES and a defensive shield.</p></div>
+</div>
+
+<section aria-labelledby="djinn-modifier-heading">
+  <h2 id="djinn-modifier-heading" class="page-heading">Sand Djinn - Modifier Tier Cutoffs</h2>
+  <p>Normal suffix tiers only; special modifiers and corruption bonuses are not included. <strong>ilvl</strong> is the minimum <strong>item level</strong> needed to roll the tier, not your character level.</p>
+  <div class="modifier-cutoffs">
+    <div class="dmg-tiers">
+      <h3>Sceptres - + to Level of all Minion Skills</h3>
+      <div class="tier-row">
+        <span class="tier-chip" title="of the Taskmaster"><span class="tc-tier">T4</span><span class="tc-lvl"><small>ilvl:</small> 2</span><span class="tc-val">+1</span></span>
+        <span class="tier-sep">›</span>
+        <span class="tier-chip" title="of the Despot"><span class="tc-tier">T3</span><span class="tc-lvl"><small>ilvl:</small> 25</span><span class="tc-val">+2</span></span>
+        <span class="tier-sep">›</span>
+        <span class="tier-chip" title="of the Overseer"><span class="tc-tier">T2</span><span class="tc-lvl"><small>ilvl:</small> 55</span><span class="tc-val">+3</span></span>
+        <span class="tier-sep">›</span>
+        <span class="tier-chip" title="of the Slavedriver"><span class="tc-tier">T1</span><span class="tc-lvl"><small>ilvl:</small> 78</span><span class="tc-val">+4</span></span>
+      </div>
+      <p>Source: <a href="https://poe2db.tw/us/Sceptres#ModifiersCalc">PoE2DB sceptre modifiers</a>.</p>
+    </div>
+    <div class="dmg-tiers">
+      <h3>Helmets - + to Level of all Minion Skills</h3>
+      <div class="tier-row">
+        <span class="tier-chip" title="of the Taskmaster"><span class="tc-tier">T2</span><span class="tc-lvl"><small>ilvl:</small> 5</span><span class="tc-val">+1</span></span>
+        <span class="tier-sep">›</span>
+        <span class="tier-chip" title="of the Despot"><span class="tc-tier">T1</span><span class="tc-lvl"><small>ilvl:</small> 41</span><span class="tc-val">+2</span></span>
+      </div>
+      <p>The same cutoffs apply to all six helmet defence types. Source: <a href="https://poe2db.tw/us/Helmets_int#ModifiersCalc">PoE2DB helmet modifiers</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="djinn-priority-heading">
+  <h2 id="djinn-priority-heading" class="page-heading">Sand Djinn - Gem Cutting Priorities</h2>
+  <p>Follow each tier top to bottom, skipping unavailable or retired skills. A row with several destinations means <strong>move that support</strong>, not cut all copies. Source-explicit opening / reward order is preserved; spare utility and minion copies follow the source skill-list order. Slot numbers are our presentation, and slash-separated supports replace one another.</p>
+  <div class="spark-priority-grid">
+    <table>
+      <caption>Tier 1</caption>
+      <thead><tr><th scope="col">Gem</th><th scope="col">Skill</th></tr></thead>
+      <tbody>
+        <tr data-djinn-priority="1:1"><td><span class="int">Unleash</span></td><td><span class="int">Spark [1]</span> / <span class="int">Firebolt [1]</span> / <span class="int">Chaos Bolt [1]</span> / <span class="int">Contagion [1]</span> <em>[move the same gem]</em></td></tr>
+        <tr data-djinn-priority="1:2"><td><span class="int">Zenith I</span></td><td><span class="int">Essence Drain [1]</span> / <span class="int">Ember Fusillade [2]</span> <em>[clear / boss swap]</em></td></tr>
+        <tr data-djinn-priority="1:3"><td><span class="dex">Chain I</span></td><td><span class="int">Essence Drain [2]</span></td></tr>
+        <tr data-djinn-priority="1:4"><td><span class="int">Controlled Destruction</span></td><td><span class="int">Ember Fusillade [1]</span> <em>[prepare for level 14]</em></td></tr>
+        <tr data-djinn-priority="1:5"><td><span class="int">Magnified Area I</span></td><td><span class="int">Kelari's Deception [2]</span> <em>[clear]</em></td></tr>
+        <tr data-djinn-priority="1:6"><td><span class="int">Concentrated Area</span></td><td><span class="int">Kelari's Deception [2]</span> <em>[boss swap]</em></td></tr>
+        <tr data-djinn-priority="1:7"><td><span class="str">Prolonged Duration I</span></td><td><span class="str">Pounce [2]</span> <em>[spare after core links]</em></td></tr>
+        <tr data-djinn-priority="1:8"><td><span class="int">Last Gasp</span></td><td><span class="int">Skeletal Sniper [1]</span> <em>[spare; Spirit permitting]</em></td></tr>
+        <tr data-djinn-priority="1:9"><td><span class="int">Last Gasp</span></td><td><span class="int">Skeletal Arsonist [1]</span> <em>[spare; Spirit permitting]</em></td></tr>
+        <tr data-djinn-priority="1:10"><td><span class="int">Last Gasp</span></td><td><span class="int">Skeletal Frost Mage [1]</span> <em>[spare; Spirit permitting]</em></td></tr>
+        <tr data-djinn-priority="1:11"><td><span class="int">Last Gasp</span></td><td><span class="int">Bind Spectre [1]</span> <em>[spare; Spirit permitting]</em></td></tr>
+        <tr data-djinn-priority="1:12"><td><span class="int">Last Gasp</span></td><td><span class="int">Skeletal Reaver [1]</span> <em>[spare; Spirit permitting]</em></td></tr>
+        <tr data-djinn-priority="1:13"><td><span class="int">Last Gasp</span></td><td><span class="int">Skeletal Storm Mage [1]</span> <em>[spare; Spirit permitting]</em></td></tr>
+        <tr data-djinn-priority="1:14"><td><span class="int">Last Gasp</span></td><td><span class="int">Skeletal Brute [1]</span> <em>[spare; Spirit permitting]</em></td></tr>
+      </tbody>
+    </table>
+    <table>
+      <caption>Tier 2</caption>
+      <thead><tr><th scope="col">Gem</th><th scope="col">Skill</th></tr></thead>
+      <tbody>
+        <tr data-djinn-priority="2:1"><td><span class="int">Bidding I</span></td><td><span class="int">Kelari's Deception [1]</span> <em>[first ascendancy]</em></td></tr>
+        <tr data-djinn-priority="2:2"><td><span class="str">Mark for Death</span></td><td><span class="str">Pounce [1]</span></td></tr>
+        <tr data-djinn-priority="2:3"><td><span class="int">Living Lightning</span></td><td><span class="int">Thunderstorm [1]</span></td></tr>
+      </tbody>
+    </table>
+    <table>
+      <caption>Tier 3</caption>
+      <thead><tr><th scope="col">Gem</th><th scope="col">Skill</th></tr></thead>
+      <tbody>
+        <tr data-djinn-priority="3:1"><td><span class="int">Magnified Area II</span></td><td><span class="int">Kelari's Deception [2]</span> <em>[Act 3 upgrade]</em></td></tr>
+        <tr data-djinn-priority="3:2"><td><span class="int">Muster</span></td><td><span class="int">Kelari's Deception [3]</span> <em>[level 36 / third socket]</em></td></tr>
+        <tr data-djinn-priority="3:3"><td><span class="str">Prolonged Duration II</span></td><td><span class="str">Pounce [2]</span> <em>[spare upgrade]</em></td></tr>
+        <tr data-djinn-priority="3:4"><td><span class="str">Prolonged Duration II</span></td><td><span class="int">Thunderstorm [2]</span> <em>[spare utility]</em></td></tr>
+        <tr data-djinn-priority="3:5"><td><span class="int">Magnified Area II</span></td><td><span class="int">Thunderstorm [3]</span> <em>[third ordinary socket]</em></td></tr>
+      </tbody>
+    </table>
+    <table>
+      <caption>Tier 4</caption>
+      <thead><tr><th scope="col">Gem</th><th scope="col">Skill</th></tr></thead>
+      <tbody>
+        <tr data-djinn-priority="4:1"><td><span class="int">Bidding II</span></td><td><span class="int">Kelari's Deception [1]</span> <em>[Act 4 upgrade]</em></td></tr>
+      </tbody>
+    </table>
+    <table>
+      <caption>Tier 5</caption>
+      <thead><tr><th scope="col">Gem</th><th scope="col">Skill</th></tr></thead>
+      <tbody>
+        <tr><td colspan="2">No T5 support is specified by this campaign route. Save for your chosen endgame transition.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="spark-priority-grid">
+    <table><caption>Jeweller's Orbs</caption><thead><tr><th scope="col">Use</th><th scope="col">Priority</th></tr></thead><tbody>
+      <tr><td>Djinn</td><td>Do not spend orbs: granted-skill sockets unlock by character level. The selected guide adds Muster at 36.</td></tr>
+      <tr><td>Lesser</td><td>Optional Thunderstorm [3] for its later area support. Core Deception links come first.</td></tr>
+      <tr><td>Greater / Perfect</td><td>No campaign priority specified by this source; save.</td></tr>
+    </tbody></table>
+    <table><caption>Gemcutter's Prisms</caption><thead><tr><th scope="col">Campaign priority</th></tr></thead><tbody><tr><td>No GCP cutting/spending order is specified in this leveling guide. Save rather than invent a required quality investment.</td></tr></tbody></table>
+    <table><caption>Lineage Gems</caption><thead><tr><th scope="col">Campaign priority</th></tr></thead><tbody><tr><td>None prescribed by GuyThatDies's campaign setup. No drop / trade-only support is required here.</td></tr></tbody></table>
+  </div>
+</section>
+
+<h2 class="page-heading">Sand Djinn - Gems and Supports</h2>
+<p>Numbered slots match the cutting table. Earlier support ranks remain available until you find an upgrade. The author names stages 14-19 and a level-19 swap; our file resolves that overlap as <strong>14-18 spells, 19+ Djinn after the trial</strong>. Other levels are availability / planning checkpoints, not guaranteed rewards.</p>
+<table class="spark-skills" aria-label="Sand Djinn gems and supports">
+  <thead><tr><th scope="col">Icon</th><th scope="col">Skill</th><th scope="col">Supports</th></tr></thead>
+  <tbody>
+      <tr data-djinn-skill="Spark">
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/sorceressspark.webp" alt="Spark" loading="lazy"></td>
+        <td><strong>Spark</strong><br><em>Levels 1-5</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Unleash</span></div>
+          <p>Opening clear. At level 6, replace with Essence Drain. Move Unleash between this and the weapon spell for bossing.</p>
+        </td>
+      </tr>
+      <tr data-djinn-skill="Firebolt">
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/fireballskillstaff.webp" alt="Firebolt" loading="lazy"></td>
+        <td><strong>Firebolt</strong><br><em>Levels 1-13; weapon-granted</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Unleash</span></div>
+          <p>Weapon-granted option, not a normal skill-gem cut. Use a strong available weapon spell for early bosses; Chaos Bolt becomes the default fallback after the Rust King.</p>
+        </td>
+      </tr>
+      <tr data-djinn-skill="Frost Bomb">
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/sorceressfrostbomb.webp" alt="Frost Bomb" loading="lazy"></td>
+        <td><strong>Frost Bomb</strong><br><em>Levels 1-5</em></td>
+        <td><em>No supports specified.</em>
+          <p>Opening utility from Renly. Not part of the later stage-specific skill lists; no support investment.</p>
+        </td>
+      </tr>
+      <tr data-djinn-skill="Contagion">
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchcontagion.webp" alt="Contagion" loading="lazy"></td>
+        <td><strong>Contagion</strong><br><em>Levels 1-18</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Unleash</span></div>
+          <p>Clearfell skill reward. From level 6, use with Essence Drain and move Unleash here for clear. Do not spend skill-gem upgrades on it.</p>
+        </td>
+      </tr>
+      <tr data-djinn-skill="Chaos Bolt">
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/chaosboltweaponskill.webp" alt="Chaos Bolt" loading="lazy"></td>
+        <td><strong>Chaos Bolt</strong><br><em>Levels 6-13; weapon-granted</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Unleash</span></div>
+          <p>Weapon-granted by a Withered Wand; not a normal skill-gem cut. Boss option with Unleash. Strong Firebolt / Lightning Bolt / Freezing Shards weapons are alternatives.</p>
+        </td>
+      </tr>
+      <tr data-djinn-skill="Essence Drain">
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchessencedrain.webp" alt="Essence Drain" loading="lazy"></td>
+        <td><strong>Essence Drain</strong><br><em>Pre-cut before 6; use at levels 6-18</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Zenith I</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="dex">Chain I</span></div>
+          <p>Shown in our build's recommendations from level 1 for pre-cutting when a suitable uncut gem is available. Equip from level 6 for main clear with Contagion. Upgrade ahead of Orb of Storms. From level 14, move the same Zenith I between ED for clear and Ember Fusillade for bosses.</p>
+        </td>
+      </tr>
+      <tr data-djinn-skill="Pounce">
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/druidwolfleapattack.webp" alt="Pounce" loading="lazy"></td>
+        <td><strong>Pounce</strong><br><em>Levels 6-100</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="str">Mark for Death</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="str">Prolonged Duration I</span> / <span class="str">Prolonged Duration II</span></div>
+          <p>Cut from Lachlann reward; wolf talisman on weapon set 2. Do not spend gem upgrades on Pounce. At the Djinn swap add Mark for Death and duration. Meta gem: socket manually if the planner does not display it.</p>
+        </td>
+      </tr>
+      <tr data-djinn-skill="Arctic Armour">
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/sorceressarcticarmour.webp" alt="Arctic Armour" loading="lazy"></td>
+        <td><strong>Arctic Armour</strong><br><em>Levels 10-18</em></td>
+        <td><em>No supports specified.</em>
+          <p>Early Spirit skill in the ED / Ember stages. Retire at the Djinn swap to make room for reviving minions.</p>
+        </td>
+      </tr>
+      <tr data-djinn-skill="Orb of Storms">
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/sorceressorbofstorms.webp" alt="Orb of Storms" loading="lazy"></td>
+        <td><strong>Orb of Storms</strong><br><em>Levels 14-18</em></td>
+        <td><em>No supports specified.</em>
+          <p>Prepare with the Crowbell reward, use in the Ember stage. Upgrade after Essence Drain. The level 14-19 skill list assigns no supports, so none are added here.</p>
+        </td>
+      </tr>
+      <tr data-djinn-skill="Ember Fusillade">
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/sorceressblazingcluster.webp" alt="Ember Fusillade" loading="lazy"></td>
+        <td><strong>Ember Fusillade</strong><br><em>Levels 14-18</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Controlled Destruction</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Zenith I</span></div>
+          <p>Cut with the Leitis level 5 skill gem. Single target with Controlled Destruction and the Zenith I moved from Essence Drain.</p>
+        </td>
+      </tr>
+      <tr data-djinn-skill="Thunderstorm">
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/lightningstormskill.webp" alt="Thunderstorm" loading="lazy"></td>
+        <td><strong>Thunderstorm</strong><br><em>Levels 14-100</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Living Lightning</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="str">Prolonged Duration II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Magnified Area II</span></div>
+          <p>Cut from Vastiri Outskirts completion when available. KEEP GEM LEVEL 5: further levels increase attribute requirements without benefiting this utility setup. From the Djinn swap, use Living Lightning; later add duration and area with spare gems/sockets.</p>
+        </td>
+      </tr>
+      <tr data-djinn-skill="Kelari's Deception">
+        <td><img src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/Rolldodge.webp" alt="Kelari's Deception" loading="lazy"></td>
+        <td><strong>Kelari's Deception</strong><br><em>Levels 19-100; ascendancy-granted</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Bidding I</span> / <span class="int">Bidding II</span></div>
+          <div class="support-slot"><code>[2]</code> <span class="int">Magnified Area I</span> / <span class="int">Concentrated Area</span> / <span class="int">Magnified Area II</span></div>
+          <div class="support-slot"><code>[3]</code> <span class="int">Muster</span></div>
+          <p>FIRST ASCENDANCY REQUIRED: level 19 is GuyThatDies's swap checkpoint, not an automatic unlock. Granted by the Kelari ascendancy setup, not cut. [1] Bidding; [2] Magnified Area for clear OR Concentrated Area for bosses; [3] Muster at level 36 once the socket is available. No second Fire Djinn is prescribed by this campaign guide.</p>
+        </td>
+      </tr>
+      <tr data-djinn-skill="Skeletal Sniper">
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witcharcherskeleton.webp" alt="Skeletal Sniper" loading="lazy"></td>
+        <td><strong>Skeletal Sniper</strong><br><em>Levels 19-100</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Last Gasp</span></div>
+          <p>First reviving minion at the swap. Last Gasp is a spare T1 investment. Level minion gems as useful; reserve Spirit for different active types once Muster is available.</p>
+        </td>
+      </tr>
+      <tr data-djinn-skill="Skeletal Arsonist">
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witcharsonistskeleton.webp" alt="Skeletal Arsonist" loading="lazy"></td>
+        <td><strong>Skeletal Arsonist</strong><br><em>Levels 20-100</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Last Gasp</span></div>
+          <p>Add one if Spirit permits in the post-swap roster. Different active reviving types increase Muster damage; duplicates of one type do not add another type.</p>
+        </td>
+      </tr>
+      <tr data-djinn-skill="Skeletal Frost Mage">
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchfrostskeleton.webp" alt="Skeletal Frost Mage" loading="lazy"></td>
+        <td><strong>Skeletal Frost Mage</strong><br><em>Levels 20-100</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Last Gasp</span></div>
+          <p>Add one if Spirit permits. Campaign roster option, not a requirement to reserve every listed minion immediately.</p>
+        </td>
+      </tr>
+      <tr data-djinn-skill="Bind Spectre">
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchbindspectre.webp" alt="Bind Spectre" loading="lazy"></td>
+        <td><strong>Bind Spectre</strong><br><em>Levels 22-100</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Last Gasp</span></div>
+          <p>Use the cheap wasp in Sandswept Marsh recommended by GuyThatDies. It adds a reviving minion type for Muster; no Powered Zealot farming or projectile-spell supports in this route. The gem unlock and reaching the zone are separate gates.</p>
+        </td>
+      </tr>
+      <tr data-djinn-skill="Skeletal Reaver">
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchreaverskeleton.webp" alt="Skeletal Reaver" loading="lazy"></td>
+        <td><strong>Skeletal Reaver</strong><br><em>Levels 31-100</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Last Gasp</span></div>
+          <p>Another reviving type when a level 9 skill gem and sufficient Spirit are available.</p>
+        </td>
+      </tr>
+      <tr data-djinn-skill="Skeletal Storm Mage">
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchstormskeleton.webp" alt="Skeletal Storm Mage" loading="lazy"></td>
+        <td><strong>Skeletal Storm Mage</strong><br><em>Levels 41-100</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Last Gasp</span></div>
+          <p>Another reviving type when a level 11 skill gem and sufficient Spirit are available.</p>
+        </td>
+      </tr>
+      <tr data-djinn-skill="Skeletal Brute">
+        <td><img src="https://cdn.poe2db.tw/image/art/2dart/skillicons/4k/witchbruteskeleton.webp" alt="Skeletal Brute" loading="lazy"></td>
+        <td><strong>Skeletal Brute</strong><br><em>Levels 52-100</em></td>
+        <td><div class="support-slot"><code>[1]</code> <span class="int">Last Gasp</span></div>
+          <p>Another reviving type when a level 13 skill gem and sufficient Spirit are available.</p>
+        </td>
+      </tr>
+  </tbody>
+</table>
+
+<section id="djinn-sources" class="djinn-sources" aria-labelledby="djinn-sources-heading">
+  <h2 id="djinn-sources-heading" class="page-heading">Sand Djinn - GuyThatDies Sources and Build Files</h2>
+  <p><strong>Our version:</strong> <a href="Builld%20Ideas/Sand%20Djinn/sand-djinn-campaign.build" download>Sand Djinn - GuyThatDies Campaign</a> combines the five stages with our explicit slots and priorities. Passives remain empty; use the author's original trees below. Recommendations continuing to 100 preserve the campaign setup, not a new endgame prescription.</p>
+  <p><strong>Original author exports:</strong> downloaded from <a href="https://mobalytics.gg/poe-2/profile/guythatdies/builds/0-4-varashta-levelling">GuyThatDies's guide</a> on 12 October 2026, unchanged except for local filenames. Original author, names, trees and gem data are preserved. These are separate stage snapshots with broad ranges, not a single automatically staged build; select the appropriate snapshot in-game.</p>
+  <ul>
+<li><a href="Builld%20Ideas/Sand%20Djinn/guythatdies-source-01-opening.build" download>Levels 1-5: Opening spells - original GuyThatDies export</a><br><small>SHA-256: <code>41ac18cb09b93edb1b73d216043990cd81fa33050ac62336f17a53eef911f323</code></small></li>
+<li><a href="Builld%20Ideas/Sand%20Djinn/guythatdies-source-02-essence-drain.build" download>Levels 6-13: Essence Drain - original GuyThatDies export</a><br><small>SHA-256: <code>ac33ee903b38ab16425780456b69e4d89af24889a43001a21aa03ab222e8a5c7</code></small></li>
+<li><a href="Builld%20Ideas/Sand%20Djinn/guythatdies-source-03-ember-fusillade.build" download>Levels 14-19: Ember Fusillade - original GuyThatDies export</a><br><small>SHA-256: <code>aaf2fac5cb46e6ac16bd4fa2f96d84d683901743cf7b60a4ce0983ff72ebb840</code></small></li>
+<li><a href="Builld%20Ideas/Sand%20Djinn/guythatdies-source-04-djinn-swap.build" download>Level 19: Djinn swap - original GuyThatDies export</a><br><small>SHA-256: <code>58e1e044ae4ee4f0649cf70cf1c92b0c458c71872fc3638cf1620cecae222855</code></small></li>
+<li><a href="Builld%20Ideas/Sand%20Djinn/guythatdies-source-05-campaign.build" download>Levels 20-58: Campaign Djinn - original GuyThatDies export</a><br><small>SHA-256: <code>1b973a47248b790bb0d8ceb68739edf35ff2ca8121c385c7f523c934ed8e8787</code></small></li>
+  </ul>
+  <p><strong>Source precedence:</strong> the stage-specific skill lists and instructions are used where the initial overview differs. In particular, the Ember stage has an unsupported Orb of Storms, and its instructions transfer Zenith between ED and Ember. Concentrated / Magnified Area are explicitly a swap, despite appearing together in exported support arrays. The T3 core order is Magnified Area II, then Muster.</p>
+  <p><strong>Speed evidence:</strong> <a href="https://www.youtube.com/watch?v=Jla2a4H8XKI">the author's 3:35 full campaign video</a> links directly to this guide. The timestamp and guide were checked, not every minute independently replayed; no additional assertion about race rules, trading or permanent bonuses is made.</p>
+  <p><strong>Mechanics:</strong> <a href="https://poe2db.tw/us/Kelaris_Deception">Deception</a>, <a href="https://poe2db.tw/us/Muster">Muster</a>, <a href="https://poe2db.tw/us/Zenith_I">Zenith I</a> and the other skill/support metadata were checked on PoE2DB. Higher-tier support intervals in our file use approximate Act 3 / Act 4 checkpoints; follow actual drops and sockets.</p>
+  <p><strong>Sniper metadata:</strong> <a href="https://poe2db.tw/us/Skeletal_Sniper">PoE2DB's Sniper entry</a> uses the legacy <code>SkillGemSkeletalWarrior</code> item ID and documents the old Warrior gem's conversion to Sniper in 0.2. Our file follows that entry. The author's exports use <code>SkillGemSkeletalSniper</code> and are preserved unchanged; both recommendations refer to Skeletal Sniper, not an extra Warrior gem to cut.</p>
+  <p><strong>Planner limitations:</strong> <a href="https://www.pathofexile.com/developer/docs/game">GGG's experimental format</a> does not support meta gems. Pounce, weapon-granted skills and ascendancy-granted skills may need manual setup. Weapon-slot notes repeat the important links and the Thunderstorm level cap. File synchronization does not prove in-game rendering.</p>
+</section>
+</div><!-- #sand-djinn-details -->
 
 </div><!-- #tab-campaign -->
 
@@ -2044,6 +2359,41 @@
 <p><em>Spell and projectile skill-level sources collected so far for the main-hand setup, not an exhaustive list or a combined total. Adonia's Ego is excluded because it is reserved for the offhand setup. Elemental-only skill bonuses are excluded.</em></p>
 </div><!-- #pill-early-spark-comet -->
 
+<div id="pill-early-sand-djinn" data-build-panel="sand-djinn" hidden>
+<h2 class="page-heading">Sand Djinn - GuyThatDies Early Items</h2>
+<p>Use the author's caster opening and minion swap; no unique or Lineage purchase is required. Priorities below are paraphrased from the matching campaign stages.</p>
+<div class="spark-early-items">
+  <table><caption>Before first ascendancy</caption><thead><tr><th scope="col">Slot</th><th scope="col">Look for</th></tr></thead><tbody>
+    <tr><td>Weapon / focus</td><td>Useful skill levels &gt; damage gained as extra &gt; increased damage &gt; cast speed &gt; critical stats. A strong weapon-granted spell can carry early bosses.</td></tr>
+    <tr><td>Withered Wand</td><td>After the Rust King, buy one for Chaos Bolt if no better +level weapon is available. The level of the weapon-granted skill matters.</td></tr>
+    <tr><td>Weapon swap</td><td>Wolf talisman for Pounce from level 6. Do not keep upgrading Pounce's gem.</td></tr>
+    <tr><td>Boots</td><td>Movement speed first, then resistances / life / armour.</td></tr>
+    <tr><td>Armour / jewellery</td><td>Life and resistances; useful skill levels on the amulet. Source belt base: Rawhide Belt.</td></tr>
+    <tr><td>Prepare the swap</td><td>Check vendors for +1 minion level on sceptre and helmet before ascending. Keep enough gold for the actual tree respec; no fixed 7,000-gold grenade budget is assumed.</td></tr>
+  </tbody></table>
+  <table><caption>After first ascendancy</caption><thead><tr><th scope="col">Slot</th><th scope="col">Look for</th></tr></thead><tbody>
+    <tr><td>Sceptre</td><td>+minion skill levels &gt; nearby-allies increased damage &gt; allies' critical chance / bonus. Do not keep prioritizing your own spell damage.</td></tr>
+    <tr><td>Helmet</td><td>+minion skill levels, then resistances / life / ES.</td></tr>
+    <tr><td>Shield</td><td>Resistances, life and increased block.</td></tr>
+    <tr><td>Body armour</td><td>Spirit in the later campaign, then resistances / life / ES. Use the Spirit to fit different reviving minion types.</td></tr>
+    <tr><td>Boots / gloves / belt</td><td>Movement on boots; resistances, life and ES. Maintain attributes needed by gear and supports.</td></tr>
+    <tr><td>Amulet / rings</td><td>Useful skill levels on amulet, then life / resistances; rings primarily fix defences.</td></tr>
+  </tbody></table>
+</div>
+<div class="craft-grid">
+  <section class="craft-card"><h3>Vendor Checks Before Gambling</h3><ol class="craft-steps">
+    <li>Use the opening regex to compare spell weapons and movement boots while banking minion-level gear.</li>
+    <li>Before the trial swap, confirm a usable sceptre, shield and the relevant attributes. A caster damage roll is not a substitute for +minion levels.</li>
+    <li>The author suggests a level-5 character and Finn gambling as a fallback if minion-level gear is missing. This costs time and gold and is not guaranteed; it is optional, not a mandatory speedrun step.</li>
+  </ol></section>
+  <section class="craft-card"><h3>Campaign Currency - Local Budget Guidance</h3><ol class="craft-steps">
+    <li>Keep the working item until its replacement is ready. Transmute / Augment a promising base only when the possible improvement is worth the currency.</li>
+    <li>Regal a good magic item selectively; do not exhaust currency chasing perfect rolls before the build transition.</li>
+    <li>Prioritize movement boots, missing resistances and minion levels over speculative endgame crafts. The source does not prescribe a deterministic campaign craft.</li>
+  </ol></section>
+</div>
+</div><!-- #pill-early-sand-djinn -->
+
 </div><!-- #tab-early-crafting -->
 
 <div id="tab-crafting" class="tab-panel">
@@ -2725,6 +3075,9 @@ function updateCraftingSelection() {
     if (matches) hasRecipes = true;
   });
   document.querySelector('.crafting-empty').hidden = hasRecipes;
+  document.querySelector('.crafting-empty').textContent = build.dataset.build === 'sand-djinn'
+    ? 'Campaign crafting and SSF gearing are in Early Items. No endgame or mirror-tier recipe is prescribed for this campaign build.'
+    : 'No crafts added for this selection yet.';
   document.querySelector('.crafting-guidance').hidden = !hasRecipes;
 }
 updateCraftingSelection();
